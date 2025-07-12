@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>english on end2end zone</title>
+    <link>http://www.end2endzone.com/tags/english/</link>
+    <description>Recent content in english on end2end zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PiDVR Record over the air TV on a Raspberry Pi 4</title>
+      <link>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</link>
+      <pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</guid>
+      <description>About the project The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.
+Required Hardware This project requires the following hardware:
+ Raspberry Pi 4 (with the required parts)  4GB of ram A 16GB SD card A micro HDMI cable Monitor with HDMI input A 15.3W USB-C Power Supply (3A @ 5v power supply) Raspberry Pi 4 case.</description>
+    </item>
+    
+    <item>
+      <title>How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</title>
+      <link>http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</link>
+      <pubDate>Sun, 14 Mar 2021 16:42:39 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</guid>
+      <description>Introduction This post explains all the instructions required in order to get started with c++ no macOS 10.15 Catalina.
+This article assumes that you already have access to a macOS image ISO file and that you already created a macOS virtual machine in VirtualBox.
+Update macOS with latest security updates and bug fixes Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software &amp;amp; security update.</description>
+    </item>
+    
+    <item>
+      <title>How to encode command line parameters on Windows – done right</title>
+      <link>http://www.end2endzone.com/how-to-encode-command-line-parameters-on-windows-done-right/</link>
+      <pubDate>Sun, 14 Mar 2021 14:49:47 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-encode-command-line-parameters-on-windows-done-right/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This post is a follow up on command line arguments. I recently published a C++ library (&lt;a href=&#34;http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/&#34;&gt;libArgvCodec&lt;/a&gt;) which properly handles all encoding and decoding of command line arguments. It is much safer to use the library than simply wrap each argument with double quotes.&lt;/p&gt;
+&lt;p&gt;This post is about the list of rules that the library implements for encoding and decoding of arguments.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</title>
+      <link>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</link>
+      <pubDate>Sun, 25 Jun 2017 16:02:08 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &amp;lsquo;safe enough&amp;rsquo; for most situations. That is simply not true.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libVariant – A c&#43;&#43; library which encapsulate any value of variant types</title>
+      <link>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</link>
+      <pubDate>Sun, 28 May 2017 21:06:45 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</title>
+      <link>http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</link>
+      <pubDate>Thu, 22 Dec 2016 18:03:50 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is written in order to demonstrate how my arduino libraries &lt;a href=&#34;http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/&#34;&gt;libRtttl&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/&#34;&gt;AnyRtttl&lt;/a&gt; can be used to convert arduino code (&lt;code&gt;tone()&lt;/code&gt; and &lt;code&gt;delay()&lt;/code&gt; functions calls) into actual RTTTL melodies.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</title>
+      <link>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</link>
+      <pubDate>Thu, 27 Oct 2016 16:48:23 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p&gt;
+&lt;p&gt;I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</title>
+      <link>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</link>
+      <pubDate>Thu, 04 Aug 2016 17:30:03 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</guid>
+      <description>&lt;p class=&#34;postedit&#34;&gt;
+  Please note that &lt;strong&gt;csvplot&lt;/strong&gt; source code is now moved to GitHub. Source code can be downloaded from the project’s &lt;a href=&#34;http://github.com/end2endzone/csvplot&#34;&gt;GitHub page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&amp;rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.&lt;/p&gt;
+&lt;p&gt;Most programming language I know does not offer a native library for plotting data to a graph. It is not an easy task. Most programming language often require external libraries for implementing the process and each library does not work the same way.&lt;/p&gt;
+&lt;p&gt;Excel is a native platform for parsing Comma-separated values (CSV) files and can be scripted to plot the result into an image.&lt;/p&gt;
+&lt;p&gt;The purpose of this script is to allows any programming language which generates data to plot the data into an image by saving the raw data to a CSV file and then using the power of Excel to plot the result into an image.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title>
+      <link>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link>
+      <pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about my simplest library that I wrote for the arduino: &lt;em&gt;SoftTimers&lt;/em&gt;. The &lt;em&gt;SoftTimers&lt;/em&gt; arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format</title>
+      <link>http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</link>
+      <pubDate>Sat, 28 May 2016 15:18:35 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about another library that I have written: libRtttl is a c++ library for manipulating the RTTTL audio format.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</title>
+      <link>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</link>
+      <pubDate>Sat, 21 May 2016 23:20:34 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available &lt;code&gt;void play_rtttl(char *p)&lt;/code&gt; function. The AnyRtttl is a feature rich library which supports all best RTTTL features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>win32Arduino: a win32 library that implements most arduino functions</title>
+      <link>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</link>
+      <pubDate>Mon, 16 May 2016 17:15:58 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/win32Arduino&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/win32Arduino.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.&lt;/p&gt;
+&lt;p&gt;The win32Arduino is a solution to this issue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>svnpropertylog – A script which finds all revisions where a specific subversion property has changed</title>
+      <link>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</link>
+      <pubDate>Tue, 03 May 2016 16:52:00 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</guid>
+      <description>&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.&lt;/p&gt;
+&lt;p&gt;The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&amp;rsquo;s a &amp;ldquo;&lt;em&gt;show log for subversion properties&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libMIDI – A C&#43;&#43; open-source library for generating single tone melodies in MIDI format</title>
+      <link>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</link>
+      <pubDate>Sun, 24 Apr 2016 16:42:27 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to multiplex RC Transmitter switches into a single channel</title>
+      <link>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</link>
+      <pubDate>Wed, 30 Mar 2016 17:15:24 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 1&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Throttle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 2&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Rudder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 3&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Ailerons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 4&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Elevator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 5&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Flight mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 6&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The following article explains how I manage to solve the issue:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;How can I control more than one device using a single channel&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title>
+      <link>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link>
+      <pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;
+&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mapping RC Transmitter PWM signal to actual transmitter values</title>
+      <link>http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</link>
+      <pubDate>Sat, 26 Mar 2016 20:47:29 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;If you ever need to use an RC Transmitter &amp;amp; receiver for a personal project, an easy way to retrieve the signal is to connect the receiver to a micro-controller.&lt;/p&gt;
+&lt;p&gt;However, decoding the signal to get actual transmitter values is not as easy as it sounds. You need to know the correct encoding and searching on the internet about the subject gives erratic results.&lt;/p&gt;
+&lt;p&gt;Here is the full article that explains how to correctly map an RC Transmitter PWM signal to actual transmitter values.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BitReader – An arduino library for reading &amp; writing data as chunks of bits</title>
+      <link>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</link>
+      <pubDate>Sat, 26 Mar 2016 00:23:05 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Here is another arduino library that I have written.&lt;/p&gt;
+&lt;p&gt;As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp;amp; CPU is cheap. If your application is struggling to run on today&amp;rsquo;s computer, it will run smoothly in 1-2 years.&lt;/p&gt;
+&lt;p&gt;As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.&lt;/p&gt;
+&lt;p&gt;BitReader is an arduino library that allows one to read or write data as chunks of bits.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</title>
+      <link>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</link>
+      <pubDate>Sun, 20 Mar 2016 15:16:54 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Demystifying RC Transmitter Mixing</title>
+      <link>http://www.end2endzone.com/demystifying-rc-transmitter-mixing/</link>
+      <pubDate>Thu, 28 Jan 2016 17:44:31 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/demystifying-rc-transmitter-mixing/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;If you look on the internet for &amp;ldquo;mixing&amp;rdquo;, you will usually find posts and articles of people asking for things like &amp;ldquo;what is the best mix I should use for this or that&amp;rdquo; which I think is not helpful. I think it is far more helpful to actually understand what mixing is and how it can help you improve your skills as a pilot. Lately I wanted to understand how mixing could help me in a personal project. I took this opportunity to learn something new and try to demystifying RC Transmitter Mixing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RC Transmitter Mix Calculator</title>
+      <link>http://www.end2endzone.com/rc-transmitter-mix-calculator/</link>
+      <pubDate>Thu, 28 Jan 2016 17:43:43 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/rc-transmitter-mix-calculator/</guid>
+      <description>&lt;p&gt;This is an Excel worksheet I created based on the calculations I found for calculating most R/C Transmitter mixes. It is designed to help you identify the effective range of a mix (finding the low, medium and high values).&lt;/p&gt;
+&lt;p&gt;See my post on &lt;a href=&#34;http://www.end2endzone.com/demystifying-rc-transmitter-mixing/&#34;&gt;Demystifying RC Transmitter Mixing&lt;/a&gt; for more details.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maintenance of Hobbico TorqMaster 90 deluxe 12 Volt RC starter</title>
+      <link>http://www.end2endzone.com/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</link>
+      <pubDate>Sun, 17 Jan 2016 22:13:51 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</guid>
+      <description>&lt;p&gt;This article is about how I did the maintenance on my Hobbico Torqmaster 90 deluxe which is a 12 Volt starter for remote controlled (RC) aircraft. I wanted to change the rubber nose to get a better grip on my &lt;a href=&#34;http://www.end2endzone.com/tag/avistar-elite/&#34;&gt;Avistar Elite&lt;/a&gt; spinner. I ended up disassembling the whole unit before understanding what I should have done.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</title>
+      <link>http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</link>
+      <pubDate>Sat, 16 Jan 2016 22:19:34 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This guide is a follow up to the post called&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/&#34;&gt;How to remove ads from HDHomeRun recordings and still encode with Handbrake&lt;/a&gt;. I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to remove ads from HDHomeRun recordings and still encode with Handbrake</title>
+      <link>http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</link>
+      <pubDate>Sun, 04 Oct 2015 20:41:01 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unboxing the Avistar Elite .46 a timelapse video</title>
+      <link>http://www.end2endzone.com/unboxing-the-avistar-elite-46-a-timelapse-video/</link>
+      <pubDate>Sat, 04 Apr 2015 06:20:22 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/unboxing-the-avistar-elite-46-a-timelapse-video/</guid>
+      <description>&lt;p&gt;Hi.&lt;/p&gt;
+&lt;p&gt;For those interested, here is the first sequence of images I captured with my Canon EOS SL1 in order to make a timelapse video of the unpacking of the aircraft RC Avistar Elite .46.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>extTools: a windows shell extension to help you with common Windows File Explorer tasks.</title>
+      <link>http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</link>
+      <pubDate>Sun, 29 Mar 2015 20:00:07 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</guid>
+      <description>&lt;h1 id=&#34;what-is-exttools&#34;&gt;What is extTools&lt;/h1&gt;
+&lt;p&gt;extTools is a fast and innovative FREEWARE (for non-commercial use) software suite to help you executing common tasks in Windows File Explorer more easily.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Advanced clipboard support (copy, append or modify).&lt;/li&gt;
+&lt;li&gt;File operation queuing (batch copy or paste).&lt;/li&gt;
+&lt;li&gt;Better &amp;amp; quicker file deletions.&lt;/li&gt;
+&lt;li&gt;Powerful file renaming algorithms.&lt;/li&gt;
+&lt;li&gt;XP like search tool (simple search tool).&lt;/li&gt;
+&lt;li&gt;Extends Windows File Explorer by registering as a Shell Extension.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;extTools allows its users to execute tasks that are not available in a default Windows environment. extTools is also designed to replace existing task that are badly designed, annoying to execute or simply missing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to make a time-lapse video with free tools and a DSLR camera</title>
+      <link>http://www.end2endzone.com/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/</link>
+      <pubDate>Sun, 15 Mar 2015 19:50:02 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/time-lapse_photography&#34;&gt;Time-lapse photography&lt;/a&gt; is a wonderful effect to make your images alive instead of static because you can make a plain (or almost boring) event and make it so much more dramatic. However, it is something that usually needs a lot of time investment to get something acceptable.&lt;/p&gt;
+&lt;p&gt;Considering my family was planning to decorate the Christmas tree during the weekend, I decided to take my camera and capture the whole event in a time-lapse video.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HDHomeRun TV Dump: Unleash the DVR capabilities of your free to air live TV stream</title>
+      <link>http://www.end2endzone.com/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</link>
+      <pubDate>Mon, 16 Feb 2015 02:24:14 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</guid>
+      <description>&lt;h1 id=&#34;hdhomerun-tv-dump&#34;&gt;HDHomeRun TV Dump&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;HdHomeRun TV Dump&lt;/em&gt; is a &lt;a href=&#34;http://en.wikipedia.org/wiki/Graphical_user_interface&#34;&gt;GUI&lt;/a&gt; that installs over the native &lt;a href=&#34;http://www.silicondust.com/support/downloads/&#34;&gt;HDHomeRun application&lt;/a&gt; and allows owners to quickly take control over the free to air live TV stream. Implementing DVR capabilities on your computer becomes a easy as 1-2-3.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</title>
+      <link>http://www.end2endzone.com/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</link>
+      <pubDate>Sun, 01 Feb 2015 13:58:08 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</guid>
+      <description>&lt;h1 id=&#34;dns343monitor&#34;&gt;DNS343Monitor&lt;/h1&gt;
+&lt;p&gt;DNS-343 Monitor is a tool for monitoring how much space is left on your DNS-343 NAS device.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</title>
+      <link>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</link>
+      <pubDate>Sat, 31 Jan 2015 01:27:33 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</guid>
+      <description>&lt;h1 id=&#34;msbuildreorder&#34;&gt;MSBuildReorder&lt;/h1&gt;
+&lt;p class=&#34;postedit&#34;&gt;
+  Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/msbuildreorder&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/msbuildreorder.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OfficeReadOnly: How to open Microsoft Office documents as read-only</title>
+      <link>http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</link>
+      <pubDate>Wed, 28 Jan 2015 02:12:41 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</guid>
+      <description>&lt;h1 id=&#34;officereadonly&#34;&gt;OfficeReadOnly&lt;/h1&gt;
+&lt;p&gt;OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrates into Windows File Explorer or the with the &amp;ldquo;Send to&amp;rdquo; folder.&lt;/li&gt;
+&lt;li&gt;Supports Documents, Workbooks, Presentations and Diagrams.&lt;/li&gt;
+&lt;li&gt;Supports both Microsoft Office 2003 (&lt;em&gt;.doc) and Microsoft Office 2010 file extensions (&lt;/em&gt;.doc, and *.docx).&lt;/li&gt;
+&lt;li&gt;Can be used from the command prompt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.&lt;/p&gt;
+&lt;p&gt;OfficeReadOnly was created to solve this issue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>bin2cpp: The easiest way to embed small files into a C&#43;&#43; executable</title>
+      <link>http://www.end2endzone.com/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</link>
+      <pubDate>Mon, 12 Jan 2015 03:56:17 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</guid>
+      <description>&lt;h1 id=&#34;bin2cpp&#34;&gt;bin2cpp&lt;/h1&gt;
+&lt;p class=&#34;postedit&#34;&gt;
+  Please note that bin2cpp source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/bin2cpp&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/bin2cpp.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/q9k0ebb971o475qi/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/bin2cpp/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/bin2cpp/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;bin2cpp is a command line tool for embedding small files (like images, icons or raw data files) into a C++ executable.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easily converts small files as C++ source code for embedding into a C++ executable.&lt;/li&gt;
+&lt;li&gt;Content extraction supported by a unique function call for each embedded file.&lt;/li&gt;
+&lt;li&gt;Supports a multiple embedded files at once.&lt;/li&gt;
+&lt;li&gt;Makes it harder for resource hacker to modify or steal the embedded files.&lt;/li&gt;
+&lt;li&gt;No third party libraries required for retrieving the data of the embedded files.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to photograph fireworks with a DSLR camera</title>
+      <link>http://www.end2endzone.com/how-to-photograph-fireworks-with-a-dslr-camera/</link>
+      <pubDate>Sun, 07 Dec 2014 06:49:09 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-photograph-fireworks-with-a-dslr-camera/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Do you plan to take photographs of fireworks during the next few weeks? If so you might take a look at this article that explains how to properly shoot fireworks with a DSLR camera.&lt;/p&gt;
+&lt;p&gt;Getting a nice firework picture is it not as simple as going outside, finding a firework display and starting to shoot bits of lights in the sky. There are things you can do to increase your chances of success or fine tune the end result.&lt;/p&gt;
+&lt;p&gt;Of course, it is also temping to take picture of the fireworks with a decent phone or point &amp;amp; shoot camera if you have a &amp;ldquo;firework&amp;rdquo; option, but those kind of picture often comes out as grainy/noisy or worst blurry.&lt;/p&gt;
+&lt;p&gt;In this article, I will guide you to make the most stunning photography of fireworks with your DSLR camera.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Remote trigger shutter release cable for your Canon DSLR camera</title>
+      <link>http://www.end2endzone.com/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/</link>
+      <pubDate>Wed, 03 Dec 2014 02:00:59 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I have been working on multiple projects since I bought my camera. Most of them are related to super telephoto shots, macrophotography. Other requires a very long exposures or even a bulb exposure modes.&lt;/p&gt;
+&lt;p&gt;For all these kind of photography, camera shake is your greatest enemy. You really need to reduce the shaking to a minimum. The first element I bought to reduce camera shake was a tripod but that wasn&amp;rsquo;t enough. When pressing the shutter button, a light shake was induced by my fingers and that would sometime ruin the image.&lt;/p&gt;
+&lt;p&gt;For solving this issue, most camera allows the user to set a delay for taking a picture. That is perfect alternative for situation where the scene you are photographing does not change a lot or is predictable like macrophotography or long exposures scenarios. However, it is not suitable for wild life super telephoto shots or when you need the bulb mode since you have to hold and release the shutter for the whole exposure.&lt;/p&gt;
+&lt;p&gt;Canon sells a &lt;a href=&#34;http://estore.canon.ca/shop/en-CA/catalog/product-accessories/eos-digital-slr-camera-accessories/remote-controllers-10614-24/remote-switch-rs-60e3&#34;&gt;Remote Switch RS-60E3&lt;/a&gt; which acts exactly like your shutter button, enabling halfway or complete pressing for adjusting auto-focus or activating the shutter to capture an image. It sells for 34$ (at the time of this writing) but it is only 2-ft long.&lt;/p&gt;
+&lt;p&gt;Since the Canon version is not exactly what I needed, I though why not create one instead of buying it. In this article, I will show you how I built a DIY version of Canon&amp;rsquo;s remote shutter release cable for my Canon DSLR camera.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Recommended modifications to the Avistar Elite .46 ARF by Great Planes</title>
+      <link>http://www.end2endzone.com/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/</link>
+      <pubDate>Mon, 13 Oct 2014 15:03:21 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I recently bought an Avistar Elite .46 ARF by Great Planes for flying with a flight instructor at my local hobby club. Before we went to the club and start flying, he and I (mostly he) made some adjustments to the plane for getting the perfect trainer for me. Basically, I changed some settings to get better results from the stock options.&lt;/p&gt;
+&lt;p&gt;Here are all the modifications that I did to make this trainer the perfect plane.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Review of the Avistar Elite .46 ARF by Great Planes – The perfect motorized trainer for beginners</title>
+      <link>http://www.end2endzone.com/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/</link>
+      <pubDate>Sun, 21 Sep 2014 00:31:55 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;At the beginning of the 2014 season, I decided to join a local RC club to get to know good experienced people that would give me advices on the best practices for flying. I also decided to find a flight instructor that would assist me and help me with all the technical details that I am still lacking. When we met, he strongly suggested that I leave the &lt;a href=&#34;http://www.end2endzone.com/tag/super-cub/&#34;&gt;Hobby Zone Super Cub&lt;/a&gt; behind and get to a wooden motorized trainer plane like the Avistar Elite .46 ARF by Great Planes, which I did.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Final flight of a Super Cub LP</title>
+      <link>http://www.end2endzone.com/final-flight-of-a-super-cub-lp/</link>
+      <pubDate>Mon, 15 Sep 2014 00:27:05 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/final-flight-of-a-super-cub-lp/</guid>
+      <description>&lt;h1 id=&#34;the-good&#34;&gt;The Good&lt;/h1&gt;
+&lt;p&gt;After 1½ month of flying the plane, I was feeling a little more confident and I trusted enough myself for doing loops.  So at the end of the 2013 season, I went flying with a friend with my Super Cub LP. I wasn&amp;rsquo;t expecting any disaster&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Hobby Zone Super Cub LP RTF. A good beginner’s RC plane</title>
+      <link>http://www.end2endzone.com/the-hobby-zone-super-cub-lp-rtf-a-good-beginners-rc-plane/</link>
+      <pubDate>Fri, 12 Sep 2014 21:44:59 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/the-hobby-zone-super-cub-lp-rtf-a-good-beginners-rc-plane/</guid>
+      <description>&lt;p&gt;During summer 2013, I have found myself with a high interest in flying an RC plane. I didn’t know what to expect from this but I wanted to get a new toy to play with. Like everyone, I thought that flying a plane was not that hard and that I could easily manage to fly any kind of plane. I was wrong. During my search for the best plane, I learned about the &lt;a href=&#34;http://secure.hobbyzone.com/catalog/hz/HBZ7300.html&#34;&gt;Hobby Zone Super Cub LP RTF&lt;/a&gt; which I think is a really good plane for a beginner.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Bedroom under the bed led lighting</title>
+      <link>http://www.end2endzone.com/diy-bedroom-under-the-bed-led-lighting/</link>
+      <pubDate>Mon, 01 Sep 2014 19:32:17 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-bedroom-under-the-bed-led-lighting/</guid>
+      <description>&lt;p&gt;Introduction&lt;/p&gt;
+&lt;p&gt;How many times did you wake up your partner in bed because you had to turn on a lamp to see something? Did you ever wanted to have a bedside lamp/table lamp that do not take too much space on the bedside table? How about being able to turn off a lamp that&amp;rsquo;s been turned on by your partner without leaving your bed?&lt;/p&gt;
+&lt;p&gt;In this article, I will explain how I created a bedroom under the bed LED lighting solution that can replace your existing bedside lamp.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to shoot a waterfall with a DSLR camera</title>
+      <link>http://www.end2endzone.com/how-to-shoot-a-waterfall-with-a-dslr-camera/</link>
+      <pubDate>Mon, 01 Sep 2014 19:30:39 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-shoot-a-waterfall-with-a-dslr-camera/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Shooting a waterfall with a DSLR camera is not that hard. As usual in photography, you need a lot a patience. The perfect picture is all about managing a long exposure of the waterfall. This will get you a nice look as if the waterfall would be a silk river. In this guide, I will explain how I managed to get this picture of the &amp;ldquo;Chute du Diable&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Kitchen under cabinet led lighting</title>
+      <link>http://www.end2endzone.com/diy-kitchen-under-cabinet-led-lighting/</link>
+      <pubDate>Thu, 14 Aug 2014 17:30:40 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-kitchen-under-cabinet-led-lighting/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;There is something missing in most kitchens I have seen in my life and it is not a huge free space or a smart refrigerator. It is much simpler than that. I am talking about good lighting. All kitchen that I have used had decent lighting when used during a bright shiny day but was lacking appropriate lighting during a rainy days or nights. Most of then were also missing under cabinet lighting.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My expectations and things I would like to shoot</title>
+      <link>http://www.end2endzone.com/my-expectations-and-things-i-would-like-to-shoot/</link>
+      <pubDate>Tue, 05 Aug 2014 10:20:35 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/my-expectations-and-things-i-would-like-to-shoot/</guid>
+      <description>&lt;p&gt;What I expect from photography? I don&amp;rsquo;t really know. It&amp;rsquo;s a hobby after all but over time I managed to think about cool things I would like to shoot. Most of them are technical challenges but some of them have a geographical difficulty level. Others are only possible during a specific period of the year.&lt;/p&gt;
+&lt;p&gt;Here is my list of what I would hunt for a good shoot:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How photography all started</title>
+      <link>http://www.end2endzone.com/how-photography-all-started/</link>
+      <pubDate>Tue, 05 Aug 2014 01:34:05 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-photography-all-started/</guid>
+      <description>&lt;p&gt;Hi everyone. This is my first post regarding photography. I recently started this hobby but I had an interest in photography since a long time but never pursued this hobby because I always tough that good photography skills were not achievable or simply because you need a lot of gears that are expensive. Unfortunately, I changed my mind and rediscovered photography.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Custom baby gate</title>
+      <link>http://www.end2endzone.com/diy-custom-baby-gate/</link>
+      <pubDate>Sun, 03 Aug 2014 20:40:20 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-custom-baby-gate/</guid>
+      <description>&lt;h1 id=&#34;introduction-&#34;&gt;**Introduction **&lt;/h1&gt;
+&lt;p&gt;Following the birth of a child and after the celebration is all the stuff you have to buy to protect the house of &amp;ldquo;potential dangers&amp;rdquo;. Quickly, you realize that you need to buy a baby gate.&lt;/p&gt;
+&lt;p&gt;I looked at several models and I have not found a model that can suit my needs and my situation. I needed a baby gate that can:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

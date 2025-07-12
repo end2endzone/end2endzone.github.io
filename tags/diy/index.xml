@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diy on end2end zone</title>
+    <link>http://www.end2endzone.com/tags/diy/</link>
+    <description>Recent content in diy on end2end zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 27 Oct 2016 16:48:23 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</title>
+      <link>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</link>
+      <pubDate>Thu, 27 Oct 2016 16:48:23 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p&gt;
+&lt;p&gt;I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to multiplex RC Transmitter switches into a single channel</title>
+      <link>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</link>
+      <pubDate>Wed, 30 Mar 2016 17:15:24 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 1&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Throttle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 2&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Rudder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 3&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Ailerons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 4&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Elevator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 5&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Flight mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 6&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The following article explains how I manage to solve the issue:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;How can I control more than one device using a single channel&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Bricoler soi-même un éclairage au LED sous le lit de la chambre à coucher</title>
+      <link>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-le-lit-de-la-chambre-a-coucher/</link>
+      <pubDate>Tue, 21 Apr 2015 16:57:52 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-le-lit-de-la-chambre-a-coucher/</guid>
+      <description>&lt;p&gt;Introduction&lt;/p&gt;
+&lt;p&gt;Combien de fois avez-vous réveiller votre partenaire au lit parce que vous deviez allumer une lampe pour voir quelque chose? Avez-vous jamais eu envie d&amp;rsquo;avoir une lampe de chevet qui ne prenait pas trop de place sur la table ? Que diriez-vous d&amp;rsquo;être en mesure d&amp;rsquo;éteindre une lampe qui a été allumé par votre partenaire sans avoir à quitter votre lit?&lt;/p&gt;
+&lt;p&gt;Dans cet article, je vais vous expliquer comment j&amp;rsquo;ai créé moi-même un éclairage au DEL sous le lit de la chambre à coucher qui peut remplacer votre lampe de chevet existante.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Bricoler soi-même un éclairage au LED sous les armoires de cuisine</title>
+      <link>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-les-armoires-de-cuisine/</link>
+      <pubDate>Thu, 16 Apr 2015 17:11:33 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-les-armoires-de-cuisine/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Il manque quelque chose dans la plupart des cuisines que j&amp;rsquo;ai vus dans ma vie et ce ne est pas un énorme espace de travail pour couper vos légumes ou un réfrigérateur intelligent. Ce qu&amp;rsquo;il manque souvent est beaucoup plus simple: c&amp;rsquo;est un éclairage adéquat. Toutes les cuisines que j&amp;rsquo;ai utilisé avait un éclairage décent lorsqu&amp;rsquo;elles sont utilisés pendant le jour (beaucoup de fenêtre, une bonne lumière ambiante) mais c&amp;rsquo;est souvent pas le cas pendant les jours pluvieux ou la nuit. La plupart des cuisines manquent aussi d&amp;rsquo;un bon éclairage sous les armoires de cuisine.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Remote trigger shutter release cable for your Canon DSLR camera</title>
+      <link>http://www.end2endzone.com/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/</link>
+      <pubDate>Wed, 03 Dec 2014 02:00:59 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I have been working on multiple projects since I bought my camera. Most of them are related to super telephoto shots, macrophotography. Other requires a very long exposures or even a bulb exposure modes.&lt;/p&gt;
+&lt;p&gt;For all these kind of photography, camera shake is your greatest enemy. You really need to reduce the shaking to a minimum. The first element I bought to reduce camera shake was a tripod but that wasn&amp;rsquo;t enough. When pressing the shutter button, a light shake was induced by my fingers and that would sometime ruin the image.&lt;/p&gt;
+&lt;p&gt;For solving this issue, most camera allows the user to set a delay for taking a picture. That is perfect alternative for situation where the scene you are photographing does not change a lot or is predictable like macrophotography or long exposures scenarios. However, it is not suitable for wild life super telephoto shots or when you need the bulb mode since you have to hold and release the shutter for the whole exposure.&lt;/p&gt;
+&lt;p&gt;Canon sells a &lt;a href=&#34;http://estore.canon.ca/shop/en-CA/catalog/product-accessories/eos-digital-slr-camera-accessories/remote-controllers-10614-24/remote-switch-rs-60e3&#34;&gt;Remote Switch RS-60E3&lt;/a&gt; which acts exactly like your shutter button, enabling halfway or complete pressing for adjusting auto-focus or activating the shutter to capture an image. It sells for 34$ (at the time of this writing) but it is only 2-ft long.&lt;/p&gt;
+&lt;p&gt;Since the Canon version is not exactly what I needed, I though why not create one instead of buying it. In this article, I will show you how I built a DIY version of Canon&amp;rsquo;s remote shutter release cable for my Canon DSLR camera.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Bedroom under the bed led lighting</title>
+      <link>http://www.end2endzone.com/diy-bedroom-under-the-bed-led-lighting/</link>
+      <pubDate>Mon, 01 Sep 2014 19:32:17 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-bedroom-under-the-bed-led-lighting/</guid>
+      <description>&lt;p&gt;Introduction&lt;/p&gt;
+&lt;p&gt;How many times did you wake up your partner in bed because you had to turn on a lamp to see something? Did you ever wanted to have a bedside lamp/table lamp that do not take too much space on the bedside table? How about being able to turn off a lamp that&amp;rsquo;s been turned on by your partner without leaving your bed?&lt;/p&gt;
+&lt;p&gt;In this article, I will explain how I created a bedroom under the bed LED lighting solution that can replace your existing bedside lamp.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Kitchen under cabinet led lighting</title>
+      <link>http://www.end2endzone.com/diy-kitchen-under-cabinet-led-lighting/</link>
+      <pubDate>Thu, 14 Aug 2014 17:30:40 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-kitchen-under-cabinet-led-lighting/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;There is something missing in most kitchens I have seen in my life and it is not a huge free space or a smart refrigerator. It is much simpler than that. I am talking about good lighting. All kitchen that I have used had decent lighting when used during a bright shiny day but was lacking appropriate lighting during a rainy days or nights. Most of then were also missing under cabinet lighting.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Custom baby gate</title>
+      <link>http://www.end2endzone.com/diy-custom-baby-gate/</link>
+      <pubDate>Sun, 03 Aug 2014 20:40:20 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-custom-baby-gate/</guid>
+      <description>&lt;h1 id=&#34;introduction-&#34;&gt;**Introduction **&lt;/h1&gt;
+&lt;p&gt;Following the birth of a child and after the celebration is all the stuff you have to buy to protect the house of &amp;ldquo;potential dangers&amp;rdquo;. Quickly, you realize that you need to buy a baby gate.&lt;/p&gt;
+&lt;p&gt;I looked at several models and I have not found a model that can suit my needs and my situation. I needed a baby gate that can:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY Barrière pour bébé personnalisée</title>
+      <link>http://www.end2endzone.com/diy-barriere-pour-bebe-personnalisee/</link>
+      <pubDate>Mon, 07 Jul 2014 13:02:30 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-barriere-pour-bebe-personnalisee/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Ce qui suit la naissance d&amp;rsquo;un enfant après les réjouissances c&amp;rsquo;est tous les trucs qu&amp;rsquo;il faut acheter pour protéger la maison des &amp;ldquo;dangers potentiels&amp;rdquo;. Rapidement, on doit acheter une barrière pour bébé.&lt;/p&gt;
+&lt;p&gt;J&amp;rsquo;ai regardé plusieurs modèles et je n&amp;rsquo;ai pas trouvé un modèle qui puisse convenir à mes besoins et à ma situation soit:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

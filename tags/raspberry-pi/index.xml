@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi on end2end zone</title>
+    <link>http://www.end2endzone.com/tags/raspberry-pi/</link>
+    <description>Recent content in Raspberry Pi on end2end zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PiDVR Record over the air TV on a Raspberry Pi 4</title>
+      <link>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</link>
+      <pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</guid>
+      <description>About the project The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.
+Required Hardware This project requires the following hardware:
+ Raspberry Pi 4 (with the required parts)  4GB of ram A 16GB SD card A micro HDMI cable Monitor with HDMI input A 15.3W USB-C Power Supply (3A @ 5v power supply) Raspberry Pi 4 case.</description>
+    </item>
+    
+  </channel>
+</rss>

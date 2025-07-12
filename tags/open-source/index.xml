@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source on end2end zone</title>
+    <link>http://www.end2endzone.com/tags/open-source/</link>
+    <description>Recent content in open source on end2end zone</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Jun 2017 16:02:08 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</title>
+      <link>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</link>
+      <pubDate>Sun, 25 Jun 2017 16:02:08 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &amp;lsquo;safe enough&amp;rsquo; for most situations. That is simply not true.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libVariant – A c&#43;&#43; library which encapsulate any value of variant types</title>
+      <link>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</link>
+      <pubDate>Sun, 28 May 2017 21:06:45 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</title>
+      <link>http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</link>
+      <pubDate>Thu, 22 Dec 2016 18:03:50 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is written in order to demonstrate how my arduino libraries &lt;a href=&#34;http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/&#34;&gt;libRtttl&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/&#34;&gt;AnyRtttl&lt;/a&gt; can be used to convert arduino code (&lt;code&gt;tone()&lt;/code&gt; and &lt;code&gt;delay()&lt;/code&gt; functions calls) into actual RTTTL melodies.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comment afficher un exemple de toutes les polices dans Microsoft Word</title>
+      <link>http://www.end2endzone.com/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</link>
+      <pubDate>Wed, 21 Dec 2016 02:28:38 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;À chaque fois que je travail en graphisme et que je dois ajouter du texte à une image, je me retrouve toujours avec le même problème: &amp;ldquo;Comment faire pour identifier rapidement la meilleure police pour mon affiche ?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Je crois maintenant avoir finalement trouver la solution à ce problème.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</title>
+      <link>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</link>
+      <pubDate>Thu, 27 Oct 2016 16:48:23 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p&gt;
+&lt;p&gt;I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</title>
+      <link>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</link>
+      <pubDate>Thu, 04 Aug 2016 17:30:03 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</guid>
+      <description>&lt;p class=&#34;postedit&#34;&gt;
+  Please note that &lt;strong&gt;csvplot&lt;/strong&gt; source code is now moved to GitHub. Source code can be downloaded from the project’s &lt;a href=&#34;http://github.com/end2endzone/csvplot&#34;&gt;GitHub page&lt;/a&gt;.
+&lt;/p&gt;
+&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&amp;rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.&lt;/p&gt;
+&lt;p&gt;Most programming language I know does not offer a native library for plotting data to a graph. It is not an easy task. Most programming language often require external libraries for implementing the process and each library does not work the same way.&lt;/p&gt;
+&lt;p&gt;Excel is a native platform for parsing Comma-separated values (CSV) files and can be scripted to plot the result into an image.&lt;/p&gt;
+&lt;p&gt;The purpose of this script is to allows any programming language which generates data to plot the data into an image by saving the raw data to a CSV file and then using the power of Excel to plot the result into an image.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title>
+      <link>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link>
+      <pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about my simplest library that I wrote for the arduino: &lt;em&gt;SoftTimers&lt;/em&gt;. The &lt;em&gt;SoftTimers&lt;/em&gt; arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format</title>
+      <link>http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</link>
+      <pubDate>Sat, 28 May 2016 15:18:35 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about another library that I have written: libRtttl is a c++ library for manipulating the RTTTL audio format.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</title>
+      <link>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</link>
+      <pubDate>Sat, 21 May 2016 23:20:34 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available &lt;code&gt;void play_rtttl(char *p)&lt;/code&gt; function. The AnyRtttl is a feature rich library which supports all best RTTTL features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>win32Arduino: a win32 library that implements most arduino functions</title>
+      <link>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</link>
+      <pubDate>Mon, 16 May 2016 17:15:58 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/win32Arduino&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/win32Arduino.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.&lt;/p&gt;
+&lt;p&gt;The win32Arduino is a solution to this issue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>svnpropertylog – A script which finds all revisions where a specific subversion property has changed</title>
+      <link>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</link>
+      <pubDate>Tue, 03 May 2016 16:52:00 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</guid>
+      <description>&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;
+&lt;p&gt;The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.&lt;/p&gt;
+&lt;p&gt;The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&amp;rsquo;s a &amp;ldquo;&lt;em&gt;show log for subversion properties&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>libMIDI – A C&#43;&#43; open-source library for generating single tone melodies in MIDI format</title>
+      <link>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</link>
+      <pubDate>Sun, 24 Apr 2016 16:42:27 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to multiplex RC Transmitter switches into a single channel</title>
+      <link>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</link>
+      <pubDate>Wed, 30 Mar 2016 17:15:24 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 1&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Throttle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 2&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Rudder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 3&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Ailerons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 4&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Elevator&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 5&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;Flight mode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CH 6&lt;/td&gt;
+&lt;td&gt;:&lt;/td&gt;
+&lt;td&gt;???&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The following article explains how I manage to solve the issue:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;How can I control more than one device using a single channel&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title>
+      <link>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link>
+      <pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;
+&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BitReader – An arduino library for reading &amp; writing data as chunks of bits</title>
+      <link>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</link>
+      <pubDate>Sat, 26 Mar 2016 00:23:05 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Here is another arduino library that I have written.&lt;/p&gt;
+&lt;p&gt;As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp;amp; CPU is cheap. If your application is struggling to run on today&amp;rsquo;s computer, it will run smoothly in 1-2 years.&lt;/p&gt;
+&lt;p&gt;As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.&lt;/p&gt;
+&lt;p&gt;BitReader is an arduino library that allows one to read or write data as chunks of bits.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</title>
+      <link>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</link>
+      <pubDate>Sun, 20 Mar 2016 15:16:54 +0000</pubDate>
+      
+      <guid>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
