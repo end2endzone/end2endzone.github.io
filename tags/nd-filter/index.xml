@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nd filter on end2end zone</title>
+    <title>Nd Filter on end2end zone</title>
     <link>http://www.end2endzone.com/tags/nd-filter/</link>
-    <description>Recent content in nd filter on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Nd Filter on end2end zone</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Sep 2014 19:30:39 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/nd-filter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Sep 2014 19:30:39 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/nd-filter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to shoot a waterfall with a DSLR camera</title>
       <link>http://www.end2endzone.com/how-to-shoot-a-waterfall-with-a-dslr-camera/</link>
       <pubDate>Mon, 01 Sep 2014 19:30:39 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/how-to-shoot-a-waterfall-with-a-dslr-camera/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Shooting a waterfall with a DSLR camera is not that hard. As usual in photography, you need a lot a patience. The perfect picture is all about managing a long exposure of the waterfall. This will get you a nice look as if the waterfall would be a silk river. In this guide, I will explain how I managed to get this picture of the &amp;ldquo;Chute du Diable&amp;rdquo;.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Shooting a waterfall with a DSLR camera is not that hard. As usual in photography, you need a lot a patience. The perfect picture is all about managing a long exposure of the waterfall. This will get you a nice look as if the waterfall would be a silk river. In this guide, I will explain how I managed to get this picture of the &amp;ldquo;Chute du Diable&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

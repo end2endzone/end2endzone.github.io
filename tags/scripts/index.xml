@@ -1,38 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>scripts on end2end zone</title>
+    <title>Scripts on end2end zone</title>
     <link>http://www.end2endzone.com/tags/scripts/</link>
-    <description>Recent content in scripts on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Scripts on end2end zone</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Aug 2016 17:30:03 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2016 17:30:03 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/scripts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</title>
       <link>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</link>
       <pubDate>Thu, 04 Aug 2016 17:30:03 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</guid>
-      <description>&lt;p class=&#34;postedit&#34;&gt;
-  Please note that &lt;strong&gt;csvplot&lt;/strong&gt; source code is now moved to GitHub. Source code can be downloaded from the project’s &lt;a href=&#34;http://github.com/end2endzone/csvplot&#34;&gt;GitHub page&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;
-&lt;p&gt;I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&amp;rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.&lt;/p&gt;
-&lt;p&gt;Most programming language I know does not offer a native library for plotting data to a graph. It is not an easy task. Most programming language often require external libraries for implementing the process and each library does not work the same way.&lt;/p&gt;
-&lt;p&gt;Excel is a native platform for parsing Comma-separated values (CSV) files and can be scripted to plot the result into an image.&lt;/p&gt;
-&lt;p&gt;The purpose of this script is to allows any programming language which generates data to plot the data into an image by saving the raw data to a CSV file and then using the power of Excel to plot the result into an image.&lt;/p&gt;</description>
+      <description>&lt;p class=&#34;postedit&#34;&gt;&#xD;&#xA;  Please note that &lt;strong&gt;csvplot&lt;/strong&gt; source code is now moved to GitHub. Source code can be downloaded from the project’s &lt;a href=&#34;http://github.com/end2endzone/csvplot&#34;&gt;GitHub page&lt;/a&gt;.&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;&#xA;&lt;p&gt;I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&amp;rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.&lt;/p&gt;&#xA;&lt;p&gt;Most programming language I know does not offer a native library for plotting data to a graph. It is not an easy task. Most programming language often require external libraries for implementing the process and each library does not work the same way.&lt;/p&gt;&#xA;&lt;p&gt;Excel is a native platform for parsing Comma-separated values (CSV) files and can be scripted to plot the result into an image.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this script is to allows any programming language which generates data to plot the data into an image by saving the raw data to a CSV file and then using the power of Excel to plot the result into an image.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>svnpropertylog – A script which finds all revisions where a specific subversion property has changed</title>
       <link>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</link>
       <pubDate>Tue, 03 May 2016 16:52:00 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</guid>
-      <description>&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;
-&lt;p&gt;The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.&lt;/p&gt;
-&lt;p&gt;The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&amp;rsquo;s a &amp;ldquo;&lt;em&gt;show log for subversion properties&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;&#xA;&lt;p&gt;The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&amp;rsquo;s a &amp;ldquo;&lt;em&gt;show log for subversion properties&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

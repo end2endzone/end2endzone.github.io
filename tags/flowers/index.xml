@@ -1,49 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>flowers on end2end zone</title>
+    <title>Flowers on end2end zone</title>
     <link>http://www.end2endzone.com/tags/flowers/</link>
-    <description>Recent content in flowers on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Flowers on end2end zone</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2015 23:38:36 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/flowers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Aug 2015 23:38:36 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/flowers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fleurs de la cours</title>
       <link>http://www.end2endzone.com/fleurs-de-la-cours/</link>
       <pubDate>Wed, 12 Aug 2015 23:38:36 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/fleurs-de-la-cours/</guid>
       <description>&lt;p&gt;Voici d&amp;rsquo;autres photos de fleurs que j&amp;rsquo;ai capturé pas plus loin que la cours de la maison.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>La Fête nationale du Québec – Soyez fier d’être Québécois!</title>
       <link>http://www.end2endzone.com/la-fete-nationale-du-quebec-soyez-fier-detre-quebecois/</link>
       <pubDate>Wed, 24 Jun 2015 03:06:54 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/la-fete-nationale-du-quebec-soyez-fier-detre-quebecois/</guid>
-      <description>&lt;p&gt;Le jour de Fête nationale, les Québécois n&amp;rsquo;hésite pas à faire la fête (ou des folies) afin de démontrer tous ensemble qu&amp;rsquo;ils sont fier de leur racines.&lt;/p&gt;
-&lt;p&gt;Voici donc un symbole patriotique afin de vivifier votre flamme et votre amour de la Belle province.&lt;/p&gt;
-&lt;p&gt;En ce 24 juin, dites-le haut et fort: &amp;ldquo;Je suis fier d&amp;rsquo;être Québécois&amp;rdquo;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Le jour de Fête nationale, les Québécois n&amp;rsquo;hésite pas à faire la fête (ou des folies) afin de démontrer tous ensemble qu&amp;rsquo;ils sont fier de leur racines.&lt;/p&gt;&#xA;&lt;p&gt;Voici donc un symbole patriotique afin de vivifier votre flamme et votre amour de la Belle province.&lt;/p&gt;&#xA;&lt;p&gt;En ce 24 juin, dites-le haut et fort: &amp;ldquo;Je suis fier d&amp;rsquo;être Québécois&amp;rdquo;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Beauté florale</title>
       <link>http://www.end2endzone.com/beaute-florale/</link>
       <pubDate>Tue, 19 May 2015 01:00:27 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/beaute-florale/</guid>
       <description>&lt;p&gt;Le soleil et le temps chaud est de nouveau de retour parmi nous. Encore une fois, j&amp;rsquo;ai apporté mon appareil pour prendre des photos.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Photographie Macro, je m’y suis lancé cet été</title>
       <link>http://www.end2endzone.com/photographie-macro-je-my-suis-lance-cet-ete/</link>
       <pubDate>Sun, 08 Feb 2015 03:53:22 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/photographie-macro-je-my-suis-lance-cet-ete/</guid>
       <description>&lt;p&gt;Pendant le début du mois de juillet, j&amp;rsquo;ai décidé de me lancer dans la photographie macro. Ce que j&amp;rsquo;ai découvert durant cette expérience est étonnant.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

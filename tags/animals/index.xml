@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>animals on end2end zone</title>
+    <title>Animals on end2end zone</title>
     <link>http://www.end2endzone.com/tags/animals/</link>
-    <description>Recent content in animals on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Animals on end2end zone</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Aug 2015 21:59:09 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/animals/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Aug 2015 21:59:09 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/animals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Canards sauvages à Val-David</title>
       <link>http://www.end2endzone.com/canards-sauvages-a-val-david/</link>
       <pubDate>Thu, 13 Aug 2015 21:59:09 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/canards-sauvages-a-val-david/</guid>
       <description>&lt;p&gt;Les parents de ma conjointe ont aménagés un étang artificiel près de la résidence. À chaque été, un couple de canard sauvages viennent se reposer à l&amp;rsquo;étang pendant leur migration.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

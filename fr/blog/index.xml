@@ -4,17 +4,16 @@
     <title>Blog on end2end zone</title>
     <link>http://www.end2endzone.com/fr/blog/</link>
     <description>Recent content in Blog on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>fr</language>
-    <lastBuildDate>Sun, 26 May 2024 18:13:00 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/fr/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 May 2024 18:13:00 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/fr/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Les posts fr et en sont disponibles sur le blog anglophone</title>
       <link>http://www.end2endzone.com/fr/blog/1900-01-01-localisation-des-posts-du-blob/</link>
       <pubDate>Sun, 26 May 2024 18:13:00 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/fr/blog/1900-01-01-localisation-des-posts-du-blob/</guid>
-      <description>Information Afin de faciliter la navigation et rapidement identifier les nouveaux posts, les posts francophones et les posts anglophones sont tous regrouppés dans le blog anglophone.</description>
+      <description>&lt;h1 id=&#34;information&#34;&gt;Information&lt;/h1&gt;&#xA;&lt;p&gt;Afin de faciliter la navigation et rapidement identifier les nouveaux posts, &lt;a href=&#34;http://www.end2endzone.com/tags/fran%C3%A7ais/&#34;&gt;les posts francophones&lt;/a&gt; et les posts anglophones sont tous regrouppés dans le &lt;a href=&#34;http://www.end2endzone.com/fr/blog/&#34;&gt;blog anglophone&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

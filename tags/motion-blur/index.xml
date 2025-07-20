@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>motion blur on end2end zone</title>
+    <title>Motion Blur on end2end zone</title>
     <link>http://www.end2endzone.com/tags/motion-blur/</link>
-    <description>Recent content in motion blur on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Motion Blur on end2end zone</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jun 2015 01:29:41 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/motion-blur/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jun 2015 01:29:41 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/motion-blur/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flou d’hélice / Propeller blur</title>
       <link>http://www.end2endzone.com/flou-dhelice-propeller-blur/</link>
       <pubDate>Wed, 10 Jun 2015 01:29:41 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/flou-dhelice-propeller-blur/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai apporté mon appareil photo lors d&amp;rsquo;une séance de vol à mon club d&amp;rsquo;aviation.  Lorsqu&amp;rsquo;un collègue était au &amp;ldquo;pit&amp;rdquo;, j&amp;rsquo;ai tenté de faire une photo de son avion avec un beau flou d&amp;rsquo;hélice.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

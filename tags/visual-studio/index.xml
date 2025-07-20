@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>visual studio on end2end zone</title>
+    <title>Visual Studio on end2end zone</title>
     <link>http://www.end2endzone.com/tags/visual-studio/</link>
-    <description>Recent content in visual studio on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Visual Studio on end2end zone</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Jan 2015 01:27:33 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Jan 2015 01:27:33 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</title>
       <link>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</link>
       <pubDate>Sat, 31 Jan 2015 01:27:33 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</guid>
-      <description>&lt;h1 id=&#34;msbuildreorder&#34;&gt;MSBuildReorder&lt;/h1&gt;
-&lt;p class=&#34;postedit&#34;&gt;
-  Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/msbuildreorder&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/msbuildreorder.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;msbuildreorder&#34;&gt;MSBuildReorder&lt;/h1&gt;&#xA;&lt;p class=&#34;postedit&#34;&gt;&#xD;&#xA;  Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/msbuildreorder&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/msbuildreorder.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

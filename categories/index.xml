@@ -4,44 +4,37 @@
     <title>Categories on end2end zone</title>
     <link>http://www.end2endzone.com/categories/</link>
     <description>Recent content in Categories on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Other</title>
       <link>http://www.end2endzone.com/categories/other/</link>
       <pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/categories/other/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Development</title>
       <link>http://www.end2endzone.com/categories/development/</link>
       <pubDate>Sun, 14 Mar 2021 16:42:39 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/categories/development/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Model Aeronautics</title>
       <link>http://www.end2endzone.com/categories/model-aeronautics/</link>
       <pubDate>Sun, 21 May 2017 15:26:00 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/categories/model-aeronautics/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Photography</title>
       <link>http://www.end2endzone.com/categories/photography/</link>
       <pubDate>Tue, 29 Sep 2015 17:14:58 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/categories/photography/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

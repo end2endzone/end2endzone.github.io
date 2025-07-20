@@ -4,7 +4,8 @@
     <title>Tags on end2end zone</title>
     <link>http://www.end2endzone.com/fr/tags/</link>
     <description>Recent content in Tags on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language><atom:link href="http://www.end2endzone.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://www.end2endzone.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

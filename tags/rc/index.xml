@@ -4,138 +4,65 @@
     <title>RC on end2end zone</title>
     <link>http://www.end2endzone.com/tags/rc/</link>
     <description>Recent content in RC on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Oct 2016 16:48:23 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/rc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Oct 2016 16:48:23 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/rc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</title>
       <link>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</link>
       <pubDate>Thu, 27 Oct 2016 16:48:23 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p&gt;
-&lt;p&gt;I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p&gt;&#xA;&lt;p&gt;I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to multiplex RC Transmitter switches into a single channel</title>
       <link>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</link>
       <pubDate>Wed, 30 Mar 2016 17:15:24 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
-&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
-&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;CH 1&lt;/td&gt;
-&lt;td&gt;:&lt;/td&gt;
-&lt;td&gt;Throttle&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CH 2&lt;/td&gt;
-&lt;td&gt;:&lt;/td&gt;
-&lt;td&gt;Rudder&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CH 3&lt;/td&gt;
-&lt;td&gt;:&lt;/td&gt;
-&lt;td&gt;Ailerons&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CH 4&lt;/td&gt;
-&lt;td&gt;:&lt;/td&gt;
-&lt;td&gt;Elevator&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CH 5&lt;/td&gt;
-&lt;td&gt;:&lt;/td&gt;
-&lt;td&gt;Flight mode&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CH 6&lt;/td&gt;
-&lt;td&gt;:&lt;/td&gt;
-&lt;td&gt;???&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;The following article explains how I manage to solve the issue:&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;em&gt;How can I control more than one device using a single channel&lt;/em&gt;.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 1&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Throttle&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 2&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Rudder&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 3&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Ailerons&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 4&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Elevator&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 5&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Flight mode&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 6&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;???&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;The following article explains how I manage to solve the issue:&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;&lt;em&gt;How can I control more than one device using a single channel&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title>
       <link>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link>
       <pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;
-&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;&#xA;&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mapping RC Transmitter PWM signal to actual transmitter values</title>
       <link>http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</link>
       <pubDate>Sat, 26 Mar 2016 20:47:29 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;If you ever need to use an RC Transmitter &amp;amp; receiver for a personal project, an easy way to retrieve the signal is to connect the receiver to a micro-controller.&lt;/p&gt;
-&lt;p&gt;However, decoding the signal to get actual transmitter values is not as easy as it sounds. You need to know the correct encoding and searching on the internet about the subject gives erratic results.&lt;/p&gt;
-&lt;p&gt;Here is the full article that explains how to correctly map an RC Transmitter PWM signal to actual transmitter values.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;If you ever need to use an RC Transmitter &amp;amp; receiver for a personal project, an easy way to retrieve the signal is to connect the receiver to a micro-controller.&lt;/p&gt;&#xA;&lt;p&gt;However, decoding the signal to get actual transmitter values is not as easy as it sounds. You need to know the correct encoding and searching on the internet about the subject gives erratic results.&lt;/p&gt;&#xA;&lt;p&gt;Here is the full article that explains how to correctly map an RC Transmitter PWM signal to actual transmitter values.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Demystifying RC Transmitter Mixing</title>
       <link>http://www.end2endzone.com/demystifying-rc-transmitter-mixing/</link>
       <pubDate>Thu, 28 Jan 2016 17:44:31 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/demystifying-rc-transmitter-mixing/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;If you look on the internet for &amp;ldquo;mixing&amp;rdquo;, you will usually find posts and articles of people asking for things like &amp;ldquo;what is the best mix I should use for this or that&amp;rdquo; which I think is not helpful. I think it is far more helpful to actually understand what mixing is and how it can help you improve your skills as a pilot. Lately I wanted to understand how mixing could help me in a personal project. I took this opportunity to learn something new and try to demystifying RC Transmitter Mixing.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;If you look on the internet for &amp;ldquo;mixing&amp;rdquo;, you will usually find posts and articles of people asking for things like &amp;ldquo;what is the best mix I should use for this or that&amp;rdquo; which I think is not helpful. I think it is far more helpful to actually understand what mixing is and how it can help you improve your skills as a pilot. Lately I wanted to understand how mixing could help me in a personal project. I took this opportunity to learn something new and try to demystifying RC Transmitter Mixing.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>RC Transmitter Mix Calculator</title>
       <link>http://www.end2endzone.com/rc-transmitter-mix-calculator/</link>
       <pubDate>Thu, 28 Jan 2016 17:43:43 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/rc-transmitter-mix-calculator/</guid>
-      <description>&lt;p&gt;This is an Excel worksheet I created based on the calculations I found for calculating most R/C Transmitter mixes. It is designed to help you identify the effective range of a mix (finding the low, medium and high values).&lt;/p&gt;
-&lt;p&gt;See my post on &lt;a href=&#34;http://www.end2endzone.com/demystifying-rc-transmitter-mixing/&#34;&gt;Demystifying RC Transmitter Mixing&lt;/a&gt; for more details.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is an Excel worksheet I created based on the calculations I found for calculating most R/C Transmitter mixes. It is designed to help you identify the effective range of a mix (finding the low, medium and high values).&lt;/p&gt;&#xA;&lt;p&gt;See my post on &lt;a href=&#34;http://www.end2endzone.com/demystifying-rc-transmitter-mixing/&#34;&gt;Demystifying RC Transmitter Mixing&lt;/a&gt; for more details.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Maintenance of Hobbico TorqMaster 90 deluxe 12 Volt RC starter</title>
       <link>http://www.end2endzone.com/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</link>
       <pubDate>Sun, 17 Jan 2016 22:13:51 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</guid>
       <description>&lt;p&gt;This article is about how I did the maintenance on my Hobbico Torqmaster 90 deluxe which is a 12 Volt starter for remote controlled (RC) aircraft. I wanted to change the rubber nose to get a better grip on my &lt;a href=&#34;http://www.end2endzone.com/tag/avistar-elite/&#34;&gt;Avistar Elite&lt;/a&gt; spinner. I ended up disassembling the whole unit before understanding what I should have done.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Final flight of a Super Cub LP</title>
       <link>http://www.end2endzone.com/final-flight-of-a-super-cub-lp/</link>
       <pubDate>Mon, 15 Sep 2014 00:27:05 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/final-flight-of-a-super-cub-lp/</guid>
-      <description>&lt;h1 id=&#34;the-good&#34;&gt;The Good&lt;/h1&gt;
-&lt;p&gt;After 1½ month of flying the plane, I was feeling a little more confident and I trusted enough myself for doing loops.  So at the end of the 2013 season, I went flying with a friend with my Super Cub LP. I wasn&amp;rsquo;t expecting any disaster&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;the-good&#34;&gt;The Good&lt;/h1&gt;&#xA;&lt;p&gt;After 1½ month of flying the plane, I was feeling a little more confident and I trusted enough myself for doing loops.  So at the end of the 2013 season, I went flying with a friend with my Super Cub LP. I wasn&amp;rsquo;t expecting any disaster&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

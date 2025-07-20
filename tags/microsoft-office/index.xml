@@ -4,38 +4,23 @@
     <title>Microsoft Office on end2end zone</title>
     <link>http://www.end2endzone.com/tags/microsoft-office/</link>
     <description>Recent content in Microsoft Office on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Dec 2016 02:28:38 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/microsoft-office/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Dec 2016 02:28:38 +0000</lastBuildDate>
+    <atom:link href="http://www.end2endzone.com/tags/microsoft-office/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comment afficher un exemple de toutes les polices dans Microsoft Word</title>
       <link>http://www.end2endzone.com/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</link>
       <pubDate>Wed, 21 Dec 2016 02:28:38 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;À chaque fois que je travail en graphisme et que je dois ajouter du texte à une image, je me retrouve toujours avec le même problème: &amp;ldquo;Comment faire pour identifier rapidement la meilleure police pour mon affiche ?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;Je crois maintenant avoir finalement trouver la solution à ce problème.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;À chaque fois que je travail en graphisme et que je dois ajouter du texte à une image, je me retrouve toujours avec le même problème: &amp;ldquo;Comment faire pour identifier rapidement la meilleure police pour mon affiche ?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Je crois maintenant avoir finalement trouver la solution à ce problème.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OfficeReadOnly: How to open Microsoft Office documents as read-only</title>
       <link>http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</link>
       <pubDate>Wed, 28 Jan 2015 02:12:41 +0000</pubDate>
-      
       <guid>http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</guid>
-      <description>&lt;h1 id=&#34;officereadonly&#34;&gt;OfficeReadOnly&lt;/h1&gt;
-&lt;p&gt;OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Integrates into Windows File Explorer or the with the &amp;ldquo;Send to&amp;rdquo; folder.&lt;/li&gt;
-&lt;li&gt;Supports Documents, Workbooks, Presentations and Diagrams.&lt;/li&gt;
-&lt;li&gt;Supports both Microsoft Office 2003 (&lt;em&gt;.doc) and Microsoft Office 2010 file extensions (&lt;/em&gt;.doc, and *.docx).&lt;/li&gt;
-&lt;li&gt;Can be used from the command prompt.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.&lt;/p&gt;
-&lt;p&gt;OfficeReadOnly was created to solve this issue.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;officereadonly&#34;&gt;OfficeReadOnly&lt;/h1&gt;&#xA;&lt;p&gt;OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Integrates into Windows File Explorer or the with the &amp;ldquo;Send to&amp;rdquo; folder.&lt;/li&gt;&#xA;&lt;li&gt;Supports Documents, Workbooks, Presentations and Diagrams.&lt;/li&gt;&#xA;&lt;li&gt;Supports both Microsoft Office 2003 (&lt;em&gt;.doc) and Microsoft Office 2010 file extensions (&lt;/em&gt;.doc, and *.docx).&lt;/li&gt;&#xA;&lt;li&gt;Can be used from the command prompt.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.&lt;/p&gt;&#xA;&lt;p&gt;OfficeReadOnly was created to solve this issue.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
