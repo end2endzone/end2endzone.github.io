@@ -1,47 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Waterfall on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/waterfall/</link>
-    <description>Recent content in Waterfall on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 01 Aug 2015 19:40:57 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/waterfall/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chutes Croches au Parc nationale du Mont-Tremblant</title>
-      <link>http://www.end2endzone.com/chutes-croches-au-parc-nationale-du-mont-tremblant/</link>
-      <pubDate>Sat, 01 Aug 2015 19:40:57 +0000</pubDate>
-      <guid>http://www.end2endzone.com/chutes-croches-au-parc-nationale-du-mont-tremblant/</guid>
-      <description>&lt;p&gt;Une des attractions du Parc nationale de Mont-Tremblant sont les Chutes Croches qui coulent le long de la rivière de la Diable. Les Chutes Croches sont situés plus précisément aux coordonnées &lt;a href=&#34;https://www.google.ca/maps/place/46%C2%B022%2710.1%22N&amp;#43;74%C2%B031%2700.0%22W/@46.3694722,-74.5166667,15.28z/data=!4m2!3m1!1s0x0:0x0&#34;&gt;46°22&#39;10.1″ N 74°31&#39;00.0″ W&lt;/a&gt; à 398 mètres d&amp;rsquo;altitude.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Barrage du Lac-Escalier Nord</title>
-      <link>http://www.end2endzone.com/barrage-du-lac-escalier-nord/</link>
-      <pubDate>Fri, 31 Jul 2015 02:28:10 +0000</pubDate>
-      <guid>http://www.end2endzone.com/barrage-du-lac-escalier-nord/</guid>
-      <description>&lt;p&gt;Voici une formidable photo du Barrage du Lac-Escalier Nord. Il est situé dans le Parc nationale du Mont-Tremblant plus précisément aux coordonnées &lt;a href=&#34;https://www.google.ca/maps/place/46%C2%B025%2714.7%22N&amp;#43;74%C2%B029%2732.9%22W/@46.42075,-74.4924722,15.28z/data=!4m2!3m1!1s0x0:0x0&#34;&gt;46°25&#39;14.7″ N 74°29&#39;32.9″ W&lt;/a&gt; à 436 mètres d&amp;rsquo;altitude.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to shoot a waterfall with a DSLR camera</title>
-      <link>http://www.end2endzone.com/how-to-shoot-a-waterfall-with-a-dslr-camera/</link>
-      <pubDate>Mon, 01 Sep 2014 19:30:39 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-shoot-a-waterfall-with-a-dslr-camera/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Shooting a waterfall with a DSLR camera is not that hard. As usual in photography, you need a lot a patience. The perfect picture is all about managing a long exposure of the waterfall. This will get you a nice look as if the waterfall would be a silk river. In this guide, I will explain how I managed to get this picture of the &amp;ldquo;Chute du Diable&amp;rdquo;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mes attentes et toutes ces choses que je veux photographier</title>
-      <link>http://www.end2endzone.com/mes-attentes-et-toutes-ces-choses-que-je-veux-photographier/</link>
-      <pubDate>Mon, 11 Aug 2014 00:36:44 +0000</pubDate>
-      <guid>http://www.end2endzone.com/mes-attentes-et-toutes-ces-choses-que-je-veux-photographier/</guid>
-      <description>&lt;p&gt;Ce que j&amp;rsquo;attends de la photographie? Je ne sais pas vraiment. C&amp;rsquo;est un passe-temps après tout, mais au fil du temps, j&amp;rsquo;ai réussi à réfléchir à des choses agréable à photographier. La plupart d&amp;rsquo;entre elles sont des défis techniques, mais certains d&amp;rsquo;entre elles ont un niveau de difficulté géographique. D&amp;rsquo;autres ne sont possibles que pendant une période spécifique de l&amp;rsquo;année.&lt;/p&gt;&#xA;&lt;p&gt;Voici ma liste de ce que je voudrais réussir à capturer avec ma caméra:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My expectations and things I would like to shoot</title>
-      <link>http://www.end2endzone.com/my-expectations-and-things-i-would-like-to-shoot/</link>
-      <pubDate>Tue, 05 Aug 2014 10:20:35 +0000</pubDate>
-      <guid>http://www.end2endzone.com/my-expectations-and-things-i-would-like-to-shoot/</guid>
-      <description>&lt;p&gt;What I expect from photography? I don&amp;rsquo;t really know. It&amp;rsquo;s a hobby after all but over time I managed to think about cool things I would like to shoot. Most of them are technical challenges but some of them have a geographical difficulty level. Others are only possible during a specific period of the year.&lt;/p&gt;&#xA;&lt;p&gt;Here is my list of what I would hunt for a good shoot:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Waterfall on end2end zone</title><link>http://localhost:1313/tags/waterfall/</link><description>Recent content in Waterfall on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 01 Aug 2015 19:40:57 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/waterfall/index.xml" rel="self" type="application/rss+xml"/><item><title>Chutes Croches au Parc nationale du Mont-Tremblant</title><link>http://localhost:1313/chutes-croches-au-parc-nationale-du-mont-tremblant/</link><pubDate>Sat, 01 Aug 2015 19:40:57 +0000</pubDate><guid>http://localhost:1313/chutes-croches-au-parc-nationale-du-mont-tremblant/</guid><description>&lt;p>Une des attractions du Parc nationale de Mont-Tremblant sont les Chutes Croches qui coulent le long de la rivière de la Diable. Les Chutes Croches sont situés plus précisément aux coordonnées &lt;a href="https://www.google.ca/maps/place/46%C2%B022%2710.1%22N&amp;#43;74%C2%B031%2700.0%22W/@46.3694722,-74.5166667,15.28z/data=!4m2!3m1!1s0x0:0x0">46°22'10.1&amp;quot; N 74°31'00.0&amp;quot; W&lt;/a> à 398 mètres d&amp;rsquo;altitude.
+&lt;div class="image-gallery">
+&lt;table>
+ 
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="https://www.flickr.com/photos/154618444@N05/37345441010/in/album-72157686882832251/" title="Chutes croches (Parc nationale du Mont-Tremblant)">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_5429_e2ez-672x448.jpg" alt="Chutes croches (Parc nationale du Mont-Tremblant)">
+&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://www.flickr.com/photos/154618444@N05/37345438960/in/album-72157686882832251/" title="Chutes croches (Parc nationale du Mont-Tremblant)">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_5438_e2ez-672x448.jpg" alt="Chutes croches (Parc nationale du Mont-Tremblant)">
+&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37345436960/in/album-72157686882832251/" title="Chutes croches (Parc nationale du Mont-Tremblant)">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_5439_e2ez-672x448.jpg" alt="Chutes croches (Parc nationale du Mont-Tremblant)">
+&lt;/a>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;/p></description></item><item><title>Barrage du Lac-Escalier Nord</title><link>http://localhost:1313/barrage-du-lac-escalier-nord/</link><pubDate>Fri, 31 Jul 2015 02:28:10 +0000</pubDate><guid>http://localhost:1313/barrage-du-lac-escalier-nord/</guid><description>&lt;p>Voici une formidable photo du Barrage du Lac-Escalier Nord. Il est situé dans le Parc nationale du Mont-Tremblant plus précisément aux coordonnées &lt;a href="https://www.google.ca/maps/place/46%C2%B025%2714.7%22N&amp;#43;74%C2%B029%2732.9%22W/@46.42075,-74.4924722,15.28z/data=!4m2!3m1!1s0x0:0x0">46°25'14.7&amp;quot; N 74°29'32.9&amp;quot; W&lt;/a>à 436 mètres d&amp;rsquo;altitude.&lt;/p>
+&lt;p>&lt;a href="https://www.flickr.com/photos/154618444@N05/37571831322/in/album-72157687682125444/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/07/IMG_5362_e2ez-672x448.jpg" alt="Barrage du Lac-Escalier Nord (Parc nationale du Mont-Tremblant)">
+&lt;/a>&lt;/p>
+&lt;p>Barrage du Lac-Escalier Nord (Parc nationale du Mont-Tremblant)&lt;/p></description></item><item><title>How to shoot a waterfall with a DSLR camera</title><link>http://localhost:1313/how-to-shoot-a-waterfall-with-a-dslr-camera/</link><pubDate>Mon, 01 Sep 2014 19:30:39 +0000</pubDate><guid>http://localhost:1313/how-to-shoot-a-waterfall-with-a-dslr-camera/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Shooting a waterfall with a DSLR camera is not that hard. As usual in photography, you need a lot a patience. The perfect picture is all about managing a long exposure of the waterfall. This will get you a nice look as if the waterfall would be a silk river. In this guide, I will explain how I managed to get this picture of the &amp;ldquo;Chute du Diable&amp;rdquo;.&lt;/p>
+&lt;h1 id="context">Context&lt;/h1>
+&lt;p>During summer 2014, I went camping with my family to Mont-Tremblant and as always, I have brought my camera with me. I was lucky enough to bring all my camera gears since I was not expecting that I would have to use almost all of them to get a nice picture of a waterfall.&lt;/p></description></item><item><title>Mes attentes et toutes ces choses que je veux photographier</title><link>http://localhost:1313/mes-attentes-et-toutes-ces-choses-que-je-veux-photographier/</link><pubDate>Mon, 11 Aug 2014 00:36:44 +0000</pubDate><guid>http://localhost:1313/mes-attentes-et-toutes-ces-choses-que-je-veux-photographier/</guid><description>&lt;p>Ce que j&amp;rsquo;attends de la photographie? Je ne sais pas vraiment. C&amp;rsquo;est un passe-temps après tout, mais au fil du temps, j&amp;rsquo;ai réussi à réfléchir à des choses agréable à photographier. La plupart d&amp;rsquo;entre elles sont des défis techniques, mais certains d&amp;rsquo;entre elles ont un niveau de difficulté géographique. D&amp;rsquo;autres ne sont possibles que pendant une période spécifique de l&amp;rsquo;année.&lt;/p>
+&lt;p>Voici ma liste de ce que je voudrais réussir à capturer avec ma caméra:&lt;/p></description></item><item><title>My expectations and things I would like to shoot</title><link>http://localhost:1313/my-expectations-and-things-i-would-like-to-shoot/</link><pubDate>Tue, 05 Aug 2014 10:20:35 +0000</pubDate><guid>http://localhost:1313/my-expectations-and-things-i-would-like-to-shoot/</guid><description>&lt;p>What I expect from photography? I don&amp;rsquo;t really know. It&amp;rsquo;s a hobby after all but over time I managed to think about cool things I would like to shoot. Most of them are technical challenges but some of them have a geographical difficulty level. Others are only possible during a specific period of the year.&lt;/p>
+&lt;p>Here is my list of what I would hunt for a good shoot:&lt;/p>
+&lt;p>Note: I will try to update this post as I managed to find the opportunity to shoot one of those. Come back later to see what new ideas I added or what I&amp;rsquo;ve done (strike trough).&lt;/p></description></item></channel></rss>

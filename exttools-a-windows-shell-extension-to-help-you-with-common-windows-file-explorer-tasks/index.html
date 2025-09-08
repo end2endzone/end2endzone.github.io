@@ -1,361 +1,194 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>extTools: a windows shell extension to help you with common Windows File Explorer tasks. - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="extTools: a windows shell extension to help you with common Windows File Explorer tasks.">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2015/02/extTools.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2015/02/extTools.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks.&amp;url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;description=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/">extTools: a windows shell extension to help you with common Windows File Explorer tasks.</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2015-03-29 20:00:07 &#43;0000 &#43;0000">March 29, 2015</time>
-    <p>end2end</p>
-    <p>10-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks.&amp;url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;description=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/" class="image" style="--bg-image: url('/wp-content/uploads/2015/02/extTools.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2015/02/extTools.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#what-is-exttools">What is extTools</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="#screenshots">Screenshots</a></li>
-    <li><a href="#application-components">Application components<br /></a>
-      <ol>
-        <li><a href="#extfilerenamer">extFileRenamer</a>
-          <ol>
-            <li><a href="#pattern-mode">Pattern mode</a></li>
-            <li><a href="#search--replace-mode">Search &amp; Replace mode</a></li>
-          </ol>
-        </li>
-        <li><a href="#extsearch">extSearch</a></li>
-        <li><a href="#clipboard-management">Clipboard management</a></li>
-        <li><a href="#extbatchfileprocessor">extBatchFileProcessor</a></li>
-        <li><a href="#extdelete">extDelete</a>
-          <ol>
-            <li><a href="#normal">Normal</a></li>
-            <li><a href="#fast">Fast</a></li>
-            <li><a href="#secure">Secure</a></li>
-          </ol>
-        </li>
-        <li><a href="#extfilesplitter">extFileSplitter</a></li>
-        <li><a href="#extimageencoder">extImageEncoder</a></li>
-        <li><a href="#extwebget">extWebGet</a></li>
-        <li><a href="#exthashcalculator">extHashCalculator</a></li>
-        <li><a href="#extguid">extGuid</a>
-          <ol>
-            <li><a href="#implement_olecreate">IMPLEMENT_OLECREATE(&hellip;)</a></li>
-            <li><a href="#define_guid">DEFINE_GUID(&hellip;)</a></li>
-            <li><a href="#static-const-struct-guid-">static const struct GUID =</a></li>
-            <li><a href="#registry-format">Registry format</a></li>
-          </ol>
-        </li>
-        <li><a href="#extansiprinter">extAnsiPrinter</a></li>
-      </ol>
-    </li>
-    <li><a href="#compatible-with">Compatible with</a></li>
-    <li><a href="#minimum-system-requirements">Minimum system requirements</a></li>
-    <li><a href="#history-of-changes">History of changes</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks.&amp;url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;description=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/">extTools: a windows shell extension to help you with common Windows File Explorer tasks.</a></h2>
 </div>
-
-        
-		
-        <h1 id="what-is-exttools">What is extTools</h1>
+<div class="meta">
+<time datetime="2015-03-29 20:00:07 +0000 +0000">March 29, 2015</time>
+<p>end2end</p>
+<p>10-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks.&amp;url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;title=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f&amp;description=extTools%3a%20a%20windows%20shell%20extension%20to%20help%20you%20with%20common%20Windows%20File%20Explorer%20tasks." target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fexttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/" class="image" style="--bg-image:url('/wp-content/uploads/2015/02/extTools.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/02/extTools.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#what-is-exttools">What is extTools</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+<li><a href="#application-components">Application components</a>
+<ol>
+<li><a href="#extfilerenamer">extFileRenamer</a>
+<ol>
+<li><a href="#pattern-mode">Pattern mode</a></li>
+<li><a href="#search--replace-mode">Search & Replace mode</a></li>
+</ol>
+</li>
+<li><a href="#extsearch">extSearch</a></li>
+<li><a href="#clipboard-management">Clipboard management</a></li>
+<li><a href="#extbatchfileprocessor">extBatchFileProcessor</a></li>
+<li><a href="#extdelete">extDelete</a>
+<ol>
+<li><a href="#normal">Normal</a></li>
+<li><a href="#fast">Fast</a></li>
+<li><a href="#secure">Secure</a></li>
+</ol>
+</li>
+<li><a href="#extfilesplitter">extFileSplitter</a></li>
+<li><a href="#extimageencoder">extImageEncoder</a></li>
+<li><a href="#extwebget">extWebGet</a></li>
+<li><a href="#exthashcalculator">extHashCalculator</a></li>
+<li><a href="#extguid">extGuid</a>
+<ol>
+<li><a href="#implement_olecreate">IMPLEMENT_OLECREATE(&mldr;)</a></li>
+<li><a href="#define_guid">DEFINE_GUID(&mldr;)</a></li>
+<li><a href="#static-const-struct-guid-">static const struct GUID =</a></li>
+<li><a href="#registry-format">Registry format</a></li>
+</ol>
+</li>
+<li><a href="#extansiprinter">extAnsiPrinter</a></li>
+</ol>
+</li>
+<li><a href="#compatible-with">Compatible with</a></li>
+<li><a href="#minimum-system-requirements">Minimum system requirements</a></li>
+<li><a href="#history-of-changes">History of changes</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="what-is-exttools">What is extTools</h1>
 <p>extTools is a fast and innovative FREEWARE (for non-commercial use) software suite to help you executing common tasks in Windows File Explorer more easily.</p>
 <p>It&rsquo;s main features are:</p>
 <ul>
 <li>Advanced clipboard support (copy, append or modify).</li>
 <li>File operation queuing (batch copy or paste).</li>
-<li>Better &amp; quicker file deletions.</li>
+<li>Better & quicker file deletions.</li>
 <li>Powerful file renaming algorithms.</li>
 <li>XP like search tool (simple search tool).</li>
 <li>Extends Windows File Explorer by registering as a Shell Extension.</li>
@@ -363,126 +196,146 @@
 <p>extTools allows its users to execute tasks that are not available in a default Windows environment. extTools is also designed to replace existing task that are badly designed, annoying to execute or simply missing.</p>
 <h1 id="download">Download</h1>
 <p>You can download extTools by clicking on the following links:</p>
-<ul>
-<li><a href="http://www.end2endzone.com/download/825/" title="Version 1.4.501"> extTools v1.4.501 (win32 portable) (316 downloads) </a></li>
-<li><a href="http://www.end2endzone.com/download/822/" title="Version 1.4.501"> extTools v1.4.501 (win32 setup) (151 downloads) </a> (for Windows XP)</li>
-<li><a href="http://www.end2endzone.com/download/831/" title="Version 1.4.501"> extTools v1.4.501 (x64 portable) (352 downloads) </a></li>
-<li><a href="http://www.end2endzone.com/download/828/" title="Version 1.4.501"> extTools v1.4.501 (x64 setup) (143 downloads) </a> (for Windows 7 and over)</li>
-</ul>
 <p class="pleasenote">
-  Note: Please note that portable versions does not contain the shell extension module to register menu option with the File Explorer context menu.
+<strong>Note:</strong> The download files for extTools are not available anymore.
+</p>
+<p class="pleasenote">
+Note: Please note that portable versions does not contain the shell extension module to register menu option with the File Explorer context menu.
 </p>
 <h1 id="screenshots">Screenshots</h1>
-<table>
-  <thead>
-      <tr>
-          <th><!-- --></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extWebGet-screenshot.png" title="extWebGet screenshot"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extWebGet-screenshot.png" alt="extWebGet screenshot"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extWebGet-screenshot.png">660x150</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extGuid-screenshot.png" title="extGuid screenshot"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extGuid-screenshot.png" alt="extGuid screenshot"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extGuid-screenshot.png">468x363</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png" title="extHashCalculator screenshot (md5)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png" alt="extHashCalculator screenshot (md5)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png">360x135</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extImageEncoder-screenshot.png" title="extImageEncoder screenshot"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extImageEncoder-screenshot.png" alt="extImageEncoder screenshot"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extImageEncoder-screenshot.png">660x559</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extSearch-screenshot.png" title="extSearch screenshot"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extSearch-screenshot.png" alt="extSearch screenshot"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extSearch-screenshot.png">677x485</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png" title="extTools screenshot (clipboard)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png" alt="extTools screenshot (clipboard)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png">413x292</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png" title="extFileSplitter screenshot (split)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png" alt="extFileSplitter screenshot (split)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png">450x245</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png" title="extFileSplitter screenshot (join)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png" alt="extFileSplitter screenshot (join)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png">450x245</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-1.png" title="extFileRenamer screenshot (search &amp; replace #1)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-1.png" alt="extFileRenamer screenshot (search &amp; replace #1)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-1.png">660x690</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-2.png" title="extFileRenamer screenshot (search &amp; replace #2)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-2.png" alt="extFileRenamer screenshot (search &amp; replace #2)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-2.png">660x690</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png" title="extFileRenamer screenshot (pattern #1)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png" alt="extFileRenamer screenshot (pattern #1)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png">660x690</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-2.png" title="extFileRenamer screenshot (pattern #2)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-2.png" alt="extFileRenamer screenshot (pattern #2)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-2.png">660x690</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot.png" title="extDelete screenshot"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot.png" alt="extDelete screenshot"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot.png">576x264</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png" title="extDelete screenshot (secure delete mode)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png" alt="extDelete screenshot (secure delete mode)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png">560x305</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png" title="extDelete screenshot (normal delete mode)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png" alt="extDelete screenshot (normal delete mode)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png">560x220</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png" title="extDelete screenshot (fast delete mode)"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png" alt="extDelete screenshot (fast delete mode)"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png">560x230</a></td>
-      </tr>
-      <tr>
-          <td><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png" title="extBatchFileProcessor screenshot"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png" alt="extBatchFileProcessor screenshot"></a><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png">503x316</a></td>
-      </tr>
-  </tbody>
-</table>
-<h1 id="application-components">Application components<br /></h1>
+<div class="image-gallery">
+<a href="/wp-content/uploads/2014/10/extWebGet-screenshot.png" title="extWebGet screenshot">
+<img src="/wp-content/uploads/2014/10/extWebGet-screenshot-300x68.png" alt="extWebGet screenshot">
+</a>
+<a href="/wp-content/uploads/2014/10/extGuid-screenshot.png" title="extGuid screenshot">
+<img src="/wp-content/uploads/2014/10/extGuid-screenshot-300x233.png" alt="extGuid screenshot">
+</a>
+<a href="/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png" title="extHashCalculator screenshot (md5)">
+<img src="/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5-300x113.png" alt="extHashCalculator screenshot (md5)">
+</a>
+<a href="/wp-content/uploads/2014/10/extImageEncoder-screenshot.png" title="extImageEncoder screenshot">
+<img src="/wp-content/uploads/2014/10/extImageEncoder-screenshot-300x254.png" alt="extImageEncoder screenshot">
+</a>
+<a href="/wp-content/uploads/2014/10/extSearch-screenshot.png" title="extSearch screenshot">
+<img src="/wp-content/uploads/2014/10/extSearch-screenshot-300x215.png" alt="extSearch screenshot">
+</a>
+<a href="/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png" title="extTools screenshot (clipboard)">
+<img src="/wp-content/uploads/2014/10/extTools-screenshot-clipboard-300x212.png" alt="extTools screenshot (clipboard)">
+</a>
+<a href="/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png" title="extFileSplitter screenshot (split)">
+<img src="/wp-content/uploads/2014/10/extFileSplitter-screenshot-split-300x163.png" alt="extFileSplitter screenshot (split)">
+</a>
+<a href="/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png" title="extFileSplitter screenshot (join)">
+<img src="/wp-content/uploads/2014/10/extFileSplitter-screenshot-join-300x163.png" alt="extFileSplitter screenshot (join)">
+</a>
+<a href="/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-1.png" title="extFileRenamer screenshot (search & replace #1)">
+<img src="/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-1-287x300.png" alt="extFileRenamer screenshot (search & replace #1)">
+</a>
+<a href="/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-2.png" title="extFileRenamer screenshot (search & replace #2)">
+<img src="/wp-content/uploads/2014/10/extFileRenamer-screenshot-search-replace-2-287x300.png" alt="extFileRenamer screenshot (search & replace #2)">
+</a>
+<a href="/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png" title="extFileRenamer screenshot (pattern #1)">
+<img src="/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1-287x300.png" alt="extFileRenamer screenshot (pattern #1)">
+</a>
+<a href="/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-2.png" title="extFileRenamer screenshot (pattern #2)">
+<img src="/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-2-287x300.png" alt="extFileRenamer screenshot (pattern #2)">
+</a>
+<a href="/wp-content/uploads/2014/10/extDelete-screenshot.png" title="extDelete screenshot">
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-300x138.png" alt="extDelete screenshot">
+</a>
+<a href="/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png" title="extDelete screenshot (secure delete mode)">
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode-300x163.png" alt="extDelete screenshot (secure delete mode)">
+</a>
+<a href="/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png" title="extDelete screenshot (normal delete mode)">
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode-300x118.png" alt="extDelete screenshot (normal delete mode)">
+</a>
+<a href="/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png" title="extDelete screenshot (fast delete mode)">
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode-300x123.png" alt="extDelete screenshot (fast delete mode)">
+</a>
+<a href="/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png" title="extBatchFileProcessor screenshot">
+<img src="/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot-300x188.png" alt="extBatchFileProcessor screenshot">
+</a>
+</div>
+<h1 id="application-components">Application components</h1>
 <p>Below is all the tools that are included in extTools. A quick description is available for each tool. Most applications are available when right clicking a file in Windows file Explorer (shell extension).</p>
 <h2 id="extfilerenamer">extFileRenamer</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png" alt="extFileRenamer screenshot (pattern #1)"></a></p>
-<p>extFileRenamer screenshot (pattern #1)</p>
-<p>extFileRenamer is a powerful file renaming manager. This application can rename a bunch of files according to a pattern (with increasing numbers) or rename files using a &ldquo;search &amp; replace&rdquo; technique to remove the same word(s) from multiple files.</p>
+<p><a href="/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extFileRenamer-screenshot-pattern-1-287x300.png" alt="extFileRenamer screenshot (pattern #1)">
+<figcaption>extFileRenamer screenshot (pattern #1)</figcaption>
+</figure>
+</a></p>
+<p>extFileRenamer is a powerful file renaming manager. This application can rename a bunch of files according to a pattern (with increasing numbers) or rename files using a &ldquo;search & replace&rdquo; technique to remove the same word(s) from multiple files.</p>
 <p>extFileRenamer has the following features:</p>
 <ul>
-<li>Allows you to rename files using a pattern or with a &ldquo;search &amp; replace&rdquo; through the file names.</li>
+<li>Allows you to rename files using a pattern or with a &ldquo;search & replace&rdquo; through the file names.</li>
 <li>Manually select target files to rename.</li>
 <li>Live preview of renamed files.</li>
 <li>Automatic detection of renaming conflict (before renaming files!)</li>
 </ul>
 <p>Here is some typical pattern scenarios where extFileRenaming shines!</p>
 <h3 id="pattern-mode">Pattern mode</h3>
-<p>te<br>st
-foo<br/>bar
-Select the <em><strong>pattern</strong></em> mode to rename photos or videos from a camera phone:</p>
+<p>Select the <em><strong>pattern</strong></em> mode to rename photos or videos from a camera phone:</p>
 <p>Using a pattern like <em><strong>Trip to Hawaii with John (2007) ##.jpg</strong></em> you can rename the following files like this:</p>
 <p class="renamep">
-  IMG_8823.jpg  Trip to Hawaii with John (2007) 01.jpg</br> IMG_8824.jpg  Trip to Hawaii with John (2007) 02.jpg<br /> IMG_8825.jpg  Trip to Hawaii with John (2007) 03.jpg<br /> &hellip;<br /> IMG_8899.jpg  Trip to Hawaii with John (2007) 77.jpg
+IMG_8823.jpg ⇨ Trip to Hawaii with John (2007) 01.jpg
+IMG_8824.jpg ⇨ Trip to Hawaii with John (2007) 02.jpg
+IMG_8825.jpg ⇨ Trip to Hawaii with John (2007) 03.jpg
+&mldr;
+IMG_8899.jpg ⇨ Trip to Hawaii with John (2007) 77.jpg
 </p>
 <p>Adding a prefix to all files is easy with the pattern <em><strong>Trip to Hawaii with John ????????????</strong></em> which would rename all your files to something like:</p>
 <p class="renamep">
-  IMG_8823.jpg  Trip to Hawaii with John IMG_8823.jpg<br /> IMG_8824.jpg  Trip to Hawaii with John IMG_8824.jpg<br /> IMG_8825.jpg  Trip to Hawaii with John IMG_8825.jpg<br /> &hellip;<br /> IMG_8899.jpg  Trip to Hawaii with John IMG_8899.jpg
+IMG_8823.jpg ⇨ Trip to Hawaii with John IMG_8823.jpg
+IMG_8824.jpg ⇨ Trip to Hawaii with John IMG_8824.jpg
+IMG_8825.jpg ⇨ Trip to Hawaii with John IMG_8825.jpg
+&mldr;
+IMG_8899.jpg ⇨ Trip to Hawaii with John IMG_8899.jpg
 </p>
 <p>Complex renaming is also possible. With a pattern like <em><strong>||||||||?????? trip?????????? and Bruce ###.jpg</strong></em>, you add Bruce to your picture set:</p>
 <p class="renamep">
-  Trip to Hawaii with John IMG_8823.jpg  Hawaii trip with John and Bruce 001.jpg<br /> Trip to Hawaii with John IMG_8824.jpg  Hawaii trip with John and Bruce 002.jpg<br /> Trip to Hawaii with John IMG_8825.jpg  Hawaii trip with John and Bruce 003.jpg<br /> &hellip;<br /> Trip to Hawaii with John IMG_8899.jpg  Hawaii trip with John and Bruce 077.jpg
+Trip to Hawaii with John IMG_8823.jpg ⇨ Hawaii trip with John and Bruce 001.jpg
+Trip to Hawaii with John IMG_8824.jpg ⇨ Hawaii trip with John and Bruce 002.jpg
+Trip to Hawaii with John IMG_8825.jpg ⇨ Hawaii trip with John and Bruce 003.jpg
+&mldr;
+Trip to Hawaii with John IMG_8899.jpg ⇨ Hawaii trip with John and Bruce 077.jpg
 </p>
-<h3 id="search--replace-mode">Search &amp; Replace mode</h3>
-<p>To change all file extensions from DAT to RAW, set <em>replace from</em> field to <em>*<strong>.dat</strong></em> and set <em>replace to</em> field to <em>*<strong>.raw</strong></em>. Click preview and you get:</p>
+<h3 id="search--replace-mode">Search & Replace mode</h3>
+<p>To change all file extensions from DAT to RAW, set <em>replace from</em> field to <em><strong>*.dat</strong></em> and set <em>replace to</em> field to <em><strong>*.raw</strong></em>. Click preview and you get:</p>
 <p class="renamep">
-  file01.dat  file01.raw<br /> file02.dat  file02.raw<br /> file03.dat  file03.raw<br /> file04.dat  file04.raw<br /> file05.dat  file05.raw
+file01.dat ⇨ file01.raw
+file02.dat ⇨ file02.raw
+file03.dat ⇨ file03.raw
+file04.dat ⇨ file04.raw
+file05.dat ⇨ file05.raw
 </p>
-<p>To change the prefix of picture files, set <em>replace from</em> to <em>**IMG</em>**_ (including underscore character) and set <em>replace to</em> to <em><strong>Circus</strong></em> (including a space character). Click preview and you get:</p>
+<p>To change the prefix of picture files, set <em>replace from</em> to <em><strong>IMG_</strong></em> (including underscore character) and set <em>replace to</em> to <em><strong>Circus</strong></em> (including a space character). Click preview and you get:</p>
 <p class="renamep">
-  IMG_8823.jpg  Circus 8823.jpg<br /> IMG_8824.jpg  Circus 8824.jpg<br /> IMG_8825.jpg  Circus 8825.jpg<br /> &hellip;<br /> IMG_8899.jpg  Circus 8899.jpg
+IMG_8823.jpg ⇨ Circus 8823.jpg
+IMG_8824.jpg ⇨ Circus 8824.jpg
+IMG_8825.jpg ⇨ Circus 8825.jpg
+&mldr;
+IMG_8899.jpg ⇨ Circus 8899.jpg
 </p>
-<p>To remove the artist and album name from MP3 files, set <em>replace from</em> field to <em>**Linkin_Park_album_Living_Things</em>**_ and leave <em>replace to</em> empty. Click preview and you get:</p>
+<p>To remove the artist and album name from MP3 files, set <em>replace from</em> field to <em><strong>Linkin_Park_album_Living_Things_</strong></em> and leave <em>replace to</em> empty. Click preview and you get:</p>
 <p class="renamep">
-  Linkin_Park_album_Living_Things_01_Lost in the Echo.mp3  01_Lost in the Echo.mp3<br /> Linkin_Park_album_Living_Things_02_In My Remains.mp3  02_In My Remains.mp3<br /> Linkin_Park_album_Living_Things_03_Burn_It_Down.mp3  03_Burn_It_Down.mp3<br /> &hellip;<br /> Linkin_Park_album_Living_Things_12_Powerless.mp3  12_Powerless.mp3
+Linkin_Park_album_Living_Things_01_Lost in the Echo.mp3 ⇨ 01_Lost in the Echo.mp3
+Linkin_Park_album_Living_Things_02_In My Remains.mp3 ⇨ 02_In My Remains.mp3
+Linkin_Park_album_Living_Things_03_Burn_It_Down.mp3 ⇨ 03_Burn_It_Down.mp3
+&mldr;
+Linkin_Park_album_Living_Things_12_Powerless.mp3 ⇨ 12_Powerless.mp3
 </p>
 <h2 id="extsearch">extSearch</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extSearch-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extSearch-screenshot.png" alt="extSearch screenshot"></a></p>
-<p>extSearch screenshot</p>
+<p><a href="/wp-content/uploads/2014/10/extSearch-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extSearch-screenshot-300x215.png" alt="extSearch screenshot">
+<figcaption>extSearch screenshot</figcaption>
+</figure>
+</a></p>
 <p>extSearch is a file search application. It&rsquo;s design is identical to Windows XP&rsquo;s search application. If you are using Windows Vista or later and you miss the simplicity that the search application was giving, then extSearch is for you.</p>
 <p>extSearch allows searching for a file using multiple criteria:</p>
 <ul>
-<li>File name or file extension using wildcard characters such as <em>*****</em> or <em><strong>?</strong></em></li>
+<li>File name or file extension using wildcard characters such as <em><strong>*</strong></em> or <em><strong>?</strong></em></li>
 <li>Search for a specific word or phrase in a file (matching case or not).</li>
 <li>Searches sub-folders or not.</li>
 <li>Searches files based on its last modification date.</li>
@@ -490,8 +343,12 @@ Select the <em><strong>pattern</strong></em> mode to rename photos or videos fro
 </ul>
 <h2 id="clipboard-management">Clipboard management</h2>
 <p>All features of extTools are available through a shell explorer add-on. A nice feature of extTools is how the clipboard is managed:</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png" alt="extTools screenshot (clipboard)"></a></p>
-<p>extTools screenshot (clipboard)</p>
+<p><a href="/wp-content/uploads/2014/10/extTools-screenshot-clipboard.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extTools-screenshot-clipboard-300x212.png" alt="extTools screenshot (clipboard)">
+<figcaption>extTools screenshot (clipboard)</figcaption>
+</figure>
+</a></p>
 <ul>
 <li>Copy Full Path</li>
 <li>Copy File name only</li>
@@ -500,8 +357,12 @@ Select the <em><strong>pattern</strong></em> mode to rename photos or videos fro
 <li>Append to Cut</li>
 </ul>
 <h2 id="extbatchfileprocessor">extBatchFileProcessor</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png" alt="extBatchFileProcessor screenshot"></a></p>
-<p>extBatchFileProcessor screenshot</p>
+<p><a href="/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extBatchFileProcessor-screenshot-300x188.png" alt="extBatchFileProcessor screenshot">
+<figcaption>extBatchFileProcessor screenshot</figcaption>
+</figure>
+</a></p>
 <p>extBatchFileProcessor is a tool for queuing file operations (batch). This tools allows you to append a file operation (cut, copy or move) to a list of task to execute one after the other. In other words, you don&rsquo;t have to wait for another operation to complete before queuing another.</p>
 <p>This can be particularly handy when dealing with long operations like copying or moving a huge file or when dealing with slow peripherals like USB drives.</p>
 <p>Each queue item of extBatchFileProcessor uses default Windows API to process the operation so your data is safely processed.</p>
@@ -509,48 +370,76 @@ Select the <em><strong>pattern</strong></em> mode to rename photos or videos fro
 <p>There is 2 options for solving this: Stop the copying process add start all over again (loosing your precious 10 minutes) or you could copy the missing file on a parallel copy (and reduce the performance/speed of both copy processes).</p>
 <p>With extBatchFileProcessor, you can queue a copy operation of the missing folder that will run when the first copy is completed while keeping 100% performance.</p>
 <h2 id="extdelete">extDelete</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot.png" alt="extDelete screenshot"></a></p>
-<p>extDelete screenshot</p>
+<p><a href="/wp-content/uploads/2014/10/extDelete-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-300x138.png" alt="extDelete screenshot">
+<figcaption>extDelete screenshot</figcaption>
+</figure>
+</a></p>
 <p>extDelete is a fast and secured file deletion application. It allows a user to quickly delete files and folders to recover free space as fast as possible.</p>
 <p>extDelete supports 3 deletion modes:</p>
 <h3 id="normal">Normal</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png" alt="extDelete screenshot (normal delete mode)"></a></p>
-<p>extDelete screenshot (normal delete mode)</p>
+<p><a href="/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-normal-delete-mode-300x118.png" alt="extDelete screenshot (normal delete mode)">
+<figcaption>extDelete screenshot (normal delete mode)</figcaption>
+</figure>
+</a></p>
 <p>This mode is the standard mode. It is really similar to the default Windows folder delete implementation. Before actually deleting files, it will first try to &ldquo;discover&rdquo; all the files within the target folder to compute the number of files to be deleted. A nice progress bar is also displayed to show the completion of the task.</p>
 <h3 id="fast">Fast</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png" alt="extDelete screenshot (fast delete mode)"></a></p>
-<p>extDelete screenshot (fast delete mode)</p>
+<p><a href="/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-fast-delete-mode-300x123.png" alt="extDelete screenshot (fast delete mode)">
+<figcaption>extDelete screenshot (fast delete mode)</figcaption>
+</figure>
+</a></p>
 <p>This is the main feature of extDelete. This mode allow a user to retrieve the deleted space as soon as possible. A nice GUI shows the amount of files and the retrieved size from deleted files &ldquo;so far&rdquo;.</p>
 <p>It is designed to be the opposite behavior of the default Windows delete process which has to &ldquo;discover&rdquo; all the files in the target folder to show the total space to be deleted and an accurate &ldquo;remaining time&rdquo;. The discovering process can take forever when dealing with folders that has many files.</p>
 <p>This mode is convenient when your are copying a huge amount of files from a remote drive to a local drive and finding out that you may not have enough space left.</p>
 <p class="pleasenote">
-  Note that deleting a temporary folder would take forever using Windows delete API since the drive would already be busy copying.
+Note that deleting a temporary folder would take forever using Windows delete API since the drive would already be busy copying.
 </p>
 <p>Using extDelete would start deleting files and recovering space right away!</p>
 <h3 id="secure">Secure</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png" alt="extDelete screenshot (secure delete mode)"></a></p>
-<p>extDelete screenshot (secure delete mode)</p>
+<p><a href="/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extDelete-screenshot-secure-delete-mode-300x163.png" alt="extDelete screenshot (secure delete mode)">
+<figcaption>extDelete screenshot (secure delete mode)</figcaption>
+</figure>
+</a></p>
 <p>Please note that extDelete <em><strong>secure</strong></em> deletion mode is not safe when deleting files on a Solid State Drive (SSD).</p>
 <p>This mode allows a user to destroy the content of every file (<a href="http://en.wikipedia.org/wiki/Zeroisation">Zeroisation</a>) before deleting it preventing any file recovery (<a href="http://en.wikipedia.org/wiki/Undeletion">Undelete</a>). Each file deleted in secured mode will see its data lost forever. If a user successfully undeletes a file, the content of the file will all be 0.</p>
 <p class="pleasenote">
-  <strong>Note:</strong> This mode has to &ldquo;discover&rdquo; the files first.
+<strong>Note:</strong> This mode has to &ldquo;discover&rdquo; the files first.
 </p>
 <h2 id="extfilesplitter">extFileSplitter</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png" alt="extFileSplitter screenshot (split)"></a></p>
-<p>extFileSplitter screenshot (split)</p>
+<p><a href="/wp-content/uploads/2014/10/extFileSplitter-screenshot-split.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extFileSplitter-screenshot-split-300x163.png" alt="extFileSplitter screenshot (split)">
+<figcaption>extFileSplitter screenshot (split)</figcaption>
+</figure>
+</a></p>
 <p>extFileSplitter is a file splitting and joining application. It allows you to split a file to multiple smaller parts for easier management and join them back together later.</p>
 <p>Supported split values are bytes, kilobytes, megabytes, gigabytes or &ldquo;files&rdquo; which split the file evenly into the specified amount of files.</p>
 <p>Each file is split into smaller files which have the same name as the original with a sequential number append at the end. For instance, big_file.mp4 will be split into big_file.mp4.001, big_file.mp4.002, big_file.mp4.003, big_file.mp4.004 and so forth.</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png" alt="extFileSplitter screenshot (join)"></a></p>
-<p>extFileSplitter screenshot (join)</p>
+<p><a href="/wp-content/uploads/2014/10/extFileSplitter-screenshot-join.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extFileSplitter-screenshot-join-300x163.png" alt="extFileSplitter screenshot (join)">
+<figcaption>extFileSplitter screenshot (join)</figcaption>
+</figure>
+</a></p>
 <p>For joining a file back together, just select the first split file (*.001) and let extFileSplitter automatically detect successive files. It will create a file with the same name without the .001 at the end. Joining big_file.mp4.001 will automatically detect successive files (big_file.mp4.002, big_file.mp4.003, etc) and create a joined file name big_file.mp4.</p>
 <p>extFileSplitter is really useful for splitting a huge file on multiple medias (CD or DVD) or send a file by email. Many email providers limit the size of each email preventing you to attach a big file to an email. Use extFileSplitter to split the file into multiple parts small enough to be accepted in an email. The recipient just have to join back all files to be able to rebuilt the original file.</p>
 <p class="pleasenote">
-  <strong>Note:</strong> extFileSplitter does not support splitting a file into more than 999 parts.
+<strong>Note:</strong> extFileSplitter does not support splitting a file into more than 999 parts.
 </p>
 <h2 id="extimageencoder">extImageEncoder</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extImageEncoder-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extImageEncoder-screenshot.png" alt="extImageEncoder screenshot"></a></p>
-<p>extImageEncoder screenshot</p>
+<p><a href="/wp-content/uploads/2014/10/extImageEncoder-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extImageEncoder-screenshot-300x254.png" alt="extImageEncoder screenshot">
+<figcaption>extImageEncoder screenshot</figcaption>
+</figure>
+</a></p>
 <p>extImageEncoder is an application that can hide a file/data into a picture. This process is called <a href="http://en.wikipedia.org/wiki/Steganography">steganography</a>.</p>
 <p>extImageEncoder does not simply append the data at the end of the image file but encodes the data into the actual pixels of the image by creating subtle change in pixel&rsquo;s color. If an unsuspecting user opens an encoded image into an image editor or picture viewer, it won&rsquo;t be able to see that a file is hidden within the image since that each change is so subtle that someone not specifically looking for it is unlikely to notice it.</p>
 <p>The following features are supported:</p>
@@ -558,17 +447,25 @@ Select the <em><strong>pattern</strong></em> mode to rename photos or videos fro
 <li>Automatically detect the appropriate encoding format to preserve the original image as much as possible (reduce the amount of modified pixels).</li>
 <li>Allows the encoding algorithm to keep modifying the pixels until the end of the image to evenly modify the image which hides the modified part.</li>
 </ul>
-<p>extImageEncoder only supports <a href="http://en.wikipedia.org/wiki/Lossless_compression">lossless</a> image file format (*.png or *.bmp) for saving the resulting image. Other image file format are <a href="http://en.wikipedia.org/wiki/Image_file_formats#Image_file_compression">lossy</a> which means that some details are lost every time an image is saved. Since the data is encoded into pixels, a lossy image format would alterate or even destroy the data.</p>
+<p>extImageEncoder only supports <a href="http://en.wikipedia.org/wiki/Lossless_compression">lossless</a> image file format (*.png or *.bmp) for saving the resulting image. Other image file format are <a href="http://en.wikipedia.org/wiki/Image_file_formats#Image_file_compression">lossy</a> which means that some details are lost every time an image is saved. Since the data is encoded into pixels, a lossy image format would alterate or even destroy the data.</p>
 <h2 id="extwebget">extWebGet</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extWebGet-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extWebGet-screenshot.png" alt="extWebGet screenshot"></a></p>
-<p>extWebGet screenshot</p>
+<p><a href="/wp-content/uploads/2014/10/extWebGet-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extWebGet-screenshot-300x68.png" alt="extWebGet screenshot">
+<figcaption>extWebGet screenshot</figcaption>
+</figure>
+</a></p>
 <p>extWebGet allows a user to download a file from a URL. Its usage is identical to UNIX wget application but wrapped with a nice GUI window.</p>
 <p>Good usage involves downloading file that would not be downloadable from an internet browser like html or rss files.</p>
 <h2 id="exthashcalculator">extHashCalculator</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png" alt="extHashCalculator screenshot (md5)"></a></p>
-<p>extHashCalculator screenshot (md5)</p>
+<p><a href="/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extHashCalculator-screenshot-md5-300x113.png" alt="extHashCalculator screenshot (md5)">
+<figcaption>extHashCalculator screenshot (md5)</figcaption>
+</figure>
+</a></p>
 <p>extHashCalculator calculate hashes (<a href="http://en.wikipedia.org/wiki/Message_digest">message digests</a>) for any kind of file.</p>
-<p>A file hash is the result of a <a href="http://en.wikipedia.org/wiki/File_verification">file verification</a> process that confirms the integrity of a file. Web sites that offers downloadable content mostly provide hash values to let users know that the downloaded file is not altered (incomplete, corrupted or modified by a virus).</p>
+<p>A file hash is the result of a <a href="http://en.wikipedia.org/wiki/File_verification">file verification</a> process that confirms the integrity of a file. Web sites that offers downloadable content mostly provide hash values to let users know that the downloaded file is not altered (incomplete, corrupted or modified by a virus).</p>
 <p>extHashCalculator supports the following hash algorithms:</p>
 <ul>
 <li>CRC32</li>
@@ -576,27 +473,35 @@ Select the <em><strong>pattern</strong></em> mode to rename photos or videos fro
 <li>SHA1</li>
 </ul>
 <h2 id="extguid">extGuid</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extGuid-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extGuid-screenshot.png" alt="extGuid screenshot"></a></p>
-<p>extGuid screenshot</p>
-<p>extGuid is tool for developers that allows a user to generate new <a href="http://en.wikipedia.org/wiki/Guid">GUID</a> (Globally unique identifier) numbers.</p>
+<p><a href="/wp-content/uploads/2014/10/extGuid-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extGuid-screenshot-300x233.png" alt="extGuid screenshot">
+<figcaption>extGuid screenshot</figcaption>
+</figure>
+</a></p>
+<p>extGuid is tool for developers that allows a user to generate new <a href="http://en.wikipedia.org/wiki/Guid">GUID</a> (Globally unique identifier) numbers.</p>
 <p>extGuid can format the GUID output in multiple forms which are:</p>
-<h3 id="implement_olecreate">IMPLEMENT_OLECREATE(&hellip;)</h3>
-<p>// {A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}<br>
-IMPLEMENT_OLECREATE(&laquo;class&raquo;, &laquo;external_name&raquo;,<br>
-0xa17f1f0d, 0x6fcb, 0x4dc1, 0x83, 0xa1, 0x22, 0x80, 0x8a, 0x6b, 0x65, 0x01);</p>
-<h3 id="define_guid">DEFINE_GUID(&hellip;)</h3>
-<p>// {A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}<br>
-DEFINE_GUID(&laquo;name&raquo;,<br>
-0xa17f1f0d, 0x6fcb, 0x4dc1, 0x83, 0xa1, 0x22, 0x80, 0x8a, 0x6b, 0x65, 0x01);</p>
-<h3 class=".." id="static-const-struct-guid-">static const struct GUID =</h3>
-<p>// {A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}<br>
-static const GUID &laquo;name&raquo; =<br>
-{ 0xa17f1f0d, 0x6fcb, 0x4dc1, { 0x83, 0xa1, 0x22, 0x80, 0x8a, 0x6b, 0x65, 0x01 } };</p>
-<h3 id="registry-format">Registry format</h3>
+<h3 id="implement_olecreate">IMPLEMENT_OLECREATE(&mldr;)</h3>
+<pre tabindex="0"><code>// {A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}  
+IMPLEMENT\_OLECREATE(&lt;&lt;class&gt;&gt;, &lt;&lt;external\_name&gt;&gt;,  
+0xa17f1f0d, 0x6fcb, 0x4dc1, 0x83, 0xa1, 0x22, 0x80, 0x8a, 0x6b, 0x65, 0x01);
+</code></pre><h3 id="define_guid">DEFINE_GUID(&mldr;)</h3>
+<pre tabindex="0"><code>// {A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}  
+DEFINE_GUID(&lt;&lt;name&gt;&gt;,  
+0xa17f1f0d, 0x6fcb, 0x4dc1, 0x83, 0xa1, 0x22, 0x80, 0x8a, 0x6b, 0x65, 0x01);
+</code></pre><h3 class=".." id="static-const-struct-guid-">static const struct GUID =</h3>
+<pre tabindex="0"><code>// {A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}  
+static const GUID &lt;&lt;name&gt;&gt; =  
+{ 0xa17f1f0d, 0x6fcb, 0x4dc1, { 0x83, 0xa1, 0x22, 0x80, 0x8a, 0x6b, 0x65, 0x01 } };
+</code></pre><h3 id="registry-format">Registry format</h3>
 <p>{A17F1F0D-6FCB-4DC1-83A1-22808A6B6501}</p>
 <h2 id="extansiprinter">extAnsiPrinter</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2014/10/extAnsiPrinter-screenshot-apple.png"><img src="http://www.end2endzone.com/wp-content/uploads/2014/10/extAnsiPrinter-screenshot-apple.png" alt="extAnsiPrinter screenshot (apple)"></a></p>
-<p>extAnsiPrinter screenshot (apple)</p>
+<p><a href="/wp-content/uploads/2014/10/extAnsiPrinter-screenshot-apple.png">
+<figure>
+<img src="/wp-content/uploads/2014/10/extAnsiPrinter-screenshot-apple-300x152.png" alt="extAnsiPrinter screenshot (apple)">
+<figcaption>extAnsiPrinter screenshot (apple)</figcaption>
+</figure>
+</a></p>
 <p>extAnsiPrinter a command prompt only application (no GUI). It is an implementation of the old DOS driver ANSI.SYS. This driver is not available anymore on recent windows operating systems. This tools bring back this functionality and allows you to render ANSI files (*.ans) on a windows command prompt (win32).</p>
 <p><strong>Usage:</strong> extAnsiPrinter [ansi file]</p>
 <h1 id="compatible-with">Compatible with</h1>
@@ -617,267 +522,152 @@ static const GUID &laquo;name&raquo; =<br>
 </ul>
 <h1 id="history-of-changes">History of changes</h1>
 <p>Version 1.4 - First public release</p>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/exttools/">exttools</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
-        
-      
-    </ul>
-  
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='ef078156b5d65a68a94cad7f866ed46d'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/deballage-du-avistar-elite-46-un-video-timelapse/" class="button left"><span>Déballage du Avistar Elite .46 un vidéo timelapse</span></a>
-    
-    
-      <a href="/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/" class="button right"><span>How to make a time-lapse video with free tools and a DSLR camera</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/exttools/">exttools</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='ef078156b5d65a68a94cad7f866ed46d'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/deballage-du-avistar-elite-46-un-video-timelapse/" class="button left"><span>Déballage du Avistar Elite .46 un vidéo timelapse</span></a>
+<a href="/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/" class="button right"><span>How to make a time-lapse video with free tools and a DSLR camera</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

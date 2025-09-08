@@ -1,40 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Flowers on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/flowers/</link>
-    <description>Recent content in Flowers on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2015 23:38:36 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/flowers/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fleurs de la cours</title>
-      <link>http://www.end2endzone.com/fleurs-de-la-cours/</link>
-      <pubDate>Wed, 12 Aug 2015 23:38:36 +0000</pubDate>
-      <guid>http://www.end2endzone.com/fleurs-de-la-cours/</guid>
-      <description>&lt;p&gt;Voici d&amp;rsquo;autres photos de fleurs que j&amp;rsquo;ai capturé pas plus loin que la cours de la maison.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>La Fête nationale du Québec – Soyez fier d’être Québécois!</title>
-      <link>http://www.end2endzone.com/la-fete-nationale-du-quebec-soyez-fier-detre-quebecois/</link>
-      <pubDate>Wed, 24 Jun 2015 03:06:54 +0000</pubDate>
-      <guid>http://www.end2endzone.com/la-fete-nationale-du-quebec-soyez-fier-detre-quebecois/</guid>
-      <description>&lt;p&gt;Le jour de Fête nationale, les Québécois n&amp;rsquo;hésite pas à faire la fête (ou des folies) afin de démontrer tous ensemble qu&amp;rsquo;ils sont fier de leur racines.&lt;/p&gt;&#xA;&lt;p&gt;Voici donc un symbole patriotique afin de vivifier votre flamme et votre amour de la Belle province.&lt;/p&gt;&#xA;&lt;p&gt;En ce 24 juin, dites-le haut et fort: &amp;ldquo;Je suis fier d&amp;rsquo;être Québécois&amp;rdquo;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Beauté florale</title>
-      <link>http://www.end2endzone.com/beaute-florale/</link>
-      <pubDate>Tue, 19 May 2015 01:00:27 +0000</pubDate>
-      <guid>http://www.end2endzone.com/beaute-florale/</guid>
-      <description>&lt;p&gt;Le soleil et le temps chaud est de nouveau de retour parmi nous. Encore une fois, j&amp;rsquo;ai apporté mon appareil pour prendre des photos.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Photographie Macro, je m’y suis lancé cet été</title>
-      <link>http://www.end2endzone.com/photographie-macro-je-my-suis-lance-cet-ete/</link>
-      <pubDate>Sun, 08 Feb 2015 03:53:22 +0000</pubDate>
-      <guid>http://www.end2endzone.com/photographie-macro-je-my-suis-lance-cet-ete/</guid>
-      <description>&lt;p&gt;Pendant le début du mois de juillet, j&amp;rsquo;ai décidé de me lancer dans la photographie macro. Ce que j&amp;rsquo;ai découvert durant cette expérience est étonnant.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flowers on end2end zone</title><link>http://localhost:1313/tags/flowers/</link><description>Recent content in Flowers on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 12 Aug 2015 23:38:36 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/flowers/index.xml" rel="self" type="application/rss+xml"/><item><title>Fleurs de la cours</title><link>http://localhost:1313/fleurs-de-la-cours/</link><pubDate>Wed, 12 Aug 2015 23:38:36 +0000</pubDate><guid>http://localhost:1313/fleurs-de-la-cours/</guid><description>&lt;p>Voici d&amp;rsquo;autres photos de fleurs que j&amp;rsquo;ai capturé pas plus loin que la cours de la maison.&lt;/p>
+&lt;div class="image-gallery">
+&lt;a href="https://www.flickr.com/photos/154618444@N05/36860986414/in/album-72157687616715024/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2611_LR5-300x200.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/23719009398/in/album-72157687616715024/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2619_LR5-300x200.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/36860982644/in/album-72157687616715024/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2624_LR5-200x300.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/23719006978/in/album-72157687616715024/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2637_LR5-300x200.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/37320179020/in/album-72157687616715024/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2821_e2ez-300x200.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/36868560994/in/album-72157687616715024/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2943_e2ez-200x300.jpg" alt="">
+&lt;/a>
+&lt;/div></description></item><item><title>La Fête nationale du Québec – Soyez fier d'être Québécois!</title><link>http://localhost:1313/la-fete-nationale-du-quebec-soyez-fier-detre-quebecois/</link><pubDate>Wed, 24 Jun 2015 03:06:54 +0000</pubDate><guid>http://localhost:1313/la-fete-nationale-du-quebec-soyez-fier-detre-quebecois/</guid><description>&lt;p>Le jour de Fête nationale, les Québécois n&amp;rsquo;hésite pas à faire la fête (ou des folies) afin de démontrer tous ensemble qu&amp;rsquo;ils sont fier de leur racines.&lt;/p>
+&lt;p>Voici donc un symbole patriotique afin de vivifier votre flamme et votre amour de la Belle province.&lt;/p>
+&lt;p>En ce 24 juin, dites-le haut et fort: &amp;ldquo;Je suis fier d&amp;rsquo;être Québécois&amp;rdquo;
+&lt;div class="image-gallery">
+&lt;table>
+ 
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;a href="https://www.flickr.com/photos/154618444@N05/37579347401/in/album-72157661287647108/" title="Fleur de Lys">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/06/IMG_2827_e2ez-300x200.jpg" alt="Fleur de Lys">
+&lt;/a>&lt;/th>
+ &lt;th>&lt;a href="https://www.flickr.com/photos/154618444@N05/37579341761/in/album-72157661287647108/" title="Fleur de Lys">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/06/IMG_2834_e2ez-200x300.jpg" alt="Fleur de Lys">
+&lt;/a>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37579343271/in/album-72157661287647108/" title="Fleur de Lys">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/06/IMG_2843_e2ez-300x200.jpg" alt="Fleur de Lys">
+&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37579340191/in/album-72157661287647108/" title="Fleur de Lys">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/06/IMG_2865_e2ez-200x300.jpg" alt="Fleur de Lys">
+&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37579338321/in/album-72157661287647108/" title="Fleur de Lys">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/06/IMG_2880_e2ez-300x200.jpg" alt="Fleur de Lys">
+&lt;/a>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;/div>
+&lt;/p></description></item><item><title>Beauté florale</title><link>http://localhost:1313/beaute-florale/</link><pubDate>Tue, 19 May 2015 01:00:27 +0000</pubDate><guid>http://localhost:1313/beaute-florale/</guid><description>&lt;p>Le soleil et le temps chaud est de nouveau de retour parmi nous. Encore une fois, j&amp;rsquo;ai apporté mon appareil pour prendre des photos.&lt;/p>
+&lt;p>Je suis donc parti à la chasse rechercher des fleurs dignes d&amp;rsquo;être observés pendant plus de 15 minutes avec mon appareil, &lt;a href="http://localhost:1313/wp-content/uploads/2015/02/Manfrotto-190XPROB-Tripod-with-3D-Head-804RC2.jpg" title="Manfrotto 190XPROB Tripod with 3D Head 804RC2">mon trépied&lt;/a> ainsi que des &lt;a href="http://localhost:1313/wp-content/uploads/2015/02/Aputure-AF-Macro-Extension-Tube-for-Canon-EOS-EF-EF-S-Lens-Mount.jpg" title="Aputure AF Macro Extension Tube for Canon EOS EF EF-S Lens Mount">tubes d&amp;rsquo;extension (21mm)&lt;/a>.&lt;/p>
+&lt;p>Voici le résultat de ma séance photo:&lt;/p></description></item><item><title>Photographie Macro, je m'y suis lancé cet été</title><link>http://localhost:1313/photographie-macro-je-my-suis-lance-cet-ete/</link><pubDate>Sun, 08 Feb 2015 03:53:22 +0000</pubDate><guid>http://localhost:1313/photographie-macro-je-my-suis-lance-cet-ete/</guid><description>&lt;p>Pendant le début du mois de juillet, j&amp;rsquo;ai décidé de me lancer dans la photographie macro. Ce que j&amp;rsquo;ai découvert durant cette expérience est étonnant.&lt;/p>
+&lt;p>Comme tout le monde, j&amp;rsquo;ai naturellement décidé d&amp;rsquo;utiliser les fleurs comme sujet. Quoi de mieux que le mois de juillet, où les fleurs sont belles et épanouies, pour essayer de faire de la photographie.&lt;/p>
+&lt;p>Je suis donc parti à la recherche de fleurs avec mon appareil, &lt;a href="http://localhost:1313/wp-content/uploads/2015/02/Manfrotto-190XPROB-Tripod-with-3D-Head-804RC2.jpg" title="Manfrotto 190XPROB Tripod with 3D Head 804RC2">mon trépied&lt;/a> ainsi que des &lt;a href="http://localhost:1313/wp-content/uploads/2015/02/Aputure-AF-Macro-Extension-Tube-for-Canon-EOS-EF-EF-S-Lens-Mount.jpg" title="Aputure AF Macro Extension Tube for Canon EOS EF EF-S Lens Mount">tubes d&amp;rsquo;extension (21mm)&lt;/a>.&lt;/p></description></item></channel></rss>

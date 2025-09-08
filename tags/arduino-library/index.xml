@@ -1,54 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Arduino Library on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/arduino-library/</link>
-    <description>Recent content in Arduino Library on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 10 Jun 2016 20:14:19 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/arduino-library/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title>
-      <link>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link>
-      <pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate>
-      <guid>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my simplest library that I wrote for the arduino: &lt;em&gt;SoftTimers&lt;/em&gt;. The &lt;em&gt;SoftTimers&lt;/em&gt; arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</title>
-      <link>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</link>
-      <pubDate>Sat, 21 May 2016 23:20:34 +0000</pubDate>
-      <guid>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available &lt;code&gt;void play_rtttl(char *p)&lt;/code&gt; function. The AnyRtttl is a feature rich library which supports all best RTTTL features.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>win32Arduino: a win32 library that implements most arduino functions</title>
-      <link>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</link>
-      <pubDate>Mon, 16 May 2016 17:15:58 +0000</pubDate>
-      <guid>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/win32Arduino&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/win32Arduino.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.&lt;/p&gt;&#xA;&lt;p&gt;The win32Arduino is a solution to this issue.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title>
-      <link>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link>
-      <pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate>
-      <guid>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;&#xA;&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>BitReader – An arduino library for reading &amp; writing data as chunks of bits</title>
-      <link>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</link>
-      <pubDate>Sat, 26 Mar 2016 00:23:05 +0000</pubDate>
-      <guid>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Here is another arduino library that I have written.&lt;/p&gt;&#xA;&lt;p&gt;As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp;amp; CPU is cheap. If your application is struggling to run on today&amp;rsquo;s computer, it will run smoothly in 1-2 years.&lt;/p&gt;&#xA;&lt;p&gt;As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.&lt;/p&gt;&#xA;&lt;p&gt;BitReader is an arduino library that allows one to read or write data as chunks of bits.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</title>
-      <link>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</link>
-      <pubDate>Sun, 20 Mar 2016 15:16:54 +0000</pubDate>
-      <guid>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arduino Library on end2end zone</title><link>http://localhost:1313/tags/arduino-library/</link><description>Recent content in Arduino Library on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 10 Jun 2016 20:14:19 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/arduino-library/index.xml" rel="self" type="application/rss+xml"/><item><title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title><link>http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link><pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate><guid>http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my simplest library that I wrote for the arduino: &lt;em>SoftTimers&lt;/em>. The &lt;em>SoftTimers&lt;/em> arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;p>When I first learned programming the arduino, I learned the &amp;ldquo;&lt;em>hello world&lt;/em>&amp;rdquo; of the arduino: turning a LED on and off. As expected, I used &lt;code>delay()&lt;/code> to define how long the LED should be on and off.&lt;/p></description></item><item><title>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</title><link>http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</link><pubDate>Sat, 21 May 2016 23:20:34 +0000</pubDate><guid>http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available &lt;code>void play_rtttl(char *p)&lt;/code> function. The AnyRtttl is a feature rich library which supports all best RTTTL features.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>See this post for a &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">quick recall of the RTTTL format&lt;/a>.&lt;/p></description></item><item><title>win32Arduino: a win32 library that implements most arduino functions</title><link>http://localhost:1313/win32arduino-a-win32-library-that-implements-most-arduino-functions/</link><pubDate>Mon, 16 May 2016 17:15:58 +0000</pubDate><guid>http://localhost:1313/win32arduino-a-win32-library-that-implements-most-arduino-functions/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/win32Arduino">the project&amp;rsquo;s GitHub page&lt;/a>.&lt;/p>
+&lt;p>
+&lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
+ 
+&lt;img src="https://img.shields.io/github/release/end2endzone/win32Arduino.svg" alt="">
+ 
+&lt;img src="https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true" alt="">
+ 
+&lt;img src="https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg" alt="">
+ 
+&lt;img src="https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg" alt="">
+&lt;/p>
+&lt;p>After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.&lt;/p>
+&lt;p>The win32Arduino is a solution to this issue.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/win32arduino-a-win32-library-that-implements-most-arduino-functions/#Download">download section&lt;/a> for quick download.&lt;/p></description></item><item><title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title><link>http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link><pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate><guid>http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following arduino library was written to use the findings found during the &lt;em>&lt;strong>&lt;a href="http://localhost:1313/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a>&lt;/strong>&lt;/em> article. All results were wrapped into a library for ease of use.&lt;/p>
+&lt;p>The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>The RcReceiverSignal library allows one to easily configure an input pin to read a PWM signal sent from a RC receiver by attaching a RcReceiverSignal instance to a pin connected the receiver and automatically monitor each pulse sent by the receiver.&lt;/p></description></item><item><title>BitReader – An arduino library for reading &amp; writing data as chunks of bits</title><link>http://localhost:1313/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</link><pubDate>Sat, 26 Mar 2016 00:23:05 +0000</pubDate><guid>http://localhost:1313/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Here is another arduino library that I have written.&lt;/p>
+&lt;p>As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp;amp; CPU is cheap. If your application is struggling to run on today&amp;rsquo;s computer, it will run smoothly in 1-2 years.&lt;/p>
+&lt;p>As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.&lt;/p></description></item><item><title>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</title><link>http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</link><pubDate>Sun, 20 Mar 2016 15:16:54 +0000</pubDate><guid>http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.&lt;/p>
+&lt;p class="postedit">
+ &lt;strong>EDIT&lt;/strong>: The NonBlockingRtttl arduino library is now moved to GitHub. Source code can be downloaded from the project&amp;rsquo;s &lt;a href="http://github.com/end2endzone/NonBlockingRTTTL">GitHub page&lt;/a>.
+&lt;/p>
+&lt;p class="postedit">
+ EDIT: NonBlockingRTTTL library is now available on the &lt;a href="http://www.arduino.cc/en/guide/libraries#toc3">Arduino Library Manager&lt;/a>.
+&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>Most code that can be found on the internet that allows you to &amp;ldquo;play&amp;rdquo; an &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">RTTTL&lt;/a> string is build the same way: sequential calls to the tone() function followed by a delay() function. This type of implementation might be good for robots but not for realtime application or projects that needs to monitor pins while the song is playing.&lt;/p></description></item></channel></rss>

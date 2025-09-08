@@ -1,572 +1,541 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>Blog - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="Blog">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/blog/">
-  <meta property="og:image" content="http://www.end2endzone.com/img/main/logo.jpg">
-
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/blog/">
+<meta property="og:image" content="http://localhost:1313/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-      <a href="http://www.end2endzone.com/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="http://localhost:1313/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
 </header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+</footer>
 </section>
-
-      <main id="site-main">
-        
-  
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/assemblage-du-quadrirotor-f450-mon-premier-drone/">Assemblage du quadrirotor F450 – Mon premier drone</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-12-22 22:45:25 &#43;0000 &#43;0000">December 22, 2016</time>
-    <p>end2end</p>
-    <p>2-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/assemblage-du-quadrirotor-f450-mon-premier-drone/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/Assemblage-du-quadrirotor-F450-Mon-premier-drone.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/Assemblage-du-quadrirotor-F450-Mon-premier-drone.jpg" alt="">
-  </a>
-    <p>J&rsquo;ai fait l’acquisition de mon premier quadrirotor. Puisque je préfère de loin <a href="/tag/diy/">les options DIY</a>, j&rsquo;ai décidé de ne pas acheter un modèle RTF (ready-to-fly) et de plutôt opter pour un modèle livré à la maison en pièce détachée.</p>
-<p>Tous comme avec mon <a href="/deballage-du-avistar-elite-46-un-video-timelapse/">Avistar Elite</a>, j&rsquo;ai capturé le déballage et l&rsquo;assemblage de l&rsquo;engin sur photos afin de réaliser un vidéo time lapse.</p>
-<p>Pour le plaisir de vos yeux, voici le vidéo démontrant le déballage et l&rsquo;assemblage de mon premier quadrirotor.</p>
-  </div>
-  
-  <footer>
-    <a href="/assemblage-du-quadrirotor-f450-mon-premier-drone/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/time-lapse/">time lapse</a></li>
-        
-      
-    </ul>
-  
+<main id="site-main">
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">BitReader – An arduino library for reading & writing data as chunks of bits</a></h2>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/">How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-12-22 18:03:50 &#43;0000 &#43;0000">December 22, 2016</time>
-    <p>end2end</p>
-    <p>31-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/" class="image" style="--bg-image: url('/wp-content/uploads/2016/11/How-to-convert-arduino-code-to-actual-RTTTL-melodies-using-libRtttl-and-AnyRtttl.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/11/How-to-convert-arduino-code-to-actual-RTTTL-melodies-using-libRtttl-and-AnyRtttl.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>The following article is written in order to demonstrate how my arduino libraries <a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">libRtttl</a> &amp; <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> can be used to convert arduino code (<code>tone()</code> and <code>delay()</code> functions calls) into actual RTTTL melodies.</p>
-  </div>
-  
-  <footer>
-    <a href="/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rtttl/">rtttl</a></li>
-        
-      
-    </ul>
-  
+<div class="meta">
+<time datetime="2016-03-26 00:23:05 +0000 +0000">March 26, 2016</time>
+<p>end2end</p>
+<p>6-Minute Read</p>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/">Comment afficher un exemple de toutes les polices dans Microsoft Word</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-12-21 02:28:38 &#43;0000 &#43;0000">December 21, 2016</time>
-    <p>end2end</p>
-    <p>7-Minute Read</p>
-  </div>
 </header>
-
-  <div class="content">
-    <a href="/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/" class="image" style="--bg-image: url('/wp-content/uploads/2016/12/Comment-affichier-une-liste-de-toutes-les-polices-dans-Microsoft-Word.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/12/Comment-affichier-une-liste-de-toutes-les-polices-dans-Microsoft-Word.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>À chaque fois que je travail en graphisme et que je dois ajouter du texte à une image, je me retrouve toujours avec le même problème: &ldquo;Comment faire pour identifier rapidement la meilleure police pour mon affiche ?&rdquo;</p>
-<p>Je crois maintenant avoir finalement trouver la solution à ce problème.</p>
-  </div>
-  
-  <footer>
-    <a href="/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/microsoft-office/">Microsoft Office</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<div class="content">
+<a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>Here is another arduino library that I have written.</p>
+<p>As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory & CPU is cheap. If your application is struggling to run on today&rsquo;s computer, it will run smoothly in 1-2 years.</p>
+<p>As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.</p>
 </div>
-
-  </footer>
-  
+<footer>
+<a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+</ul>
+</div>
+</footer>
 </article>
-
-  
-  <div class="pagination">
-    
-      <a href="/blog/page/2/" class="button left"><span>Previous Page</span></a>
-    
-    
-      <a href="/blog/page/4/" class="button right"><span>Next Page</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/">NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-03-20 15:16:54 +0000 +0000">March 20, 2016</time>
+<p>end2end</p>
+<p>4-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/Arduino-non-blocking-rtttl-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-non-blocking-rtttl-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.</p>
+<p class="postedit">
+<strong>EDIT</strong>: The NonBlockingRtttl arduino library is now moved to GitHub. Source code can be downloaded from the project&rsquo;s <a href="http://github.com/end2endzone/NonBlockingRTTTL">GitHub page</a>.
+</p>
+<p class="postedit">
+EDIT: NonBlockingRTTTL library is now available on the <a href="http://www.arduino.cc/en/guide/libraries#toc3">Arduino Library Manager</a>.
+</p>
+<p>Skip to the <a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Download">download section</a> for quick download.</p>
+<h1 id="purpose">Purpose</h1>
+<p>Most code that can be found on the internet that allows you to &ldquo;play&rdquo; an <a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">RTTTL</a> string is build the same way: sequential calls to the tone() function followed by a delay() function. This type of implementation might be good for robots but not for realtime application or projects that needs to monitor pins while the song is playing.</p>
+</div>
+<footer>
+<a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rtttl/">rtttl</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/demystifying-rc-transmitter-mixing/">Demystifying RC Transmitter Mixing</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-01-28 17:44:31 +0000 +0000">January 28, 2016</time>
+<p>end2end</p>
+<p>10-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/demystifying-rc-transmitter-mixing/" class="image" style="--bg-image:url('/wp-content/uploads/2016/01/Demystifying-RC-Transmitter-Mixing.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/01/Demystifying-RC-Transmitter-Mixing.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>If you look on the internet for &ldquo;mixing&rdquo;, you will usually find posts and articles of people asking for things like &ldquo;what is the best mix I should use for this or that&rdquo; which I think is not helpful. I think it is far more helpful to actually understand what mixing is and how it can help you improve your skills as a pilot. Lately I wanted to understand how mixing could help me in a personal project. I took this opportunity to learn something new and try to demystifying RC Transmitter Mixing.</p>
+</div>
+<footer>
+<a href="/demystifying-rc-transmitter-mixing/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+<li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/rc-transmitter-mix-calculator/">RC Transmitter Mix Calculator</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-01-28 17:43:43 +0000 +0000">January 28, 2016</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/rc-transmitter-mix-calculator/" class="image" style="--bg-image:url('/wp-content/uploads/2016/01/RC-Transmitter-Mix-Calculator.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/01/RC-Transmitter-Mix-Calculator.jpg" alt>
+</a>
+<p>This is an Excel worksheet I created based on the calculations I found for calculating most R/C Transmitter mixes. It is designed to help you identify the effective range of a mix (finding the low, medium and high values).</p>
+<p>See my post on <a href="/demystifying-rc-transmitter-mixing/">Demystifying RC Transmitter Mixing</a> for more details.</p>
+<p class="pleasenote">
+Please note the following calculator is valid on Spektrum Transmitters. I did not verified it&rsquo;s validity or accuracy on other transmitters.
+</p>
+</div>
+<footer>
+<a href="/rc-transmitter-mix-calculator/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+<li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/">Maintenance of Hobbico TorqMaster 90 deluxe 12 Volt RC starter</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-01-17 22:13:51 +0000 +0000">January 17, 2016</time>
+<p>end2end</p>
+<p>6-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/" class="image" style="--bg-image:url('/wp-content/uploads/2015/07/Hobbico-Torqmaster-90-deluxe-12-Volt-RC-starter1.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/07/Hobbico-Torqmaster-90-deluxe-12-Volt-RC-starter1.jpg" alt>
+</a>
+<p>This article is about how I did the maintenance on my Hobbico Torqmaster 90 deluxe which is a 12 Volt starter for remote controlled (RC) aircraft. I wanted to change the rubber nose to get a better grip on my <a href="/tag/avistar-elite/">Avistar Elite</a> spinner. I ended up disassembling the whole unit before understanding what I should have done.</p>
+<p>This guide documents the steps and tricks I used to reassemble the unit. I hope it may help someone that have the same issue. If not, then I shall use this article as a way for me to remember how I did the maintenance on the starter and which tool I used&mldr;</p>
+</div>
+<footer>
+<a href="/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/">Best way to remove ads from HDHomeRun recordings (no intermediate file required)</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-01-16 22:19:34 +0000 +0000">January 16, 2016</time>
+<p>end2end</p>
+<p>11-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/" class="image" style="--bg-image:url('/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>This guide is a follow up to the post called <a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">How to remove ads from HDHomeRun recordings and still encode with Handbrake</a>.</p>
+<p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!</p>
+</div>
+<footer>
+<a href="/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/other/">Other</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/hdhomerun/">hdhomerun</a></li>
+<li><a class="article-terms-link" href="/tags/tv/">tv</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">How to remove ads from HDHomeRun recordings and still encode with Handbrake</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-10-04 20:41:01 +0000 +0000">October 4, 2015</time>
+<p>end2end</p>
+<p>4-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/" class="image" style="--bg-image:url('/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!</p>
+<p>With all TV shows comes a bunch of TV ads that I do not want to keep and waste time and disk space for. I encode all my videos using <a href="https://handbrake.fr/downloads.php">Handbrake</a> because it supports quality based H264 encoding and 5.1 surround sounds but unfortunately, it does not support removing ads.</p>
+</div>
+<footer>
+<a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/other/">Other</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/hdhomerun/">hdhomerun</a></li>
+<li><a class="article-terms-link" href="/tags/tv/">tv</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/lune-de-sang-blood-moon/">Lune de Sang / Blood moon</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-09-29 17:14:58 +0000 +0000">September 29, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/lune-de-sang-blood-moon/" class="image" style="--bg-image:url('/wp-content/uploads/2015/09/IMG_7099_Featured.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/09/IMG_7099_Featured.jpg" alt>
+</a>
+<p>Je vous présente l&rsquo;éclipse totale de lune ou plus communément appelée &ldquo;lune de sang&rdquo;.</p>
+<p>Une photo d&rsquo;une éclipse lunaire est très différent d&rsquo;<a href="/lune-de-paques-easter-moon/">une photo traditionnelle de la lune</a>. Il y a beaucoup moins de lumière disponible! Il faut donc compenser avec un temps d&rsquo;exposition plus long et une sensibilité ISO beaucoup plus haute. Dans ce cas ci, 1.3 secondes et ISO 400. En conséquence, la photo est un peu plus flou et granuleuse qu&rsquo;une photo traditionnelle.</p>
+</div>
+<footer>
+<a href="/lune-de-sang-blood-moon/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+<li><a class="article-terms-link" href="/tags/moon/">moon</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/visualiser-la-rotation-de-la-terre-en-image-star-trails/">Visualiser la rotation de la terre en image (Star Trails)</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-15 15:02:43 +0000 +0000">August 15, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/visualiser-la-rotation-de-la-terre-en-image-star-trails/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_5753-IMG_6050-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_5753-IMG_6050-Featured-Image.jpg" alt>
+</a>
+<p>Suite à <a href="/visualiser-la-rotation-de-la-terre-en-video/">ce vidéo</a>, j&rsquo;ai aussi fusionné (ou plutôt cumulé) toutes les images en une seule. Le résultat est ce que l&rsquo;on appelle une image &ldquo;Star Trails&rdquo; (ou Filé d&rsquo;étoiles en français).</p>
+<p>Vous pouvez voir que les étoiles semblent tourner autour d&rsquo;un même point. Il s&rsquo;agit de l&rsquo;étoile polaire. Cette étoile est fixe dans le ciel peut importe l&rsquo;heure à laquelle vous regarder le ciel. C&rsquo;est à dire qu&rsquo;elle est parfaitement alignée avec l&rsquo;axe de rotation de la terre. Donc pour obtenir ce type d&rsquo;image, il suffit d&rsquo;aligner la camera vers le Nord (polaire) et cadrer le tout pour obtenir un bel effet.</p>
+</div>
+<footer>
+<a href="/visualiser-la-rotation-de-la-terre-en-image-star-trails/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/long-exposure/">long exposure</a></li>
+<li><a class="article-terms-link" href="/tags/nature/">nature</a></li>
+<li><a class="article-terms-link" href="/tags/photography/">photography</a></li>
+<li><a class="article-terms-link" href="/tags/stars/">stars</a></li>
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/visualiser-la-rotation-de-la-terre-en-video/">Visualiser la rotation de la terre en vidéo</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-14 23:04:58 +0000 +0000">August 14, 2015</time>
+<p>end2end</p>
+<p>2-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/visualiser-la-rotation-de-la-terre-en-video/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_5753-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_5753-Featured-Image.jpg" alt>
+</a>
+<p>Je caresse depuis longtemps l&rsquo;idée de faire des photos du ciel et des étoiles. J&rsquo;ai récemment réussi à faire de <a href="/ciel-etoile-au-parc-nationale-du-mont-tremblant/">bonnes photos du ciel de Mont-Tremblant</a>. Par contre, je me suis vite rendu compte que la rotation de la terre était vraiment apparente dans chacune de mes photographies. Plutôt qu&rsquo;essayer de la combattre, j&rsquo;ai essayé de mieux la faire ressortir.</p>
+<p>J&rsquo;ai donc décidé de sortir en douce de la maison une fois de plus pour pouvoir aller prendre de bonnes photos. La pollution lumineuse des villes environnantes est très nuisible pour se type de projet. Par contre, j&rsquo;ai réussi à trouver un endroit à Mirabel qui est suffisamment loin de St-Jérôme et de Blainville.</p>
+</div>
+<footer>
+<a href="/visualiser-la-rotation-de-la-terre-en-video/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+<li><a class="article-terms-link" href="/tags/long-exposure/">long exposure</a></li>
+<li><a class="article-terms-link" href="/tags/nature/">nature</a></li>
+<li><a class="article-terms-link" href="/tags/photography/">photography</a></li>
+<li><a class="article-terms-link" href="/tags/stars/">stars</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<div class="pagination">
+<a href="/blog/page/2/" class="button left"><span>Previous Page</span></a>
+<a href="/blog/page/4/" class="button right"><span>Next Page</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

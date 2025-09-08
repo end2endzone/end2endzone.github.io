@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>VirtualDub on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/virtualdub/</link>
-    <description>Recent content in VirtualDub on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 15 Mar 2015 19:50:02 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/virtualdub/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to make a time-lapse video with free tools and a DSLR camera</title>
-      <link>http://www.end2endzone.com/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/</link>
-      <pubDate>Sun, 15 Mar 2015 19:50:02 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/time-lapse_photography&#34;&gt;Time-lapse photography&lt;/a&gt; is a wonderful effect to make your images alive instead of static because you can make a plain (or almost boring) event and make it so much more dramatic. However, it is something that usually needs a lot of time investment to get something acceptable.&lt;/p&gt;&#xA;&lt;p&gt;Considering my family was planning to decorate the Christmas tree during the weekend, I decided to take my camera and capture the whole event in a time-lapse video.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VirtualDub on end2end zone</title><link>http://localhost:1313/tags/virtualdub/</link><description>Recent content in VirtualDub on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 15 Mar 2015 19:50:02 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/virtualdub/index.xml" rel="self" type="application/rss+xml"/><item><title>How to make a time-lapse video with free tools and a DSLR camera</title><link>http://localhost:1313/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/</link><pubDate>Sun, 15 Mar 2015 19:50:02 +0000</pubDate><guid>http://localhost:1313/how-to-make-a-time-lapse-video-with-free-tools-and-a-dslr-camera/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>&lt;a href="http://en.wikipedia.org/wiki/time-lapse_photography">Time-lapse photography&lt;/a> is a wonderful effect to make your images alive instead of static because you can make a plain (or almost boring) event and make it so much more dramatic. However, it is something that usually needs a lot of time investment to get something acceptable.&lt;/p>
+&lt;p>Considering my family was planning to decorate the Christmas tree during the weekend, I decided to take my camera and capture the whole event in a time-lapse video.
+To get a nice video, you need to prepare yourself before taking the shots because if you don&amp;rsquo;t, you can end up with a bad picture set and have a hard time merging all pictures together.&lt;/p></description></item></channel></rss>

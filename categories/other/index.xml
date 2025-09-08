@@ -1,75 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Other on end2end zone</title>
-    <link>http://www.end2endzone.com/categories/other/</link>
-    <description>Recent content in Other on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/categories/other/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PiDVR Record over the air TV on a Raspberry Pi 4</title>
-      <link>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</link>
-      <pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate>
-      <guid>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</guid>
-      <description>&lt;h1 id=&#34;about-the-project&#34;&gt;About the project&lt;/h1&gt;&#xA;&lt;p&gt;The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.&lt;/p&gt;&#xA;&lt;h1 id=&#34;required-hardware&#34;&gt;Required Hardware&lt;/h1&gt;&#xA;&lt;p&gt;This project requires the following hardware:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Raspberry Pi 4 (with the required parts)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;4GB of ram&lt;/li&gt;&#xA;&lt;li&gt;A 16GB SD card&lt;/li&gt;&#xA;&lt;li&gt;A micro HDMI cable&lt;/li&gt;&#xA;&lt;li&gt;Monitor with HDMI input&lt;/li&gt;&#xA;&lt;li&gt;A 15.3W USB-C Power Supply (3A @ 5v power supply)&lt;/li&gt;&#xA;&lt;li&gt;Raspberry Pi 4 case. Preferably a passive cooling case for noise consideration.&lt;br&gt;&#xA;I used the &lt;a href=&#34;https://www.argon40.com/argon-one-raspberry-pi-4-case.html&#34;&gt;Argon One&lt;/a&gt; case.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;An HDHomeRun Dual tuner from &lt;a href=&#34;https://www.silicondust.com/&#34;&gt;Silicondust&lt;/a&gt;. The oldest model will do. For this build, I used the &lt;a href=&#34;https://www.google.com/search?q=HDHR3-US&amp;amp;amp;source=lnms&amp;amp;amp;tbm=isch&amp;amp;amp;sa=X&amp;amp;amp;ved=2ahUKEwjquKyuvsbuAhWkrFkKHXbmCLMQ_AUoA3oECAEQBQ&amp;amp;amp;biw=1920&amp;amp;amp;bih=927&#34;&gt;&lt;em&gt;HDHR3-US&lt;/em&gt;&lt;/a&gt; which dates back to 2012-2013.&lt;/li&gt;&#xA;&lt;li&gt;An over-the-air tv antenna for ATSC signals. For this build I use the &lt;a href=&#34;https://www.google.com/search?q=Antennas&amp;#43;Direct&amp;#43;Clearstream&amp;#43;4&amp;#43;antenna&#34;&gt;Clearstream 4&lt;/a&gt; antenna by Antennas Direct.&lt;/li&gt;&#xA;&lt;li&gt;50ft to 100ft Coaxial Cable, 18AWG, 75 Ohm to connect the antenna to the HDHomeRun.&lt;/li&gt;&#xA;&lt;li&gt;External Solid State Drive (SSD) with about 500Gb in size.&lt;/li&gt;&#xA;&lt;li&gt;USB 3.0 to SATA Converter Adapter - Look for one that has UASP support.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;software-list&#34;&gt;Software list&lt;/h1&gt;&#xA;&lt;p&gt;This section defines the list of required software for the project. Follow the instructions in the next section to know when and how to install them.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</title>
-      <link>http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</link>
-      <pubDate>Sat, 16 Jan 2016 22:19:34 +0000</pubDate>
-      <guid>http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This guide is a follow up to the post called&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/&#34;&gt;How to remove ads from HDHomeRun recordings and still encode with Handbrake&lt;/a&gt;. I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to remove ads from HDHomeRun recordings and still encode with Handbrake</title>
-      <link>http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</link>
-      <pubDate>Sun, 04 Oct 2015 20:41:01 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Bricoler soi-même un éclairage au LED sous le lit de la chambre à coucher</title>
-      <link>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-le-lit-de-la-chambre-a-coucher/</link>
-      <pubDate>Tue, 21 Apr 2015 16:57:52 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-le-lit-de-la-chambre-a-coucher/</guid>
-      <description>&lt;p&gt;Introduction&lt;/p&gt;&#xA;&lt;p&gt;Combien de fois avez-vous réveiller votre partenaire au lit parce que vous deviez allumer une lampe pour voir quelque chose? Avez-vous jamais eu envie d&amp;rsquo;avoir une lampe de chevet qui ne prenait pas trop de place sur la table ? Que diriez-vous d&amp;rsquo;être en mesure d&amp;rsquo;éteindre une lampe qui a été allumé par votre partenaire sans avoir à quitter votre lit?&lt;/p&gt;&#xA;&lt;p&gt;Dans cet article, je vais vous expliquer comment j&amp;rsquo;ai créé moi-même un éclairage au DEL sous le lit de la chambre à coucher qui peut remplacer votre lampe de chevet existante.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Bricoler soi-même un éclairage au LED sous les armoires de cuisine</title>
-      <link>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-les-armoires-de-cuisine/</link>
-      <pubDate>Thu, 16 Apr 2015 17:11:33 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-bricoler-soi-meme-un-eclairage-au-led-sous-les-armoires-de-cuisine/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Il manque quelque chose dans la plupart des cuisines que j&amp;rsquo;ai vus dans ma vie et ce ne est pas un énorme espace de travail pour couper vos légumes ou un réfrigérateur intelligent. Ce qu&amp;rsquo;il manque souvent est beaucoup plus simple: c&amp;rsquo;est un éclairage adéquat. Toutes les cuisines que j&amp;rsquo;ai utilisé avait un éclairage décent lorsqu&amp;rsquo;elles sont utilisés pendant le jour (beaucoup de fenêtre, une bonne lumière ambiante) mais c&amp;rsquo;est souvent pas le cas pendant les jours pluvieux ou la nuit. La plupart des cuisines manquent aussi d&amp;rsquo;un bon éclairage sous les armoires de cuisine.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Bedroom under the bed led lighting</title>
-      <link>http://www.end2endzone.com/diy-bedroom-under-the-bed-led-lighting/</link>
-      <pubDate>Mon, 01 Sep 2014 19:32:17 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-bedroom-under-the-bed-led-lighting/</guid>
-      <description>&lt;p&gt;Introduction&lt;/p&gt;&#xA;&lt;p&gt;How many times did you wake up your partner in bed because you had to turn on a lamp to see something? Did you ever wanted to have a bedside lamp/table lamp that do not take too much space on the bedside table? How about being able to turn off a lamp that&amp;rsquo;s been turned on by your partner without leaving your bed?&lt;/p&gt;&#xA;&lt;p&gt;In this article, I will explain how I created a bedroom under the bed LED lighting solution that can replace your existing bedside lamp.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Kitchen under cabinet led lighting</title>
-      <link>http://www.end2endzone.com/diy-kitchen-under-cabinet-led-lighting/</link>
-      <pubDate>Thu, 14 Aug 2014 17:30:40 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-kitchen-under-cabinet-led-lighting/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;There is something missing in most kitchens I have seen in my life and it is not a huge free space or a smart refrigerator. It is much simpler than that. I am talking about good lighting. All kitchen that I have used had decent lighting when used during a bright shiny day but was lacking appropriate lighting during a rainy days or nights. Most of then were also missing under cabinet lighting.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Custom baby gate</title>
-      <link>http://www.end2endzone.com/diy-custom-baby-gate/</link>
-      <pubDate>Sun, 03 Aug 2014 20:40:20 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-custom-baby-gate/</guid>
-      <description>&lt;h1 id=&#34;introduction-&#34;&gt;**Introduction **&lt;/h1&gt;&#xA;&lt;p&gt;Following the birth of a child and after the celebration is all the stuff you have to buy to protect the house of &amp;ldquo;potential dangers&amp;rdquo;. Quickly, you realize that you need to buy a baby gate.&lt;/p&gt;&#xA;&lt;p&gt;I looked at several models and I have not found a model that can suit my needs and my situation. I needed a baby gate that can:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY Barrière pour bébé personnalisée</title>
-      <link>http://www.end2endzone.com/diy-barriere-pour-bebe-personnalisee/</link>
-      <pubDate>Mon, 07 Jul 2014 13:02:30 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-barriere-pour-bebe-personnalisee/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Ce qui suit la naissance d&amp;rsquo;un enfant après les réjouissances c&amp;rsquo;est tous les trucs qu&amp;rsquo;il faut acheter pour protéger la maison des &amp;ldquo;dangers potentiels&amp;rdquo;. Rapidement, on doit acheter une barrière pour bébé.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai regardé plusieurs modèles et je n&amp;rsquo;ai pas trouvé un modèle qui puisse convenir à mes besoins et à ma situation soit:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Other on end2end zone</title><link>http://localhost:1313/categories/other/</link><description>Recent content in Other on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/other/index.xml" rel="self" type="application/rss+xml"/><item><title>PiDVR Record over the air TV on a Raspberry Pi 4</title><link>http://localhost:1313/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</link><pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate><guid>http://localhost:1313/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</guid><description>&lt;h1 id="about-the-project">About the project&lt;/h1>
+&lt;p>The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.&lt;/p>
+&lt;h1 id="required-hardware">Required Hardware&lt;/h1>
+&lt;p>This project requires the following hardware:&lt;/p>
+&lt;ul>
+&lt;li>Raspberry Pi 4 (with the required parts)
+&lt;ul>
+&lt;li>4GB of ram&lt;/li>
+&lt;li>A 16GB SD card&lt;/li>
+&lt;li>A micro HDMI cable&lt;/li>
+&lt;li>Monitor with HDMI input&lt;/li>
+&lt;li>A 15.3W USB-C Power Supply (3A @ 5v power supply)&lt;/li>
+&lt;li>Raspberry Pi 4 case. Preferably a passive cooling case for noise consideration.&lt;br>
+I used the &lt;a href="https://www.argon40.com/argon-one-raspberry-pi-4-case.html">Argon One&lt;/a> case.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>An HDHomeRun Dual tuner from &lt;a href="https://www.silicondust.com/">Silicondust&lt;/a>. The oldest model will do. For this build, I used the &lt;a href="https://www.google.com/search?q=HDHR3-US&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ved=2ahUKEwjquKyuvsbuAhWkrFkKHXbmCLMQ_AUoA3oECAEQBQ&amp;amp;biw=1920&amp;amp;bih=927">&lt;em>HDHR3-US&lt;/em>&lt;/a> which dates back to 2012-2013.&lt;/li>
+&lt;li>An over-the-air tv antenna for ATSC signals. For this build I use the &lt;a href="https://www.google.com/search?q=Antennas&amp;#43;Direct&amp;#43;Clearstream&amp;#43;4&amp;#43;antenna">Clearstream 4&lt;/a> antenna by Antennas Direct.&lt;/li>
+&lt;li>50ft to 100ft Coaxial Cable, 18AWG, 75 Ohm to connect the antenna to the HDHomeRun.&lt;/li>
+&lt;li>External Solid State Drive (SSD) with about 500Gb in size.&lt;/li>
+&lt;li>USB 3.0 to SATA Converter Adapter - Look for one that has UASP support.&lt;/li>
+&lt;/ul>
+&lt;h1 id="software-list">Software list&lt;/h1>
+&lt;p>This section defines the list of required software for the project. Follow the instructions in the next section to know when and how to install them.&lt;/p></description></item><item><title>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</title><link>http://localhost:1313/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</link><pubDate>Sat, 16 Jan 2016 22:19:34 +0000</pubDate><guid>http://localhost:1313/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This guide is a follow up to the post called &lt;a href="http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">How to remove ads from HDHomeRun recordings and still encode with Handbrake&lt;/a>.&lt;/p>
+&lt;p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p></description></item><item><title>How to remove ads from HDHomeRun recordings and still encode with Handbrake</title><link>http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</link><pubDate>Sun, 04 Oct 2015 20:41:01 +0000</pubDate><guid>http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p>
+&lt;p>With all TV shows comes a bunch of TV ads that I do not want to keep and waste time and disk space for. I encode all my videos using &lt;a href="https://handbrake.fr/downloads.php">Handbrake&lt;/a> because it supports quality based H264 encoding and 5.1 surround sounds but unfortunately, it does not support removing ads.&lt;/p></description></item><item><title>DIY Bricoler soi-même un éclairage au LED sous le lit de la chambre à coucher</title><link>http://localhost:1313/diy-bricoler-soi-meme-un-eclairage-au-led-sous-le-lit-de-la-chambre-a-coucher/</link><pubDate>Tue, 21 Apr 2015 16:57:52 +0000</pubDate><guid>http://localhost:1313/diy-bricoler-soi-meme-un-eclairage-au-led-sous-le-lit-de-la-chambre-a-coucher/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Combien de fois avez-vous réveiller votre partenaire au lit parce que vous deviez allumer une lampe pour voir quelque chose? Avez-vous jamais eu envie d&amp;rsquo;avoir une lampe de chevet qui ne prenait pas trop de place sur la table ? Que diriez-vous d&amp;rsquo;être en mesure d&amp;rsquo;éteindre une lampe qui a été allumé par votre partenaire sans avoir à quitter votre lit?&lt;/p>
+&lt;p>Dans cet article, je vais vous expliquer comment j&amp;rsquo;ai créé moi-même un éclairage au DEL sous le lit de la chambre à coucher qui peut remplacer votre lampe de chevet existante.&lt;/p></description></item><item><title>DIY Bricoler soi-même un éclairage au LED sous les armoires de cuisine</title><link>http://localhost:1313/diy-bricoler-soi-meme-un-eclairage-au-led-sous-les-armoires-de-cuisine/</link><pubDate>Thu, 16 Apr 2015 17:11:33 +0000</pubDate><guid>http://localhost:1313/diy-bricoler-soi-meme-un-eclairage-au-led-sous-les-armoires-de-cuisine/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Il manque quelque chose dans la plupart des cuisines que j&amp;rsquo;ai vus dans ma vie et ce ne est pas un énorme espace de travail pour couper vos légumes ou un réfrigérateur intelligent. Ce qu&amp;rsquo;il manque souvent est beaucoup plus simple: c&amp;rsquo;est un éclairage adéquat. Toutes les cuisines que j&amp;rsquo;ai utilisé avait un éclairage décent lorsqu&amp;rsquo;elles sont utilisés pendant le jour (beaucoup de fenêtre, une bonne lumière ambiante) mais c&amp;rsquo;est souvent pas le cas pendant les jours pluvieux ou la nuit. La plupart des cuisines manquent aussi d&amp;rsquo;un bon éclairage sous les armoires de cuisine.&lt;/p></description></item><item><title>DIY Bedroom under the bed led lighting</title><link>http://localhost:1313/diy-bedroom-under-the-bed-led-lighting/</link><pubDate>Mon, 01 Sep 2014 19:32:17 +0000</pubDate><guid>http://localhost:1313/diy-bedroom-under-the-bed-led-lighting/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>How many times did you wake up your partner in bed because you had to turn on a lamp to see something? Did you ever wanted to have a bedside lamp/table lamp that do not take too much space on the bedside table? How about being able to turn off a lamp that&amp;rsquo;s been turned on by your partner without leaving your bed?&lt;/p>
+&lt;p>In this article, I will explain how I created a bedroom under the bed LED lighting solution that can replace your existing bedside lamp.&lt;/p></description></item><item><title>DIY Kitchen under cabinet led lighting</title><link>http://localhost:1313/diy-kitchen-under-cabinet-led-lighting/</link><pubDate>Thu, 14 Aug 2014 17:30:40 +0000</pubDate><guid>http://localhost:1313/diy-kitchen-under-cabinet-led-lighting/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>There is something missing in most kitchens I have seen in my life and it is not a huge free space or a smart refrigerator. It is much simpler than that. I am talking about good lighting. All kitchen that I have used had decent lighting when used during a bright shiny day but was lacking appropriate lighting during a rainy days or nights. Most of then were also missing under cabinet lighting.&lt;/p></description></item><item><title>DIY Custom baby gate</title><link>http://localhost:1313/diy-custom-baby-gate/</link><pubDate>Sun, 03 Aug 2014 20:40:20 +0000</pubDate><guid>http://localhost:1313/diy-custom-baby-gate/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Following the birth of a child and after the celebration is all the stuff you have to buy to protect the house of &amp;ldquo;potential dangers&amp;rdquo;. Quickly, you realize that you need to buy a baby gate.&lt;/p>
+&lt;p>I looked at several models and I have not found a model that can suit my needs and my situation. I needed a baby gate that can:&lt;/p>
+&lt;ul>
+&lt;li>Cover a length of at least 52 inches.&lt;/li>
+&lt;li>Operate at an angle of 41.9 degrees.&lt;/li>
+&lt;li>Attachable to a wall and a stair railing.&lt;/li>
+&lt;li>Non-intrusive (it should not leave any mark on the ramp once removed).&lt;/li>
+&lt;li>Strong enough to withstand a child jumping on it.&lt;/li>
+&lt;/ul>
+&lt;p>Unfortunately, the area to be protected is very large and I have not managed to find a gate that is long enough and solid to block the access to the stairs. This is how I started this project: ​​build my own baby gate.&lt;/p></description></item><item><title>DIY Barrière pour bébé personnalisée</title><link>http://localhost:1313/diy-barriere-pour-bebe-personnalisee/</link><pubDate>Mon, 07 Jul 2014 13:02:30 +0000</pubDate><guid>http://localhost:1313/diy-barriere-pour-bebe-personnalisee/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Ce qui suit la naissance d&amp;rsquo;un enfant après les réjouissances c&amp;rsquo;est tous les trucs qu&amp;rsquo;il faut acheter pour protéger la maison des &amp;ldquo;dangers potentiels&amp;rdquo;. Rapidement, on doit acheter une barrière pour bébé.&lt;/p>
+&lt;p>J&amp;rsquo;ai regardé plusieurs modèles et je n&amp;rsquo;ai pas trouvé un modèle qui puisse convenir à mes besoins et à ma situation soit:&lt;/p>
+&lt;ul>
+&lt;li>Couvrir une longueur d&amp;rsquo;au moins 52 pouces.&lt;/li>
+&lt;li>Fonctionnant à un angle de 41.9 degrés.&lt;/li>
+&lt;li>Pouvant se fixer à un mur et à une rampe d&amp;rsquo;escalier.&lt;/li>
+&lt;li>Non-intrusive (elle ne doit pas laisser de marque sur la rampe une fois enlevée).&lt;/li>
+&lt;li>Suffisamment solide pour résister à un enfant qui saute dessus.&lt;/li>
+&lt;/ul>
+&lt;p>Malheureusement, l&amp;rsquo;espace à protéger est très grand et je n&amp;rsquo;ai pas réussi à trouver une barrière qui soit suffisamment longue et à la fois solide pour bloquer le passage. Ce projet a donc pris naissance et je me suis lancé avec l&amp;rsquo;idée de faire ma propre barrière.&lt;/p></description></item></channel></rss>

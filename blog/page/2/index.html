@@ -1,569 +1,611 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>Blog - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="Blog">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/blog/">
-  <meta property="og:image" content="http://www.end2endzone.com/img/main/logo.jpg">
-
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/blog/">
+<meta property="og:image" content="http://localhost:1313/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-      <a href="http://www.end2endzone.com/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="http://localhost:1313/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
 </header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+</footer>
 </section>
-
-      <main id="site-main">
-        
-  
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-    <p>end2end</p>
-    <p>4-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &lsquo;safe enough&rsquo; for most situations. That is simply not true.</p>
-  </div>
-  
-  <footer>
-    <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<main id="site-main">
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/">csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</a></h2>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-    <p>end2end</p>
-    <p>7-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.</p>
-  </div>
-  
-  <footer>
-    <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<div class="meta">
+<time datetime="2016-08-04 17:30:03 +0000 +0000">August 4, 2016</time>
+<p>end2end</p>
+<p>5-Minute Read</p>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/assemblage-du-planeur-radian-pro/">Déballage et assemblage du Radian Pro – Un planeur hors pair</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2017-05-21 15:26:00 &#43;0000 &#43;0000">May 21, 2017</time>
-    <p>end2end</p>
-    <p>1-Minute Read</p>
-  </div>
 </header>
-
-  <div class="content">
-    <a href="/assemblage-du-planeur-radian-pro/" class="image" style="--bg-image: url('/wp-content/uploads/2017/05/Assemblage-du-planeur-Radian-Pro-Featured-image.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/05/Assemblage-du-planeur-Radian-Pro-Featured-image.jpg" alt="">
-  </a>
-    <p>Voici un autre modèle d&rsquo;avion que j&rsquo;ai assemblé: le planeur Radian Pro de ParkZone.</p>
-<p>C&rsquo;est un excellent appareil. Je le recommande fortement. Lorsque je le pilote, je dois m&rsquo;apporter une chaise afin de m’asseoir parce qu&rsquo;une fois que cet oiseau est dans les airs, il ne veut juste plus redescendre au sol. Il faut s&rsquo;armer de patience.</p>
-<p>Le tout présenté en time lapse.</p>
-  </div>
-  
-  <footer>
-    <a href="/assemblage-du-planeur-radian-pro/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/time-lapse/">time lapse</a></li>
-        
-      
-    </ul>
-  
+<div class="content">
+<a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/" class="image" style="--bg-image:url('/wp-content/uploads/2016/07/csvplot.CarEngineModel.png')">
+<img class="stretchV" src="/wp-content/uploads/2016/07/csvplot.CarEngineModel.png" alt>
+</a>
+<p class="postedit">
+Please note that <strong>csvplot</strong> source code is now moved to GitHub. Source code can be downloaded from the project&rsquo;s <a href="http://github.com/end2endzone/csvplot">GitHub page</a>.
+</p>
+<h1 id="purpose">Purpose</h1>
+<p>I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.</p>
 </div>
-
-  </footer>
-  
+<footer>
+<a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/scripts/">scripts</a></li>
+</ul>
+</div>
+</footer>
 </article>
-
-  
-  <div class="pagination">
-    
-      <a href="/blog/" class="button left"><span>Previous Page</span></a>
-    
-    
-      <a href="/blog/page/3/" class="button right"><span>Next Page</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/">SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-06-10 20:14:19 +0000 +0000">June 10, 2016</time>
+<p>end2end</p>
+<p>7-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="image" style="--bg-image:url('/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>The following article is about my simplest library that I wrote for the arduino: <em>SoftTimers</em>. The <em>SoftTimers</em> arduino library allows one to properly time multiple events and know when each &ldquo;timer&rdquo; expires meaning that an action is required.</p>
+<p>Skip to the <a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/#Download">download section</a> for quick download.</p>
+<p>When I first learned programming the arduino, I learned the &ldquo;<em>hello world</em>&rdquo; of the arduino: turning a LED on and off. As expected, I used <code>delay()</code> to define how long the LED should be on and off.</p>
+</div>
+<footer>
+<a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">libRtttl – A c++ library (with UI) for compressing/optimizing the RTTTL audio format</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-05-28 15:18:35 +0000 +0000">May 28, 2016</time>
+<p>end2end</p>
+<p>8-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/" class="image" style="--bg-image:url('/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>The following article is about another library that I have written: libRtttl is a c++ library for manipulating the RTTTL audio format.</p>
+<p>Skip to the <a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/#Download">download section</a> for quick download.</p>
+<p>See this post for a <a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">quick recall of the RTTTL format</a>.</p>
+<p class="postedit">
+Edit: for a better understanding and examples of what libRTTTL can do, please see this post:
+<a href="/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/">How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</a>.
+</p>
+<h1 id="purpose">Purpose</h1>
+<p>RTTTL songs available on the internet are not optimized for the smallest size. Still they are readable by a human but they are far from optimized for the arduino embedded device. Most RTTTL song can be optimized (without quality loss) and have their size reduced by ~20%. Conversion to binary allows even better compression but it wont be human readable anymore.</p>
+</div>
+<footer>
+<a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rtttl/">rtttl</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl – A feature rich arduino library for playing RTTTL melodies</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-05-21 23:20:34 +0000 +0000">May 21, 2016</time>
+<p>end2end</p>
+<p>10-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/" class="image" style="--bg-image:url('/wp-content/uploads/2016/05/AnyRtttl-arduino-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/05/AnyRtttl-arduino-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available <code>void play_rtttl(char *p)</code> function. The AnyRtttl is a feature rich library which supports all best RTTTL features.</p>
+<p>Skip to the <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Download">download section</a> for quick download.</p>
+<h1 id="purpose">Purpose</h1>
+<p>See this post for a <a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">quick recall of the RTTTL format</a>.</p>
+</div>
+<footer>
+<a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rtttl/">rtttl</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/win32arduino-a-win32-library-that-implements-most-arduino-functions/">win32Arduino: a win32 library that implements most arduino functions</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-05-16 17:15:58 +0000 +0000">May 16, 2016</time>
+<p>end2end</p>
+<p>2-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/win32arduino-a-win32-library-that-implements-most-arduino-functions/" class="image" style="--bg-image:url('/wp-content/uploads/2016/05/Arduino-win32Arduino-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/05/Arduino-win32Arduino-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from <a href="http://github.com/end2endzone/win32Arduino">the project&rsquo;s GitHub page</a>.</p>
+<p>
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt>
+<img src="https://img.shields.io/github/release/end2endzone/win32Arduino.svg" alt>
+<img src="https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true" alt>
+<img src="https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg" alt>
+<img src="https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg" alt>
+</p>
+<p>After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.</p>
+<p>The win32Arduino is a solution to this issue.</p>
+<p>Skip to the <a href="/win32arduino-a-win32-library-that-implements-most-arduino-functions/#Download">download section</a> for quick download.</p>
+</div>
+<footer>
+<a href="/win32arduino-a-win32-library-that-implements-most-arduino-functions/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/">svnpropertylog - A script which finds all revisions where a specific subversion property has changed</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-05-03 16:52:00 +0000 +0000">May 3, 2016</time>
+<p>end2end</p>
+<p>2-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/" class="image" style="--bg-image:url('/wp-content/uploads/2016/05/svnpropertylog-v1.1.29-screenshot.png')">
+<img class="stretchV" src="/wp-content/uploads/2016/05/svnpropertylog-v1.1.29-screenshot.png" alt>
+</a>
+<h1 id="purpose">Purpose</h1>
+<p>The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.</p>
+<p>The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&rsquo;s a &ldquo;<em>show log for subversion properties</em>&rdquo;.</p>
+<p>Skip to the <a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/#Download">download section</a> for quick download.</p>
+<p class="pleasenote">
+Note that <em><strong>svnpropertylog</strong></em> is only available for Windows and has been tested on Windows 7 only.
+</p>
+</div>
+<footer>
+<a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/scripts/">scripts</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/">libMIDI - A C++ open-source library for generating single tone melodies in MIDI format</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-04-24 16:42:27 +0000 +0000">April 24, 2016</time>
+<p>end2end</p>
+<p>3-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/" class="image" style="--bg-image:url('/wp-content/uploads/2016/04/libMidi-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/04/libMidi-cplusplus-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.</p>
+<p>Skip to the <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/#Download">download section</a> for quick download.</p>
+<h1 id="purpose">Purpose</h1>
+<p>I mostly develop on the Windows platform. When I try to generate basic sounds and tone, I use the <a href="http://msdn.microsoft.com/en-ca/library/windows/desktop/ms679277%28v=vs.85%29.aspx">Microsoft Beep function</a>. This API is quite old and is far from accurate when dealing with multiple short duration tones (less than 100ms). Also when you make two consecutive calls to the <code>Beep()</code> function will ear a tick sound between each calls.</p>
+</div>
+<footer>
+<a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/">How to multiplex RC Transmitter switches into a single channel</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-03-30 17:15:24 +0000 +0000">March 30, 2016</time>
+<p>end2end</p>
+<p>25-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/How-to-multiplex-RC-Transmitter-switches-into-a-single-channel.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/How-to-multiplex-RC-Transmitter-switches-into-a-single-channel.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:</p>
+<div class="rc-channels">
+<table>
+<tbody>
+<tr>
+<td>CH 1</td>
+<td>:</td>
+<td>Throttle</td>
+</tr>
+<tr>
+<td>CH 2</td>
+<td>:</td>
+<td>Rudder</td>
+</tr>
+<tr>
+<td>CH 3</td>
+<td>:</td>
+<td>Ailerons</td>
+</tr>
+<tr>
+<td>CH 4</td>
+<td>:</td>
+<td>Elevator</td>
+</tr>
+<tr>
+<td>CH 5</td>
+<td>:</td>
+<td>Flight mode</td>
+</tr>
+<tr>
+<td>CH 6</td>
+<td>:</td>
+<td>???</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following article explains how I manage to solve the issue: <em>How can I control more than one device using a single channel</em>.</p>
+</div>
+<footer>
+<a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/diy/">diy</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+<li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/">RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-03-30 17:05:59 +0000 +0000">March 30, 2016</time>
+<p>end2end</p>
+<p>7-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>The following arduino library was written to use the findings found during the <em><strong><a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values</a></strong></em> article. All results were wrapped into a library for ease of use.</p>
+<p>The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.</p>
+<p>Skip to the <a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/#Download">download section</a> for quick download.</p>
+<h1 id="purpose">Purpose</h1>
+<p>The RcReceiverSignal library allows one to easily configure an input pin to read a PWM signal sent from a RC receiver by attaching a RcReceiverSignal instance to a pin connected the receiver and automatically monitor each pulse sent by the receiver.</p>
+</div>
+<footer>
+<a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+<li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values</a></h2>
+</div>
+<div class="meta">
+<time datetime="2016-03-26 20:47:29 +0000 +0000">March 26, 2016</time>
+<p>end2end</p>
+<p>16-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/Mapping-RC-Transmitter-PWM-signal-to-actual-transmitter-values.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/Mapping-RC-Transmitter-PWM-signal-to-actual-transmitter-values.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>If you ever need to use an RC Transmitter & receiver for a personal project, an easy way to retrieve the signal is to connect the receiver to a micro-controller.</p>
+<p>However, decoding the signal to get actual transmitter values is not as easy as it sounds. You need to know the correct encoding and searching on the internet about the subject gives erratic results.</p>
+<p>Here is the full article that explains how to correctly map an RC Transmitter PWM signal to actual transmitter values.</p>
+</div>
+<footer>
+<a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+<li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<div class="pagination">
+<a href="/blog/" class="button left"><span>Previous Page</span></a>
+<a href="/blog/page/3/" class="button right"><span>Next Page</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

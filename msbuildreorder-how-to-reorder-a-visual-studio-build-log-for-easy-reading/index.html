@@ -1,330 +1,169 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="MSBuildReorder: How to reorder a Visual Studio build log for easy reading">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading&amp;url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;description=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/">MSBuildReorder: How to reorder a Visual Studio build log for easy reading</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2015-01-31 01:27:33 &#43;0000 &#43;0000">January 31, 2015</time>
-    <p>end2end</p>
-    <p>10-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading&amp;url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;description=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/" class="image" style="--bg-image: url('/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png');">
-    <img class="stretchV" src="/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#msbuildreorder">MSBuildReorder</a></li>
-    <li><a href="#screenshot">Screenshot</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="#sample">Sample</a></li>
-    <li><a href="#compatible-with">Compatible with</a></li>
-    <li><a href="#minimum-system-requirements">Minimum system requirements</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#history-of-changes">History of changes</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading&amp;url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;description=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/">MSBuildReorder: How to reorder a Visual Studio build log for easy reading</a></h2>
 </div>
-
-        
-		
-        <h1 id="msbuildreorder">MSBuildReorder</h1>
+<div class="meta">
+<time datetime="2015-01-31 01:27:33 +0000 +0000">January 31, 2015</time>
+<p>end2end</p>
+<p>9-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading&amp;url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;title=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f&amp;description=MSBuildReorder%3a%20How%20to%20reorder%20a%20Visual%20Studio%20build%20log%20for%20easy%20reading" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fmsbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/" class="image" style="--bg-image:url('/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png')">
+<img class="stretchV" src="/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#msbuildreorder">MSBuildReorder</a></li>
+<li><a href="#screenshot">Screenshot</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#sample">Sample</a></li>
+<li><a href="#compatible-with">Compatible with</a></li>
+<li><a href="#minimum-system-requirements">Minimum system requirements</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#history-of-changes">History of changes</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="msbuildreorder">MSBuildReorder</h1>
 <p class="postedit">
-  Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from <a href="http://github.com/end2endzone/msbuildreorder">the project&rsquo;s GitHub page</a>.
+Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from <a href="http://github.com/end2endzone/msbuildreorder">the project&rsquo;s GitHub page</a>.
 </p>
-<p><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""><img src="https://img.shields.io/github/release/end2endzone/msbuildreorder.svg" alt=""><img src="https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true" alt=""><img src="https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg" alt=""><img src="https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg" alt=""></p>
-<p>MSBuildReorder is a tool for &ldquo;reordering&rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.</p>
-<p>Building a solution that has multiple projects can quickly become bloated with too many lines that are not related to each other. For this reason, finding the actual cause of a build fail is harder than it should be.  MSBuildReorder is able to read the log and reorder the projects in a sequential order.</p>
+<p>
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt>
+<img src="https://img.shields.io/github/release/end2endzone/msbuildreorder.svg" alt>
+<img src="https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true" alt>
+<img src="https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg" alt>
+<img src="https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg" alt>
+</p>
+<p>MSBuildReorder is a tool for &ldquo;reordering&rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.</p>
+<p>Building a solution that has multiple projects can quickly become bloated with too many lines that are not related to each other. For this reason, finding the actual cause of a build fail is harder than it should be. MSBuildReorder is able to read the log and reorder the projects in a sequential order.</p>
 <p>It&rsquo;s main features are:</p>
 <ul>
 <li>Supports both msbuild and Visual Studio 2008 (and over) build logs.</li>
@@ -332,18 +171,22 @@
 <li>Allows quicker identification of the project that caused an error.</li>
 <li>Command line support.</li>
 </ul>
-<p>**Usage:<br /> **msbuildreorder [input file] [output file]</p>
+<p><strong>Usage:</strong> msbuildreorder [input file] [output file]</p>
 <ul>
 <li><strong>input file</strong>: Path to the input build log file to reorder.</li>
 <li><strong>output file</strong>: Path of the output reordered build log file.</li>
 </ul>
 <h1 id="screenshot">Screenshot</h1>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/01/msbuildreorder-screenshot.png"><img src="http://www.end2endzone.com/wp-content/uploads/2015/01/msbuildreorder-screenshot.png" alt="msbuildreorder screenshot"></a></p>
-<p>msbuildreorder screenshot</p>
+<p><a href="/wp-content/uploads/2015/01/msbuildreorder-screenshot.png">
+<figure>
+<img src="/wp-content/uploads/2015/01/msbuildreorder-screenshot-300x130.png" alt="msbuildreorder screenshot">
+<figcaption>msbuildreorder screenshot</figcaption>
+</figure>
+</a></p>
 <h1 id="download">Download</h1>
 <p>You can download MSBuildReorder by clicking on the following link:</p>
 <p class="pleasenote">
-  Please note that download links are now deprecated. Binary version of msbuildreorder can be downloaded directly from <a href="http://github.com/end2endzone/msbuildreorder/releases">the project&rsquo;s GitHub page</a>.
+Please note that download links are now deprecated. Binary version of msbuildreorder can be downloaded directly from <a href="http://github.com/end2endzone/msbuildreorder/releases">the project&rsquo;s GitHub page</a>.
 </p>
 <h1 id="sample">Sample</h1>
 <p>The following shows a multi-process build log compiling <a href="http://code.google.com/p/protobuf/">libprotobuf</a>. MSBuildReorder can be used to reorder the multi-threaded log on a <a href="http://en.wikipedia.org/wiki/Continuous_integration">Continuous Integration (CI)</a> server.</p>
@@ -853,275 +696,160 @@
 <li>5 Mb free disk space</li>
 </ul>
 <h1 id="license">License</h1>
-<p>MSBuildReorder is being distributed as Freeware for personal, commercial use, non-profit organization, and educational purpose. It may be included with CD-ROM/DVD-ROM distributions. You are NOT allowed to make a charge for distributing this Software (either for profit or merely to recover your media and distribution costs) whether as a stand-alone product, or as part of a compilation or anthology, nor to use it for supporting your business or customers. It may be distributed freely on any website or through any other distribution mechanism, as long as no part of it is changed in any way.</p>
-<p>The full license is available <a href="http://www.end2endzone.com/wp-content/uploads/2015/01/MSBuildReorder-EULA.htm">here</a>.</p>
+<p>Copyright (C) 2015 Antoine Beauchamp</p>
+<p>MSBuildReorder is licensed under the MIT License:</p>
+<p>A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<p>The full license is available <a href="https://github.com/end2endzone/bin2cpp/blob/master/LICENSE">here</a>.</p>
 <h1 id="history-of-changes">History of changes</h1>
 <p>Version 1.0 - First public release</p>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/msbuild/">msbuild</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/visual-studio/">visual studio</a></li>
-        
-      
-    </ul>
-  
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='fa3088ae25003d09176a0cac18374013'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/" class="button left"><span>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</span></a>
-    
-    
-      <a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/" class="button right"><span>OfficeReadOnly: How to open Microsoft Office documents as read-only</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+<li><a class="article-terms-link" href="/tags/msbuild/">msbuild</a></li>
+<li><a class="article-terms-link" href="/tags/visual-studio/">visual studio</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='fa3088ae25003d09176a0cac18374013'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/" class="button left"><span>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</span></a>
+<a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/" class="button right"><span>OfficeReadOnly: How to open Microsoft Office documents as read-only</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

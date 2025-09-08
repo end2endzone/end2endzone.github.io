@@ -1,340 +1,173 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-<title>BitReader – An arduino library for reading &amp; writing data as chunks of bits - end2end zone</title>
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<title>BitReader – An arduino library for reading & writing data as chunks of bits - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
-<meta property="og:title" content="BitReader – An arduino library for reading &amp; writing data as chunks of bits">
+<meta property="og:title" content="BitReader – An arduino library for reading & writing data as chunks of bits">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits&amp;url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;description=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">BitReader – An arduino library for reading &amp; writing data as chunks of bits</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-03-26 00:23:05 &#43;0000 &#43;0000">March 26, 2016</time>
-    <p>end2end</p>
-    <p>7-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits&amp;url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;description=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/" class="image" style="--bg-image: url('/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#purpose">Purpose</a></li>
-    <li><a href="#library-features">Library features</a></li>
-    <li><a href="#usage">Usage</a>
-      <ol>
-        <li><a href="#making-text-strings-shorter">Making text strings shorter</a></li>
-        <li><a href="#shorter-structures-definition">Shorter structures definition</a></li>
-        <li><a href="#make-data-arrays-much-shorter">Make data arrays much shorter</a></li>
-        <li><a href="#demo">Demo</a></li>
-      </ol>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#download">Download</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits&amp;url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;description=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">BitReader – An arduino library for reading & writing data as chunks of bits</a></h2>
 </div>
-
-        
-		
-        <h1 id="introduction">Introduction</h1>
+<div class="meta">
+<time datetime="2016-03-26 00:23:05 +0000 +0000">March 26, 2016</time>
+<p>end2end</p>
+<p>6-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits&amp;url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;title=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f&amp;description=BitReader%20%e2%80%93%20An%20arduino%20library%20for%20reading%20%26%20writing%20data%20as%20chunks%20of%20bits" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fbitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-BitReader-library.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#library-features">Library features</a></li>
+<li><a href="#usage">Usage</a>
+<ol>
+<li><a href="#making-text-strings-shorter">Making text strings shorter</a></li>
+<li><a href="#shorter-structures-definition">Shorter structures definition</a></li>
+<li><a href="#make-data-arrays-much-shorter">Make data arrays much shorter</a></li>
+<li><a href="#demo">Demo</a></li>
+</ol>
+</li>
+<li><a href="#license">License</a></li>
+<li><a href="#download">Download</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>Here is another arduino library that I have written.</p>
-<p>As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp; CPU is cheap. If your application is struggling to run on today&rsquo;s computer, it will run smoothly in 1-2 years.</p>
+<p>As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory & CPU is cheap. If your application is struggling to run on today&rsquo;s computer, it will run smoothly in 1-2 years.</p>
 <p>As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.</p>
 <p>BitReader is an arduino library that allows one to read or write data as chunks of bits.</p>
 <p>Skip to the <a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/#Download">download section</a> for quick download.</p>
 <h1 id="purpose">Purpose</h1>
 <p>This BitReader library allows one to read data which is not necessarily aligned on 8, 16 or 32 bits structures.</p>
 <p class="pleasenote">
-  Note that since you are encoding data in binary format (bits), the trade-off is that more code is required to process/decode the data and there is a small performance delay required for decoding the data
+Note that since you are encoding data in binary format (bits), the trade-off is that more code is required to process/decode the data and there is a small performance delay required for decoding the data
 </p>
-<p>The library is useful for storing or decoding data in binary format using the minimum amount of bits. For examples&hellip;</p>
+<p>The library is useful for storing or decoding data in binary format using the minimum amount of bits. For examples&mldr;</p>
 <ul>
 <li><a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/#Making_text_strings_shorter">Shorter text strings</a></li>
 <li><a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/#Shorter_structuresdefinition">Shorter structures</a></li>
@@ -348,7 +181,7 @@
 <li>Handles bit <a href="https://en.wikipedia.org/wiki/Serialization">serialization </a>data to/from buffers.</li>
 </ul>
 <h1 id="usage">Usage</h1>
-<p>Create an instance of <em>BitReader</em>, <em>BitWriter</em> or <em>BitAddress</em> depending on the following optimization switches:</p>
+<p>Create an instance of <em>BitReader</em>, <em>BitWriter</em> or <em>BitAddress</em> depending on the following optimization switches:</p>
 <ul>
 <li>USE_BITADDRESS_SETTER_GETTER</li>
 <li>USE_SINGLEBIT_MACROS</li>
@@ -357,8 +190,8 @@
 <p>Then assign a reading or writing buffer using the <em>setBuffer()</em> method.</p>
 <p>Then call the <em>write()</em> method for writing bits to the assigned buffer or call the <em>read()</em> method for reading bits from the assigned buffer. Each method allows one to specify the amount of bits to read or write.</p>
 <h2 id="making-text-strings-shorter">Making text strings shorter</h2>
-<p>Storing words composed of only lower case letters, spaces and dots requires only 5 bits per characters instead of 8 bits (which saves 3 bits per character). The phase &ldquo;<em>hello my name is antoine. i wrote the bitreader library.</em>&rdquo; takes 56 bytes as an array of char but uses 35 bytes as 5 bits chunks.</p>
-<p>Allow 6 bits per characters and you can also include capital letters and numbers: &ldquo;<em>Hello my name is Antoine. I wrote the BitReader library when I was 34 years old.</em>&rdquo; takes 80 bytes as an array of char but only requires 60 bytes as 6 bits chunks.</p>
+<p>Storing words composed of only lower case letters, spaces and dots requires only 5 bits per characters instead of 8 bits (which saves 3 bits per character). The phase <code>hello my name is antoine. i wrote the bitreader library.</code> takes 56 bytes as an array of char but uses 35 bytes as 5 bits chunks.</p>
+<p>Allow 6 bits per characters and you can also include capital letters and numbers: <code>Hello my name is Antoine. I wrote the BitReader library when I was 34 years old.</code> takes 80 bytes as an array of char but only requires 60 bytes as 6 bits chunks.</p>
 <h2 id="shorter-structures-definition">Shorter structures definition</h2>
 <p>The library is particularly useful for dealing with <a href="http://en.cppreference.com/w/cpp/language/bit_field">bit-field structures</a>. Consider the following:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">Person</span> <span class="p">{</span>
@@ -381,9 +214,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="kt">uint8_t</span> <span class="nl">birthMonth</span> <span class="p">:</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">//from 1 to 12
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="kt">uint8_t</span> <span class="nl">maried</span> <span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">//true or false
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="c1">//uint8_t : 3; //birthYear (low)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="c1">//uint8_t : 8; //birthYear (high)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="c1">//uint8_t : 8; //birthYear (high)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">};</span>
-</span></span><span class="line"><span class="cl">   <span class="k">struct</span> <span class="err">//</span><span class="nc">aligned</span> <span class="n">on</span> <span class="mi">32</span> <span class="n">bits</span>
+</span></span><span class="line"><span class="cl">   <span class="k">struct</span> <span class="err">//</span><span class="nc">aligned</span> <span class="n">on</span> <span class="mi">32</span> <span class="n">bits</span>
 </span></span><span class="line"><span class="cl">   <span class="p">{</span>
 </span></span><span class="line"><span class="cl">     <span class="kt">uint32_t</span> <span class="nl">padding1</span> <span class="p">:</span><span class="mi">13</span><span class="p">;</span> <span class="c1">//padding for birthDay, children, birthMonth, maried
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="kt">uint32_t</span> <span class="nl">birthYear</span> <span class="p">:</span><span class="mi">12</span><span class="p">;</span> <span class="c1">//allows years from 0 to 4095.
@@ -391,33 +224,34 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">};</span>
 </span></span><span class="line"><span class="cl"> <span class="p">};</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span></code></pre></div><p>The <em>Person2</em> structure contains the same information as the <em>Person</em> structure but instead of using 128 bits in memory it only requires 105 bits (80+5+3+4+1+12).</p>
+</span></span></code></pre></div><p>The <em>Person2</em> structure contains the same information as the <em>Person</em> structure but instead of using 128 bits in memory it only requires 105 bits (80+5+3+4+1+12)</p>
 <p>A <em>Person</em> could also be defined with masks:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">Person3</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="kt">uint8_t</span> <span class="n">name</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl">  <span class="kt">uint32_t</span> <span class="n">buffer</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_BIRTHDAY</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">4</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">3</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">2</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">1</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">0</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_CHILDREN</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">7</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">6</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">5</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_BIRTHMONTH</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">11</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">10</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">9</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">8</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_MARIED</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">12</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_BIRTHYEAR</span> <span class="o">=</span>  <span class="p">(</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">24</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">23</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">22</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">21</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">20</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">19</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">18</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">17</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">16</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">15</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">14</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">13</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_PADDING</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">31</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">30</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">29</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">28</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">27</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">26</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">25</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_BIRTHDAY</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">4</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">3</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">2</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">1</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_CHILDREN</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">7</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">6</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_BIRTHMONTH</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">11</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">10</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">9</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">8</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_MARIED</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">12</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_BIRTHYEAR</span> <span class="o">=</span>  <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">24</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">23</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">22</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">21</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">20</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">19</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">18</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">17</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">16</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">15</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">14</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">13</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">MASK_PADDING</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">31</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">30</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">29</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">28</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">27</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">26</span> <span class="o">|</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">25</span><span class="p">);</span>
 </span></span></code></pre></div><p>In the last 2 scenarios (<em>Person2</em> and <em>Person3</em>), the BitReader library allows one to decode a <em>Person</em> structure from a binary buffer.</p>
 <h2 id="make-data-arrays-much-shorter">Make data arrays much shorter</h2>
 <p>Consider an algorithm that plays a <a href="https://en.wikipedia.org/wiki/Morse_code">Morse code</a>. Morse code defines 3 symbols that can be played: dots, dashes and pauses.</p>
-<p>For example, the following string &ldquo;<em>Hello my name is Antoine. I wrote the BitReader library when I was 34 years old.</em>&rdquo; (56 bytes) translate into Morse code as</p>
+<p>For example, the following string <code>Hello my name is Antoine. I wrote the BitReader library when I was 34 years old.</code> (56 bytes) translate into Morse code as</p>
 <pre tabindex="0"><code>.... . .-.. .-.. --- / -- -.-- / -. .- -- . / .. ... / .- -. 
-- --- .. -. . .-.-.- / .. / .-- .-. --- - . / - .... . / -... 
+* --- .. -. . .-.-.- / .. / .-- .-. --- - . / - .... . / -... 
 .. - .-. . .- -.. . .-. / .-.. .. -... .-. .- .-. -.-- / .-- 
 .... . -. / .. / .-- .- ... / ...-- ....- / -.-- . .- .-. 
 ... / --- .-.. -.. .-.-.-
-</code></pre><p>according to <a href="http://morsecode.scphillips.com/translator.html">this translator</a>. The whole code takes 267 bytes in memory. However, using 2 bits per code, the whole string can be encoded in a char buffer with only 534 bits (~67 bytes).</p>
-<p>The same concept applies to all numeric array.</p>
+</code></pre><p>according to <a href="http://morsecode.scphillips.com/translator.html">this translator</a>. The whole code takes 267 bytes in memory. However, using 2 bits per code, the whole string can be encoded in a char buffer with only 534 bits (~67 bytes). The same concept applies to all numeric array.</p>
 <h2 id="demo">Demo</h2>
-<p>The following demo show how to use the library:<br>
-(download the
-<a href="http://www.end2endzone.com/download/1691/" title="Version 1.0.70"> BitReader v1.0.70 benchmark demo.ino (596 downloads) </a>)</p>
+<p>The following demo show how to use the library:</p>
+<a href="/wp-content/uploads/2016/03/BitReader-v1.0.70-benchmark-demo.ino" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+BitReader v1.0.70 benchmark demo.ino
+</a>
 <pre tabindex="0"><code>#include &lt;bitreader.h&gt;
 
 /**
@@ -515,278 +349,163 @@ void loop() {
 
 </code></pre>
 <h1 id="license">License</h1>
-<p>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.</p>
-<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License (LGPL-3.0) for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA</p>
-<p><strong>DISCLAIMER:</strong><br>
-This software is furnished &ldquo;as is&rdquo;, without technical support, and with no warranty, express or implied, as to its usefulness for any purpose.</p>
+<p>Copyright (C) 2016 Antoine Beauchamp</p>
+<p>This library is licensed under the MIT License:</p>
+<p>A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<p>The full license is available <a href="https://github.com/end2endzone/bin2cpp/blob/master/LICENSE">here</a>.</p>
 <h1 id="download">Download</h1>
 <p>You can download the BitReader arduino library by clicking on the following link:</p>
-<pre><code>	[ Download &quot;BitReader v1.1.110 arduino library&quot; BitReader-v1.1.110.zip - Downloaded 404 times - 10 KB ](http://www.end2endzone.com/download/1688/)
-</code></pre>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<a href="https://github.com/end2endzone/BitReader/archive/refs/tags/1.3.0.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+BitReader-v1.1.110.zip
+</a>
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='13fbb3e77260b25e99fe90114f8576d4'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" class="button left"><span>Mapping RC Transmitter PWM signal to actual transmitter values</span></a>
-    
-    
-      <a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/" class="button right"><span>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='13fbb3e77260b25e99fe90114f8576d4'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" class="button left"><span>Mapping RC Transmitter PWM signal to actual transmitter values</span></a>
+<a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/" class="button right"><span>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

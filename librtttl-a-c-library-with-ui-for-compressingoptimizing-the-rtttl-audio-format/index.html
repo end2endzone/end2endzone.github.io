@@ -1,401 +1,237 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-<title>libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format - end2end zone</title>
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<title>libRtttl – A c++ library (with UI) for compressing/optimizing the RTTTL audio format - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
-<meta property="og:title" content="libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format">
+<meta property="og:title" content="libRtttl – A c++ library (with UI) for compressing/optimizing the RTTTL audio format">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format&amp;url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;description=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-05-28 15:18:35 &#43;0000 &#43;0000">May 28, 2016</time>
-    <p>end2end</p>
-    <p>9-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format&amp;url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;description=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/" class="image" style="--bg-image: url('/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#purpose">Purpose</a></li>
-    <li><a href="#library">Library</a>
-      <ol>
-        <li><a href="#functionalities--features">Functionalities / Features</a></li>
-        <li><a href="#requirements">Requirements</a>
-          <ol>
-            <li><a href="#librtttl">libRtttl</a></li>
-            <li><a href="#rtttloptimizergui">rtttlOptimizerGui</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-    <li><a href="#usage">Usage</a>
-      <ol>
-        <li><a href="#optimize">Optimize</a></li>
-        <li><a href="#play-rtttl">Play RTTTL</a></li>
-        <li><a href="#rtttl-to-midi">RTTTL to MIDI</a></li>
-        <li><a href="#tone-to-rtttl">tone() to RTTTL</a></li>
-        <li><a href="#rtttl-to-tone">RTTTL to tone()</a></li>
-        <li><a href="#rtttl-to-binary-10-bits">RTTTL to Binary (10 bits)</a></li>
-        <li><a href="#rtttl-to-binary-16-bits">RTTTL to Binary (16 bits)</a></li>
-      </ol>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#download">Download</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format&amp;url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;description=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">libRtttl – A c++ library (with UI) for compressing/optimizing the RTTTL audio format</a></h2>
 </div>
-
-        
-		
-        <h1 id="introduction">Introduction</h1>
+<div class="meta">
+<time datetime="2016-05-28 15:18:35 +0000 +0000">May 28, 2016</time>
+<p>end2end</p>
+<p>8-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format&amp;url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;title=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f&amp;description=libRtttl%20%e2%80%93%20A%20c%2b%2b%20library%20%28with%20UI%29%20for%20compressing%2foptimizing%20the%20RTTTL%20audio%20format" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2flibrtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/" class="image" style="--bg-image:url('/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/05/libRtttl-cplusplus-library.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#library">Library</a>
+<ol>
+<li><a href="#functionalities--features">Functionalities / Features</a></li>
+<li><a href="#requirements">Requirements</a>
+<ol>
+<li><a href="#librtttl">libRtttl</a></li>
+<li><a href="#rtttloptimizergui">rtttlOptimizerGui</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#usage">Usage</a>
+<ol>
+<li><a href="#optimize">Optimize</a></li>
+<li><a href="#play-rtttl">Play RTTTL</a></li>
+<li><a href="#rtttl-to-midi">RTTTL to MIDI</a></li>
+<li><a href="#tone-to-rtttl">tone() to RTTTL</a></li>
+<li><a href="#rtttl-to-tone">RTTTL to tone()</a></li>
+<li><a href="#rtttl-to-binary-10-bits">RTTTL to Binary (10 bits)</a></li>
+<li><a href="#rtttl-to-binary-16-bits">RTTTL to Binary (16 bits)</a></li>
+</ol>
+</li>
+<li><a href="#license">License</a></li>
+<li><a href="#download">Download</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>The following article is about another library that I have written: libRtttl is a c++ library for manipulating the RTTTL audio format.</p>
 <p>Skip to the <a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/#Download">download section</a> for quick download.</p>
 <p>See this post for a <a href="/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">quick recall of the RTTTL format</a>.</p>
 <p class="postedit">
-  Edit: for a better understanding and examples of what libRTTTL can do, please see this post: <strong><a href="http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/" title="Edit “How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl”">How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</a>.</strong>
+Edit: for a better understanding and examples of what libRTTTL can do, please see this post:
+<a href="/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/">How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</a>.
 </p>
 <h1 id="purpose">Purpose</h1>
 <p>RTTTL songs available on the internet are not optimized for the smallest size. Still they are readable by a human but they are far from optimized for the arduino embedded device. Most RTTTL song can be optimized (without quality loss) and have their size reduced by ~20%. Conversion to binary allows even better compression but it wont be human readable anymore.</p>
-<p>The library also allows one to convert an RTTTL song to hardcoded function calls (<code>tone()</code> and <code>delay()</code> calls). This is really useful if your dynamic memory is almost completely full and you would like to move the load from dynamic memory to program storage space.</p>
-<p>The UI (rtttlOptimizerGui) also features a basic RTTTL player. The quality of the playback is limited but it allows one to prove that a compression did not changed the song&rsquo;s melody.</p>
+<p>The library also allows one to convert an RTTTL song to hardcoded function calls (<code>tone()</code> and <code>delay()</code> calls). This is really useful if your <em>dynamic memory</em> is almost completely full and you would like to move the load from <em>dynamic memory</em> to <em>program storage space</em>.</p>
+<p>The UI (rtttlOptimizerGui) also features a basic RTTTL player. The quality of the playback is limited but it allows one to prove that a compression did not changed the song&rsquo;s melody.</p>
 <h1 id="library">Library</h1>
 <h2 id="functionalities--features">Functionalities / Features</h2>
 <p>Possible use are:</p>
 <ul>
 <li>Optimize an existing RTTTL melodies.</li>
-</ul>
-<li style="text-align: left;">
-  Convert RTTTL melodies to other format: <li>
-      MIDI.
-    </li>
-    * Arduino `tone()` and `delay()` function calls.
-    * Binary format (10 bits per note) for maximum compression (minimum size).
-    * Binary format (16 bits per note) for quick note offset addressing and minimum code footprint.
-</li>
+<li>Convert RTTTL melodies to other format:
 <ul>
-<li>Convert arduino <code>tone()</code> and <code>delay()</code> function calls back to a valid RTTTL melody.</li>
+<li>MIDI.</li>
+<li>Arduino <code>tone()</code> and <code>delay()</code> function calls.</li>
+<li>Binary format (10 bits per note) for maximum compression (minimum size).</li>
+<li>Binary format (16 bits per note) for quick note offset addressing and minimum code footprint.</li>
+</ul>
+</li>
+<li>Convert arduino <code>tone()</code> and <code>delay()</code> function calls back to a valid RTTTL melody.</li>
 <li>Allow relaxed RTTTL settings for easier conversions.</li>
 </ul>
 <p class="pleasenote">
-  Note that RTTTL binary format requires an external arduino library for playback. The <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl library</a> supports all common RTTTL format including the binary format generated by this library.
+Note that RTTTL binary format requires an external arduino library for playback. The <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl library</a> supports all common RTTTL format including the binary format generated by this library.
 </p>
 <h2 id="requirements">Requirements</h2>
 <p>The library has some compilation requirements and library dependencies which are:</p>
 <h3 id="librtttl">libRtttl</h3>
 <ul>
 <li>Only Visual Studio 2008 projects files are available. Files can be manually moved to other platforms or IDE as required. Supporting other compilers is not currently planned.</li>
-<li>Requires code from <a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">BitReader</a> and <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> arduino libraries, <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/">libMidi</a> and <a href="/win32arduino-a-win32-library-that-implements-most-arduino-functions/">win32Arduino</a> win32 library which are all already included in source code.</li>
+<li>Requires code from <a href="/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/">BitReader</a> and <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> arduino libraries, <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/">libMidi</a> and <a href="/win32arduino-a-win32-library-that-implements-most-arduino-functions/">win32Arduino</a> win32 library which are all already included in source code.</li>
 <li>The <a href="http://github.com/google/googletest">Google Test</a> v1.6 library is required for running test cases.</li>
 </ul>
 <h3 id="rtttloptimizergui">rtttlOptimizerGui</h3>
 <ul>
-<li>Requires the <a href="http://www.wxwidgets.org/">wxWidgets Cross-Platform GUI Library</a> v2.8.12 for compiling.</li>
-<li>The UI design files must be edited with <a href="http://sourceforge.net/projects/wxformbuilder/">wxFormBuilder</a>  v3.0.57 (a RAD tool for wxWidgets GUI design). This tools is not required for compilation.</li>
-<li><a href="http://sourceforge.net/projects/nsis/">NSIS: Nullsoft Scriptable Install System</a> is required for generating the installation package.</li>
-<li>The Play RTTTL &amp; RTTTL 2 MIDI functionalities require the Windows platform for runtime.</li>
+<li>Requires the <a href="http://www.wxwidgets.org/">wxWidgets Cross-Platform GUI Library</a> v2.8.12 for compiling.</li>
+<li>The UI design files must be edited with <a href="http://sourceforge.net/projects/wxformbuilder/">wxFormBuilder</a> v3.0.57 (a RAD tool for wxWidgets GUI design). This tools is not required for compilation.</li>
+<li><a href="http://sourceforge.net/projects/nsis/">NSIS: Nullsoft Scriptable Install System</a> is required for generating the installation package.</li>
+<li>The <span class="windows-button3d">Play RTTTL</span> & <span class="windows-button3d">RTTTL 2 MIDI</span> functionalities require the Windows platform for runtime.</li>
 <li>The code uses some compiler-dependent instructions for debugging the UI under Windows.</li>
 <li>All non-portable code is protected with <code>#ifdef _WIN32</code> to be cross-platform friendly.</li>
 </ul>
 <h1 id="usage">Usage</h1>
 <p>All functionalities of the library are available through the UI.</p>
 <p>Start the UI by launching rtttlOptimizerGui.exe.</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2016/04/rtttlOptimizerGui-with-default-options.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2016/04/rtttlOptimizerGui-with-default-options.jpg" alt="rtttlOptimizerGui with default options"></a></p>
-<p>rtttlOptimizerGui with default options</p>
-<p>Copy &amp; paste the input data in the Command Input text area. Click on one of the available command buttons. The output result will be displayed in the Command Output area.</p>
+<p><a href="/wp-content/uploads/2016/04/rtttlOptimizerGui-with-default-options.jpg">
+<figure>
+<img src="/wp-content/uploads/2016/04/rtttlOptimizerGui-with-default-options.jpg" alt="rtttlOptimizerGui with default options">
+<figcaption>rtttlOptimizerGui with default options</figcaption>
+</figure>
+</a></p>
+<p>Copy & paste the input data in the <em>Command Input</em> text area. Click on one of the available command buttons. The output result will be displayed in the <em>Command Output</em> area.</p>
 <h2 id="optimize">Optimize</h2>
-<p>Copy &amp; paste a valid song in RTTTL format in the Command Input section.<br>
-Press the Optimize button to compress the RTTTL code to its shortest form.</p>
+<p>Copy & paste a valid song in RTTTL format in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">Optimize</span> button to compress the RTTTL code to its shortest form.</p>
 <p>During optimization, the library will convert the input RTTTL song to &ldquo;<em>raw</em>&rdquo; data and re-encode the result back to RTTTL using all possible combinations of default duration, default octave and BPM (Beats per minute).</p>
-<p>From all combination possibilities, the library will select the shortest one. For example, the following RTTTL code from _The Legend of Zelda _:</p>
+<p>From all combination possibilities, the library will select the shortest one. For example, the following RTTTL code from <em>The Legend of Zelda</em> :</p>
 <pre tabindex="0"><code>Zelda1:d=4,o=5,b=125:a#,f.,8a#,16a#,16c6,16d6,16d#6,2f6,
 8p,8f6,16f.6,16f#6,16g#.6,2a#.6,16a#.6,16g#6,16f#.6,
 8g#.6,16f#.6,2f6,f6,8d#6,16d#6,16f6,2f#6,8f6,8d#6,8c#6,
@@ -414,20 +250,20 @@ f#6,f6,2c#6,a#,c6,16d6,2e6,g6,8f6,16f,16f,8f,16f,16f,
 2f,1c#,2a#5,2c,d,1e,2g,4f,f5,f5,4f5,2p,1f5,f5,4f5,f5,f5,4f5,4f5
 </code></pre><p>which reduces the original code length by 89 bytes (from 446 bytes to 357 bytes), that is a 19.95% size reduction.</p>
 <h2 id="play-rtttl">Play RTTTL</h2>
-<p>Copy &amp; paste a valid song in RTTTL format in the Command Input section.<br>
-Press the Play RTTTL button to play the melody.</p>
+<p>Copy & paste a valid song in RTTTL format in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">Play RTTTL</span> button to play the melody.</p>
 <p class="pleasenote">
-  Note that application will momentary freeze during the playback. The application will respond again once the melody is done playing.
+Note that application will momentary freeze during the playback. The application will respond again once the melody is done playing.
 </p>
 <h2 id="rtttl-to-midi">RTTTL to MIDI</h2>
-<p>Copy &amp; paste a valid song in RTTTL format in the Command Input section.<br>
-Press the RTTTL 2 MIDI button to convert the melody to the MIDI sound format and automatically play the melody.</p>
+<p>Copy & paste a valid song in RTTTL format in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">RTTTL 2 MIDI</span> button to convert the melody to the MIDI sound format and automatically play the melody.</p>
 <p class="pleasenote">
-  Note that MIDI sound format offers much better playback capabilities and sound quality than beeping each tone. See my post about my MIDI library for more details: <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/">libMIDI - A C++ open-source library for generating single tone melodies in MIDI format</a>.
+Note that MIDI sound format offers much better playback capabilities and sound quality than beeping each tone. See my post about my MIDI library for more details: <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/">libMIDI - A C++ open-source library for generating single tone melodies in MIDI format</a>.
 </p>
 <h2 id="tone-to-rtttl">tone() to RTTTL</h2>
-<p>Copy &amp; paste a valid song in arduino code (<code>tone()</code> and <code>delay()</code> function calls) in the Command Input section.<br>
-Press the tone() 2 RTTTL button to encode the melody into RTTTL.</p>
+<p>Copy & paste a valid song in arduino code (<code>tone()</code> and <code>delay()</code> function calls) in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">tone() 2 RTTTL</span> button to encode the melody into RTTTL.</p>
 <p>For example, the following arduino code:</p>
 <pre tabindex="0"><code>void playArkanoid(int pin) {
   tone(pin, 1568, 214);
@@ -452,14 +288,14 @@ Press the tone() 2 RTTTL button to encode the melody into RTTTL.</p>
 }
 </code></pre><p>is encoded into the following RTTTL code:</p>
 <pre tabindex="0"><code>unknown:d=8,o=6,b=140:g,16p,16g.,2a#,32p,a,g,f,a,2g
-</code></pre><p>This feature is useful for moving data from program storage space to dynamic memory.</p>
+</code></pre><p>This feature is useful for moving data from <em>program storage space</em> to <em>dynamic memory</em>.</p>
 <h2 id="rtttl-to-tone">RTTTL to tone()</h2>
-<p>Copy &amp; paste a valid song in RTTTL format in the Command Input section.<br>
-Press the RTTTL 2 tone() button to decode the input song to &ldquo;<em>raw</em>&rdquo; data (note with frequency and duration) and generate the arduino code required to play the song.</p>
-<p>This process is really useful if your dynamic memory is almost completely full and you would like to move the load from dynamic memory to program storage space.</p>
-<p>For instance, the RTTTL code from <em>Super Mario Bros. - 1-up sound</em> :</p>
-<p><code>mario1up:d=16,o=7,b=180:e.6,g.6,e.,c.,d.,g.</code></p>
-<p>generates the following arduino code:</p>
+<p>Copy & paste a valid song in RTTTL format in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">RTTTL 2 tone()</span> button to decode the input song to &ldquo;<em>raw</em>&rdquo; data (note with frequency and duration) and generate the arduino code required to play the song.</p>
+<p>This process is really useful if your <em>dynamic memory</em> is almost completely full and you would like to move the load from <em>dynamic memory</em> to <em>program storage space</em>.</p>
+<p>For instance, the RTTTL code from <em>Super Mario Bros. - 1-up sound</em> :</p>
+<pre tabindex="0"><code>mario1up:d=16,o=7,b=180:e.6,g.6,e.,c.,d.,g.
+</code></pre><p>generates the following arduino code:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">playMario1up</span><span class="p">(</span><span class="kt">int</span> <span class="n">pin</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">tone</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="mi">1319</span><span class="p">,</span> <span class="mi">124</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">125</span><span class="p">);</span>
@@ -476,10 +312,10 @@ Press the RTTTL 2 tone() button to decode the input song to &ldquo;<em>raw</em>&
 </span></span><span class="line"><span class="cl">  <span class="n">noTone</span><span class="p">(</span><span class="n">pin</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h2 id="rtttl-to-binary-10-bits">RTTTL to Binary (10 bits)</h2>
-<p>Copy &amp; paste a valid song in RTTTL format in the Command Input section.<br>
-Press the RTTTL 2 Binary (10 bits) button to decode the input RTTTL song and encode the same melody into a binary RTTTL format where each note is encoded into 10 bits. The bits definition is already documented in section <a href="http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Binary_RTTTL_format_definition">RTTTL binary format definition</a> of <a href="http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl library</a> post.</p>
-<p>The <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> library can be used to play the compressed RTTTL data.</p>
-<p>For example, the RTTTL code for playing <em>Tetris</em> theme song:</p>
+<p>Copy & paste a valid song in RTTTL format in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">RTTTL 2 Binary (10 bits)</span> button to decode the input RTTTL song and encode the same melody into a binary RTTTL format where each note is encoded into 10 bits. The bits definition is already documented in section <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Binary_RTTTL_format_definition">RTTTL binary format definition</a> of <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl library</a> post.</p>
+<p>The <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> library can be used to play the compressed RTTTL data.</p>
+<p>For example, the RTTTL code for playing <em>Tetris</em> theme song:</p>
 <pre tabindex="0"><code>tetris:d=4,o=5,b=160:e6,8b,8c6,8d6,16e6,16d6,8c6,8b,a,8a,
 8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,2a,8p,d6,8f6,a6,8g6,
 8f6,e6,8e6,8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,a
@@ -524,10 +360,10 @@ Press the RTTTL 2 Binary (10 bits) button to decode the input RTTTL song and en
 </span></span></span></code></pre></div>
 <p>which reduces the original code length by 104 bytes (from 159 bytes to 55 bytes), that is a 65% size reduction.</p>
 <h2 id="rtttl-to-binary-16-bits">RTTTL to Binary (16 bits)</h2>
-<p>Copy &amp; paste a valid song in RTTTL format in the Command Input section.<br>
-Press the RTTTL 2 Binary (16 bits) button to decode the input RTTTL song and encode the same melody into a binary RTTTL format where each note is encoded into 16 bits. The bits definition is already documented in section <a href="http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Binary_RTTTL_format_definition">RTTTL binary format definition</a> of <a href="http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl library</a> post.</p>
-<p>The <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> library can be used to play the compressed RTTTL data.</p>
-<p>For example, the same RTTTL code for playing <em>Tetris</em> theme song:</p>
+<p>Copy & paste a valid song in RTTTL format in the <em>Command Input</em> section.</p>
+<p>Press the <span class="windows-button3d">RTTTL 2 Binary (16 bits)</span> button to decode the input RTTTL song and encode the same melody into a binary RTTTL format where each note is encoded into 16 bits. The bits definition is already documented in section <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Binary_RTTTL_format_definition">RTTTL binary format definition</a> of <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl library</a> post.</p>
+<p>The <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl</a> library can be used to play the compressed RTTTL data.</p>
+<p>For example, the same RTTTL code for playing <em>Tetris</em> theme song:</p>
 <pre tabindex="0"><code>tetris:d=4,o=5,b=160:e6,8b,8c6,8d6,16e6,16d6,8c6,8b,a,8a,
 8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,2a,8p,d6,8f6,a6,8g6,
 8f6,e6,8e6,8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,a
@@ -550,298 +386,180 @@ Press the RTTTL 2 Binary (16 bits) button to decode the input RTTTL song and en
 </span></span><span class="line"><span class="cl"><span class="c1">//Call the following for playing tetris melody
 </span></span></span><span class="line"><span class="cl"><span class="c1">//anyrtttl::blocking::play16Bits(BUZZER_PIN, tetris, tetris_length);
 </span></span></span></code></pre></div>
-<p>which reduces the original code length by 73 bytes (from 159 bytes to 86 bytes), that is a 46% size reduction.</p>
+<p>which reduces the original code length by 73 bytes (from 159 bytes to 86 bytes), that is a 46% size reduction.</p>
 <h1 id="license">License</h1>
-<p>libRTTTL Library / rtttlOptimizer<br>
-Copyright (C) 2016 Antoine Beauchamp<br>
-The code &amp; updates for the library can be found on <a href="http://end2endzone.com">http://end2endzone.com</a></p>
-<p><strong>AUTHOR/LICENSE:</strong><br>
-This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.</p>
-<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of<br>
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU  Lesser General Public License (LGPL-3.0) for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public<br>
-License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA</p>
-<p><strong>DISCLAIMER:</strong><br>
-This software is furnished &ldquo;as is&rdquo;, without technical support, and with no warranty, express or implied, as to its usefulness for any purpose.</p>
+<p>Copyright (C) 2016 Antoine Beauchamp</p>
+<p>libRTTTL Library / rtttlOptimizer is licensed under the MIT License:</p>
+<p>A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<p>The full license is available <a href="https://github.com/end2endzone/bin2cpp/blob/master/LICENSE">here</a>.</p>
 <h1 id="download">Download</h1>
-<p>You can download the libRTTTL library / rtttlOptimizer by clicking on the following links:</p>
-<pre><code>	[ Download &quot;rtttlOptimizer v1.2.195 Source Code&quot; rtttlOptimizer-v1.2.195-src.zip - Downloaded 343 times - 186 KB ](http://www.end2endzone.com/download/2035/)
-
-
-	[ Download &quot;rtttlOptimizer v1.2.195 win32 portable&quot; rtttlOptimizer-v1.2.195-win32-portable.zip - Downloaded 350 times - 720 KB ](http://www.end2endzone.com/download/1863/)
-
-
-	[ Download &quot;rtttlOptimizer v1.2.195 win32 Setup&quot; rtttlOptimizer-v1.2.195-win32-Setup.exe - Downloaded 453 times - 834 KB ](http://www.end2endzone.com/download/1861/)
-
-
-	[ Download &quot;rtttlOptimizer v1.2.195 x64 portable&quot; rtttlOptimizer-v1.2.195-x64-portable.zip - Downloaded 350 times - 847 KB ](http://www.end2endzone.com/download/1859/)
-
-
-	[ Download &quot;rtttlOptimizer v1.2.195 x64 Setup&quot; rtttlOptimizer-v1.2.195-x64-Setup.exe - Downloaded 482 times - 969 KB ](http://www.end2endzone.com/download/1857/)
-</code></pre>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rtttl/">rtttl</a></li>
-        
-      
-    </ul>
-  
+<p>You can download the libRTTTL library / rtttlOptimizer by clicking on the following links:</p>
+<ul>
+<li>
+<a href="/wp-content/uploads/2016/05/rtttlOptimizer-v1.2.195-src.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+rtttlOptimizer-v1.2.195-src.zip
+</a></li>
+<li>
+<a href="/wp-content/uploads/2016/05/rtttlOptimizer-v1.2.195-win32-portable.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+rtttlOptimizer-v1.2.195-win32-portable.zip
+</a></li>
+</ul>
+<ul>
+<li>
+<a href="/wp-content/uploads/2016/05/rtttlOptimizer-v1.2.195-x64-portable.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+rtttlOptimizer-v1.2.195-x64-portable.zip
+</a></li>
+</ul>
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='8eca85a5f0ebacfa08eb4233b98d9883'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="button left"><span>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</span></a>
-    
-    
-      <a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/" class="button right"><span>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rtttl/">rtttl</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='8eca85a5f0ebacfa08eb4233b98d9883'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="button left"><span>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</span></a>
+<a href="/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/" class="button right"><span>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

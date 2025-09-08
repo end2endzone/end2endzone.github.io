@@ -1,131 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Model Aeronautics on end2end zone</title>
-    <link>http://www.end2endzone.com/categories/model-aeronautics/</link>
-    <description>Recent content in Model Aeronautics on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 21 May 2017 15:26:00 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/categories/model-aeronautics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Déballage et assemblage du Radian Pro – Un planeur hors pair</title>
-      <link>http://www.end2endzone.com/assemblage-du-planeur-radian-pro/</link>
-      <pubDate>Sun, 21 May 2017 15:26:00 +0000</pubDate>
-      <guid>http://www.end2endzone.com/assemblage-du-planeur-radian-pro/</guid>
-      <description>&lt;p&gt;Voici un autre modèle d&amp;rsquo;avion que j&amp;rsquo;ai assemblé: le planeur Radian Pro de ParkZone.&lt;/p&gt;&#xA;&lt;p&gt;C&amp;rsquo;est un excellent appareil. Je le recommande fortement. Lorsque je le pilote, je dois m&amp;rsquo;apporter une chaise afin de m’asseoir parce qu&amp;rsquo;une fois que cet oiseau est dans les airs, il ne veut juste plus redescendre au sol. Il faut s&amp;rsquo;armer de patience.&lt;/p&gt;&#xA;&lt;p&gt;Le tout présenté en time lapse.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Assemblage du quadrirotor F450 – Mon premier drone</title>
-      <link>http://www.end2endzone.com/assemblage-du-quadrirotor-f450-mon-premier-drone/</link>
-      <pubDate>Thu, 22 Dec 2016 22:45:25 +0000</pubDate>
-      <guid>http://www.end2endzone.com/assemblage-du-quadrirotor-f450-mon-premier-drone/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai fait l’acquisition de mon premier quadrirotor. Puisque je préfère de loin &lt;a href=&#34;http://www.end2endzone.com/tag/diy/&#34;&gt;les options DIY&lt;/a&gt;, j&amp;rsquo;ai décidé de ne pas acheter un modèle RTF (ready-to-fly) et de plutôt opter pour un modèle livré à la maison en pièce détachée.&lt;/p&gt;&#xA;&lt;p&gt;Tous comme avec mon &lt;a href=&#34;http://www.end2endzone.com/deballage-du-avistar-elite-46-un-video-timelapse/&#34;&gt;Avistar Elite&lt;/a&gt;, j&amp;rsquo;ai capturé le déballage et l&amp;rsquo;assemblage de l&amp;rsquo;engin sur photos afin de réaliser un vidéo time lapse.&lt;/p&gt;&#xA;&lt;p&gt;Pour le plaisir de vos yeux, voici le vidéo démontrant le déballage et l&amp;rsquo;assemblage de mon premier quadrirotor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</title>
-      <link>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</link>
-      <pubDate>Thu, 27 Oct 2016 16:48:23 +0000</pubDate>
-      <guid>http://www.end2endzone.com/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p&gt;&#xA;&lt;p&gt;I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to multiplex RC Transmitter switches into a single channel</title>
-      <link>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</link>
-      <pubDate>Wed, 30 Mar 2016 17:15:24 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 1&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Throttle&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 2&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Rudder&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 3&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Ailerons&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 4&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Elevator&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 5&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;Flight mode&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CH 6&lt;/td&gt;&#xA;          &lt;td&gt;:&lt;/td&gt;&#xA;          &lt;td&gt;???&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;The following article explains how I manage to solve the issue:&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;&lt;em&gt;How can I control more than one device using a single channel&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title>
-      <link>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link>
-      <pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate>
-      <guid>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;&#xA;&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mapping RC Transmitter PWM signal to actual transmitter values</title>
-      <link>http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</link>
-      <pubDate>Sat, 26 Mar 2016 20:47:29 +0000</pubDate>
-      <guid>http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;If you ever need to use an RC Transmitter &amp;amp; receiver for a personal project, an easy way to retrieve the signal is to connect the receiver to a micro-controller.&lt;/p&gt;&#xA;&lt;p&gt;However, decoding the signal to get actual transmitter values is not as easy as it sounds. You need to know the correct encoding and searching on the internet about the subject gives erratic results.&lt;/p&gt;&#xA;&lt;p&gt;Here is the full article that explains how to correctly map an RC Transmitter PWM signal to actual transmitter values.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Demystifying RC Transmitter Mixing</title>
-      <link>http://www.end2endzone.com/demystifying-rc-transmitter-mixing/</link>
-      <pubDate>Thu, 28 Jan 2016 17:44:31 +0000</pubDate>
-      <guid>http://www.end2endzone.com/demystifying-rc-transmitter-mixing/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;If you look on the internet for &amp;ldquo;mixing&amp;rdquo;, you will usually find posts and articles of people asking for things like &amp;ldquo;what is the best mix I should use for this or that&amp;rdquo; which I think is not helpful. I think it is far more helpful to actually understand what mixing is and how it can help you improve your skills as a pilot. Lately I wanted to understand how mixing could help me in a personal project. I took this opportunity to learn something new and try to demystifying RC Transmitter Mixing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RC Transmitter Mix Calculator</title>
-      <link>http://www.end2endzone.com/rc-transmitter-mix-calculator/</link>
-      <pubDate>Thu, 28 Jan 2016 17:43:43 +0000</pubDate>
-      <guid>http://www.end2endzone.com/rc-transmitter-mix-calculator/</guid>
-      <description>&lt;p&gt;This is an Excel worksheet I created based on the calculations I found for calculating most R/C Transmitter mixes. It is designed to help you identify the effective range of a mix (finding the low, medium and high values).&lt;/p&gt;&#xA;&lt;p&gt;See my post on &lt;a href=&#34;http://www.end2endzone.com/demystifying-rc-transmitter-mixing/&#34;&gt;Demystifying RC Transmitter Mixing&lt;/a&gt; for more details.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Maintenance of Hobbico TorqMaster 90 deluxe 12 Volt RC starter</title>
-      <link>http://www.end2endzone.com/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</link>
-      <pubDate>Sun, 17 Jan 2016 22:13:51 +0000</pubDate>
-      <guid>http://www.end2endzone.com/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</guid>
-      <description>&lt;p&gt;This article is about how I did the maintenance on my Hobbico Torqmaster 90 deluxe which is a 12 Volt starter for remote controlled (RC) aircraft. I wanted to change the rubber nose to get a better grip on my &lt;a href=&#34;http://www.end2endzone.com/tag/avistar-elite/&#34;&gt;Avistar Elite&lt;/a&gt; spinner. I ended up disassembling the whole unit before understanding what I should have done.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Levé de soleil sur le Club Amidair</title>
-      <link>http://www.end2endzone.com/leve-de-soleil-sur-le-club-amidair/</link>
-      <pubDate>Thu, 13 Aug 2015 21:19:15 +0000</pubDate>
-      <guid>http://www.end2endzone.com/leve-de-soleil-sur-le-club-amidair/</guid>
-      <description>&lt;p&gt;Il est 5 heures du matin. Tout est calme et on entend quelque fois le crie d&amp;rsquo;un oiseau. Au loin, un nuage de brume surplombe le champ de légumes lui donnant l&amp;rsquo;aspect d&amp;rsquo;un lac en mouvement. Le soleil colore au ciel avec un teint rosé puis orangé.&lt;/p&gt;&#xA;&lt;p&gt;Une belle journée de vol s&amp;rsquo;annonce.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Flou d’hélice / Propeller blur</title>
-      <link>http://www.end2endzone.com/flou-dhelice-propeller-blur/</link>
-      <pubDate>Wed, 10 Jun 2015 01:29:41 +0000</pubDate>
-      <guid>http://www.end2endzone.com/flou-dhelice-propeller-blur/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai apporté mon appareil photo lors d&amp;rsquo;une séance de vol à mon club d&amp;rsquo;aviation.  Lorsqu&amp;rsquo;un collègue était au &amp;ldquo;pit&amp;rdquo;, j&amp;rsquo;ai tenté de faire une photo de son avion avec un beau flou d&amp;rsquo;hélice.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Unboxing the Avistar Elite .46 a timelapse video</title>
-      <link>http://www.end2endzone.com/unboxing-the-avistar-elite-46-a-timelapse-video/</link>
-      <pubDate>Sat, 04 Apr 2015 06:20:22 +0000</pubDate>
-      <guid>http://www.end2endzone.com/unboxing-the-avistar-elite-46-a-timelapse-video/</guid>
-      <description>&lt;p&gt;Hi.&lt;/p&gt;&#xA;&lt;p&gt;For those interested, here is the first sequence of images I captured with my Canon EOS SL1 in order to make a timelapse video of the unpacking of the aircraft RC Avistar Elite .46.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Déballage du Avistar Elite .46 un vidéo timelapse</title>
-      <link>http://www.end2endzone.com/deballage-du-avistar-elite-46-un-video-timelapse/</link>
-      <pubDate>Sat, 04 Apr 2015 06:19:02 +0000</pubDate>
-      <guid>http://www.end2endzone.com/deballage-du-avistar-elite-46-un-video-timelapse/</guid>
-      <description>&lt;p&gt;Bonjour.&lt;/p&gt;&#xA;&lt;p&gt;Pour les intéressés, voici la première séquence d&amp;rsquo;images que j&amp;rsquo;ai capturé avec ma Canon EOS SL1 dans le but de faire un vidéo timelapse du déballage de l&amp;rsquo;avion téléguidée Avistar Elite .46.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Recommended modifications to the Avistar Elite .46 ARF by Great Planes</title>
-      <link>http://www.end2endzone.com/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/</link>
-      <pubDate>Mon, 13 Oct 2014 15:03:21 +0000</pubDate>
-      <guid>http://www.end2endzone.com/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I recently bought an Avistar Elite .46 ARF by Great Planes for flying with a flight instructor at my local hobby club. Before we went to the club and start flying, he and I (mostly he) made some adjustments to the plane for getting the perfect trainer for me. Basically, I changed some settings to get better results from the stock options.&lt;/p&gt;&#xA;&lt;p&gt;Here are all the modifications that I did to make this trainer the perfect plane.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Review of the Avistar Elite .46 ARF by Great Planes – The perfect motorized trainer for beginners</title>
-      <link>http://www.end2endzone.com/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/</link>
-      <pubDate>Sun, 21 Sep 2014 00:31:55 +0000</pubDate>
-      <guid>http://www.end2endzone.com/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;At the beginning of the 2014 season, I decided to join a local RC club to get to know good experienced people that would give me advices on the best practices for flying. I also decided to find a flight instructor that would assist me and help me with all the technical details that I am still lacking. When we met, he strongly suggested that I leave the &lt;a href=&#34;http://www.end2endzone.com/tag/super-cub/&#34;&gt;Hobby Zone Super Cub&lt;/a&gt; behind and get to a wooden motorized trainer plane like the Avistar Elite .46 ARF by Great Planes, which I did.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Final flight of a Super Cub LP</title>
-      <link>http://www.end2endzone.com/final-flight-of-a-super-cub-lp/</link>
-      <pubDate>Mon, 15 Sep 2014 00:27:05 +0000</pubDate>
-      <guid>http://www.end2endzone.com/final-flight-of-a-super-cub-lp/</guid>
-      <description>&lt;h1 id=&#34;the-good&#34;&gt;The Good&lt;/h1&gt;&#xA;&lt;p&gt;After 1½ month of flying the plane, I was feeling a little more confident and I trusted enough myself for doing loops.  So at the end of the 2013 season, I went flying with a friend with my Super Cub LP. I wasn&amp;rsquo;t expecting any disaster&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Hobby Zone Super Cub LP RTF. A good beginner’s RC plane</title>
-      <link>http://www.end2endzone.com/the-hobby-zone-super-cub-lp-rtf-a-good-beginners-rc-plane/</link>
-      <pubDate>Fri, 12 Sep 2014 21:44:59 +0000</pubDate>
-      <guid>http://www.end2endzone.com/the-hobby-zone-super-cub-lp-rtf-a-good-beginners-rc-plane/</guid>
-      <description>&lt;p&gt;During summer 2013, I have found myself with a high interest in flying an RC plane. I didn’t know what to expect from this but I wanted to get a new toy to play with. Like everyone, I thought that flying a plane was not that hard and that I could easily manage to fly any kind of plane. I was wrong. During my search for the best plane, I learned about the &lt;a href=&#34;http://secure.hobbyzone.com/catalog/hz/HBZ7300.html&#34;&gt;Hobby Zone Super Cub LP RTF&lt;/a&gt; which I think is a really good plane for a beginner.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Model Aeronautics on end2end zone</title><link>http://localhost:1313/categories/model-aeronautics/</link><description>Recent content in Model Aeronautics on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 21 May 2017 15:26:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/model-aeronautics/index.xml" rel="self" type="application/rss+xml"/><item><title>Déballage et assemblage du Radian Pro – Un planeur hors pair</title><link>http://localhost:1313/assemblage-du-planeur-radian-pro/</link><pubDate>Sun, 21 May 2017 15:26:00 +0000</pubDate><guid>http://localhost:1313/assemblage-du-planeur-radian-pro/</guid><description>&lt;p>Voici un autre modèle d&amp;rsquo;avion que j&amp;rsquo;ai assemblé: le planeur Radian Pro de ParkZone.&lt;/p>
+&lt;p>C&amp;rsquo;est un excellent appareil. Je le recommande fortement. Lorsque je le pilote, je dois m&amp;rsquo;apporter une chaise afin de m&amp;rsquo;asseoir parce qu&amp;rsquo;une fois que cet oiseau est dans les airs, il ne veut juste plus redescendre au sol. Il faut s&amp;rsquo;armer de patience.&lt;/p>
+&lt;p>Le tout présenté en time lapse.&lt;/p>
+&lt;h1 id="description">Description&lt;/h1>
+&lt;p>Le Radian Pro est un planeur de 78.5 pouces d&amp;rsquo;envergure. Le fuselage mesure 45 pouces. Il est motorisé ce qui veut dire qu&amp;rsquo;il n&amp;rsquo;a pas besoin d&amp;rsquo;être remorqué pour prendre son envol et qu&amp;rsquo;il peut par lui même reprendre de l&amp;rsquo;altitude lorsque nécessaire.&lt;/p></description></item><item><title>Assemblage du quadrirotor F450 – Mon premier drone</title><link>http://localhost:1313/assemblage-du-quadrirotor-f450-mon-premier-drone/</link><pubDate>Thu, 22 Dec 2016 22:45:25 +0000</pubDate><guid>http://localhost:1313/assemblage-du-quadrirotor-f450-mon-premier-drone/</guid><description>&lt;p>J&amp;rsquo;ai fait l&amp;rsquo;acquisition de mon premier quadrirotor. Puisque je préfère de loin &lt;a href="http://localhost:1313/tag/diy/">les options DIY&lt;/a>, j&amp;rsquo;ai décidé de ne pas acheter un modèle RTF (ready-to-fly) et de plutôt opter pour un modèle livré à la maison en pièce détachée.&lt;/p>
+&lt;p>Tous comme avec mon &lt;a href="http://localhost:1313/deballage-du-avistar-elite-46-un-video-timelapse/">Avistar Elite&lt;/a>, j&amp;rsquo;ai capturé le déballage et l&amp;rsquo;assemblage de l&amp;rsquo;engin sur photos afin de réaliser un vidéo time lapse.&lt;/p>
+&lt;p>Pour le plaisir de vos yeux, voici le vidéo démontrant le déballage et l&amp;rsquo;assemblage de mon premier quadrirotor.&lt;/p></description></item><item><title>DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</title><link>http://localhost:1313/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</link><pubDate>Thu, 27 Oct 2016 16:48:23 +0000</pubDate><guid>http://localhost:1313/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.&lt;/p></description></item><item><title>How to multiplex RC Transmitter switches into a single channel</title><link>http://localhost:1313/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</link><pubDate>Wed, 30 Mar 2016 17:15:24 +0000</pubDate><guid>http://localhost:1313/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:&lt;/p>
+&lt;div class="rc-channels">
+ &lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>CH 1&lt;/td>
+ &lt;td>:&lt;/td>
+ &lt;td>Throttle&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>CH 2&lt;/td>
+ &lt;td>:&lt;/td>
+ &lt;td>Rudder&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>CH 3&lt;/td>
+ &lt;td>:&lt;/td>
+ &lt;td>Ailerons&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>CH 4&lt;/td>
+ &lt;td>:&lt;/td>
+ &lt;td>Elevator&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>CH 5&lt;/td>
+ &lt;td>:&lt;/td>
+ &lt;td>Flight mode&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>CH 6&lt;/td>
+ &lt;td>:&lt;/td>
+ &lt;td>???&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+
+&lt;/div>
+&lt;p>The following article explains how I manage to solve the issue: &lt;em>How can I control more than one device using a single channel&lt;/em>.&lt;/p></description></item><item><title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title><link>http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link><pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate><guid>http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following arduino library was written to use the findings found during the &lt;em>&lt;strong>&lt;a href="http://localhost:1313/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a>&lt;/strong>&lt;/em> article. All results were wrapped into a library for ease of use.&lt;/p>
+&lt;p>The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>The RcReceiverSignal library allows one to easily configure an input pin to read a PWM signal sent from a RC receiver by attaching a RcReceiverSignal instance to a pin connected the receiver and automatically monitor each pulse sent by the receiver.&lt;/p></description></item><item><title>Mapping RC Transmitter PWM signal to actual transmitter values</title><link>http://localhost:1313/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</link><pubDate>Sat, 26 Mar 2016 20:47:29 +0000</pubDate><guid>http://localhost:1313/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>If you ever need to use an RC Transmitter &amp;amp; receiver for a personal project, an easy way to retrieve the signal is to connect the receiver to a micro-controller.&lt;/p>
+&lt;p>However, decoding the signal to get actual transmitter values is not as easy as it sounds. You need to know the correct encoding and searching on the internet about the subject gives erratic results.&lt;/p>
+&lt;p>Here is the full article that explains how to correctly map an RC Transmitter PWM signal to actual transmitter values.&lt;/p></description></item><item><title>Demystifying RC Transmitter Mixing</title><link>http://localhost:1313/demystifying-rc-transmitter-mixing/</link><pubDate>Thu, 28 Jan 2016 17:44:31 +0000</pubDate><guid>http://localhost:1313/demystifying-rc-transmitter-mixing/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>If you look on the internet for &amp;ldquo;mixing&amp;rdquo;, you will usually find posts and articles of people asking for things like &amp;ldquo;what is the best mix I should use for this or that&amp;rdquo; which I think is not helpful. I think it is far more helpful to actually understand what mixing is and how it can help you improve your skills as a pilot. Lately I wanted to understand how mixing could help me in a personal project. I took this opportunity to learn something new and try to demystifying RC Transmitter Mixing.&lt;/p></description></item><item><title>RC Transmitter Mix Calculator</title><link>http://localhost:1313/rc-transmitter-mix-calculator/</link><pubDate>Thu, 28 Jan 2016 17:43:43 +0000</pubDate><guid>http://localhost:1313/rc-transmitter-mix-calculator/</guid><description>&lt;p>This is an Excel worksheet I created based on the calculations I found for calculating most R/C Transmitter mixes. It is designed to help you identify the effective range of a mix (finding the low, medium and high values).&lt;/p>
+&lt;p>See my post on &lt;a href="http://localhost:1313/demystifying-rc-transmitter-mixing/">Demystifying RC Transmitter Mixing&lt;/a> for more details.&lt;/p>
+&lt;p class="pleasenote">
+ Please note the following calculator is valid on Spektrum Transmitters. I did not verified it&amp;rsquo;s validity or accuracy on other transmitters.
+&lt;/p></description></item><item><title>Maintenance of Hobbico TorqMaster 90 deluxe 12 Volt RC starter</title><link>http://localhost:1313/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</link><pubDate>Sun, 17 Jan 2016 22:13:51 +0000</pubDate><guid>http://localhost:1313/maintenance-of-hobbico-torqmaster-90-deluxe-12-volt-rc-starter/</guid><description>&lt;p>This article is about how I did the maintenance on my Hobbico Torqmaster 90 deluxe which is a 12 Volt starter for remote controlled (RC) aircraft. I wanted to change the rubber nose to get a better grip on my &lt;a href="http://localhost:1313/tag/avistar-elite/">Avistar Elite&lt;/a> spinner. I ended up disassembling the whole unit before understanding what I should have done.&lt;/p>
+&lt;p>This guide documents the steps and tricks I used to reassemble the unit. I hope it may help someone that have the same issue. If not, then I shall use this article as a way for me to remember how I did the maintenance on the starter and which tool I used&amp;hellip;&lt;/p></description></item><item><title>Levé de soleil sur le Club Amidair</title><link>http://localhost:1313/leve-de-soleil-sur-le-club-amidair/</link><pubDate>Thu, 13 Aug 2015 21:19:15 +0000</pubDate><guid>http://localhost:1313/leve-de-soleil-sur-le-club-amidair/</guid><description>&lt;p>Il est 5 heures du matin. Tout est calme et on entend quelque fois le crie d&amp;rsquo;un oiseau. Au loin, un nuage de brume surplombe le champ de légumes lui donnant l&amp;rsquo;aspect d&amp;rsquo;un lac en mouvement. Le soleil colore au ciel avec un teint rosé puis orangé.&lt;/p>
+&lt;p>Une belle journée de vol s&amp;rsquo;annonce.&lt;/p>
+&lt;div class="image-gallery">
+&lt;a href="http://localhost:1313/wp-content/uploads/2015/08/IMG_6162_LR5.jpg">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_6162_LR5-1024x683.jpg" alt="">
+&lt;/a>
+&lt;a href="http://localhost:1313/wp-content/uploads/2015/08/IMG_6159_LR5.jpg">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_6159_LR5-1024x683.jpg" alt="">
+&lt;/a>
+&lt;/div></description></item><item><title>Flou d'hélice / Propeller blur</title><link>http://localhost:1313/flou-dhelice-propeller-blur/</link><pubDate>Wed, 10 Jun 2015 01:29:41 +0000</pubDate><guid>http://localhost:1313/flou-dhelice-propeller-blur/</guid><description>&lt;p>J&amp;rsquo;ai apporté mon appareil photo lors d&amp;rsquo;une séance de vol à mon club d&amp;rsquo;aviation. Lorsqu&amp;rsquo;un collègue était au &amp;ldquo;pit&amp;rdquo;, j&amp;rsquo;ai tenté de faire une photo de son avion avec un beau flou d&amp;rsquo;hélice.&lt;/p>
+&lt;h1 id="un-peu-dexplication">Un peu d&amp;rsquo;explication&lt;/h1>
+&lt;p>Il existe deux moyen de faire un flou d&amp;rsquo;hélice. Le premier étant un peu plus traditionnelle correspond à faire une photo avec une longue exposition (typiquement dans les 1/30 seconde). Cette méthode permet de bien voir la dimension des pales de l&amp;rsquo;hélice et forme d&amp;rsquo;impressionnants cercles homogènes complets. Le résultat est d&amp;rsquo;autant plus beau lorsque les hélices ont des motifs de couleur ce qui rend les cercles encore plus beaux.&lt;/p></description></item><item><title>Unboxing the Avistar Elite .46 a timelapse video</title><link>http://localhost:1313/unboxing-the-avistar-elite-46-a-timelapse-video/</link><pubDate>Sat, 04 Apr 2015 06:20:22 +0000</pubDate><guid>http://localhost:1313/unboxing-the-avistar-elite-46-a-timelapse-video/</guid><description>&lt;p>Hi.&lt;/p>
+&lt;p>For those interested, here is the first sequence of images I captured with my Canon EOS SL1 in order to make a timelapse video of the unpacking of the aircraft RC Avistar Elite .46.&lt;/p>
+&lt;p>At the time, I didn&amp;rsquo;t know the basic principles that were required to capture good pictures for a timelapse video. So I proceeded with the exact opposite of what was required: Auto Focus, auto exposure adjustment, automatic white balance, use of the flash and capture with low batteries. In short, I was a beginner.&lt;/p></description></item><item><title>Déballage du Avistar Elite .46 un vidéo timelapse</title><link>http://localhost:1313/deballage-du-avistar-elite-46-un-video-timelapse/</link><pubDate>Sat, 04 Apr 2015 06:19:02 +0000</pubDate><guid>http://localhost:1313/deballage-du-avistar-elite-46-un-video-timelapse/</guid><description>&lt;p>Bonjour.&lt;/p>
+&lt;p>Pour les intéressés, voici la première séquence d&amp;rsquo;images que j&amp;rsquo;ai capturé avec ma Canon EOS SL1 dans le but de faire un vidéo timelapse du déballage de l&amp;rsquo;avion téléguidée Avistar Elite .46.&lt;/p>
+&lt;p>À l&amp;rsquo;époque, je ne connaissais pas les principes de base afin de faire de bonne prises pour faire un vidéo timelapse. J&amp;rsquo;ai donc procédé en faisant tout le contraire de ce qu&amp;rsquo;il faut faire: Focus automatique, ajustement de l&amp;rsquo;exposition automatique, balance des blancs automatique, activer le flash et débuter la séance avec des piles déchargées. Bref, j&amp;rsquo;étais débutant.&lt;/p></description></item><item><title>Recommended modifications to the Avistar Elite .46 ARF by Great Planes</title><link>http://localhost:1313/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/</link><pubDate>Mon, 13 Oct 2014 15:03:21 +0000</pubDate><guid>http://localhost:1313/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>I recently bought an Avistar Elite .46 ARF by Great Planes for flying with a flight instructor at my local hobby club. Before we went to the club and start flying, he and I (mostly he) made some adjustments to the plane for getting the perfect trainer for me. Basically, I changed some settings to get better results from the stock options.&lt;/p>
+&lt;p>Here are all the modifications that I did to make this trainer the perfect plane.&lt;/p></description></item><item><title>Review of the Avistar Elite .46 ARF by Great Planes – The perfect motorized trainer for beginners</title><link>http://localhost:1313/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/</link><pubDate>Sun, 21 Sep 2014 00:31:55 +0000</pubDate><guid>http://localhost:1313/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>At the beginning of the 2014 season, I decided to join a local RC club to get to know good experienced people that would give me advices on the best practices for flying. I also decided to find a flight instructor that would assist me and help me with all the technical details that I am still lacking. When we met, he strongly suggested that I leave the &lt;a href="http://localhost:1313/tag/super-cub/">Hobby Zone Super Cub&lt;/a> behind and get to a wooden motorized trainer plane like the Avistar Elite .46 ARF by Great Planes, which I did.&lt;/p></description></item><item><title>Final flight of a Super Cub LP</title><link>http://localhost:1313/final-flight-of-a-super-cub-lp/</link><pubDate>Mon, 15 Sep 2014 00:27:05 +0000</pubDate><guid>http://localhost:1313/final-flight-of-a-super-cub-lp/</guid><description>&lt;h1 id="the-good">The Good&lt;/h1>
+&lt;p>After 1½ month of flying the plane, I was feeling a little more confident and I trusted enough myself for doing loops. So at the end of the 2013 season, I went flying with a friend with my Super Cub LP. I wasn&amp;rsquo;t expecting any disaster&amp;hellip;&lt;/p>
+&lt;p>It was a little cloudy &amp;amp; windy but I went flying anyway because I was too much confident that nothing could happen since I had 6-7 flights of experience!&lt;/p></description></item><item><title>The Hobby Zone Super Cub LP RTF. A good beginner's RC plane</title><link>http://localhost:1313/the-hobby-zone-super-cub-lp-rtf-a-good-beginners-rc-plane/</link><pubDate>Fri, 12 Sep 2014 21:44:59 +0000</pubDate><guid>http://localhost:1313/the-hobby-zone-super-cub-lp-rtf-a-good-beginners-rc-plane/</guid><description>&lt;p>During summer 2013, I have found myself with a high interest in flying an RC plane. I didn&amp;rsquo;t know what to expect from this but I wanted to get a new toy to play with. Like everyone, I thought that flying a plane was not that hard and that I could easily manage to fly any kind of plane. I was wrong. During my search for the best plane, I learned about the &lt;a href="http://secure.hobbyzone.com/catalog/hz/HBZ7300.html">Hobby Zone Super Cub LP RTF&lt;/a> which I think is a really good plane for a beginner.&lt;/p></description></item></channel></rss>

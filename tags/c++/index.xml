@@ -1,61 +1,66 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>C&#43;&#43; on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/c&#43;&#43;/</link>
-    <description>Recent content in C&#43;&#43; on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 16:42:39 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</title>
-      <link>http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</link>
-      <pubDate>Sun, 14 Mar 2021 16:42:39 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post explains all the instructions required in order to get started with c++ no macOS 10.15 Catalina.&lt;/p&gt;&#xA;&lt;p&gt;This article assumes that you already have access to a macOS image ISO file and that you already created a macOS virtual machine in VirtualBox.&lt;/p&gt;&#xA;&lt;h1 id=&#34;update-macos-with-latest-security-updates-and-bug-fixes&#34;&gt;Update macOS with latest security updates and bug fixes&lt;/h1&gt;&#xA;&lt;p&gt;Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software &amp;amp; security update.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</title>
-      <link>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</link>
-      <pubDate>Sun, 25 Jun 2017 16:02:08 +0000</pubDate>
-      <guid>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &amp;lsquo;safe enough&amp;rsquo; for most situations. That is simply not true.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libVariant – A c&#43;&#43; library which encapsulate any value of variant types</title>
-      <link>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</link>
-      <pubDate>Sun, 28 May 2017 21:06:45 +0000</pubDate>
-      <guid>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title>
-      <link>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link>
-      <pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate>
-      <guid>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my simplest library that I wrote for the arduino: &lt;em&gt;SoftTimers&lt;/em&gt;. The &lt;em&gt;SoftTimers&lt;/em&gt; arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libMIDI – A C&#43;&#43; open-source library for generating single tone melodies in MIDI format</title>
-      <link>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</link>
-      <pubDate>Sun, 24 Apr 2016 16:42:27 +0000</pubDate>
-      <guid>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</title>
-      <link>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</link>
-      <pubDate>Sat, 31 Jan 2015 01:27:33 +0000</pubDate>
-      <guid>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</guid>
-      <description>&lt;h1 id=&#34;msbuildreorder&#34;&gt;MSBuildReorder&lt;/h1&gt;&#xA;&lt;p class=&#34;postedit&#34;&gt;&#xA;  Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/msbuildreorder&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/msbuildreorder.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>bin2cpp: The easiest way to embed small files into a C&#43;&#43; executable</title>
-      <link>http://www.end2endzone.com/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</link>
-      <pubDate>Mon, 12 Jan 2015 03:56:17 +0000</pubDate>
-      <guid>http://www.end2endzone.com/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</guid>
-      <description>&lt;h1 id=&#34;bin2cpp&#34;&gt;bin2cpp&lt;/h1&gt;&#xA;&lt;p class=&#34;postedit&#34;&gt;&#xA;  Please note that bin2cpp source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/bin2cpp&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/bin2cpp.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/q9k0ebb971o475qi/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/bin2cpp/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/bin2cpp/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;bin2cpp is a command line tool for embedding small files (like images, icons or raw data files) into a C++ executable.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Easily converts small files as C++ source code for embedding into a C++ executable.&lt;/li&gt;&#xA;&lt;li&gt;Content extraction supported by a unique function call for each embedded file.&lt;/li&gt;&#xA;&lt;li&gt;Supports a multiple embedded files at once.&lt;/li&gt;&#xA;&lt;li&gt;Makes it harder for resource hacker to modify or steal the embedded files.&lt;/li&gt;&#xA;&lt;li&gt;No third party libraries required for retrieving the data of the embedded files.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on end2end zone</title><link>http://localhost:1313/tags/c++/</link><description>Recent content in C++ on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Mar 2021 16:42:39 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</title><link>http://localhost:1313/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</link><pubDate>Sun, 14 Mar 2021 16:42:39 +0000</pubDate><guid>http://localhost:1313/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This post explains all the instructions required in order to get started with c++ no macOS 10.15 Catalina.&lt;/p>
+&lt;p>This article assumes that you already have access to a macOS image ISO file and that you already created a macOS virtual machine in VirtualBox.&lt;/p>
+&lt;h1 id="update-macos-with-latest-security-updates-and-bug-fixes">Update macOS with latest security updates and bug fixes&lt;/h1>
+&lt;p>Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software &amp;amp; security update.&lt;/p></description></item><item><title>libArgvCodec – A c++ library which properly encode and decode command line arguments</title><link>http://localhost:1313/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</link><pubDate>Sun, 25 Jun 2017 16:02:08 +0000</pubDate><guid>http://localhost:1313/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &amp;lsquo;safe enough&amp;rsquo; for most situations. That is simply not true.&lt;/p>
+&lt;p>This article is about the C++ library libArgvCodec which properly encodes and decodes command line parameters.&lt;/p></description></item><item><title>libVariant – A c++ library which encapsulate any value of variant types</title><link>http://localhost:1313/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</link><pubDate>Sun, 28 May 2017 21:06:45 +0000</pubDate><guid>http://localhost:1313/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>The libVariant library allows one to create an instance of Variant class. The class is a type safe and value safe union between all known basic c++ types. An instance of a Variant class encapsulates a single value of any c++ type: signed and unsigned integers, floating points &amp;amp; strings.&lt;/p></description></item><item><title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title><link>http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link><pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate><guid>http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my simplest library that I wrote for the arduino: &lt;em>SoftTimers&lt;/em>. The &lt;em>SoftTimers&lt;/em> arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;p>When I first learned programming the arduino, I learned the &amp;ldquo;&lt;em>hello world&lt;/em>&amp;rdquo; of the arduino: turning a LED on and off. As expected, I used &lt;code>delay()&lt;/code> to define how long the LED should be on and off.&lt;/p></description></item><item><title>libMIDI - A C++ open-source library for generating single tone melodies in MIDI format</title><link>http://localhost:1313/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</link><pubDate>Sun, 24 Apr 2016 16:42:27 +0000</pubDate><guid>http://localhost:1313/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>I mostly develop on the Windows platform. When I try to generate basic sounds and tone, I use the &lt;a href="http://msdn.microsoft.com/en-ca/library/windows/desktop/ms679277%28v=vs.85%29.aspx">Microsoft Beep function&lt;/a>. This API is quite old and is far from accurate when dealing with multiple short duration tones (less than 100ms). Also when you make two consecutive calls to the &lt;code>Beep()&lt;/code> function will ear a tick sound between each calls.&lt;/p></description></item><item><title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</title><link>http://localhost:1313/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</link><pubDate>Sat, 31 Jan 2015 01:27:33 +0000</pubDate><guid>http://localhost:1313/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</guid><description>&lt;h1 id="msbuildreorder">MSBuildReorder&lt;/h1>
+&lt;p class="postedit">
+ Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/msbuildreorder">the project&amp;rsquo;s GitHub page&lt;/a>.
+&lt;/p>
+&lt;p>
+&lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/release/end2endzone/msbuildreorder.svg" alt="">
+
+
+&lt;img src="https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true" alt="">
+
+
+&lt;img src="https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg" alt="">
+&lt;/p>
+&lt;p>MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p>
+&lt;p>Building a solution that has multiple projects can quickly become bloated with too many lines that are not related to each other. For this reason, finding the actual cause of a build fail is harder than it should be. MSBuildReorder is able to read the log and reorder the projects in a sequential order.&lt;/p></description></item><item><title>bin2cpp: The easiest way to embed small files into a C++ executable</title><link>http://localhost:1313/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</link><pubDate>Mon, 12 Jan 2015 03:56:17 +0000</pubDate><guid>http://localhost:1313/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</guid><description>&lt;h1 id="bin2cpp">bin2cpp&lt;/h1>
+&lt;p class="postedit">
+ Please note that bin2cpp source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/bin2cpp">the project&amp;rsquo;s GitHub page&lt;/a>.
+&lt;/p>
+&lt;p>
+&lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/release/end2endzone/bin2cpp.svg" alt="">
+
+
+&lt;img src="https://ci.appveyor.com/api/projects/status/q9k0ebb971o475qi/branch/master?svg=true" alt="">
+
+
+&lt;img src="https://img.shields.io/appveyor/tests/end2endzone/bin2cpp/master.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/downloads/end2endzone/bin2cpp/total.svg" alt="">
+&lt;/p>
+&lt;p>bin2cpp is a command line tool for embedding small files (like images, icons or raw data files) into a C++ executable.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Easily converts small files as C++ source code for embedding into a C++ executable.&lt;/li>
+&lt;li>Content extraction supported by a unique function call for each embedded file.&lt;/li>
+&lt;li>Supports a multiple embedded files at once.&lt;/li>
+&lt;li>Makes it harder for resource hacker to modify or steal the embedded files.&lt;/li>
+&lt;li>No third party libraries required for retrieving the data of the embedded files.&lt;/li>
+&lt;/ul>
+&lt;p>bin2cpp is not implemented using &lt;a href="http://en.wikipedia.org/wiki/Resource_%28Windows%29">executable resources&lt;/a>. Instead, bin2cpp creates multiple function calls for retrieving the data which makes it harder to steal the executable&amp;rsquo;s content. It also makes it even harder to replace an existing resource of the executable.&lt;/p></description></item></channel></rss>

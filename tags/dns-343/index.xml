@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>DNS-343 on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/dns-343/</link>
-    <description>Recent content in DNS-343 on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 01 Feb 2015 13:58:08 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/dns-343/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</title>
-      <link>http://www.end2endzone.com/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</link>
-      <pubDate>Sun, 01 Feb 2015 13:58:08 +0000</pubDate>
-      <guid>http://www.end2endzone.com/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</guid>
-      <description>&lt;h1 id=&#34;dns343monitor&#34;&gt;DNS343Monitor&lt;/h1&gt;&#xA;&lt;p&gt;DNS-343 Monitor is a tool for monitoring how much space is left on your DNS-343 NAS device.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DNS-343 on end2end zone</title><link>http://localhost:1313/tags/dns-343/</link><description>Recent content in DNS-343 on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 01 Feb 2015 13:58:08 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/dns-343/index.xml" rel="self" type="application/rss+xml"/><item><title>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</title><link>http://localhost:1313/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</link><pubDate>Sun, 01 Feb 2015 13:58:08 +0000</pubDate><guid>http://localhost:1313/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</guid><description>&lt;h1 id="dns343monitor">DNS343Monitor&lt;/h1>
+&lt;p>DNS-343 Monitor is a tool for monitoring how much space is left on your DNS-343 NAS device.&lt;/p>
+&lt;p>The &lt;a href="http://www.google.com/?q=dns-343">DNS-343&lt;/a> is a &lt;a href="http://en.wikipedia.org/wiki/Network-attached_storage">Network Attached Storage&lt;/a> (NAS) device that can hold as much as 4 drives. Since all the drives are shared in a Network, each disk can quickly become full. This tools allows you to see the remaining space left on each individual drives.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Show space left and used for each drives.&lt;/li>
+&lt;li>GUI supported.&lt;/li>
+&lt;li>Compatible with all firmware versions.&lt;/li>
+&lt;/ul>
+&lt;p class="pleasenote">
+ &lt;strong>Note:&lt;/strong> This tool requires administrator privileges on the DNS-343 for retrieving free space left.
+&lt;/p></description></item></channel></rss>

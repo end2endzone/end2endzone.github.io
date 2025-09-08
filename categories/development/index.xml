@@ -1,166 +1,175 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Development on end2end zone</title>
-    <link>http://www.end2endzone.com/categories/development/</link>
-    <description>Recent content in Development on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 16:42:39 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</title>
-      <link>http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</link>
-      <pubDate>Sun, 14 Mar 2021 16:42:39 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post explains all the instructions required in order to get started with c++ no macOS 10.15 Catalina.&lt;/p&gt;&#xA;&lt;p&gt;This article assumes that you already have access to a macOS image ISO file and that you already created a macOS virtual machine in VirtualBox.&lt;/p&gt;&#xA;&lt;h1 id=&#34;update-macos-with-latest-security-updates-and-bug-fixes&#34;&gt;Update macOS with latest security updates and bug fixes&lt;/h1&gt;&#xA;&lt;p&gt;Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software &amp;amp; security update.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to encode command line parameters on Windows – done right</title>
-      <link>http://www.end2endzone.com/how-to-encode-command-line-parameters-on-windows-done-right/</link>
-      <pubDate>Sun, 14 Mar 2021 14:49:47 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-encode-command-line-parameters-on-windows-done-right/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post is a follow up on command line arguments. I recently published a C++ library (&lt;a href=&#34;http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/&#34;&gt;libArgvCodec&lt;/a&gt;) which properly handles all encoding and decoding of command line arguments. It is much safer to use the library than simply wrap each argument with double quotes.&lt;/p&gt;&#xA;&lt;p&gt;This post is about the list of rules that the library implements for encoding and decoding of arguments.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</title>
-      <link>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</link>
-      <pubDate>Sun, 25 Jun 2017 16:02:08 +0000</pubDate>
-      <guid>http://www.end2endzone.com/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &amp;lsquo;safe enough&amp;rsquo; for most situations. That is simply not true.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libVariant – A c&#43;&#43; library which encapsulate any value of variant types</title>
-      <link>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</link>
-      <pubDate>Sun, 28 May 2017 21:06:45 +0000</pubDate>
-      <guid>http://www.end2endzone.com/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</title>
-      <link>http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</link>
-      <pubDate>Thu, 22 Dec 2016 18:03:50 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is written in order to demonstrate how my arduino libraries &lt;a href=&#34;http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/&#34;&gt;libRtttl&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/&#34;&gt;AnyRtttl&lt;/a&gt; can be used to convert arduino code (&lt;code&gt;tone()&lt;/code&gt; and &lt;code&gt;delay()&lt;/code&gt; functions calls) into actual RTTTL melodies.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Comment afficher un exemple de toutes les polices dans Microsoft Word</title>
-      <link>http://www.end2endzone.com/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</link>
-      <pubDate>Wed, 21 Dec 2016 02:28:38 +0000</pubDate>
-      <guid>http://www.end2endzone.com/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;À chaque fois que je travail en graphisme et que je dois ajouter du texte à une image, je me retrouve toujours avec le même problème: &amp;ldquo;Comment faire pour identifier rapidement la meilleure police pour mon affiche ?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Je crois maintenant avoir finalement trouver la solution à ce problème.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</title>
-      <link>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</link>
-      <pubDate>Thu, 04 Aug 2016 17:30:03 +0000</pubDate>
-      <guid>http://www.end2endzone.com/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</guid>
-      <description>&lt;p class=&#34;postedit&#34;&gt;&#xA;  Please note that &lt;strong&gt;csvplot&lt;/strong&gt; source code is now moved to GitHub. Source code can be downloaded from the project’s &lt;a href=&#34;http://github.com/end2endzone/csvplot&#34;&gt;GitHub page&lt;/a&gt;.&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;&#xA;&lt;p&gt;I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&amp;rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.&lt;/p&gt;&#xA;&lt;p&gt;Most programming language I know does not offer a native library for plotting data to a graph. It is not an easy task. Most programming language often require external libraries for implementing the process and each library does not work the same way.&lt;/p&gt;&#xA;&lt;p&gt;Excel is a native platform for parsing Comma-separated values (CSV) files and can be scripted to plot the result into an image.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this script is to allows any programming language which generates data to plot the data into an image by saving the raw data to a CSV file and then using the power of Excel to plot the result into an image.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title>
-      <link>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link>
-      <pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate>
-      <guid>http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my simplest library that I wrote for the arduino: &lt;em&gt;SoftTimers&lt;/em&gt;. The &lt;em&gt;SoftTimers&lt;/em&gt; arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format</title>
-      <link>http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</link>
-      <pubDate>Sat, 28 May 2016 15:18:35 +0000</pubDate>
-      <guid>http://www.end2endzone.com/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about another library that I have written: libRtttl is a c++ library for manipulating the RTTTL audio format.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</title>
-      <link>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</link>
-      <pubDate>Sat, 21 May 2016 23:20:34 +0000</pubDate>
-      <guid>http://www.end2endzone.com/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available &lt;code&gt;void play_rtttl(char *p)&lt;/code&gt; function. The AnyRtttl is a feature rich library which supports all best RTTTL features.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>win32Arduino: a win32 library that implements most arduino functions</title>
-      <link>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</link>
-      <pubDate>Mon, 16 May 2016 17:15:58 +0000</pubDate>
-      <guid>http://www.end2endzone.com/win32arduino-a-win32-library-that-implements-most-arduino-functions/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/win32Arduino&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/win32Arduino.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.&lt;/p&gt;&#xA;&lt;p&gt;The win32Arduino is a solution to this issue.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>svnpropertylog – A script which finds all revisions where a specific subversion property has changed</title>
-      <link>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</link>
-      <pubDate>Tue, 03 May 2016 16:52:00 +0000</pubDate>
-      <guid>http://www.end2endzone.com/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</guid>
-      <description>&lt;h1 id=&#34;purpose&#34;&gt;Purpose&lt;/h1&gt;&#xA;&lt;p&gt;The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.&lt;/p&gt;&#xA;&lt;p&gt;The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&amp;rsquo;s a &amp;ldquo;&lt;em&gt;show log for subversion properties&lt;/em&gt;&amp;rdquo;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>libMIDI – A C&#43;&#43; open-source library for generating single tone melodies in MIDI format</title>
-      <link>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</link>
-      <pubDate>Sun, 24 Apr 2016 16:42:27 +0000</pubDate>
-      <guid>http://www.end2endzone.com/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title>
-      <link>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link>
-      <pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate>
-      <guid>http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following arduino library was written to use the findings found during the &lt;em&gt;&lt;strong&gt;&lt;a href=&#34;http://www.end2endzone.com/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/&#34; title=&#34;Edit “Mapping RC Transmitter PWM signal to actual transmitter values”&#34;&gt;Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a&gt;{.row-title}&lt;/strong&gt;&lt;/em&gt; article. All results were wrapped into a library for ease of use.&lt;/p&gt;&#xA;&lt;p&gt;The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>BitReader – An arduino library for reading &amp; writing data as chunks of bits</title>
-      <link>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</link>
-      <pubDate>Sat, 26 Mar 2016 00:23:05 +0000</pubDate>
-      <guid>http://www.end2endzone.com/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Here is another arduino library that I have written.&lt;/p&gt;&#xA;&lt;p&gt;As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp;amp; CPU is cheap. If your application is struggling to run on today&amp;rsquo;s computer, it will run smoothly in 1-2 years.&lt;/p&gt;&#xA;&lt;p&gt;As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.&lt;/p&gt;&#xA;&lt;p&gt;BitReader is an arduino library that allows one to read or write data as chunks of bits.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</title>
-      <link>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</link>
-      <pubDate>Sun, 20 Mar 2016 15:16:54 +0000</pubDate>
-      <guid>http://www.end2endzone.com/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>extTools: a windows shell extension to help you with common Windows File Explorer tasks.</title>
-      <link>http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</link>
-      <pubDate>Sun, 29 Mar 2015 20:00:07 +0000</pubDate>
-      <guid>http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</guid>
-      <description>&lt;h1 id=&#34;what-is-exttools&#34;&gt;What is extTools&lt;/h1&gt;&#xA;&lt;p&gt;extTools is a fast and innovative FREEWARE (for non-commercial use) software suite to help you executing common tasks in Windows File Explorer more easily.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Advanced clipboard support (copy, append or modify).&lt;/li&gt;&#xA;&lt;li&gt;File operation queuing (batch copy or paste).&lt;/li&gt;&#xA;&lt;li&gt;Better &amp;amp; quicker file deletions.&lt;/li&gt;&#xA;&lt;li&gt;Powerful file renaming algorithms.&lt;/li&gt;&#xA;&lt;li&gt;XP like search tool (simple search tool).&lt;/li&gt;&#xA;&lt;li&gt;Extends Windows File Explorer by registering as a Shell Extension.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;extTools allows its users to execute tasks that are not available in a default Windows environment. extTools is also designed to replace existing task that are badly designed, annoying to execute or simply missing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>HDHomeRun TV Dump: Unleash the DVR capabilities of your free to air live TV stream</title>
-      <link>http://www.end2endzone.com/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</link>
-      <pubDate>Mon, 16 Feb 2015 02:24:14 +0000</pubDate>
-      <guid>http://www.end2endzone.com/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</guid>
-      <description>&lt;h1 id=&#34;hdhomerun-tv-dump&#34;&gt;HDHomeRun TV Dump&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;HdHomeRun TV Dump&lt;/em&gt; is a &lt;a href=&#34;http://en.wikipedia.org/wiki/Graphical_user_interface&#34;&gt;GUI&lt;/a&gt; that installs over the native &lt;a href=&#34;http://www.silicondust.com/support/downloads/&#34;&gt;HDHomeRun application&lt;/a&gt; and allows owners to quickly take control over the free to air live TV stream. Implementing DVR capabilities on your computer becomes a easy as 1-2-3.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</title>
-      <link>http://www.end2endzone.com/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</link>
-      <pubDate>Sun, 01 Feb 2015 13:58:08 +0000</pubDate>
-      <guid>http://www.end2endzone.com/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</guid>
-      <description>&lt;h1 id=&#34;dns343monitor&#34;&gt;DNS343Monitor&lt;/h1&gt;&#xA;&lt;p&gt;DNS-343 Monitor is a tool for monitoring how much space is left on your DNS-343 NAS device.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</title>
-      <link>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</link>
-      <pubDate>Sat, 31 Jan 2015 01:27:33 +0000</pubDate>
-      <guid>http://www.end2endzone.com/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</guid>
-      <description>&lt;h1 id=&#34;msbuildreorder&#34;&gt;MSBuildReorder&lt;/h1&gt;&#xA;&lt;p class=&#34;postedit&#34;&gt;&#xA;  Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/msbuildreorder&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/msbuildreorder.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OfficeReadOnly: How to open Microsoft Office documents as read-only</title>
-      <link>http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</link>
-      <pubDate>Wed, 28 Jan 2015 02:12:41 +0000</pubDate>
-      <guid>http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</guid>
-      <description>&lt;h1 id=&#34;officereadonly&#34;&gt;OfficeReadOnly&lt;/h1&gt;&#xA;&lt;p&gt;OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Integrates into Windows File Explorer or the with the &amp;ldquo;Send to&amp;rdquo; folder.&lt;/li&gt;&#xA;&lt;li&gt;Supports Documents, Workbooks, Presentations and Diagrams.&lt;/li&gt;&#xA;&lt;li&gt;Supports both Microsoft Office 2003 (&lt;em&gt;.doc) and Microsoft Office 2010 file extensions (&lt;/em&gt;.doc, and *.docx).&lt;/li&gt;&#xA;&lt;li&gt;Can be used from the command prompt.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.&lt;/p&gt;&#xA;&lt;p&gt;OfficeReadOnly was created to solve this issue.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>bin2cpp: The easiest way to embed small files into a C&#43;&#43; executable</title>
-      <link>http://www.end2endzone.com/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</link>
-      <pubDate>Mon, 12 Jan 2015 03:56:17 +0000</pubDate>
-      <guid>http://www.end2endzone.com/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</guid>
-      <description>&lt;h1 id=&#34;bin2cpp&#34;&gt;bin2cpp&lt;/h1&gt;&#xA;&lt;p class=&#34;postedit&#34;&gt;&#xA;  Please note that bin2cpp source code is now moved to GitHub. Source code can be downloaded from &lt;a href=&#34;http://github.com/end2endzone/bin2cpp&#34;&gt;the project&amp;rsquo;s GitHub page&lt;/a&gt;.&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/release/end2endzone/bin2cpp.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://ci.appveyor.com/api/projects/status/q9k0ebb971o475qi/branch/master?svg=true&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/appveyor/tests/end2endzone/bin2cpp/master.svg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/downloads/end2endzone/bin2cpp/total.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;bin2cpp is a command line tool for embedding small files (like images, icons or raw data files) into a C++ executable.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Easily converts small files as C++ source code for embedding into a C++ executable.&lt;/li&gt;&#xA;&lt;li&gt;Content extraction supported by a unique function call for each embedded file.&lt;/li&gt;&#xA;&lt;li&gt;Supports a multiple embedded files at once.&lt;/li&gt;&#xA;&lt;li&gt;Makes it harder for resource hacker to modify or steal the embedded files.&lt;/li&gt;&#xA;&lt;li&gt;No third party libraries required for retrieving the data of the embedded files.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Development on end2end zone</title><link>http://localhost:1313/categories/development/</link><description>Recent content in Development on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Mar 2021 16:42:39 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/development/index.xml" rel="self" type="application/rss+xml"/><item><title>How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</title><link>http://localhost:1313/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</link><pubDate>Sun, 14 Mar 2021 16:42:39 +0000</pubDate><guid>http://localhost:1313/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This post explains all the instructions required in order to get started with c++ no macOS 10.15 Catalina.&lt;/p>
+&lt;p>This article assumes that you already have access to a macOS image ISO file and that you already created a macOS virtual machine in VirtualBox.&lt;/p>
+&lt;h1 id="update-macos-with-latest-security-updates-and-bug-fixes">Update macOS with latest security updates and bug fixes&lt;/h1>
+&lt;p>Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software &amp;amp; security update.&lt;/p></description></item><item><title>How to encode command line parameters on Windows – done right</title><link>http://localhost:1313/how-to-encode-command-line-parameters-on-windows-done-right/</link><pubDate>Sun, 14 Mar 2021 14:49:47 +0000</pubDate><guid>http://localhost:1313/how-to-encode-command-line-parameters-on-windows-done-right/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This post is a follow up on command line arguments. I recently published a C++ library (&lt;a href="http://localhost:1313/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec&lt;/a>) which properly handles all encoding and decoding of command line arguments. It is much safer to use the library than simply wrap each argument with double quotes.&lt;/p>
+&lt;p>This post is about the list of rules that the library implements for encoding and decoding of arguments.&lt;/p>
+&lt;h1 id="using-libargvcodec-library">Using libArgvCodec library&lt;/h1>
+&lt;p>The &lt;a href="http://localhost:1313/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec&lt;/a> library can be used for free and is released as Open Source. The code is available &lt;a href="http://localhost:1313/download/2480/">here&lt;/a>. Feel free to download the library to use it in your own projects.&lt;/p></description></item><item><title>libArgvCodec – A c++ library which properly encode and decode command line arguments</title><link>http://localhost:1313/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</link><pubDate>Sun, 25 Jun 2017 16:02:08 +0000</pubDate><guid>http://localhost:1313/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This post is about a decade old problem: how to properly encode command line arguments. Properly encoding string arguments into a long command line should not be a complicated issue. However, I have seen multiple situations where people wrongfully assume that wrapping each argument with double quotes is &amp;lsquo;safe enough&amp;rsquo; for most situations. That is simply not true.&lt;/p>
+&lt;p>This article is about the C++ library libArgvCodec which properly encodes and decodes command line parameters.&lt;/p></description></item><item><title>libVariant – A c++ library which encapsulate any value of variant types</title><link>http://localhost:1313/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</link><pubDate>Sun, 28 May 2017 21:06:45 +0000</pubDate><guid>http://localhost:1313/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my new c++ library: libVariant. The library allows one to easily store/encapsulate a value of any c++ type into an instance of type Variant. The library is useful for declaring objects, interfaces, APIs or plugins to be type-independent.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>The libVariant library allows one to create an instance of Variant class. The class is a type safe and value safe union between all known basic c++ types. An instance of a Variant class encapsulates a single value of any c++ type: signed and unsigned integers, floating points &amp;amp; strings.&lt;/p></description></item><item><title>How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl</title><link>http://localhost:1313/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</link><pubDate>Thu, 22 Dec 2016 18:03:50 +0000</pubDate><guid>http://localhost:1313/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is written in order to demonstrate how my arduino libraries &lt;a href="http://localhost:1313/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/">libRtttl&lt;/a> &amp;amp; &lt;a href="http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/">AnyRtttl&lt;/a> can be used to convert arduino code (&lt;code>tone()&lt;/code> and &lt;code>delay()&lt;/code> functions calls) into actual RTTTL melodies.&lt;/p>
+&lt;p>This article shows how to convert &amp;lsquo;&lt;em>Game of Throne theme&lt;/em>&amp;rsquo;, &amp;lsquo;&lt;em>Star Wars - The imperial March&lt;/em>&amp;rsquo; and most &lt;em>Super Mario Bros. sound themes&lt;/em> (Main theme, 1-up life sound, Flagpole fanfare, Death and Game Over sounds) into actual playable RTTTL melodies.&lt;/p></description></item><item><title>Comment afficher un exemple de toutes les polices dans Microsoft Word</title><link>http://localhost:1313/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</link><pubDate>Wed, 21 Dec 2016 02:28:38 +0000</pubDate><guid>http://localhost:1313/comment-afficher-un-exemple-de-toutes-les-polices-dans-microsoft-word/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>À chaque fois que je travail en graphisme et que je dois ajouter du texte à une image, je me retrouve toujours avec le même problème: &amp;ldquo;Comment faire pour identifier rapidement la meilleure police pour mon affiche ?&amp;rdquo;&lt;/p>
+&lt;p>Je crois maintenant avoir finalement trouver la solution à ce problème.&lt;/p>
+&lt;p>Voici un script pour Microsoft Word qui permet de générer n&amp;rsquo;importe quelle exemple de texte avec toutes les polices de votre ordinateur.&lt;/p></description></item><item><title>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</title><link>http://localhost:1313/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</link><pubDate>Thu, 04 Aug 2016 17:30:03 +0000</pubDate><guid>http://localhost:1313/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/</guid><description>&lt;p class="postedit">
+ Please note that &lt;strong>csvplot&lt;/strong> source code is now moved to GitHub. Source code can be downloaded from the project&amp;rsquo;s &lt;a href="http://github.com/end2endzone/csvplot">GitHub page&lt;/a>.
+&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&amp;rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.&lt;/p></description></item><item><title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</title><link>http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</link><pubDate>Fri, 10 Jun 2016 20:14:19 +0000</pubDate><guid>http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my simplest library that I wrote for the arduino: &lt;em>SoftTimers&lt;/em>. The &lt;em>SoftTimers&lt;/em> arduino library allows one to properly time multiple events and know when each &amp;ldquo;timer&amp;rdquo; expires meaning that an action is required.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;p>When I first learned programming the arduino, I learned the &amp;ldquo;&lt;em>hello world&lt;/em>&amp;rdquo; of the arduino: turning a LED on and off. As expected, I used &lt;code>delay()&lt;/code> to define how long the LED should be on and off.&lt;/p></description></item><item><title>libRtttl – A c++ library (with UI) for compressing/optimizing the RTTTL audio format</title><link>http://localhost:1313/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</link><pubDate>Sat, 28 May 2016 15:18:35 +0000</pubDate><guid>http://localhost:1313/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about another library that I have written: libRtttl is a c++ library for manipulating the RTTTL audio format.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;p>See this post for a &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">quick recall of the RTTTL format&lt;/a>.&lt;/p>
+&lt;p class="postedit">
+ Edit: for a better understanding and examples of what libRTTTL can do, please see this post:
+&lt;a href="http://localhost:1313/how-to-convert-arduino-code-to-actual-rtttl-melodies-using-librtttl-and-anyrtttl/">How to convert arduino code to actual RTTTL melodies using libRtttl and AnyRtttl&lt;/a>.
+&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>RTTTL songs available on the internet are not optimized for the smallest size. Still they are readable by a human but they are far from optimized for the arduino embedded device. Most RTTTL song can be optimized (without quality loss) and have their size reduced by ~20%. Conversion to binary allows even better compression but it wont be human readable anymore.&lt;/p></description></item><item><title>AnyRtttl – A feature rich arduino library for playing RTTTL melodies</title><link>http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</link><pubDate>Sat, 21 May 2016 23:20:34 +0000</pubDate><guid>http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about yet another Arduino library that I have written. AnyRtttl is a feature rich arduino library for playing RTTTL melodies. The library offers much more interesting features than relying on the widely available &lt;code>void play_rtttl(char *p)&lt;/code> function. The AnyRtttl is a feature rich library which supports all best RTTTL features.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/anyrtttl-a-feature-rich-arduino-library-for-playing-rtttl-melodies/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>See this post for a &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">quick recall of the RTTTL format&lt;/a>.&lt;/p></description></item><item><title>win32Arduino: a win32 library that implements most arduino functions</title><link>http://localhost:1313/win32arduino-a-win32-library-that-implements-most-arduino-functions/</link><pubDate>Mon, 16 May 2016 17:15:58 +0000</pubDate><guid>http://localhost:1313/win32arduino-a-win32-library-that-implements-most-arduino-functions/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Please note that win32Arduino source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/win32Arduino">the project&amp;rsquo;s GitHub page&lt;/a>.&lt;/p>
+&lt;p>
+&lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
+ 
+&lt;img src="https://img.shields.io/github/release/end2endzone/win32Arduino.svg" alt="">
+ 
+&lt;img src="https://ci.appveyor.com/api/projects/status/4jhi6oqgaji5e7pl/branch/master?svg=true" alt="">
+ 
+&lt;img src="https://img.shields.io/appveyor/tests/end2endzone/win32Arduino/master.svg" alt="">
+ 
+&lt;img src="https://img.shields.io/github/downloads/end2endzone/win32Arduino/total.svg" alt="">
+&lt;/p>
+&lt;p>After implementing many arduino library, I realized that unit testing a library is harder than I though. Most of the time, the library does not even require advanced arduino functionalities and could be tested outside of the arduino platform.&lt;/p>
+&lt;p>The win32Arduino is a solution to this issue.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/win32arduino-a-win32-library-that-implements-most-arduino-functions/#Download">download section&lt;/a> for quick download.&lt;/p></description></item><item><title>svnpropertylog - A script which finds all revisions where a specific subversion property has changed</title><link>http://localhost:1313/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</link><pubDate>Tue, 03 May 2016 16:52:00 +0000</pubDate><guid>http://localhost:1313/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/</guid><description>&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.&lt;/p>
+&lt;p>The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&amp;rsquo;s a &amp;ldquo;&lt;em>show log for subversion properties&lt;/em>&amp;rdquo;.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;p class="pleasenote">
+ Note that &lt;em>&lt;strong>svnpropertylog&lt;/strong>&lt;/em> is only available for Windows and has been tested on Windows 7 only.
+&lt;/p></description></item><item><title>libMIDI - A C++ open-source library for generating single tone melodies in MIDI format</title><link>http://localhost:1313/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</link><pubDate>Sun, 24 Apr 2016 16:42:27 +0000</pubDate><guid>http://localhost:1313/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>I mostly develop on the Windows platform. When I try to generate basic sounds and tone, I use the &lt;a href="http://msdn.microsoft.com/en-ca/library/windows/desktop/ms679277%28v=vs.85%29.aspx">Microsoft Beep function&lt;/a>. This API is quite old and is far from accurate when dealing with multiple short duration tones (less than 100ms). Also when you make two consecutive calls to the &lt;code>Beep()&lt;/code> function will ear a tick sound between each calls.&lt;/p></description></item><item><title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</title><link>http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</link><pubDate>Wed, 30 Mar 2016 17:05:59 +0000</pubDate><guid>http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following arduino library was written to use the findings found during the &lt;em>&lt;strong>&lt;a href="http://localhost:1313/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values&lt;/a>&lt;/strong>&lt;/em> article. All results were wrapped into a library for ease of use.&lt;/p>
+&lt;p>The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>The RcReceiverSignal library allows one to easily configure an input pin to read a PWM signal sent from a RC receiver by attaching a RcReceiverSignal instance to a pin connected the receiver and automatically monitor each pulse sent by the receiver.&lt;/p></description></item><item><title>BitReader – An arduino library for reading &amp; writing data as chunks of bits</title><link>http://localhost:1313/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</link><pubDate>Sat, 26 Mar 2016 00:23:05 +0000</pubDate><guid>http://localhost:1313/bitreader-an-arduino-library-for-reading-writing-data-as-chunks-of-bits/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Here is another arduino library that I have written.&lt;/p>
+&lt;p>As a desktop developer, I am not used to have memory (or even CPU) requirements as most developers will not look at memory consumption as an arduino developer would. Memory &amp;amp; CPU is cheap. If your application is struggling to run on today&amp;rsquo;s computer, it will run smoothly in 1-2 years.&lt;/p>
+&lt;p>As most arduino developers have faced, the amount of memory available on embedded devices is pretty limited. Having a way to save bits or our precious memory is interesting.&lt;/p></description></item><item><title>NonBlockingRTTTL – A non-blocking arduino library for playing RTTTL melodies</title><link>http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</link><pubDate>Sun, 20 Mar 2016 15:16:54 +0000</pubDate><guid>http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>The following article is about my first Arduino library that I have written. NonBlockingRTTTL is a non-blocking arduino library for playing RTTTL data.&lt;/p>
+&lt;p class="postedit">
+ &lt;strong>EDIT&lt;/strong>: The NonBlockingRtttl arduino library is now moved to GitHub. Source code can be downloaded from the project&amp;rsquo;s &lt;a href="http://github.com/end2endzone/NonBlockingRTTTL">GitHub page&lt;/a>.
+&lt;/p>
+&lt;p class="postedit">
+ EDIT: NonBlockingRTTTL library is now available on the &lt;a href="http://www.arduino.cc/en/guide/libraries#toc3">Arduino Library Manager&lt;/a>.
+&lt;/p>
+&lt;p>Skip to the &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Download">download section&lt;/a> for quick download.&lt;/p>
+&lt;h1 id="purpose">Purpose&lt;/h1>
+&lt;p>Most code that can be found on the internet that allows you to &amp;ldquo;play&amp;rdquo; an &lt;a href="http://localhost:1313/nonblockingrtttl-a-non-blocking-arduino-library-for-playing-rtttl-melodies/#Quick_recall_of_the_RTTTL_format">RTTTL&lt;/a> string is build the same way: sequential calls to the tone() function followed by a delay() function. This type of implementation might be good for robots but not for realtime application or projects that needs to monitor pins while the song is playing.&lt;/p></description></item><item><title>extTools: a windows shell extension to help you with common Windows File Explorer tasks.</title><link>http://localhost:1313/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</link><pubDate>Sun, 29 Mar 2015 20:00:07 +0000</pubDate><guid>http://localhost:1313/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</guid><description>&lt;h1 id="what-is-exttools">What is extTools&lt;/h1>
+&lt;p>extTools is a fast and innovative FREEWARE (for non-commercial use) software suite to help you executing common tasks in Windows File Explorer more easily.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Advanced clipboard support (copy, append or modify).&lt;/li>
+&lt;li>File operation queuing (batch copy or paste).&lt;/li>
+&lt;li>Better &amp;amp; quicker file deletions.&lt;/li>
+&lt;li>Powerful file renaming algorithms.&lt;/li>
+&lt;li>XP like search tool (simple search tool).&lt;/li>
+&lt;li>Extends Windows File Explorer by registering as a Shell Extension.&lt;/li>
+&lt;/ul>
+&lt;p>extTools allows its users to execute tasks that are not available in a default Windows environment. extTools is also designed to replace existing task that are badly designed, annoying to execute or simply missing.&lt;/p></description></item><item><title>HDHomeRun TV Dump: Unleash the DVR capabilities of your free to air live TV stream</title><link>http://localhost:1313/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</link><pubDate>Mon, 16 Feb 2015 02:24:14 +0000</pubDate><guid>http://localhost:1313/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</guid><description>&lt;h1 id="hdhomerun-tv-dump">HDHomeRun TV Dump&lt;/h1>
+&lt;p>&lt;em>HdHomeRun TV Dump&lt;/em> is a &lt;a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI&lt;/a> that installs over the native &lt;a href="http://www.silicondust.com/support/downloads/">HDHomeRun application&lt;/a> and allows owners to quickly take control over the free to air live TV stream. Implementing DVR capabilities on your computer becomes a easy as 1-2-3.&lt;/p>
+&lt;p>It is designed to make interaction with the device easy by automating as much as possible any task a user would like to execute.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Quicker &amp;amp; easier to understand and install than other DVR solutions like &lt;a href="https://www.mythtv.org/">MythTV&lt;/a> and &lt;a href="http://windows.microsoft.com/en-CA/windows/products/windows-media-center">Windows Media Center&lt;/a>.&lt;/li>
+&lt;li>Auto-detection of existing HDHomeRun devices on the network.&lt;/li>
+&lt;li>Auto-detection of busy tuners.&lt;/li>
+&lt;li>Automatic selection of an available tuner for watching or recording a live TV stream.&lt;/li>
+&lt;li>Manual recording support.&lt;/li>
+&lt;li>Scheduled recording support (enables DVR capabilities with the HDHomeRun)&lt;/li>
+&lt;li>Watch live TV streams.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>HDHomeRun TV Dump&lt;/em> should also work with devices that supports the MPEG4/H.264 video codec but this functionality is still untested.&lt;/p></description></item><item><title>DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</title><link>http://localhost:1313/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</link><pubDate>Sun, 01 Feb 2015 13:58:08 +0000</pubDate><guid>http://localhost:1313/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/</guid><description>&lt;h1 id="dns343monitor">DNS343Monitor&lt;/h1>
+&lt;p>DNS-343 Monitor is a tool for monitoring how much space is left on your DNS-343 NAS device.&lt;/p>
+&lt;p>The &lt;a href="http://www.google.com/?q=dns-343">DNS-343&lt;/a> is a &lt;a href="http://en.wikipedia.org/wiki/Network-attached_storage">Network Attached Storage&lt;/a> (NAS) device that can hold as much as 4 drives. Since all the drives are shared in a Network, each disk can quickly become full. This tools allows you to see the remaining space left on each individual drives.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Show space left and used for each drives.&lt;/li>
+&lt;li>GUI supported.&lt;/li>
+&lt;li>Compatible with all firmware versions.&lt;/li>
+&lt;/ul>
+&lt;p class="pleasenote">
+ &lt;strong>Note:&lt;/strong> This tool requires administrator privileges on the DNS-343 for retrieving free space left.
+&lt;/p></description></item><item><title>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</title><link>http://localhost:1313/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</link><pubDate>Sat, 31 Jan 2015 01:27:33 +0000</pubDate><guid>http://localhost:1313/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/</guid><description>&lt;h1 id="msbuildreorder">MSBuildReorder&lt;/h1>
+&lt;p class="postedit">
+ Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/msbuildreorder">the project&amp;rsquo;s GitHub page&lt;/a>.
+&lt;/p>
+&lt;p>
+&lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/release/end2endzone/msbuildreorder.svg" alt="">
+
+
+&lt;img src="https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true" alt="">
+
+
+&lt;img src="https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg" alt="">
+&lt;/p>
+&lt;p>MSBuildReorder is a tool for &amp;ldquo;reordering&amp;rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.&lt;/p>
+&lt;p>Building a solution that has multiple projects can quickly become bloated with too many lines that are not related to each other. For this reason, finding the actual cause of a build fail is harder than it should be. MSBuildReorder is able to read the log and reorder the projects in a sequential order.&lt;/p></description></item><item><title>OfficeReadOnly: How to open Microsoft Office documents as read-only</title><link>http://localhost:1313/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</link><pubDate>Wed, 28 Jan 2015 02:12:41 +0000</pubDate><guid>http://localhost:1313/officereadonly-how-to-open-microsoft-office-documents-as-read-only/</guid><description>&lt;h1 id="officereadonly">OfficeReadOnly&lt;/h1>
+&lt;p>OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Integrates into Windows File Explorer or the with the &amp;ldquo;Send to&amp;rdquo; folder.&lt;/li>
+&lt;li>Supports Documents, Workbooks, Presentations and Diagrams.&lt;/li>
+&lt;li>Supports both Microsoft Office 2003 (*.doc) and Microsoft Office 2010 file extensions (*.doc, and *.docx).&lt;/li>
+&lt;li>Can be used from the command prompt.&lt;/li>
+&lt;/ul>
+&lt;p>Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.&lt;/p></description></item><item><title>bin2cpp: The easiest way to embed small files into a C++ executable</title><link>http://localhost:1313/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</link><pubDate>Mon, 12 Jan 2015 03:56:17 +0000</pubDate><guid>http://localhost:1313/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/</guid><description>&lt;h1 id="bin2cpp">bin2cpp&lt;/h1>
+&lt;p class="postedit">
+ Please note that bin2cpp source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/bin2cpp">the project&amp;rsquo;s GitHub page&lt;/a>.
+&lt;/p>
+&lt;p>
+&lt;img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/release/end2endzone/bin2cpp.svg" alt="">
+
+
+&lt;img src="https://ci.appveyor.com/api/projects/status/q9k0ebb971o475qi/branch/master?svg=true" alt="">
+
+
+&lt;img src="https://img.shields.io/appveyor/tests/end2endzone/bin2cpp/master.svg" alt="">
+
+
+&lt;img src="https://img.shields.io/github/downloads/end2endzone/bin2cpp/total.svg" alt="">
+&lt;/p>
+&lt;p>bin2cpp is a command line tool for embedding small files (like images, icons or raw data files) into a C++ executable.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Easily converts small files as C++ source code for embedding into a C++ executable.&lt;/li>
+&lt;li>Content extraction supported by a unique function call for each embedded file.&lt;/li>
+&lt;li>Supports a multiple embedded files at once.&lt;/li>
+&lt;li>Makes it harder for resource hacker to modify or steal the embedded files.&lt;/li>
+&lt;li>No third party libraries required for retrieving the data of the embedded files.&lt;/li>
+&lt;/ul>
+&lt;p>bin2cpp is not implemented using &lt;a href="http://en.wikipedia.org/wiki/Resource_%28Windows%29">executable resources&lt;/a>. Instead, bin2cpp creates multiple function calls for retrieving the data which makes it harder to steal the executable&amp;rsquo;s content. It also makes it even harder to replace an existing resource of the executable.&lt;/p></description></item></channel></rss>

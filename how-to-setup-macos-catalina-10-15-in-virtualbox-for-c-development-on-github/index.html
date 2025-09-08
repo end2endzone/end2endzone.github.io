@@ -1,337 +1,224 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-<title>How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github. - end2end zone</title>
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<title>How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github. - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
-<meta property="og:title" content="How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.">
+<meta property="og:title" content="How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github.&amp;url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;description=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-    <p>end2end</p>
-    <p>2-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github.&amp;url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;description=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#update-macos-with-latest-security-updates-and-bug-fixes">Update macOS with latest security updates and bug fixes</a></li>
-    <li><a href="#set-system-preferences-for-developers">Set system preferences for developers</a>
-      <ol>
-        <li><a href="#enable-ssh-and-file-sharing">Enable SSH and File sharing</a></li>
-        <li><a href="#add-terminal-icon-in-dock">Add Terminal icon in Dock</a></li>
-        <li><a href="#show-address-bar-in-finder">Show address bar in Finder</a></li>
-      </ol>
-    </li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github.&amp;url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;description=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
 </div>
-
-        
-		
-        <h1 id="introduction">Introduction</h1>
+<div class="meta">
+<time datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+<p>end2end</p>
+<p>15-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github.&amp;url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;title=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f&amp;description=How%20to%20setup%20macOS%20Catalina%2010.15%20in%20VirtualBox%20for%20C%2b%2b%20development%20on%20Github." target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fhow-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#update-macos-with-latest-security-updates-and-bug-fixes">Update macOS with latest security updates and bug fixes</a></li>
+<li><a href="#set-system-preferences-for-developers">Set system preferences for developers</a>
+<ol>
+<li><a href="#enable-ssh-and-file-sharing">Enable SSH and File sharing</a></li>
+<li><a href="#add-terminal-icon-in-dock">Add Terminal icon in Dock</a></li>
+<li><a href="#show-address-bar-in-finder">Show address bar in Finder</a></li>
+<li><a href="#show-hidden-file-and-folders-in-finder">Show hidden file and folders in Finder</a></li>
+</ol>
+</li>
+<li><a href="#xcode">Xcode</a>
+<ol>
+<li><a href="#install-xcode-application">Install Xcode application</a></li>
+<li><a href="#verify-xcode-installation">Verify Xcode installation</a></li>
+</ol>
+</li>
+<li><a href="#install-virtualboxs-guest-additions">Install VirtualBox&rsquo;s Guest Additions</a>
+<ol>
+<li><a href="#disable-gatekeeper">Disable Gatekeeper</a></li>
+<li><a href="#check-gatekeeper-is-disabled">Check Gatekeeper is disabled</a></li>
+<li><a href="#disable-sip-system-integrity-protection-and-allow-oracle-identifier-for-kext">Disable SIP (System Integrity Protection) and allow Oracle identifier for kext</a></li>
+<li><a href="#check-sip-is-disabled">Check SIP is disabled</a></li>
+<li><a href="#change-ownership-and-permissions-on-filesystem">Change ownership and permissions on filesystem</a></li>
+<li><a href="#install-guest-additions">Install Guest Additions</a></li>
+<li><a href="#check-clipboard-sharing-is-working">Check clipboard sharing is working</a></li>
+<li><a href="#enable-gatekeeper">Enable Gatekeeper</a></li>
+<li><a href="#enable-sip">Enable SIP</a></li>
+</ol>
+</li>
+<li><a href="#install-homebrew">Install Homebrew</a></li>
+<li><a href="#install-cmake-command-line-via-homebrew">Install CMake command line via Homebrew</a></li>
+<li><a href="#install-cmake-gui-version">Install CMake (GUI version)</a></li>
+<li><a href="#install-gcc-via-homebrew">Install GCC via Homebrew</a></li>
+<li><a href="#register-xcode-as-current-command-line-tools">Register Xcode as current Command Line Tools</a></li>
+<li><a href="#install-visual-studio-code">Install Visual Studio Code</a>
+<ol>
+<li>
+<ol>
+<li><a href="#install-required-extensions">Install required Extensions</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#configure-ssh-keys">Configure SSH keys</a>
+<ol>
+<li><a href="#find-out-if-you-already-have-ssh-keys-on-your-system">Find out if you already have ssh keys on your system</a></li>
+<li><a href="#import-existing-generated-keys">Import existing generated keys</a></li>
+<li><a href="#generate-a-new-set-of-keys">Generate a new set of keys</a></li>
+</ol>
+</li>
+<li><a href="#configure-git-for-github">Configure Git for Github</a>
+<ol>
+<li><a href="#set-your-user-global-settings">Set your user global settings</a></li>
+<li><a href="#add-your-public-ssh-key-to-your-github-account">Add your public SSH key to your Github account</a></li>
+</ol>
+</li>
+<li><a href="#test-c-compilation-in-terminal">Test C++ compilation in Terminal</a></li>
+<li><a href="#test-c-compilation-with-visual-studio-code">Test C++ compilation with Visual Studio Code</a>
+<ol>
+<li><a href="#cloning-github-repo-with-visual-studio-code">Cloning GitHub repo with Visual Studio Code</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>This post explains all the instructions required in order to get started with c++ no macOS 10.15 Catalina.</p>
 <p>This article assumes that you already have access to a macOS image ISO file and that you already created a macOS virtual machine in VirtualBox.</p>
 <h1 id="update-macos-with-latest-security-updates-and-bug-fixes">Update macOS with latest security updates and bug fixes</h1>
-<p>Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software &amp; security update.</p>
+<p>Following macOS Catalina 10.15 installation, it is best practice to update the Operating System with the latest software & security update.</p>
 <ol>
 <li>Open <em>System Preferences</em>.</li>
 <li>Click on <em>Software Update</em>, a new window will open.</li>
 <li>Install all updates that are available for macOS Catalina 10.15.</li>
 </ol>
 <p>At the time of this writing, the latest version of macOS Catalina is version 10.15.7.</p>
-<p><em>Note: You can install optional updates by clicking on</em> More info&hellip; <em>and selecting updates that are related to Catalina.</em></p>
-<p> </p>
+<p class="pleasenote">
+Note: You can install optional updates by clicking on <em>More info&mldr;</em> and selecting updates that are related to Catalina.
+</p>
 <h1 id="set-system-preferences-for-developers">Set system preferences for developers</h1>
 <h2 id="enable-ssh-and-file-sharing">Enable SSH and File sharing</h2>
 <ol>
@@ -347,7 +234,7 @@
 </li>
 <li>Check File Sharing.
 <ol>
-<li>Click <em>Options&hellip;</em> button.</li>
+<li>Click <em>Options&mldr;</em> button.</li>
 <li>In <em>Windows File Sharing</em> section, check you account name and enter your account password. This will make sure that shared folders requires a username/password for write access.</li>
 <li>Click on <em>Done</em> button.</li>
 </ol>
@@ -369,266 +256,497 @@
 <h2 id="show-address-bar-in-finder">Show address bar in Finder</h2>
 <p>By default, <em>Finder</em> does not show the address bar (the location of the current directory).</p>
 <p>Open a <em>Terminal</em> and enter the following command:</p>
-<code>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-      
-    </ul>
-  
+<pre tabindex="0"><code>defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES &amp;&amp; killall Finder
+</code></pre><p>The command will change the default setting and restart all <em>Finder</em> application instances.</p>
+<p>Also, enable the following <em>View settings</em> in <em>Finder</em> :</p>
+<ol>
+<li>Click on menu <em>View</em>.</li>
+<li>Select <em>Show Path Bar</em>.</li>
+<li>Select <em>Show Status Bar</em>.</li>
+</ol>
+<p>Source: <a href="https://superuser.com/a/1209218">How can I get an address bar in Finder?</a></p>
+<h2 id="show-hidden-file-and-folders-in-finder">Show hidden file and folders in Finder</h2>
+<p>By default, <em>Finder</em> does not show hidden file and folders. As most developers, you will probably require enable this setting.</p>
+<p>Open a <em>Terminal</em> and enter the following command:</p>
+<pre tabindex="0"><code>defaults write com.apple.Finder AppleShowAllFiles true &amp;&amp; killall Finder
+</code></pre><p>The command will change the default setting and restart all <em>Finder</em> application instances.</p>
+<p>Source: <a href="https://www.macworld.co.uk/how-to/show-hidden-files-mac-3520878/">How to Show Hidden Files on Mac</a></p>
+<h1 id="xcode">Xcode</h1>
+<p><strong>Xcode</strong> is <a href="https://en.wikipedia.org/wiki/Apple_Inc.">Apple&rsquo;s</a> <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment</a> (IDE) for <a href="https://en.wikipedia.org/wiki/MacOS">macOS</a>, used to develop software for macOS.</p>
+<h2 id="install-xcode-application">Install Xcode application</h2>
+<p>A relatively new version of xcode is required for c++ development on macOS. At the time of this writing, the latest version of xcode is 12 but we do not need to be using the latest version. It is better to use the previous stable version. At the time of this writing, xcode 11.7 is available. This <a href="https://stackoverflow.com/questions/10335747/how-to-download-xcode-dmg-or-xip-file">stackoverflow article</a> defines the location of xcode 11.7 installation package.</p>
+<ol>
+<li>Download <a href="https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_11.7/Xcode_11.7.xip">Xcode_11.7.xip</a>.</li>
+<li>Open the file in <em>Finder</em> and double-click on it. Wait for the digital signature to validate. This will extract <em>Xcode.app</em> application file to the <em>Downloads</em> directory.</li>
+<li>In <em>Finder</em>, move <em>Xcode.app</em> file to <em>Applications</em> folder.</li>
+<li>Open LaunchPad and click on Xcode application. This will register Xcode tools with your account.</li>
+</ol>
+<p><em>Note: you will require a valid Apple ID for downloading the installation package.</em></p>
+<h2 id="verify-xcode-installation">Verify Xcode installation</h2>
+<p>To verify that Xcode is properly installed, open a <em>Terminal</em> and enter the command: <code>system_profiler SPDeveloperToolsDataType</code>.</p>
+<p>The expected output is the following:</p>
+<pre tabindex="0"><code>Developer:
+
+    Developer Tools:
+
+      Version: 11.7 (11E801a)
+      Location: /Applications/Xcode.app
+      Applications:
+          Xcode: 11.7 (16142)
+          Instruments: 11.7 (64535.78)
+      SDKs:
+          iOS:
+              13.7: (17H22)
+          iOS Simulator:
+              13.7: (17H22)
+          macOS:
+              10.15.6: (19G68)
+              19.0:
+          tvOS:
+              13.4: (17L255)
+          tvOS Simulator:
+              13.4: (17L255)
+          watchOS:
+              6.2: (17T255)
+          watchOS Simulator:
+              6.2: (17T255)
+</code></pre><p>Once Xcode is properly registered on the system, you can delete file <em>Xcode_11.7.xip</em>.</p>
+<h1 id="install-virtualboxs-guest-additions">Install VirtualBox&rsquo;s Guest Additions</h1>
+<p>On macOS 10.15 Catalina, <em>Guest Additions</em> cannot be installed by default. The installation cannot be completed as normal because the OS now require packages to be digitally signed. I think this applies to macOS 10.14 Mojave as well. To get around this security limitation, you need to disable <strong>multiple security features</strong> in order to install the package.</p>
+<p>To install <em>Guest Additions</em> using VirtualBox version 6.1.16 on Windows 7 to share the clipboard values between the host and the guest. If someone else wants to install this, here is the whole process:</p>
+<h2 id="disable-gatekeeper">Disable Gatekeeper</h2>
+<ol>
+<li>Be sure to exit <em>System Preferences</em> on your Mac.</li>
+<li>Open a Terminal</li>
+<li>Enter the command <code>sudo spctl --master-disable</code>.</li>
+</ol>
+<p>Source: <a href="https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave">How to open apps from unidentified developers on Mac in macOS Catalina</a></p>
+<h2 id="check-gatekeeper-is-disabled">Check Gatekeeper is disabled</h2>
+<ol>
+<li>Click on <em>System Preferences</em> on your Mac Dock.</li>
+<li>Choose <em>Security & Privacy</em>.</li>
+<li>Look at <em>Allow apps download from:</em>, it should be set to <code>Anywhere</code>. If it is, you are done.</li>
+<li>If not, click the lock icon at the bottom left of the screen.</li>
+<li>Choose the <code>Anywhere</code> option under <em>Allow apps downloaded from</em>. Prior to making the change, this option wasn&rsquo;t available.</li>
+<li>Click the unlocked lock again to keep the change.</li>
+</ol>
+<h2 id="disable-sip-system-integrity-protection-and-allow-oracle-identifier-for-kext">Disable SIP (System Integrity Protection) and allow Oracle identifier for kext</h2>
+<ol>
+<li>Restart your computer in <em>Recovery mode</em>. In your VM&rsquo;s terminal enter the following command :<br>
+<code>sudo nvram recovery-boot-mode=unused && sudo shutdown -r now</code>.</li>
+<li>Launch <em>Terminal</em> from the <em>Utilities</em> menu.</li>
+<li>Run the command <code>csrutil disable</code> which will disable SIP.</li>
+<li>Run the command <code>spctl kext-consent add VB5E2TV963</code> which will allow Oracle identifier for <em>kext</em>.</li>
+<li>Restart your computer and exit <em>Recovery Mode</em>. In your VM&rsquo;s terminal enter the following command :<br>
+<code>nvram -d recovery-boot-mode && shutdown -r now</code>.</li>
+</ol>
+<p><em>Note: <code>VB5E2TV963</code> is the code for oracle.</em></p>
+<p>Source: <a href="https://forums.virtualbox.org/viewtopic.php?f=8&amp;t=93133#p448593">Install problem 10.14.5 vBox 6.0</a></p>
+<h2 id="check-sip-is-disabled">Check SIP is disabled</h2>
+<p>You can verify that SIP is disabled with the command:<br>
+<code>csrutil status</code><br>
+which should display:<br>
+<code>System Integrity Protection status: disabled.</code>.</p>
+<h2 id="change-ownership-and-permissions-on-filesystem">Change ownership and permissions on filesystem</h2>
+<p>Enable writing to <code>/System/Library/Extensions/</code>.</p>
+<p>In your VM&rsquo;s terminal enter the following commands:</p>
+<pre tabindex="0"><code>sudo mount -uw /
+sudo chown :admin /System/Library/Extensions/
+sudo chmod 775 /System/Library/Extensions/
+</code></pre><p>Source: <a href="https://www.virtualbox.org/ticket/19047#comment:6">Guest Additions not installing on macOS 10.15 Catalina guests</a></p>
+<h2 id="install-guest-additions">Install Guest Additions</h2>
+<p>At this point, the installation of <em>Guest Addition</em> should succeed. Proceed with normal installation instructions:</p>
+<ol>
+<li>On VirtualBox emulation window, click on <em>Devices</em> menu.</li>
+<li>Select <em>Insert Guest Additions CD image&mldr;</em> .</li>
+<li>In your VM, click on the new CD image on the desktop.</li>
+<li>Click on <em>VBoxDarwinAdditions.pkg</em>.</li>
+<li>Follow the instructions on screen.</li>
+<li>A reboot is required after the installation.</li>
+</ol>
+<h2 id="check-clipboard-sharing-is-working">Check clipboard sharing is working</h2>
+<p>Check that clipboard is shared between the host and the guest.</p>
+<ol>
+<li>On VirtualBox emulation window, click on <em>Devices</em> menu.</li>
+<li>Select menu <em>Shared Clipboard</em> -> <em>Bidirectional</em>.</li>
+<li>In your VM, open a terminal.</li>
+<li>Select text.</li>
+<li>Right-click on the selected text and select <em>Copy</em>.</li>
+<li>On your host, open a note taking application.</li>
+<li>Right-click and select <em>Paste</em>.</li>
+</ol>
+<h2 id="enable-gatekeeper">Enable Gatekeeper</h2>
+<ol>
+<li>Be sure to exit <em>System Preferences</em> on your Mac.</li>
+<li>Open a Terminal</li>
+<li>Enter the command <code>sudo spctl --master-enable</code>.</li>
+</ol>
+<h2 id="enable-sip">Enable SIP</h2>
+<ol>
+<li>Restart your computer in <em>Recovery mode</em>.</li>
+<li>Launch <em>Terminal</em> from the <em>Utilities</em> menu.</li>
+<li>Run the command <code>csrutil enable</code> .</li>
+<li>Restart your computer.</li>
+</ol>
+<h1 id="install-homebrew">Install Homebrew</h1>
+<p><a href="http://brew.sh/">Homebrew</a> is a free and open-source software <a href="https://en.wikipedia.org/wiki/Package_manager">package management system</a> that simplifies the installation of software on Apple&rsquo;s operating system macOS as well as Linux.</p>
+<p>You can install <em>Homebrew</em> with the following commands:</p>
+<ol>
+<li>Open a <em>Terminal</em> app.</li>
+<li>Enter the command<br>
+<code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>.</li>
+<li>You&rsquo;ll see messages in the <em>Terminal</em> explaining what you need to do to complete the installation process.</li>
+</ol>
+<p>Source: <a href="https://treehouse.github.io/installation-guides/mac/homebrew">Installing Homebrew on a Mac</a>.</p>
+<h1 id="install-cmake-command-line-via-homebrew">Install CMake command line via Homebrew</h1>
+<p><a href="https://cmake.org/">CMake</a> is cross-platform free and open-source software for build automation, testing and packaging using a compiler-independent method. CMake is not a build system but rather it&rsquo;s a build-system generator.</p>
+<p>cmake can be installed with the following command:<br>
+<code>brew install cmake</code></p>
+<h1 id="install-cmake-gui-version">Install CMake (GUI version)</h1>
+<p>The GUI version of <a href="https://cmake.org/">CMake</a> can be installed with these instructions:</p>
+<ol>
+<li>Open <a href="https://cmake.org/download/">CMake download page</a>.</li>
+<li>Search for the <em>Latest Release</em> section and then <em>Binary distributions</em> section.</li>
+<li>Download the dmg installer for <em>Mac OS X 10.13 or later</em>. At the time of this writing, the file <a href="https://github.com/Kitware/CMake/releases/download/v3.19.6/cmake-3.19.6-macos-universal.dmg">cmake-3.19.6-macos-universal.dmg</a> is available.</li>
+<li>Locate the downloaded file in <em>Finder</em> and double-click the file. A new window will open</li>
+<li>Drag the CMake triangle icon over the <em>Applications</em> folder, making it available in the <em>macOS Launchpad</em>.</li>
+<li>Add CMake to your <em>Dock</em> by right-clicking on the icon to bring up the context menu and choosing <strong>Options</strong>, <strong>Keep in Dock</strong>.</li>
+</ol>
+<h1 id="install-gcc-via-homebrew">Install GCC via Homebrew</h1>
+<p>GCC stands for <em>GNU Compiler Collections</em> which is used to compile mainly C and C++ source code. It can also be used to compile Objective C and Objective C++.</p>
+<p>gcc can be installed with the following command:<br>
+<code>brew install gcc</code></p>
+<p>Source: <a href="https://discussions.apple.com/thread/8336714">How does one install GCC on a Mac?</a></p>
+<h1 id="register-xcode-as-current-command-line-tools">Register Xcode as current Command Line Tools</h1>
+<p>Following the installation of <em>Xcode</em>, the application may not be registered on the system as the current <em>Command Line Tools</em>.</p>
+<p>The cause of the issue is one of the following errors when compiling :</p>
+<ul>
+<li>fatal error: limits.h: No such file or directory</li>
+<li>fatal error: &lsquo;wchar.h&rsquo; file not found</li>
+<li>The output of command <code>xcode-select -p</code> outputs <code>/Library/Developer/CommandLineTools</code>.</li>
+</ul>
+<p>This is documented as a bug at the following locations:</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/30877659/fatal-error-limits-h-no-such-file-or-directory">https://stackoverflow.com/questions/30877659/fatal-error-limits-h-no-such-file-or-directory</a></li>
+<li><a href="https://github.com/qutip/qutip/issues/1030">https://github.com/qutip/qutip/issues/1030</a></li>
+<li><a href="https://stackoverflow.com/questions/62523093/compile-llvm-from-sources-on-macos-catalina-how-to-solve-stdio-h-not-found">https://stackoverflow.com/questions/62523093/compile-llvm-from-sources-on-macos-catalina-how-to-solve-stdio-h-not-found</a></li>
+<li><a href="https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/issues/1055">https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/issues/1055</a></li>
+<li><a href="https://stackoverflow.com/questions/52509602/cant-compile-c-program-on-a-mac-after-upgrade-to-mojave">https://stackoverflow.com/questions/52509602/cant-compile-c-program-on-a-mac-after-upgrade-to-mojave</a></li>
+</ul>
+<p>The solution is to register (again) Xcode as the current current Command Line Tools:</p>
+<ol>
+<li>Open <em>Launchpad</em>.</li>
+<li>Select <em>Xcode</em>.</li>
+<li>In <em>Xcode</em> menu, select <em>Preferences</em>.</li>
+<li>Click on <em>Locations</em> tab.</li>
+<li>In <em>Command Line Tools</em> field, select <em>Xcode 11.7 (11E801a)</em>.</li>
+</ol>
+<p>Validate the change with the command <code>xcode-select -p</code> which should output <code>/Applications/Xcode.app/Contents/Developer</code>.</p>
+<p>Then create a simlink for a missing directory. The instruction is detailed <a href="https://stackoverflow.com/a/63207834">here</a>.<br>
+Enter the following command in a <em>Terminal</em> :<br>
+<code>ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk</code>.</p>
+<h1 id="install-visual-studio-code">Install Visual Studio Code</h1>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> is a freeware source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.</p>
+<ol>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=534106">Download Visual Studio Code</a> for macOS.</li>
+<li>Open the browser&rsquo;s download list and locate the downloaded archive.</li>
+<li>Select the <em>magnifying glass</em> icon to open the archive in <em>Finder</em>.</li>
+<li>Drag <code>Visual Studio Code.app</code> to the <code>Applications</code> folder, making it available in the macOS Launchpad.</li>
+<li>Add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing <strong>Options</strong>, <strong>Keep in Dock</strong>.</li>
+</ol>
+<p>Source: <a href="https://code.visualstudio.com/docs/setup/mac">Running Visual Studio Code on macOS</a></p>
+<h3 id="install-required-extensions">Install required Extensions</h3>
+<ol>
+<li>Open <em>Visual Studio Code</em>.</li>
+<li>On the left toolbar, click the <em>Extensions</em> icon.</li>
+<li>Search and install the following extensions:
+<ul>
+<li>C/C++</li>
+<li>CMake</li>
+<li>CMake Tools</li>
+</ul>
+</li>
+</ol>
+<h1 id="configure-ssh-keys">Configure SSH keys</h1>
+<p>If you use GitHub without setting up an SSH key, you&rsquo;re really missing out. Using ssh keys allow you to connect to other systems without having to provide a username and password.</p>
+<h2 id="find-out-if-you-already-have-ssh-keys-on-your-system">Find out if you already have ssh keys on your system</h2>
+<p>ssh keys are stored in <code>$HOME/.ssh</code> directory. The <em>private</em> and <em>public</em> keys are usually named <code>id_rsa</code> and <code>id_rsa.pub</code>.</p>
+<p>If this directory does not exists on your system and you cannot find these files, you don&rsquo;t have ssh keys defined for your system. Continue to the next section for instructions on how to <em>import</em> or <em>create</em> new ssh keys.</p>
+<p>If your keys already exist, skip ahead to the <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/#configure-git-for-github">Configure Git for Github</a> section below.</p>
+<h2 id="import-existing-generated-keys">Import existing generated keys</h2>
+<p><em>Note: This section is for importing keys that you have generated previously. For example, if you are restoring a system backup, you may like to use the same key as previously. If you did not generate keys for your system, you can skip this section.</em></p>
+<p><code>ssh-agent</code> is a program that starts when you log in and stores your private keys. For it to work properly, it needs to be running and have a copy of your private key.</p>
+<ol>
+<li>Make sure that <em>ssh-agent</em> is running with the command :<br>
+<code>eval "$(ssh-agent -s)"</code><br>
+The output should look like this:<br>
+<code>Agent pid 1030</code></li>
+<li>Create the <em>.ssh</em> directory in user&rsquo;s home directory with the command :<br>
+<code>mkdir -p ~/.ssh</code></li>
+<li>Copy your existing public and private keys to <code>$HOME/.ssh</code> directory.</li>
+<li>Add your <strong>private</strong> key to <em>ssh-agent</em> with the command :<br>
+<code>ssh-add ~/.ssh/your_filename</code> where <em>your_filename</em> is the name of your private key.</li>
+</ol>
+<h2 id="generate-a-new-set-of-keys">Generate a new set of keys</h2>
+<ol>
+<li>Create the <em>.ssh</em> directory in user&rsquo;s home directory with the command :<br>
+<code>mkdir -p ~/.ssh</code></li>
+<li>Create a new pair of keys with the command :<br>
+<code>ssh-keygen -o</code></li>
+<li>Validate the new keys with the command :<br>
+<code>ls -al $HOME/.ssh</code></li>
+<li>Print the content of your public key with the command :<br>
+<code>cat ~/.ssh/id_rsa.pub</code></li>
+</ol>
+<p>The command output should look something like this:</p>
+<pre tabindex="0"><code>ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
+GPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3
+Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA
+t3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/En
+mZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbx
+NrRFi9wrf+M7Q==
+</code></pre><p><em>Note: SSH keys are always generated as a pair of public (<code>id_rsa.pub</code>) and private (<code>id_rsa</code>) keys. It&rsquo;s extremely important that you <strong>never reveal your private key</strong>, and only use your public key for things like GitHub authentication.</em></p>
+<p>Source: <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key">Git on the Server - Generating Your SSH Public Key</a>.</p>
+<h1 id="configure-git-for-github">Configure Git for Github</h1>
+<p><a href="https://git-scm.com/">Git</a> is bundled with Xcode and should be already installed on the system. You can verify if git is installed with the command <code>git --version</code>.</p>
+<h2 id="set-your-user-global-settings">Set your user global settings</h2>
+<p>Before make change to a repository, git should be configured with your username and email address.<br>
+Open a <em>Terminal</em> and enter the following commands:</p>
+<pre tabindex="0"><code>git config --global user.name &#34;myusername&#34;
+git config --global user.email &#34;myemailaddress@gmail.com&#34;
+</code></pre><p>Where <code>myusername</code> and <code>myemailaddress@gmail.com</code> must be replaced with your desired username (preferably one matching your github account) and your email address, respectively.</p>
+<p>Source: <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key#_generate_ssh_key">Git - Generating Your SSH Public Key</a></p>
+<h2 id="add-your-public-ssh-key-to-your-github-account">Add your public SSH key to your Github account</h2>
+<p>Online Git servers such as <em>Gitlab</em>, <em>Bitbucket</em> or <em>Github</em> provides authentication services using ssh keys. As a general rules, you must add your public key to your account. The following instructions shows how to do so with Github.</p>
+<ol>
+<li>Copy your public SSH key to the clipboard with the command :<br>
+<code>cat ~/.ssh/id_rsa.pub</code></li>
+<li>Highlight the output of the command and copy to the clipboard.</li>
+<li>Go to your <a href="https://github.com/settings/keys">GitHub SSH keys settings</a> page and click the <em>New SSH key</em> button.</li>
+<li>Give your key a recognizable title (such as <code>MACDEV01</code>) and paste in your public (<code>id_rsa.pub</code>) key.</li>
+</ol>
+<p>Finally, test your authentication with:</p>
+<pre tabindex="0"><code>ssh -T git@github.com
+</code></pre><p>If you&rsquo;ve followed all of these steps correctly, you should see this message:</p>
+<pre tabindex="0"><code>The authenticity of host &#39;github.com (140.82.114.3)&#39; can&#39;t be established.
+RSA key fingerprint is SHA256:nThbdj6RGJ48dhvldj3gawbEH48DjmV2LviKw6EFFB8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added &#39;github.com,140.82.114.3&#39; (RSA) to the list of known hosts.
+Hi your_user_name! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><p>Where <code>your_user_name</code> matches your actual Github username.</p>
+<h1 id="test-c-compilation-in-terminal">Test C++ compilation in Terminal</h1>
+<p>At this point, you should be ready to compile c++ code in <em>Terminal</em>. These instructions show how to compile <a href="https://github.com/google/googletest">googletest</a>, Google Testing and Mocking Framework.</p>
+<p>Checkout the code from github with :</p>
+<pre tabindex="0"><code>mkdir -p ~/dev
+cd ~/dev
+git clone &#34;https://github.com/google/googletest.git&#34;
+cd googletest
+</code></pre><p>The commands above will create directory <code>~/dev/googletest</code> with <em>googletest</em> source code.</p>
+<p>Create the <em>build system</em> directory with :</p>
+<pre tabindex="0"><code>mkdir -p build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=~/dev/install -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DBUILD_GMOCK=OFF -DBUILD_GTEST=ON ..
+</code></pre><p>Build and install <em>googletest</em> with :</p>
+<pre tabindex="0"><code>cmake --build . --parallel 4
+cmake --build . --target install
+</code></pre><p>This commands above will build googletest with 4 cores and install the library in <code>~/dev/install</code> directory.</p>
+<h1 id="test-c-compilation-with-visual-studio-code">Test C++ compilation with Visual Studio Code</h1>
+<p>These instructions show how to compile <a href="https://github.com/madler/zlib">zlib</a>, a massively spiffy yet delicately unobtrusive compression library.</p>
+<ol>
+<li>Open <em>Visual Studio Code</em>.</li>
+<li>On the left toolbar, click the <em>Source Control</em> icon.</li>
+<li>Click on the <em>Clone Repository</em> button.</li>
+<li>A <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">Command Pallet</a> will open.</li>
+<li>Enter the following url: <code>https://github.com/madler/zlib.git</code> and press <code>enter</code>.</li>
+<li>Select the location where to checkout the repository. For example, <code>~/dev</code>.</li>
+<li>Wait for the repository to checkout.</li>
+<li>A notification window will appear and ask <em>Would you like to open the cloned repository?</em> Click <em>Open</em> button.</li>
+<li>On the left toolbar, click the <em>CMake</em> icon.</li>
+<li>At the top of the window, click on <em>Configure All Projects</em> icon.</li>
+<li>A <em>Command Pallet</em> will open.</li>
+<li>Select <em>[Unspecified] (Let CMake guess what compilers and environment to use)</em> option.</li>
+<li>Wait for the configuration to complete.</li>
+<li>At the top of the window, click on <em>Build All Projects</em> icon.</li>
+<li>Wait for the build to complete.</li>
+<li>Right-click on the <em>example</em> target and select <em>Run in Terminal</em> menu item.</li>
+<li>The Terminal should output the following: <code>/Users/your_user_name/dev/zlib/build/example zlib version 1.2.11 = 0x12b0, compile flags = 0xa9 uncompress(): hello, hello! gzread(): hello, hello! gzgets() after gzseek: hello! inflate(): hello, hello! large_inflate(): OK after inflateSync(): hello, hello! inflate with dictionary: hello, hello!</code></li>
+</ol>
+<p>You can also allow the extension to connect to your <em>personal GitHub account</em> in order to checkout your own repositories:</p>
+<ol>
+<li>In the <em>Command Pallet</em>, select option <em>Clone from GitHub</em>.</li>
+<li>The extension &lsquo;GitHub&rsquo; may request your to sign in to GitHub.
+<ol>
+<li>Click <em>Allow</em> button.</li>
+<li>A <em>Safari</em> window will open which request <em>Authorization for Visual Studio Code to access GitHub</em>.</li>
+<li>Click <em>Continue</em> button.</li>
+<li>Enter your <em>GitHub credentials</em> and click on <em>Sign In</em> button.</li>
+<li>Read the given permissions and click on <em>Authorize github</em>.</li>
+<li>In the <em>Safari</em> window, note <em>Your Authorization Token</em>. It should look like the following: <code>vscode://vscode.github-authentication/did-authenticate?windowid=1&amp;code=ca7506dce69e40699277&amp;state=5c05c8f1-9af0-4630-b257-3fe8adeb9a75</code>.</li>
+<li>To use the token, in <em>Visual Studio Code</em>, click <em>Signing in to github.com&mldr;</em> in the status bar.</li>
+<li>Paste the token and hit enter.</li>
+</ol>
+</li>
+<li>In Visual Studio Code, allow the extension to open your token url.
+<ol>
+<li>Check <em>Don&rsquo;t ask again for this extension</em>.</li>
+<li>Click the <em>Open</em> button.</li>
+</ol>
+</li>
+<li>Select the location where to checkout the repository. For example, <code>~/dev/mygithubrepositories</code>.</li>
+</ol>
+<h2 id="cloning-github-repo-with-visual-studio-code">Cloning GitHub repo with Visual Studio Code</h2>
+<p>At the time of this writing, when a user clone one of his own GitHub repository using <em>Visual Studio Code</em>, the URL used for cloning is in format <code>https://github.com/&lt;Username>/&lt;Project>.git</code> instead of using the url in format <code>git@github.com:&lt;Username>/&lt;Project>.git</code>. Using the <code>https</code> url force users to enter their GitHub <em>username</em> and <em>password</em> everytime they want to push changes to GitHub.</p>
+<p>You can validate the remote origin url with the following command :<br>
+<code>git config --get remote.origin.url</code>.</p>
+<p>To get around this, one must change the remote url format from <code>https://github.com/&lt;Username>/&lt;Project>.git</code> to <code>git@github.com:&lt;Username>/&lt;Project>.git</code>. The instructions for this are explained in <a href="https://stackoverflow.com/questions/14762034/push-to-github-without-a-password-using-ssh-key">Push to GitHub without a password using ssh-key</a>.</p>
+<p>Enter the following command to change the remote origin url :<br>
+<code>git remote set-url origin git@github.com:&lt;Username>/&lt;Project>.git</code><br>
+where <code>&lt;Username></code> and <code>&lt;Project></code> are replaced with the correct values.</p>
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='9df6d0bd670fcd12d520a258786b9ab8'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="button left"><span>PiDVR Record over the air TV on a Raspberry Pi 4</span></a>
-    
-    
-      <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="button right"><span>How to encode command line parameters on Windows – done right</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='9df6d0bd670fcd12d520a258786b9ab8'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="button left"><span>PiDVR Record over the air TV on a Raspberry Pi 4</span></a>
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="button right"><span>How to encode command line parameters on Windows – done right</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

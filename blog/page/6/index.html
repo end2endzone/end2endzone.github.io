@@ -1,624 +1,585 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>Blog - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="Blog">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/blog/">
-  <meta property="og:image" content="http://www.end2endzone.com/img/main/logo.jpg">
-
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/blog/">
+<meta property="og:image" content="http://localhost:1313/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-      <a href="http://www.end2endzone.com/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="http://localhost:1313/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
 </header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+</footer>
 </section>
-
-      <main id="site-main">
-        
-  
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/">svnpropertylog – A script which finds all revisions where a specific subversion property has changed</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-05-03 16:52:00 &#43;0000 &#43;0000">May 3, 2016</time>
-    <p>end2end</p>
-    <p>2-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/" class="image" style="--bg-image: url('/wp-content/uploads/2016/05/svnpropertylog-v1.1.29-screenshot.png');">
-    <img class="stretchV" src="/wp-content/uploads/2016/05/svnpropertylog-v1.1.29-screenshot.png" alt="">
-  </a>
-    <h1 id="purpose">Purpose</h1>
-<p>The subversion application does not offer native support for identifying changes to subversion properties as easily as changes to files.</p>
-<p>The purpose of this script is to allows a subversion user to find all revisions where a change to a specific property occurred. In other words, it&rsquo;s a &ldquo;<em>show log for subversion properties</em>&rdquo;.</p>
-  </div>
-  
-  <footer>
-    <a href="/svnpropertylog-a-script-which-finds-all-revisions-where-a-specific-subversion-property-has-changed/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/scripts/">scripts</a></li>
-        
-      
-    </ul>
-  
+<main id="site-main">
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/">HDHomeRun TV Dump: Unleash the DVR capabilities of your free to air live TV stream</a></h2>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/">libMIDI – A C&#43;&#43; open-source library for generating single tone melodies in MIDI format</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-04-24 16:42:27 &#43;0000 &#43;0000">April 24, 2016</time>
-    <p>end2end</p>
-    <p>3-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/" class="image" style="--bg-image: url('/wp-content/uploads/2016/04/libMidi-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/04/libMidi-cplusplus-library.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>The following article is yet another library that I have written. libMIDI is a c++ library for generating single tone melodies (monolithic melodies) in MIDI format.</p>
-  </div>
-  
-  <footer>
-    <a href="/libmidi-a-c-open-source-library-for-generating-single-tone-melodies-in-midi-format/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<div class="meta">
+<time datetime="2015-02-16 02:24:14 +0000 +0000">February 16, 2015</time>
+<p>end2end</p>
+<p>5-Minute Read</p>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/">How to multiplex RC Transmitter switches into a single channel</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-03-30 17:15:24 &#43;0000 &#43;0000">March 30, 2016</time>
-    <p>end2end</p>
-    <p>29-Minute Read</p>
-  </div>
 </header>
-
-  <div class="content">
-    <a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/" class="image" style="--bg-image: url('/wp-content/uploads/2016/03/How-to-multiplex-RC-Transmitter-switches-into-a-single-channel.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/03/How-to-multiplex-RC-Transmitter-switches-into-a-single-channel.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>In a personal project, I wanted to add 2 new devices to an existing quadcopter. The quadcopter was equipped with a 6-channel receiver meaning I only had 1 spare channel to control the 2 devices:</p>
-<table>
-  <thead>
-      <tr>
-          <th><!-- --></th>
-          <th><!-- --></th>
-          <th><!-- --></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>CH 1</td>
-          <td>:</td>
-          <td>Throttle</td>
-      </tr>
-      <tr>
-          <td>CH 2</td>
-          <td>:</td>
-          <td>Rudder</td>
-      </tr>
-      <tr>
-          <td>CH 3</td>
-          <td>:</td>
-          <td>Ailerons</td>
-      </tr>
-      <tr>
-          <td>CH 4</td>
-          <td>:</td>
-          <td>Elevator</td>
-      </tr>
-      <tr>
-          <td>CH 5</td>
-          <td>:</td>
-          <td>Flight mode</td>
-      </tr>
-      <tr>
-          <td>CH 6</td>
-          <td>:</td>
-          <td>???</td>
-      </tr>
-      <tr>
-          <td>The following article explains how I manage to solve the issue:</td>
-          <td></td>
-          <td></td>
-      </tr>
-  </tbody>
-</table>
-<p><em>How can I control more than one device using a single channel</em>.</p>
-  </div>
-  
-  <footer>
-    <a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/diy/">diy</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
-        
-      
-    </ul>
-  
+<div class="content">
+<a href="/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/" class="image" style="--bg-image:url('/wp-content/uploads/2015/02/HDHomeRun-TV-Dump.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/02/HDHomeRun-TV-Dump.jpg" alt>
+</a>
+<h1 id="hdhomerun-tv-dump">HDHomeRun TV Dump</h1>
+<p><em>HdHomeRun TV Dump</em> is a <a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a> that installs over the native <a href="http://www.silicondust.com/support/downloads/">HDHomeRun application</a> and allows owners to quickly take control over the free to air live TV stream. Implementing DVR capabilities on your computer becomes a easy as 1-2-3.</p>
+<p>It is designed to make interaction with the device easy by automating as much as possible any task a user would like to execute.</p>
+<p>It&rsquo;s main features are:</p>
+<ul>
+<li>Quicker & easier to understand and install than other DVR solutions like <a href="https://www.mythtv.org/">MythTV</a> and <a href="http://windows.microsoft.com/en-CA/windows/products/windows-media-center">Windows Media Center</a>.</li>
+<li>Auto-detection of existing HDHomeRun devices on the network.</li>
+<li>Auto-detection of busy tuners.</li>
+<li>Automatic selection of an available tuner for watching or recording a live TV stream.</li>
+<li>Manual recording support.</li>
+<li>Scheduled recording support (enables DVR capabilities with the HDHomeRun)</li>
+<li>Watch live TV streams.</li>
+</ul>
+<p><em>HDHomeRun TV Dump</em> should also work with devices that supports the MPEG4/H.264 video codec but this functionality is still untested.</p>
 </div>
-
-  </footer>
-  
+<footer>
+<a href="/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/free-to-air-tv/">free to air tv</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+<li><a class="article-terms-link" href="/tags/hdhomerun/">hdhomerun</a></li>
+</ul>
+</div>
+</footer>
 </article>
-
-  
-  <div class="pagination">
-    
-      <a href="/blog/page/5/" class="button left"><span>Previous Page</span></a>
-    
-    
-      <a href="/blog/page/7/" class="button right"><span>Next Page</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/photographie-macro-je-my-suis-lance-cet-ete/">Photographie Macro, je m'y suis lancé cet été</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-02-08 03:53:22 +0000 +0000">February 8, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/photographie-macro-je-my-suis-lance-cet-ete/" class="image" style="--bg-image:url('/wp-content/uploads/2015/02/Photographie-Macro-je-my-suis-lanc%c3%a9-cet-%c3%a9t%c3%a9-672x378.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/02/Photographie-Macro-je-my-suis-lanc%c3%a9-cet-%c3%a9t%c3%a9-672x378.jpg" alt>
+</a>
+<p>Pendant le début du mois de juillet, j&rsquo;ai décidé de me lancer dans la photographie macro. Ce que j&rsquo;ai découvert durant cette expérience est étonnant.</p>
+<p>Comme tout le monde, j&rsquo;ai naturellement décidé d&rsquo;utiliser les fleurs comme sujet. Quoi de mieux que le mois de juillet, où les fleurs sont belles et épanouies, pour essayer de faire de la photographie.</p>
+<p>Je suis donc parti à la recherche de fleurs avec mon appareil, <a href="/wp-content/uploads/2015/02/Manfrotto-190XPROB-Tripod-with-3D-Head-804RC2.jpg" title="Manfrotto  190XPROB Tripod with 3D Head 804RC2">mon trépied</a> ainsi que des <a href="/wp-content/uploads/2015/02/Aputure-AF-Macro-Extension-Tube-for-Canon-EOS-EF-EF-S-Lens-Mount.jpg" title="Aputure AF Macro Extension Tube for Canon EOS EF EF-S Lens Mount">tubes d&rsquo;extension (21mm)</a>.</p>
+</div>
+<footer>
+<a href="/photographie-macro-je-my-suis-lance-cet-ete/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/flowers/">flowers</a></li>
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+<li><a class="article-terms-link" href="/tags/macro/">macro</a></li>
+<li><a class="article-terms-link" href="/tags/macro-photograpy/">macro photograpy</a></li>
+<li><a class="article-terms-link" href="/tags/nature/">nature</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/">DNS-343 Monitor: Easily monitors disk space on your DNS-343 NAS.</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-02-01 13:58:08 +0000 +0000">February 1, 2015</time>
+<p>end2end</p>
+<p>2-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/" class="image" style="--bg-image:url('/wp-content/uploads/2015/02/DNS-343-Monitor-logo.png')">
+<img class="stretchV" src="/wp-content/uploads/2015/02/DNS-343-Monitor-logo.png" alt>
+</a>
+<h1 id="dns343monitor">DNS343Monitor</h1>
+<p>DNS-343 Monitor is a tool for monitoring how much space is left on your DNS-343 NAS device.</p>
+<p>The <a href="http://www.google.com/?q=dns-343">DNS-343</a> is a <a href="http://en.wikipedia.org/wiki/Network-attached_storage">Network Attached Storage</a> (NAS) device that can hold as much as 4 drives. Since all the drives are shared in a Network, each disk can quickly become full. This tools allows you to see the remaining space left on each individual drives.</p>
+<p>It&rsquo;s main features are:</p>
+<ul>
+<li>Show space left and used for each drives.</li>
+<li>GUI supported.</li>
+<li>Compatible with all firmware versions.</li>
+</ul>
+<p class="pleasenote">
+<strong>Note:</strong> This tool requires administrator privileges on the DNS-343 for retrieving free space left.
+</p>
+</div>
+<footer>
+<a href="/dns-343-monitor-easily-monitors-disk-space-on-your-dns-343-nas/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/dns-343/">DNS-343</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/">MSBuildReorder: How to reorder a Visual Studio build log for easy reading</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-01-31 01:27:33 +0000 +0000">January 31, 2015</time>
+<p>end2end</p>
+<p>9-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/" class="image" style="--bg-image:url('/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png')">
+<img class="stretchV" src="/wp-content/uploads/2015/01/MSBuildReorder-How-to-reorder-a-Visual-Studio-build-log-for-easy-reading.png" alt>
+</a>
+<h1 id="msbuildreorder">MSBuildReorder</h1>
+<p class="postedit">
+Please note that MSBuildReorder source code is now moved to GitHub. Source code can be downloaded from <a href="http://github.com/end2endzone/msbuildreorder">the project&rsquo;s GitHub page</a>.
+</p>
+<p>
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt>
+<img src="https://img.shields.io/github/release/end2endzone/msbuildreorder.svg" alt>
+<img src="https://ci.appveyor.com/api/projects/status/911ry08o97ubv506/branch/master?svg=true" alt>
+<img src="https://img.shields.io/appveyor/tests/end2endzone/msbuildreorder/master.svg" alt>
+<img src="https://img.shields.io/github/downloads/end2endzone/msbuildreorder/total.svg" alt>
+</p>
+<p>MSBuildReorder is a tool for &ldquo;reordering&rdquo; (buildorder) a multi-process C++ build log. It allows a developer to convert the build log as if it was generated with a single processor.</p>
+<p>Building a solution that has multiple projects can quickly become bloated with too many lines that are not related to each other. For this reason, finding the actual cause of a build fail is harder than it should be. MSBuildReorder is able to read the log and reorder the projects in a sequential order.</p>
+</div>
+<footer>
+<a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+<li><a class="article-terms-link" href="/tags/msbuild/">msbuild</a></li>
+<li><a class="article-terms-link" href="/tags/visual-studio/">visual studio</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/">OfficeReadOnly: How to open Microsoft Office documents as read-only</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-01-28 02:12:41 +0000 +0000">January 28, 2015</time>
+<p>end2end</p>
+<p>3-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/" class="image" style="--bg-image:url('/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png')">
+<img class="stretchV" src="/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png" alt>
+</a>
+<h1 id="officereadonly">OfficeReadOnly</h1>
+<p>OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.</p>
+<p>It&rsquo;s main features are:</p>
+<ul>
+<li>Integrates into Windows File Explorer or the with the &ldquo;Send to&rdquo; folder.</li>
+<li>Supports Documents, Workbooks, Presentations and Diagrams.</li>
+<li>Supports both Microsoft Office 2003 (*.doc) and Microsoft Office 2010 file extensions (*.doc, and *.docx).</li>
+<li>Can be used from the command prompt.</li>
+</ul>
+<p>Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.</p>
+</div>
+<footer>
+<a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+<li><a class="article-terms-link" href="/tags/microsoft-office/">Microsoft Office</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/">bin2cpp: The easiest way to embed small files into a C++ executable</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-01-12 03:56:17 +0000 +0000">January 12, 2015</time>
+<p>end2end</p>
+<p>6-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/" class="image" style="--bg-image:url('/wp-content/uploads/2015/01/bin2cpp-featured-image.png')">
+<img class="stretchV" src="/wp-content/uploads/2015/01/bin2cpp-featured-image.png" alt>
+</a>
+<h1 id="bin2cpp">bin2cpp</h1>
+<p class="postedit">
+Please note that bin2cpp source code is now moved to GitHub. Source code can be downloaded from <a href="http://github.com/end2endzone/bin2cpp">the project&rsquo;s GitHub page</a>.
+</p>
+<p>
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt>
+<img src="https://img.shields.io/github/release/end2endzone/bin2cpp.svg" alt>
+<img src="https://ci.appveyor.com/api/projects/status/q9k0ebb971o475qi/branch/master?svg=true" alt>
+<img src="https://img.shields.io/appveyor/tests/end2endzone/bin2cpp/master.svg" alt>
+<img src="https://img.shields.io/github/downloads/end2endzone/bin2cpp/total.svg" alt>
+</p>
+<p>bin2cpp is a command line tool for embedding small files (like images, icons or raw data files) into a C++ executable.</p>
+<p>It&rsquo;s main features are:</p>
+<ul>
+<li>Easily converts small files as C++ source code for embedding into a C++ executable.</li>
+<li>Content extraction supported by a unique function call for each embedded file.</li>
+<li>Supports a multiple embedded files at once.</li>
+<li>Makes it harder for resource hacker to modify or steal the embedded files.</li>
+<li>No third party libraries required for retrieving the data of the embedded files.</li>
+</ul>
+<p>bin2cpp is not implemented using <a href="http://en.wikipedia.org/wiki/Resource_%28Windows%29">executable resources</a>. Instead, bin2cpp creates multiple function calls for retrieving the data which makes it harder to steal the executable&rsquo;s content. It also makes it even harder to replace an existing resource of the executable.</p>
+</div>
+<footer>
+<a href="/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/how-to-photograph-fireworks-with-a-dslr-camera/">How to photograph fireworks with a DSLR camera</a></h2>
+</div>
+<div class="meta">
+<time datetime="2014-12-07 06:49:09 +0000 +0000">December 7, 2014</time>
+<p>end2end</p>
+<p>14-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/how-to-photograph-fireworks-with-a-dslr-camera/" class="image" style="--bg-image:url('/wp-content/uploads/2014/11/How-to-photograph-fireworks-with-a-DSLR-camera-featured.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2014/11/How-to-photograph-fireworks-with-a-DSLR-camera-featured.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>Do you plan to take photographs of fireworks during the next few weeks? If so you might take a look at this article that explains how to properly shoot fireworks with a DSLR camera.</p>
+<p>Getting a nice firework picture is it not as simple as going outside, finding a firework display and starting to shoot bits of lights in the sky. There are things you can do to increase your chances of success or fine tune the end result.</p>
+</div>
+<footer>
+<a href="/how-to-photograph-fireworks-with-a-dslr-camera/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/fireworks/">fireworks</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/">DIY Remote trigger shutter release cable for your Canon DSLR camera</a></h2>
+</div>
+<div class="meta">
+<time datetime="2014-12-03 02:00:59 +0000 +0000">December 3, 2014</time>
+<p>end2end</p>
+<p>7-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/" class="image" style="--bg-image:url('/wp-content/uploads/2014/12/DIY-Remote-trigger-shutter-release-cable-for-your-Canon-DSLR-camera.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2014/12/DIY-Remote-trigger-shutter-release-cable-for-your-Canon-DSLR-camera.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>I have been working on multiple projects since I bought my camera. Most of them are related to super telephoto shots, macrophotography. Other requires a very long exposures or even a bulb exposure modes.</p>
+<p>For all these kind of photography, camera shake is your greatest enemy. You really need to reduce the shaking to a minimum. The first element I bought to reduce camera shake was a tripod but that wasn&rsquo;t enough. When pressing the shutter button, a light shake was induced by my fingers and that would sometime ruin the image.</p>
+</div>
+<footer>
+<a href="/diy-remote-trigger-shutter-release-cable-for-your-canon-dslr-camera/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/diy/">diy</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/">Recommended modifications to the Avistar Elite .46 ARF by Great Planes</a></h2>
+</div>
+<div class="meta">
+<time datetime="2014-10-13 15:03:21 +0000 +0000">October 13, 2014</time>
+<p>end2end</p>
+<p>6-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/" class="image" style="--bg-image:url('/wp-content/uploads/2014/10/DSC00129.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2014/10/DSC00129.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>I recently bought an Avistar Elite .46 ARF by Great Planes for flying with a flight instructor at my local hobby club. Before we went to the club and start flying, he and I (mostly he) made some adjustments to the plane for getting the perfect trainer for me. Basically, I changed some settings to get better results from the stock options.</p>
+<p>Here are all the modifications that I did to make this trainer the perfect plane.</p>
+</div>
+<footer>
+<a href="/recommended-modifications-to-the-avistar-elite-46-arf-by-great-planes/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/avistar-elite/">avistar elite</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/">Review of the Avistar Elite .46 ARF by Great Planes – The perfect motorized trainer for beginners</a></h2>
+</div>
+<div class="meta">
+<time datetime="2014-09-21 00:31:55 +0000 +0000">September 21, 2014</time>
+<p>end2end</p>
+<p>5-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/" class="image" style="--bg-image:url('/wp-content/uploads/2014/09/IMG_7968.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2014/09/IMG_7968.jpg" alt>
+</a>
+<h1 id="introduction">Introduction</h1>
+<p>At the beginning of the 2014 season, I decided to join a local RC club to get to know good experienced people that would give me advices on the best practices for flying. I also decided to find a flight instructor that would assist me and help me with all the technical details that I am still lacking. When we met, he strongly suggested that I leave the <a href="/tag/super-cub/">Hobby Zone Super Cub</a> behind and get to a wooden motorized trainer plane like the Avistar Elite .46 ARF by Great Planes, which I did.</p>
+</div>
+<footer>
+<a href="/review-of-the-avistar-elite-46-arf-by-great-planes-the-perfect-motorized-trainer-for-beginners/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/avistar-elite/">avistar elite</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<div class="pagination">
+<a href="/blog/page/5/" class="button left"><span>Previous Page</span></a>
+<a href="/blog/page/7/" class="button right"><span>Next Page</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

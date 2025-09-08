@@ -1,369 +1,202 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>PiDVR Record over the air TV on a Raspberry Pi 4 - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="PiDVR Record over the air TV on a Raspberry Pi 4">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204&amp;url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;description=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-    <p>end2end</p>
-    <p>16-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204&amp;url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;description=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#about-the-project">About the project</a></li>
-    <li><a href="#required-hardware">Required Hardware</a></li>
-    <li><a href="#software-list">Software list</a></li>
-    <li><a href="#instructions">Instructions</a>
-      <ol>
-        <li><a href="#write-raspberry-pi-os-image-file-to-your-sd-card">Write Raspberry Pi OS image file to your SD card</a></li>
-        <li><a href="#update-the-raspberry-pi-firmware">Update the Raspberry Pi firmware</a></li>
-        <li><a href="#check-that-usb-30-to-sata-adaptor-has-uasp-support">Check that USB 3.0 to SATA adaptor has UASP support</a></li>
-        <li><a href="#enable-usb-boot-on-the-raspberry-pi">Enable USB boot on the Raspberry Pi</a></li>
-        <li><a href="#move-raspberry-pi-os-from-sd-card-to-ssd-drive">Move Raspberry Pi OS from SD card to SSD drive</a></li>
-        <li><a href="#shrink-the-operating-system-partition">Shrink the Operating System partition</a></li>
-        <li><a href="#boot-from-the-ssd-drive">Boot from the SSD drive</a></li>
-        <li><a href="#uninstall-nonessential-software">Uninstall nonessential software</a></li>
-        <li><a href="#install-additional-software">Install additional software</a>
-          <ol>
-            <li><a href="#argon-one-fan-script">Argon One fan script</a></li>
-            <li><a href="#other">Other</a></li>
-          </ol>
-        </li>
-        <li><a href="#create-storage-directories-for-our-recordings">Create storage directories for our recordings</a></li>
-        <li><a href="#install-samba-smbcifs-support">Install Samba SMB/CIFS support</a></li>
-        <li><a href="#run-raspberry-pi-configuration-utility">Run Raspberry Pi Configuration utility</a></li>
-        <li><a href="#install-tvheadend">Install Tvheadend</a></li>
-        <li><a href="#tvheadend-initial-configuration-setup">Tvheadend initial configuration setup</a>
-          <ol>
-            <li><a href="#welcome-1-of-2">Welcome (1 of 2)</a></li>
-            <li><a href="#welcome-2-of-2">Welcome (2 of 2)</a></li>
-            <li><a href="#network-settings">Network settings</a></li>
-            <li><a href="#assign-predefined-muxes-to-networks">Assign predefined muxes to networks</a></li>
-            <li><a href="#scan-status">Scan status</a></li>
-            <li><a href="#service-mapping">Service mapping</a></li>
-            <li><a href="#finished">Finished</a></li>
-          </ol>
-        </li>
-        <li><a href="#tvheadend-additional-configuration">Tvheadend additional configuration</a>
-          <ol>
-            <li><a href="#set-web-interface-level-to-advanced-by-default">Set web interface level to Advanced by default</a></li>
-            <li><a href="#test-for-tvheadend-has-access-to-recordings-directory">Test for tvheadend has access to &lsquo;recordings&rsquo; directory</a></li>
-            <li><a href="#setup-preferred-recordings-settings">Setup preferred recordings settings</a></li>
-            <li><a href="#enable-timeshift">Enable Timeshift</a></li>
-            <li><a href="#set-network-character-set">Set Network Character set</a></li>
-            <li><a href="#map-desired-services-as-channels">Map desired services as channels</a></li>
-            <li><a href="#change-channel-identifiers-to-meaningful-names">Change channel identifiers to meaningful names</a></li>
-            <li><a href="#utf-8-characters-in-electronic-program-guide-epg---bug">UTF-8 characters in Electronic Program Guide (EPG) - bug</a></li>
-          </ol>
-        </li>
-        <li><a href="#configure-kodi-to-connect-to-tvheadend">Configure Kodi to connect to tvheadend</a>
-          <ol>
-            <li><a href="#install-tvheadend-add-on">Install tvheadend add-on</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204&amp;url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;description=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
 </div>
-
-        
-		
-        <h1 id="about-the-project">About the project</h1>
+<div class="meta">
+<time datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+<p>end2end</p>
+<p>16-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204&amp;url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;title=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f&amp;description=PiDVR%20Record%20over%20the%20air%20TV%20on%20a%20Raspberry%20Pi%204" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fpidvr-record-over-the-air-tv-on-a-raspberry-pi-4%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#about-the-project">About the project</a></li>
+<li><a href="#required-hardware">Required Hardware</a></li>
+<li><a href="#software-list">Software list</a></li>
+<li><a href="#instructions">Instructions</a>
+<ol>
+<li><a href="#write-raspberry-pi-os-image-file-to-your-sd-card">Write Raspberry Pi OS image file to your SD card</a></li>
+<li><a href="#update-the-raspberry-pi-firmware">Update the Raspberry Pi firmware</a></li>
+<li><a href="#check-that-usb-30-to-sata-adaptor-has-uasp-support">Check that USB 3.0 to SATA adaptor has UASP support</a></li>
+<li><a href="#enable-usb-boot-on-the-raspberry-pi">Enable USB boot on the Raspberry Pi</a></li>
+<li><a href="#move-raspberry-pi-os-from-sd-card-to-ssd-drive">Move Raspberry Pi OS from SD card to SSD drive</a></li>
+<li><a href="#shrink-the-operating-system-partition">Shrink the Operating System partition</a></li>
+<li><a href="#boot-from-the-ssd-drive">Boot from the SSD drive</a></li>
+<li><a href="#uninstall-nonessential-software">Uninstall nonessential software</a></li>
+<li><a href="#install-additional-software">Install additional software</a>
+<ol>
+<li><a href="#argon-one-fan-script">Argon One fan script</a></li>
+<li><a href="#other">Other</a></li>
+</ol>
+</li>
+<li><a href="#create-storage-directories-for-our-recordings">Create storage directories for our recordings</a></li>
+<li><a href="#install-samba-smbcifs-support">Install Samba SMB/CIFS support</a></li>
+<li><a href="#run-raspberry-pi-configuration-utility">Run Raspberry Pi Configuration utility</a></li>
+<li><a href="#install-tvheadend">Install Tvheadend</a></li>
+<li><a href="#tvheadend-initial-configuration-setup">Tvheadend initial configuration setup</a>
+<ol>
+<li><a href="#welcome-1-of-2">Welcome (1 of 2)</a></li>
+<li><a href="#welcome-2-of-2">Welcome (2 of 2)</a></li>
+<li><a href="#network-settings">Network settings</a></li>
+<li><a href="#assign-predefined-muxes-to-networks">Assign predefined muxes to networks</a></li>
+<li><a href="#scan-status">Scan status</a></li>
+<li><a href="#service-mapping">Service mapping</a></li>
+<li><a href="#finished">Finished</a></li>
+</ol>
+</li>
+<li><a href="#tvheadend-additional-configuration">Tvheadend additional configuration</a>
+<ol>
+<li><a href="#set-web-interface-level-to-advanced-by-default">Set web interface level to Advanced by default</a></li>
+<li><a href="#test-for-tvheadend-has-access-to-recordings-directory">Test for tvheadend has access to &lsquo;recordings&rsquo; directory</a></li>
+<li><a href="#setup-preferred-recordings-settings">Setup preferred recordings settings</a></li>
+<li><a href="#enable-timeshift">Enable Timeshift</a></li>
+<li><a href="#set-network-character-set">Set Network Character set</a></li>
+<li><a href="#map-desired-services-as-channels">Map desired services as channels</a></li>
+<li><a href="#change-channel-identifiers-to-meaningful-names">Change channel identifiers to meaningful names</a></li>
+<li><a href="#utf-8-characters-in-electronic-program-guide-epg---bug">UTF-8 characters in Electronic Program Guide (EPG) - bug</a></li>
+</ol>
+</li>
+<li><a href="#configure-kodi-to-connect-to-tvheadend">Configure Kodi to connect to tvheadend</a>
+<ol>
+<li><a href="#install-tvheadend-add-on">Install tvheadend add-on</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="about-the-project">About the project</h1>
 <p>The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.</p>
 <h1 id="required-hardware">Required Hardware</h1>
 <p>This project requires the following hardware:</p>
@@ -379,8 +212,8 @@
 I used the <a href="https://www.argon40.com/argon-one-raspberry-pi-4-case.html">Argon One</a> case.</li>
 </ul>
 </li>
-<li>An HDHomeRun Dual tuner from <a href="https://www.silicondust.com/">Silicondust</a>. The oldest model will do. For this build, I used the <a href="https://www.google.com/search?q=HDHR3-US&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ved=2ahUKEwjquKyuvsbuAhWkrFkKHXbmCLMQ_AUoA3oECAEQBQ&amp;amp;biw=1920&amp;amp;bih=927"><em>HDHR3-US</em></a> which dates back to 2012-2013.</li>
-<li>An over-the-air tv antenna for ATSC signals. For this build I use the <a href="https://www.google.com/search?q=Antennas&#43;Direct&#43;Clearstream&#43;4&#43;antenna">Clearstream 4</a> antenna by Antennas Direct.</li>
+<li>An HDHomeRun Dual tuner from <a href="https://www.silicondust.com/">Silicondust</a>. The oldest model will do. For this build, I used the <a href="https://www.google.com/search?q=HDHR3-US&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjquKyuvsbuAhWkrFkKHXbmCLMQ_AUoA3oECAEQBQ&amp;biw=1920&amp;bih=927"><em>HDHR3-US</em></a> which dates back to 2012-2013.</li>
+<li>An over-the-air tv antenna for ATSC signals. For this build I use the <a href="https://www.google.com/search?q=Antennas+Direct+Clearstream+4+antenna">Clearstream 4</a> antenna by Antennas Direct.</li>
 <li>50ft to 100ft Coaxial Cable, 18AWG, 75 Ohm to connect the antenna to the HDHomeRun.</li>
 <li>External Solid State Drive (SSD) with about 500Gb in size.</li>
 <li>USB 3.0 to SATA Converter Adapter - Look for one that has UASP support.</li>
@@ -388,13 +221,13 @@ I used the <a href="https://www.argon40.com/argon-one-raspberry-pi-4-case.html">
 <h1 id="software-list">Software list</h1>
 <p>This section defines the list of required software for the project. Follow the instructions in the next section to know when and how to install them.</p>
 <ol>
-<li>Download  <em><strong>Raspberry Pi OS with desktop and recommended software</strong></em> from <a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li>
-<li>Download the  <em><strong>Raspberry Pi Imager</strong></em> to write the  <em><strong>Raspberry Pi OS</strong></em> image to an SD card.</li>
+<li>Download <em><strong>Raspberry Pi OS with desktop and recommended software</strong></em> from <a href="https://www.raspberrypi.org/software/operating-systems/">https://www.raspberrypi.org/software/operating-systems/</a></li>
+<li>Download the <em><strong>Raspberry Pi Imager</strong></em> to write the <em><strong>Raspberry Pi OS</strong></em> image to an SD card.</li>
 </ol>
 <h1 id="instructions">Instructions</h1>
 <h2 id="write-raspberry-pi-os-image-file-to-your-sd-card">Write Raspberry Pi OS image file to your SD card</h2>
 <ol>
-<li>Launch the  <em><strong>Raspberry Pi Imager</strong></em> for writing the  <em><strong>Raspberry Pi OS</strong></em> image file to your SD card. There are plenty of online tutorial for this operation</li>
+<li>Launch the <em><strong>Raspberry Pi Imager</strong></em> for writing the <em><strong>Raspberry Pi OS</strong></em> image file to your SD card. There are plenty of online tutorial for this operation</li>
 <li>Turn on the Raspberry Pi and follow &ldquo;first launch&rdquo; instructions on screen.</li>
 </ol>
 <h2 id="update-the-raspberry-pi-firmware">Update the Raspberry Pi firmware</h2>
@@ -403,22 +236,21 @@ I used the <a href="https://www.argon40.com/argon-one-raspberry-pi-4-case.html">
 Follow his instructions available at:<br>
 <a href="https://www.jeffgeerling.com/blog/2019/upgrade-raspberry-pi-4s-firmware-bootloader-better-thermals">https://www.jeffgeerling.com/blog/2019/upgrade-raspberry-pi-4s-firmware-bootloader-better-thermals</a>.</p>
 <p>In summary, run the following commands in a terminal:</p>
-<pre><code>sudo apt update
-sudo apt -y full-upgrade
-sudo apt install -y rpi-eeprom
-sudo rpi-eeprom-update
-sudo reboot
-</code></pre>
-<h2 id="check-that-usb-30-to-sata-adaptor-has-uasp-support">Check that USB 3.0 to SATA adaptor has UASP support</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt -y full-upgrade
+</span></span><span class="line"><span class="cl">sudo apt install -y rpi-eeprom
+</span></span><span class="line"><span class="cl">sudo rpi-eeprom-update
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></div><h2 id="check-that-usb-30-to-sata-adaptor-has-uasp-support">Check that USB 3.0 to SATA adaptor has UASP support</h2>
 <p>UASP stands for USB Attached SCSI Protocol. In very few words, it is a protocol used in USB storage devices and adapters that performs better that the traditional USB 1.1 protocol.</p>
 <p>Jeff Geerling has written an excellent guide on how to verify if your adaptor is UASP compatible.<br>
 Follow his instructions available at:<br>
 <a href="https://www.jeffgeerling.com/blog/2020/uasp-makes-raspberry-pi-4-disk-io-50-faster">https://www.jeffgeerling.com/blog/2020/uasp-makes-raspberry-pi-4-disk-io-50-faster</a>.</p>
 <p>In summary, connect your ssd drive and run the following commands in a terminal:</p>
-<pre><code>lsusb -t
-</code></pre>
-<p>From Jeff Geerling article:</p>
-<p><em>This command lists all the USB devices in a tree, and for each of the hard drives, you should see a <code>Driver</code> listed. If it&rsquo;s <code>uas</code> , then your drive supports UASP and you&rsquo;ll get the best speed. If it&rsquo;s <code>usb-storage</code> , then it&rsquo;s using the older BOT protocol and you won&rsquo;t see the full potential.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">lsusb -t
+</span></span></code></pre></div><p>From Jeff Geerling article:</p>
+<blockquote>
+<p>This command lists all the USB devices in a tree, and for each of the hard drives, you should see a <code>Driver</code> listed. If it&rsquo;s <code>uas</code> , then your drive supports UASP and you&rsquo;ll get the best speed. If it&rsquo;s <code>usb-storage</code> , then it&rsquo;s using the older BOT protocol and you won&rsquo;t see the full potential.</p></blockquote>
 <h2 id="enable-usb-boot-on-the-raspberry-pi">Enable USB boot on the Raspberry Pi</h2>
 <p>A USB 3.0 Flash Drive or an USB 3.0 SSD is almost always preferable to an SD Card when booting the Raspberry Pi OS. The thing about booting Operating Systems is that 4K Read/Write Speed dictate the experience more than the sequential Read/Write Speed (the usual advertised speed). SD card usually have bad performance regarding 4K Read/Write speed.</p>
 <p>On the Raspberry Pi4, you can specify whether to boot from USB or network if the SD card isn&rsquo;t inserted.</p>
@@ -454,30 +286,19 @@ Follow his instructions available at:<br>
 </ol>
 <p>The following instructions explains how to reduce the size of the OS partition:</p>
 <ol>
-<li>
-<p>Open <strong>GParted.</strong></p>
-</li>
-<li>
-<p>Switch to the SSD device (probably <strong>/dev/sda</strong>)</p>
-</li>
-<li>
-<p>Select the last partition. This is the partition of the Operating System.</p>
-</li>
-<li>
-<p>Resize the partition to the original size of the SD card.</p>
-</li>
-<li>
-<p>Create a partition for the remaining space of the SSD.<br>
+<li>Open <strong>GParted.</strong></li>
+<li>Switch to the SSD device (probably <strong>/dev/sda</strong>)</li>
+<li>Select the last partition. This is the partition of the Operating System.</li>
+<li>Resize the partition to the original size of the SD card.</li>
+<li>Create a partition for the remaining space of the SSD.<br>
 Format the partition as <strong>ext4</strong>. This is to make sure we get the best read and write performance.<br>
-For reference, the Rraspberry Pi 4 is capable of the following writing speeds:</p>
+For reference, the Rraspberry Pi 4 is capable of the following writing speeds:
 <ul>
 <li>85 mb/s to an external usb 3.0 SSD with an ext4 partition.</li>
 <li>26 mb/s to an external usb 3.0 SSD with an NTFS partition.</li>
 </ul>
 </li>
-<li>
-<p>Set the name of the partition to <strong>pidvr</strong>.</p>
-</li>
+<li>Set the name of the partition to <strong>pidvr</strong>.</li>
 </ol>
 <h2 id="boot-from-the-ssd-drive">Boot from the SSD drive</h2>
 <p>At this point, our SSD is now properly configured to be used as our boot device.</p>
@@ -507,9 +328,8 @@ For reference, the Rraspberry Pi 4 is capable of the following writing speeds:</
 <h3 id="argon-one-fan-script">Argon One fan script</h3>
 <p>This is specific to our build since we are using the <a href="https://www.argon40.com/argon-one-raspberry-pi-4-case.html">Argon One</a> case. The instructions from <a href="http://wagnerstechtalk.com/argonone/">http://wagnerstechtalk.com/argonone/</a> properly explains how to install the scripts to support the Argon One power button and fan speed.</p>
 <p>In summary, run the following commands in a terminal:</p>
-<pre><code>curl https://download.argon40.com/argon1.sh | bash
-</code></pre>
-<h3 id="other">Other</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">curl https://download.argon40.com/argon1.sh <span class="p">|</span> bash
+</span></span></code></pre></div><h3 id="other">Other</h3>
 <p>The following list of programs can be installed manually in the terminal:</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Hdparm">hdparm</a>, to perform read and write performance tests</li>
@@ -520,10 +340,9 @@ For reference, the Rraspberry Pi 4 is capable of the following writing speeds:</
 <li><a href="https://www.7-zip.org/">7-zip</a>, to add support for *.7z archives in <a href="https://magpi.raspberrypi.org/articles/unzip-and-uncompress-files-on-a-raspberry-pi">Archiver</a> software.</li>
 </ul>
 <p>The following instructions can install all software mentioned above:</p>
-<pre><code>sudo apt-get update
-sudo apt-get install hdparm gnome-disk-utility gparted gsmartcontrol qdirstat p7zip-full
-</code></pre>
-<h2 id="create-storage-directories-for-our-recordings">Create storage directories for our recordings</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo apt-get update
+</span></span><span class="line"><span class="cl">sudo apt-get install hdparm gnome-disk-utility gparted gsmartcontrol qdirstat p7zip-full
+</span></span></code></pre></div><h2 id="create-storage-directories-for-our-recordings">Create storage directories for our recordings</h2>
 <p>The instructions in this section explains how to create our base storage directories.</p>
 <p>As discussed above, we want tv recordings to be stored on the SSD in the <strong>pidvr</strong> partition which is automatically mounted at <strong>/media/pi/pidvr</strong>.</p>
 <p>In directory <strong>/media/pi/pidvr</strong>, create the following directories:</p>
@@ -533,44 +352,43 @@ sudo apt-get install hdparm gnome-disk-utility gparted gsmartcontrol qdirstat p7
 <li><strong>shared</strong>, for creating a Windows shared directory for easily transferring files from/to the raspberry pi. See next section below.</li>
 </ul>
 <p>By default, these directories will only be writable (or accessible) for the <strong>pi</strong> user on the Raspberry Pi. This is a problem for our build since tvheadend run as <strong>hts</strong> user and <em>hts</em> user won&rsquo;t have access by default to our <strong>recordings</strong> directory. To allow anyone to have read and write access to these directories, enter the following command in a terminal:</p>
-<pre><code>sudo chmod -R 7777 /media/pi.
-</code></pre>
-<p><em><strong>Note</strong>: by default, a partition permissions are inherited from its parent directory where the partition is mounted. In this case, the partition mounted at <strong>/media/pi/pidvr</strong> inherits the permissions from <strong>/media/pi</strong> directory.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo chmod -R <span class="m">7777</span> /media/pi.
+</span></span></code></pre></div><p class="pleasenote">
+<strong>Note</strong>: by default, a partition permissions are inherited from its parent directory where the partition is mounted. In this case, the partition mounted at <strong>/media/pi/pidvr</strong> inherits the permissions from <strong>/media/pi</strong> directory.
+</p>
 <p>A reboot of the Raspberry Pi may be required for the new partition is show up as writable for everyone.</p>
 <h2 id="install-samba-smbcifs-support">Install Samba SMB/CIFS support</h2>
 <p>By default, Raspberry Pi OS does not include CIFS/Samba support, but this can easily be added. The Raspberry Pi documentation has an article available at <a href="https://www.raspberrypi.org/documentation/remote-access/samba.md">https://www.raspberrypi.org/documentation/remote-access/samba.md</a> that explains how to proceed.</p>
 <p>In summary, run the following commands in a terminal:</p>
-<pre><code>sudo apt update
-sudo apt install -y samba samba-common-bin smbclient cifs-utils
-</code></pre>
-<p><em>Note: During installation, if you have other samba servers on your network, choose no which is the default option.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install -y samba samba-common-bin smbclient cifs-utils
+</span></span></code></pre></div><p class="pleasenote">
+Note: During installation, if you have other samba servers on your network, choose no which is the default option.
+</p>
 <p>To create shared directories that can be accessed by a Windows computer, edit the configuration file <strong>/etc/samba/smb.conf</strong> with the following command:</p>
-<pre><code>sudo nano /etc/samba/smb.conf
-</code></pre>
-<p>and add the following new sections:</p>
-<pre><code># Create a read-only shared directory called 'recordings' to
-# easily export recording files outside of the raspberry pi.
-[recordings]
-comment = DVR recordings
-path = /media/pi/pidvr/recordings
-force user = pi
-public = yes
-writable = no
-
-# Create a read ans write shared directory called 'shared' to
-# easily transferring files from/to the raspberry pi.
-[shared]
-path = /media/pi/pidvr/shared
-force user = pi
-public = yes
-writable = yes
-create mask = 0777
-directory mask = 0777
-</code></pre>
-<p>Restart the samba daemon service for the changes to take effect:</p>
-<pre><code>sudo systemctl restart smbd
-</code></pre>
-<h2 id="run-raspberry-pi-configuration-utility">Run Raspberry Pi Configuration utility</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo nano /etc/samba/smb.conf
+</span></span></code></pre></div><p>and add the following new sections:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="c1"># Create a read-only shared directory called &#39;recordings&#39; to</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># easily export recording files outside of the raspberry pi.</span>
+</span></span><span class="line"><span class="cl"><span class="k">[recordings]</span>
+</span></span><span class="line"><span class="cl"><span class="na">comment</span> <span class="o">=</span> <span class="s">DVR recordings</span>
+</span></span><span class="line"><span class="cl"><span class="na">path</span> <span class="o">=</span> <span class="s">/media/pi/pidvr/recordings</span>
+</span></span><span class="line"><span class="cl"><span class="na">force user</span> <span class="o">=</span> <span class="s">pi</span>
+</span></span><span class="line"><span class="cl"><span class="na">public</span> <span class="o">=</span> <span class="s">yes</span>
+</span></span><span class="line"><span class="cl"><span class="na">writable</span> <span class="o">=</span> <span class="s">no</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a read ans write shared directory called &#39;shared&#39; to</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># easily transferring files from/to the raspberry pi.</span>
+</span></span><span class="line"><span class="cl"><span class="k">[shared]</span>
+</span></span><span class="line"><span class="cl"><span class="na">path</span> <span class="o">=</span> <span class="s">/media/pi/pidvr/shared</span>
+</span></span><span class="line"><span class="cl"><span class="na">force user</span> <span class="o">=</span> <span class="s">pi</span>
+</span></span><span class="line"><span class="cl"><span class="na">public</span> <span class="o">=</span> <span class="s">yes</span>
+</span></span><span class="line"><span class="cl"><span class="na">writable</span> <span class="o">=</span> <span class="s">yes</span>
+</span></span><span class="line"><span class="cl"><span class="na">create mask</span> <span class="o">=</span> <span class="s">0777</span>
+</span></span><span class="line"><span class="cl"><span class="na">directory mask</span> <span class="o">=</span> <span class="s">0777</span>
+</span></span></code></pre></div><p>Restart the samba daemon service for the changes to take effect:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo systemctl restart smbd
+</span></span></code></pre></div><h2 id="run-raspberry-pi-configuration-utility">Run Raspberry Pi Configuration utility</h2>
 <p>The default configuration of the pi should be properly set for most users. For our usage, we need to change some of the configuration settings.</p>
 <p>For example, the default hostname for the raspberry pi is <strong>raspberrypi</strong> which is a problem if you own multiple raspberry pies because the hostname of a device on a network must be unique for every device in order to be reachable by others. It is also good practice to change the hostname to something that represent the intended usage of the pi.</p>
 <p>The <strong>Raspberry Pi Configuration</strong> application, which can be found on the <strong>Preferences</strong> menu of the Raspberry Pi Desktop, will allow you to change the required settings. Please change the following settings accordingly:</p>
@@ -582,64 +400,106 @@ directory mask = 0777
 <p>This is the main software for the build. You can find more information about tvheadend at <a href="https://tvheadend.org/">https://tvheadend.org/</a>.</p>
 <p>There are already great guides that explains how to install and configure tvheadend. For example, <a href="https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-stream-digital-tv-with-the-raspberry-pi-tv-hat">thepihut</a> and <a href="https://pimylifeup.com/raspberry-pi-tvheadend/">pimylifeup</a> have great instruction guides.</p>
 <p>In summary, run the following commands in a terminal to install tvheadend:</p>
-<pre><code>sudo apt update
-sudo apt install -y tvheadend
-</code></pre>
-<p><em>Note: During installation, you will need to provide a username and password for the tvheadend aministrator. You can use <code>pidvr</code> and <code>pidvr</code>.</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install -y tvheadend
+</span></span></code></pre></div><p class="pleasenote">
+Note: During installation, you will need to provide a username and password for the tvheadend aministrator. You can use <code>pidvr</code> and <code>pidvr</code>.
+</p>
 <h2 id="tvheadend-initial-configuration-setup">Tvheadend initial configuration setup</h2>
 <p>After installation, connect to the tvheadend web interface to configure the application and scan for channels. Head over to the following address:<br>
 <a href="http://pidvr:9981/">http://pidvr:9981/</a></p>
 <h3 id="welcome-1-of-2">Welcome (1 of 2)</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot01.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot01.png" alt="tvheadend - welcome page (1 or 2)"></a></p>
-<p>tvheadend - welcome page (1 or 2)</p>
-<p><img src="RackMultipart20210314-4-ej0w6x_html_69043a9e7dd44345.png" alt=""> This first screen will require you to select a language the web interface and the electronic program guide (EPG):</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot01-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot01-1.png" alt="tvheadend - welcome page (1 or 2)">
+<figcaption>tvheadend - welcome page (1 or 2)</figcaption>
+</figure>
+</a></p>
+<p>
+<img src="RackMultipart20210314-4-ej0w6x_html_69043a9e7dd44345.png" alt>
+</p>
+<p>This first screen will require you to select a language the web interface and the electronic program guide (EPG):</p>
 <p>Enter the following values:</p>
 <ul>
 <li>English</li>
 <li>French</li>
 </ul>
-<p>Click <strong>Save &amp; Next</strong> to get to the next page.</p>
-<p><em>Note: Since we actually changed the language of the web interface, the same page may be displayed when you first click</em> <strong>Save &amp; Next</strong><em>. Click it again.</em></p>
+<p>Click <strong>Save & Next</strong> to get to the next page.</p>
+<p class="pleasenote">
+Note: Since we actually changed the language of the web interface, the same page may be displayed when you first click <em><strong>Save & Next</strong></em>. Click it again.
+</p>
 <h3 id="welcome-2-of-2">Welcome (2 of 2)</h3>
-<p><img src="RackMultipart20210314-4-ej0w6x_html_8ff4b1990405bb00.png" alt=""></p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot02.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot02.png" alt="tvheadend - welcome page (2 or 2)"></a></p>
-<p>tvheadend - welcome page (2 or 2)</p>
+<p>
+<img src="RackMultipart20210314-4-ej0w6x_html_8ff4b1990405bb00.png" alt>
+</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot02-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot02-1.png" alt="tvheadend - welcome page (2 or 2)">
+<figcaption>tvheadend - welcome page (2 or 2)</figcaption>
+</figure>
+</a></p>
 <p>The next page allows you to configure the network access.</p>
 <p>We are going to allow all network access by leaving the &lsquo;Allowed network&rsquo; field blank.</p>
 <p>We are also going to bypass any logins by entering <code>*</code> in each of those fields.</p>
-<p>Click <strong>Save &amp; Next</strong> to get to the next page.</p>
+<p>Click <strong>Save & Next</strong> to get to the next page.</p>
 <h3 id="network-settings">Network settings</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot03.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot03.png" alt="tvheadend - network settings"></a></p>
-<p>tvheadend - network settings</p>
-<p><img src="RackMultipart20210314-4-ej0w6x_html_40136d095fe9be97.png" alt=""> The next screen configures the tuners.</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot03-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot03-1.png" alt="tvheadend - network settings">
+<figcaption>tvheadend - network settings</figcaption>
+</figure>
+</a></p>
+<p>
+<img src="RackMultipart20210314-4-ej0w6x_html_40136d095fe9be97.png" alt>
+</p>
+<p>The next screen configures the tuners.</p>
 <p>Leave the <em>IPTV</em> fields from <em>Network 1</em> blank.</p>
 <p>At this point, tbheadend should have already discovered both <em>HDHomeRun ATSC-T Tuner #0 and #1</em> identified in &ldquo;<strong>Network 2</strong>&rdquo; and &ldquo;<strong>Network 3</strong>&rdquo; sections. Select <strong>ATSC-T Network</strong> in the <em>Network type</em> fields for each network.</p>
-<p>Click <strong>Save &amp; Next</strong> to get to the next page.</p>
+<p>Click <strong>Save & Next</strong> to get to the next page.</p>
 <h3 id="assign-predefined-muxes-to-networks">Assign predefined muxes to networks</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot04.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot04.png" alt="tvheadend - muxes"></a></p>
-<p>tvheadend - muxes</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot04-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot04-1.png" alt="tvheadend - muxes">
+<figcaption>tvheadend - muxes</figcaption>
+</figure>
+</a></p>
 <p>We now have to set the &ldquo;muxes&rdquo;. To save you from manually entering muxes, Tvheadend includes predefined mux lists. For best results in Montreal area, select the following muxes: <strong>United States: us-ATSC-center-frequencies-8VSB</strong></p>
-<p>Click <strong>Save &amp; Next</strong> to get to the next page.</p>
+<p>Click <strong>Save & Next</strong> to get to the next page.</p>
 <h3 id="scan-status">Scan status</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot05a.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot05a.png" alt="tvheadend - scan status"></a></p>
-<p>tvheadend - scan status</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot05a-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot05a-1.png" alt="tvheadend - scan status">
+<figcaption>tvheadend - scan status</figcaption>
+</figure>
+</a></p>
 <p>The scan will now commence. It will search for &ldquo;muxes&rdquo; and &ldquo;services&rdquo; that are distributed via those muxes. Note, a service is a TV channel. When the scan hits 100% you&rsquo;ll be able to see how many muxes and services it&rsquo;s picked up.</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot05b.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot05b.png" alt="tvheadend - scan status (100% completed)"></a></p>
-<p>tvheadend - scan status (100% completed)</p>
-<p>Click <strong>Save &amp; Next</strong> to get to the next page</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot05b-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot05b-1.png" alt="tvheadend - scan status (100% completed)">
+<figcaption>tvheadend - scan status (100% completed)</figcaption>
+</figure>
+</a></p>
+<p>Click <strong>Save & Next</strong> to get to the next page</p>
 <h3 id="service-mapping">Service mapping</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot06.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot06.png" alt="tvheadend - service mapping"></a></p>
-<p>tvheadend - service mapping</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot06-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot06-1.png" alt="tvheadend - service mapping">
+<figcaption>tvheadend - service mapping</figcaption>
+</figure>
+</a></p>
 <p>Next on the wizard is service mapping. This step maps the services that your scan discovered to channels. If you are interested in adding all channels in your area, do not tick any checkbox. Otherwise, tick the three check boxes.</p>
-<p>Click <strong>Save &amp; Next</strong> to get to the next page.</p>
+<p>Click <strong>Save & Next</strong> to get to the next page.</p>
 <h3 id="finished">Finished</h3>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot07.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/tvheadend_screenshot07.png" alt="tvheadend - setup finished"></a></p>
-<p>tvheadend - setup finished</p>
+<p><a href="/wp-content/uploads/2021/03/tvheadend_screenshot07-1.png">
+<figure>
+<img src="/wp-content/uploads/2021/03/tvheadend_screenshot07-1.png" alt="tvheadend - setup finished">
+<figcaption>tvheadend - setup finished</figcaption>
+</figure>
+</a></p>
 <p>The initial setup is finished. Click <strong>Finish</strong> to complete the</p>
 <p>At this stage we like to reboot the Raspberry Pi. In the terminal use the following command to restart your Raspberry Pi:</p>
-<pre><code>sudo reboot now
-</code></pre>
-<h2 id="tvheadend-additional-configuration">Tvheadend additional configuration</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo reboot now
+</span></span></code></pre></div><h2 id="tvheadend-additional-configuration">Tvheadend additional configuration</h2>
 <p>The following list are specific configuration settings that I like to set for tvheadend:</p>
 <h3 id="set-web-interface-level-to-advanced-by-default">Set web interface level to Advanced by default</h3>
 <ol>
@@ -649,15 +509,13 @@ sudo apt install -y tvheadend
 </ol>
 <h3 id="test-for-tvheadend-has-access-to-recordings-directory">Test for tvheadend has access to &lsquo;recordings&rsquo; directory</h3>
 <p>tvheadend runs as user <strong>hts</strong>. To test read and write access from <strong>hts</strong> user perspective, type the following in a terminal:</p>
-<pre><code>sudo su hts
-cd /media/pi/pidvr/recordings
-touch hts_test_file
-rm hts_test_file
-</code></pre>
-<p>The commands specified above should <strong>not</strong> output any error like the following:</p>
-<pre><code>touch: cannot touch 'hts_test_file': Permission denied
-</code></pre>
-<h3 id="setup-preferred-recordings-settings">Setup preferred recordings settings</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo su hts
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /media/pi/pidvr/recordings
+</span></span><span class="line"><span class="cl">touch hts_test_file
+</span></span><span class="line"><span class="cl">rm hts_test_file
+</span></span></code></pre></div><p>The commands specified above should <strong>not</strong> output any error like the following:</p>
+<pre tabindex="0"><code>touch: cannot touch &#39;hts_test_file&#39;: Permission denied
+</code></pre><h3 id="setup-preferred-recordings-settings">Setup preferred recordings settings</h3>
 <ol>
 <li>Go to <em>Configuration</em>, <em>Recording</em>, <em>Digital Video Recorder Profiles</em> tab.</li>
 <li>Click on the <em>Default profile</em>.</li>
@@ -689,36 +547,16 @@ rm hts_test_file
 <li>Set <em>Character set</em> to value <strong>UTF-8</strong>.</li>
 <li>Click on <strong>Save</strong>.</li>
 <li>
-<ul>
-<li>
-<ul>
-<li>*Switch to</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<pre><code>_Muxes_ tab.
-</code></pre>
-<ol start="8">
+<hr>
+Switch to <em>Muxes</em> tab.</li>
 <li>Select all available muxes: click on the first mux and press <em>CTRL+A</em>.</li>
 <li>Click <strong>edit</strong> button.</li>
 <li>Check <em>Character set</em> in Advanced Settings.</li>
 <li>Set <em>Character set</em> to value <strong>UTF-8</strong>.</li>
 <li>Click on <strong>Save</strong>.</li>
 <li>
-<ul>
-<li>
-<ul>
-<li>*Switch to</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<pre><code>_Services_ tab.
-</code></pre>
-<ol start="14">
+<hr>
+Switch to <em>Services</em> tab.</li>
 <li>Select all available services: click on the first service and press <em>CTRL+A</em>.</li>
 <li>Click <strong>edit</strong> button.</li>
 <li>Switch to <em>Export</em> view level.</li>
@@ -763,8 +601,13 @@ rm hts_test_file
 <li>Télé-Québec - CJNT</li>
 </ul>
 <h3 id="utf-8-characters-in-electronic-program-guide-epg---bug">UTF-8 characters in Electronic Program Guide (EPG) - bug</h3>
-<p><img src="RackMultipart20210314-4-ej0w6x_html_16af1b06ba9c6ad8.png" alt=""> The tv guide seems to be still using non-utf8 characters. This is still an open issue and I have not yet figured out a way to solve the issue:</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2021/03/EPG-utf-8-bug.png"><img src="http://www.end2endzone.com/wp-content/uploads/2021/03/EPG-utf-8-bug.png" alt=""></a> </p>
+<p>
+<img src="RackMultipart20210314-4-ej0w6x_html_16af1b06ba9c6ad8.png" alt>
+</p>
+<p>The tv guide seems to be still using non-utf8 characters. This is still an open issue and I have not yet figured out a way to solve the issue:</p>
+<p><a href="/wp-content/uploads/2021/03/EPG-utf-8-bug.png">
+<img src="/wp-content/uploads/2021/03/EPG-utf-8-bug.png" alt>
+</a></p>
 <h2 id="configure-kodi-to-connect-to-tvheadend">Configure Kodi to connect to tvheadend</h2>
 <p>The following instructions defines how to connect Kodi with tvheadend to view recordings:</p>
 <h3 id="install-tvheadend-add-on">Install tvheadend add-on</h3>
@@ -781,264 +624,150 @@ rm hts_test_file
 <li>Set <em>tvheadend hostname</em> to <strong>pidvr</strong>.</li>
 <li>Click on <strong>OK</strong> when done.</li>
 </ol>
-
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/other/">Other</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/raspberry-pi/">Raspberry Pi</a></li>
-        
-      
-    </ul>
-  
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='588b6056d47d3dd46998cf9d4f5b0a44'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-    
-      <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="button right"><span>How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/other/">Other</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/raspberry-pi/">Raspberry Pi</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='588b6056d47d3dd46998cf9d4f5b0a44'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="button right"><span>How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

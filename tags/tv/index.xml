@@ -1,26 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tv on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/tv/</link>
-    <description>Recent content in Tv on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 16 Jan 2016 22:19:34 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/tv/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</title>
-      <link>http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</link>
-      <pubDate>Sat, 16 Jan 2016 22:19:34 +0000</pubDate>
-      <guid>http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This guide is a follow up to the post called&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/&#34;&gt;How to remove ads from HDHomeRun recordings and still encode with Handbrake&lt;/a&gt;. I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to remove ads from HDHomeRun recordings and still encode with Handbrake</title>
-      <link>http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</link>
-      <pubDate>Sun, 04 Oct 2015 20:41:01 +0000</pubDate>
-      <guid>http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tv on end2end zone</title><link>http://localhost:1313/tags/tv/</link><description>Recent content in Tv on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 16 Jan 2016 22:19:34 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/tv/index.xml" rel="self" type="application/rss+xml"/><item><title>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</title><link>http://localhost:1313/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</link><pubDate>Sat, 16 Jan 2016 22:19:34 +0000</pubDate><guid>http://localhost:1313/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>This guide is a follow up to the post called &lt;a href="http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">How to remove ads from HDHomeRun recordings and still encode with Handbrake&lt;/a>.&lt;/p>
+&lt;p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p></description></item><item><title>How to remove ads from HDHomeRun recordings and still encode with Handbrake</title><link>http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</link><pubDate>Sun, 04 Oct 2015 20:41:01 +0000</pubDate><guid>http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!&lt;/p>
+&lt;p>With all TV shows comes a bunch of TV ads that I do not want to keep and waste time and disk space for. I encode all my videos using &lt;a href="https://handbrake.fr/downloads.php">Handbrake&lt;/a> because it supports quality based H264 encoding and 5.1 surround sounds but unfortunately, it does not support removing ads.&lt;/p></description></item></channel></rss>

@@ -1,585 +1,542 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>Blog - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="Blog">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/blog/">
-  <meta property="og:image" content="http://www.end2endzone.com/img/main/logo.jpg">
-
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/blog/">
+<meta property="og:image" content="http://localhost:1313/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-      <a href="http://www.end2endzone.com/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="http://localhost:1313/fr/blog/" lang="fr" class="nav link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Blog&amp;url=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;title=Blog" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fblog%2f&amp;description=Blog" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fblog%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
 </header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+</footer>
 </section>
-
-      <main id="site-main">
-        
-  
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/">DIY lost plane alarm finder and 10 watts LED visual aids for easy orientation</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-10-27 16:48:23 &#43;0000 &#43;0000">October 27, 2016</time>
-    <p>end2end</p>
-    <p>29-Minute Read</p>
-  </div>
-</header>
-
-  <div class="content">
-    <a href="/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/Arduino-Quadcopter-Controler-featured.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/Arduino-Quadcopter-Controler-featured.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>The reason I started this project is because I recently had a bad experience flying a quadcopter too far from me until I was not able to distinguish if the quad was facing me or not. It does not require much distance before a quadcopter looks like a tiny black dot in the sky. Basically, I lost orientation of the quad and I had to land way too far from my takeoff location.</p>
-<p>I was in need of more tools (or more ways) to help myself when I will inevitably get into this situation again. The following project explains how I build a DIY solution to help a pilot know a quadcopter orientation when its far away from the point of view and easily locate the quadcopter in case of emergency landing.</p>
-  </div>
-  
-  <footer>
-    <a href="/diy-lost-plane-alarm-finder-and-10-watts-led-visual-aids-for-easy-orientation/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/diy/">diy</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
-        
-      
-    </ul>
-  
+<main id="site-main">
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/canards-sauvages-a-val-david/">Canards sauvages à Val-David</a></h2>
 </div>
-
-  </footer>
-  
-</article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/">csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-08-04 17:30:03 &#43;0000 &#43;0000">August 4, 2016</time>
-    <p>end2end</p>
-    <p>5-Minute Read</p>
-  </div>
+<div class="meta">
+<time datetime="2015-08-13 21:59:09 +0000 +0000">August 13, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
 </header>
-
-  <div class="content">
-    <a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/" class="image" style="--bg-image: url('/wp-content/uploads/2016/07/csvplot.CarEngineModel.png');">
-    <img class="stretchV" src="/wp-content/uploads/2016/07/csvplot.CarEngineModel.png" alt="">
-  </a>
-    <p class="postedit">
-  Please note that <strong>csvplot</strong> source code is now moved to GitHub. Source code can be downloaded from the project’s <a href="http://github.com/end2endzone/csvplot">GitHub page</a>.
+<div class="content">
+<a href="/canards-sauvages-a-val-david/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_2446-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_2446-Featured-Image.jpg" alt>
+</a>
+<p>Les parents de ma conjointe ont aménagés un étang artificiel près de la résidence. À chaque été, un couple de canard sauvages viennent se reposer à l&rsquo;étang pendant leur migration.</p>
+<div class="image-gallery">
+<table>
+<thead>
+<tr>
+<th><a href="https://www.flickr.com/photos/154618444@N05/37538053182/in/album-72157686816329321/">
+<img src="/wp-content/uploads/2015/08/IMG_2446_e2ez-672x448.jpg" alt>
+</a></th>
+<th><a href="https://www.flickr.com/photos/154618444@N05/37538049222/in/album-72157686816329321/">
+<img src="/wp-content/uploads/2015/08/IMG_2488_e2ez-672x448.jpg" alt>
+</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.flickr.com/photos/154618444@N05/37538046922/in/album-72157686816329321/">
+<img src="/wp-content/uploads/2015/08/IMG_2526_e2ez-672x448.jpg" alt>
+</a></td>
+<td><a href="https://www.flickr.com/photos/154618444@N05/36900405873/in/album-72157686816329321/">
+<img src="/wp-content/uploads/2015/08/IMG_2549_e2ez-672x448.jpg" alt>
+</a></td>
+</tr>
+<tr>
+<td><a href="https://www.flickr.com/photos/154618444@N05/37538045602/in/album-72157686816329321/">
+<img src="/wp-content/uploads/2015/08/IMG_2567_e2ez-672x448.jpg" alt>
+</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/leve-de-soleil-sur-le-club-amidair/">Levé de soleil sur le Club Amidair</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-13 21:19:15 +0000 +0000">August 13, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/leve-de-soleil-sur-le-club-amidair/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_6162-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_6162-Featured-Image.jpg" alt>
+</a>
+<p>Il est 5 heures du matin. Tout est calme et on entend quelque fois le crie d&rsquo;un oiseau. Au loin, un nuage de brume surplombe le champ de légumes lui donnant l&rsquo;aspect d&rsquo;un lac en mouvement. Le soleil colore au ciel avec un teint rosé puis orangé.</p>
+<p>Une belle journée de vol s&rsquo;annonce.</p>
+<div class="image-gallery">
+<a href="/wp-content/uploads/2015/08/IMG_6162_LR5.jpg">
+<img src="/wp-content/uploads/2015/08/IMG_6162_LR5-1024x683.jpg" alt>
+</a>
+<a href="/wp-content/uploads/2015/08/IMG_6159_LR5.jpg">
+<img src="/wp-content/uploads/2015/08/IMG_6159_LR5-1024x683.jpg" alt>
+</a>
+</div>
+</div>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/fleurs-de-la-cours/">Fleurs de la cours</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-12 23:38:36 +0000 +0000">August 12, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/fleurs-de-la-cours/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_2619-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_2619-Featured-Image.jpg" alt>
+</a>
+<p>Voici d&rsquo;autres photos de fleurs que j&rsquo;ai capturé pas plus loin que la cours de la maison.</p>
+<div class="image-gallery">
+<a href="https://www.flickr.com/photos/154618444@N05/36860986414/in/album-72157687616715024/">
+<img src="/wp-content/uploads/2015/08/IMG_2611_LR5-300x200.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/23719009398/in/album-72157687616715024/">
+<img src="/wp-content/uploads/2015/08/IMG_2619_LR5-300x200.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/36860982644/in/album-72157687616715024/">
+<img src="/wp-content/uploads/2015/08/IMG_2624_LR5-200x300.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/23719006978/in/album-72157687616715024/">
+<img src="/wp-content/uploads/2015/08/IMG_2637_LR5-300x200.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/37320179020/in/album-72157687616715024/">
+<img src="/wp-content/uploads/2015/08/IMG_2821_e2ez-300x200.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/36868560994/in/album-72157687616715024/">
+<img src="/wp-content/uploads/2015/08/IMG_2943_e2ez-200x300.jpg" alt>
+</a>
+</div>
+</div>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/promenades-en-foret/">Promenades en forêt</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-12 19:44:08 +0000 +0000">August 12, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/promenades-en-foret/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_5566_-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_5566_-Featured-Image.jpg" alt>
+</a>
+<p>Voici une galerie de photos que j&rsquo;ai capturé au cours de mes promenades en forêt.</p>
+<p>D&rsquo;autre photos seront ajouté au fil du temps.</p>
+<div class="image-gallery">
+<a href="https://www.flickr.com/photos/154618444@N05/37581565631/in/album-72157719778365604/">
+<img src="/wp-content/uploads/2015/08/IMG_5709_e2ez-200x300.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/51427471978/in/album-72157719778365604/">
+<img src="/wp-content/uploads/2015/08/IMG_5595_e2ez-200x300.jpg" alt>
+</a>
+<a href="https://www.flickr.com/photos/154618444@N05/36911573613/in/album-72157719778365604/">
+<img src="/wp-content/uploads/2015/08/IMG_5566_e2ez-300x200.jpg" alt>
+</a>
+</div>
+</div>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/rayons-de-soleil-a-travers-les-feuilles/">Rayons de soleil à travers les feuilles</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-11 15:08:28 +0000 +0000">August 11, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/rayons-de-soleil-a-travers-les-feuilles/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_5580_LR5-Featured-image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_5580_LR5-Featured-image.jpg" alt>
+</a>
+<p>Des fois, il faut seulement s&rsquo;arrêter et regarder tout autour de nous pour voir où l&rsquo;on se trouve. Vous verrez parfois la beauté où vous ne vous y attendiez pas&mldr;</p>
+<p><a href="https://www.flickr.com/photos/154618444@N05/36871014724/in/dateposted-public/">
+<figure>
+<img src="/wp-content/uploads/2015/08/IMG_5580_LR5-300x200.jpg" alt="Rays of sunlight through leaves">
+<figcaption>Rays of sunlight through leaves</figcaption>
+</figure>
+</a></p>
+</div>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/ciel-etoile-au-parc-nationale-du-mont-tremblant/">Ciel étoilé au Parc Nationale du Mont-Tremblant</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-02 15:29:09 +0000 +0000">August 2, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/ciel-etoile-au-parc-nationale-du-mont-tremblant/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_5303-853x480.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_5303-853x480.jpg" alt>
+</a>
+<p>Le même jour où j&rsquo;ai capturé <a href="/couche-de-soleil-au-parc-nationale-du-mont-tremblant">ce merveilleux couché de soleil</a>, je me suis levé au beau milieu de la nuit pour aller prendre des photos du ciel et des étoiles.</p>
+<p>Il s&rsquo;agit du même point d&rsquo;observation du Lac Monroe d&rsquo;où j&rsquo;ai capturé le couché de soleil. Plus précisément, la plage est situé aux coordonnées <a href="https://www.google.ca/maps/place/46%C2%B020%2701.5%22N+74%C2%B030%2724.7%22W/@46.333754,-74.506858,812m/">46°20'2" N 74°30'25" W</a>.</p>
+<p>J&rsquo;ai rapidement compris la différence entre un appareil de loisir et un appareil professionnel. Aux même réglages la quantité de bruit (noise) est beaucoup moins élevé avec un appareil professionnel. Dans mon cas, le <a href="https://www.google.ca/search?q=canon+eos+rebel+sl1">Canon EOS Rebel SL1</a> est un excellent appareil&mldr; de loisir.</p>
+</div>
+<footer>
+<a href="/ciel-etoile-au-parc-nationale-du-mont-tremblant/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+<li><a class="article-terms-link" href="/tags/long-exposure/">long exposure</a></li>
+<li><a class="article-terms-link" href="/tags/photography/">photography</a></li>
+<li><a class="article-terms-link" href="/tags/stars/">stars</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/chutes-croches-au-parc-nationale-du-mont-tremblant/">Chutes Croches au Parc nationale du Mont-Tremblant</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-08-01 19:40:57 +0000 +0000">August 1, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/chutes-croches-au-parc-nationale-du-mont-tremblant/" class="image" style="--bg-image:url('/wp-content/uploads/2015/08/IMG_5452_LR5.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/08/IMG_5452_LR5.jpg" alt>
+</a>
+<p>Une des attractions du Parc nationale de Mont-Tremblant sont les Chutes Croches qui coulent le long de la rivière de la Diable. Les Chutes Croches sont situés plus précisément aux coordonnées <a href="https://www.google.ca/maps/place/46%C2%B022%2710.1%22N+74%C2%B031%2700.0%22W/@46.3694722,-74.5166667,15.28z/data=!4m2!3m1!1s0x0:0x0">46°22'10.1" N 74°31'00.0" W</a> à 398 mètres d&rsquo;altitude.
+<div class="image-gallery">
+<table>
+<thead>
+<tr>
+<th><a href="https://www.flickr.com/photos/154618444@N05/37345441010/in/album-72157686882832251/" title="Chutes croches (Parc nationale du Mont-Tremblant)">
+<img src="/wp-content/uploads/2015/08/IMG_5429_e2ez-672x448.jpg" alt="Chutes croches (Parc nationale du Mont-Tremblant)">
+</a></th>
+<th><a href="https://www.flickr.com/photos/154618444@N05/37345438960/in/album-72157686882832251/" title="Chutes croches (Parc nationale du Mont-Tremblant)">
+<img src="/wp-content/uploads/2015/08/IMG_5438_e2ez-672x448.jpg" alt="Chutes croches (Parc nationale du Mont-Tremblant)">
+</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.flickr.com/photos/154618444@N05/37345436960/in/album-72157686882832251/" title="Chutes croches (Parc nationale du Mont-Tremblant)">
+<img src="/wp-content/uploads/2015/08/IMG_5439_e2ez-672x448.jpg" alt="Chutes croches (Parc nationale du Mont-Tremblant)">
+</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </p>
-<h1 id="purpose">Purpose</h1>
-<p>I do software prototyping using a wide range of programming language. I often have to generate data that changes over time which is mostly displayed in a grid format. However, that&rsquo;s not the best way to understand how the data changes over time compared to plotting the data to a graph.</p>
-<p>Most programming language I know does not offer a native library for plotting data to a graph. It is not an easy task. Most programming language often require external libraries for implementing the process and each library does not work the same way.</p>
-<p>Excel is a native platform for parsing Comma-separated values (CSV) files and can be scripted to plot the result into an image.</p>
-<p>The purpose of this script is to allows any programming language which generates data to plot the data into an image by saving the raw data to a CSV file and then using the power of Excel to plot the result into an image.</p>
-  </div>
-  
-  <footer>
-    <a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/scripts/">scripts</a></li>
-        
-      
-    </ul>
-  
 </div>
-
-  </footer>
-  
+<footer>
+<a href="/chutes-croches-au-parc-nationale-du-mont-tremblant/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+<li><a class="article-terms-link" href="/tags/long-exposure/">long exposure</a></li>
+<li><a class="article-terms-link" href="/tags/nature/">nature</a></li>
+<li><a class="article-terms-link" href="/tags/photography/">photography</a></li>
+<li><a class="article-terms-link" href="/tags/waterfall/">waterfall</a></li>
+</ul>
+</div>
+</footer>
 </article>
-
-  
-    <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/">SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-06-10 20:14:19 &#43;0000 &#43;0000">June 10, 2016</time>
-    <p>end2end</p>
-    <p>8-Minute Read</p>
-  </div>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/barrage-du-lac-escalier-nord/">Barrage du Lac-Escalier Nord</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-07-31 02:28:10 +0000 +0000">July 31, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
 </header>
-
-  <div class="content">
-    <a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="image" style="--bg-image: url('/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg" alt="">
-  </a>
-    <h1 id="introduction">Introduction</h1>
-<p>The following article is about my simplest library that I wrote for the arduino: <em>SoftTimers</em>. The <em>SoftTimers</em> arduino library allows one to properly time multiple events and know when each &ldquo;timer&rdquo; expires meaning that an action is required.</p>
-  </div>
-  
-  <footer>
-    <a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="button big">Read More</a>
-    <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<div class="content">
+<a href="/barrage-du-lac-escalier-nord/" class="image" style="--bg-image:url('/wp-content/uploads/2015/07/IMG_5333_LR5.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/07/IMG_5333_LR5.jpg" alt>
+</a>
+<p>Voici une formidable photo du Barrage du Lac-Escalier Nord. Il est situé dans le Parc nationale du Mont-Tremblant plus précisément aux coordonnées <a href="https://www.google.ca/maps/place/46%C2%B025%2714.7%22N+74%C2%B029%2732.9%22W/@46.42075,-74.4924722,15.28z/data=!4m2!3m1!1s0x0:0x0">46°25'14.7" N 74°29'32.9" W</a>à 436 mètres d&rsquo;altitude.</p>
+<p><a href="https://www.flickr.com/photos/154618444@N05/37571831322/in/album-72157687682125444/">
+<img src="/wp-content/uploads/2015/07/IMG_5362_e2ez-672x448.jpg" alt="Barrage du Lac-Escalier Nord (Parc nationale du Mont-Tremblant)">
+</a></p>
+<p>Barrage du Lac-Escalier Nord (Parc nationale du Mont-Tremblant)</p>
 </div>
-
-  </footer>
-  
 </article>
-
-  
-  <div class="pagination">
-    
-      <a href="/blog/page/3/" class="button left"><span>Previous Page</span></a>
-    
-    
-      <a href="/blog/page/5/" class="button right"><span>Next Page</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/eclairage-de-nuit-sous-la-tente-tent-at-night/">Éclairage de nuit sous la tente – Tent at night</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-07-31 00:29:37 +0000 +0000">July 31, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/eclairage-de-nuit-sous-la-tente-tent-at-night/" class="image" style="--bg-image:url('/wp-content/uploads/2015/07/IMG_5287-Featured-Image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/07/IMG_5287-Featured-Image.jpg" alt>
+</a>
+<p>Lorsque nous partons en camping, nous apportons toujours une <a href="https://www.google.com/search?q=Lanterne+%C3%A0+bougie+de+camping">lanterne à bougie de camping</a> avec nous. Il s&rsquo;agit en fait d&rsquo;une lanterne servant à réduire l&rsquo;humidité pendant la nuit. La beauté de la chose c&rsquo;est que vue de l&rsquo;extérieur, la tente émet une belle lumière.</p>
+<p>Se lever au beau milieu de la nuit pour voir ce décors, PRICELESS!</p>
+<p>Une image vaut mille mots!</p>
+<p><a href="https://www.flickr.com/photos/154618444@N05/23729082528/in/album-72157689242914796/">
+<figure>
+<img src="/wp-content/uploads/2015/07/IMG_5287_e2ez-672x448.jpg" alt="Tent at night">
+<figcaption>Tent at night</figcaption>
+</figure>
+</a></p>
+</div>
+</article>
+<article class="post">
+<header>
+<div class="title">
+<h2><a href="/couche-de-soleil-au-parc-nationale-du-mont-tremblant/">Couché de soleil au Parc nationale du Mont-Tremblant</a></h2>
+</div>
+<div class="meta">
+<time datetime="2015-07-31 00:06:21 +0000 +0000">July 31, 2015</time>
+<p>end2end</p>
+<p>1-Minute Read</p>
+</div>
+</header>
+<div class="content">
+<a href="/couche-de-soleil-au-parc-nationale-du-mont-tremblant/" class="image" style="--bg-image:url('/wp-content/uploads/2015/07/IMG_5234-Featured-image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/07/IMG_5234-Featured-image.jpg" alt>
+</a>
+<p>Nous sommes partis en camping cet été au Parc Nationale du Mont-Tremblant. J&rsquo;ai naturellement apporté ma caméra avec moi puisque je ne vais plus nulle part sans elle. Une fois installé, j&rsquo;ai décidé d&rsquo;aller faire un tour à la plage et j&rsquo;ai capturé un merveilleux couché de soleil&mldr;</p>
+<p>Le point d&rsquo;observation est depuis l&rsquo;une des nombreuses plages du Lac Monroe. Plus précisément, la plage est situé aux coordonnées <a href="https://www.google.ca/maps/place/46%C2%B020%2701.5%22N+74%C2%B030%2724.7%22W/@46.333754,-74.506858,812m/">46°20'2" N 74°30'25" W</a>.</p>
+</div>
+<footer>
+<a href="/couche-de-soleil-au-parc-nationale-du-mont-tremblant/" class="button big">Read More</a>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/photography/">Photography</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/fran%c3%a7ais/">français</a></li>
+<li><a class="article-terms-link" href="/tags/nature/">nature</a></li>
+<li><a class="article-terms-link" href="/tags/photography/">photography</a></li>
+<li><a class="article-terms-link" href="/tags/sunset/">sunset</a></li>
+</ul>
+</div>
+</footer>
+</article>
+<div class="pagination">
+<a href="/blog/page/3/" class="button left"><span>Previous Page</span></a>
+<a href="/blog/page/5/" class="button right"><span>Next Page</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-    <li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+<li><a href="/blog/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

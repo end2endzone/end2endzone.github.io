@@ -1,19 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Free to Air Tv on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/free-to-air-tv/</link>
-    <description>Recent content in Free to Air Tv on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 16 Feb 2015 02:24:14 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/free-to-air-tv/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HDHomeRun TV Dump: Unleash the DVR capabilities of your free to air live TV stream</title>
-      <link>http://www.end2endzone.com/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</link>
-      <pubDate>Mon, 16 Feb 2015 02:24:14 +0000</pubDate>
-      <guid>http://www.end2endzone.com/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</guid>
-      <description>&lt;h1 id=&#34;hdhomerun-tv-dump&#34;&gt;HDHomeRun TV Dump&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;HdHomeRun TV Dump&lt;/em&gt; is a &lt;a href=&#34;http://en.wikipedia.org/wiki/Graphical_user_interface&#34;&gt;GUI&lt;/a&gt; that installs over the native &lt;a href=&#34;http://www.silicondust.com/support/downloads/&#34;&gt;HDHomeRun application&lt;/a&gt; and allows owners to quickly take control over the free to air live TV stream. Implementing DVR capabilities on your computer becomes a easy as 1-2-3.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Free to Air Tv on end2end zone</title><link>http://localhost:1313/tags/free-to-air-tv/</link><description>Recent content in Free to Air Tv on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 16 Feb 2015 02:24:14 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/free-to-air-tv/index.xml" rel="self" type="application/rss+xml"/><item><title>HDHomeRun TV Dump: Unleash the DVR capabilities of your free to air live TV stream</title><link>http://localhost:1313/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</link><pubDate>Mon, 16 Feb 2015 02:24:14 +0000</pubDate><guid>http://localhost:1313/hdhomerun-tv-dump-unleash-the-dvr-capabilities-of-your-free-to-air-live-tv-stream/</guid><description>&lt;h1 id="hdhomerun-tv-dump">HDHomeRun TV Dump&lt;/h1>
+&lt;p>&lt;em>HdHomeRun TV Dump&lt;/em> is a &lt;a href="http://en.wikipedia.org/wiki/Graphical_user_interface">GUI&lt;/a> that installs over the native &lt;a href="http://www.silicondust.com/support/downloads/">HDHomeRun application&lt;/a> and allows owners to quickly take control over the free to air live TV stream. Implementing DVR capabilities on your computer becomes a easy as 1-2-3.&lt;/p>
+&lt;p>It is designed to make interaction with the device easy by automating as much as possible any task a user would like to execute.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Quicker &amp;amp; easier to understand and install than other DVR solutions like &lt;a href="https://www.mythtv.org/">MythTV&lt;/a> and &lt;a href="http://windows.microsoft.com/en-CA/windows/products/windows-media-center">Windows Media Center&lt;/a>.&lt;/li>
+&lt;li>Auto-detection of existing HDHomeRun devices on the network.&lt;/li>
+&lt;li>Auto-detection of busy tuners.&lt;/li>
+&lt;li>Automatic selection of an available tuner for watching or recording a live TV stream.&lt;/li>
+&lt;li>Manual recording support.&lt;/li>
+&lt;li>Scheduled recording support (enables DVR capabilities with the HDHomeRun)&lt;/li>
+&lt;li>Watch live TV streams.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>HDHomeRun TV Dump&lt;/em> should also work with devices that supports the MPEG4/H.264 video codec but this functionality is still untested.&lt;/p></description></item></channel></rss>

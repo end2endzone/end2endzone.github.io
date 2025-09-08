@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Exttools on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/exttools/</link>
-    <description>Recent content in Exttools on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 29 Mar 2015 20:00:07 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/exttools/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>extTools: a windows shell extension to help you with common Windows File Explorer tasks.</title>
-      <link>http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</link>
-      <pubDate>Sun, 29 Mar 2015 20:00:07 +0000</pubDate>
-      <guid>http://www.end2endzone.com/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</guid>
-      <description>&lt;h1 id=&#34;what-is-exttools&#34;&gt;What is extTools&lt;/h1&gt;&#xA;&lt;p&gt;extTools is a fast and innovative FREEWARE (for non-commercial use) software suite to help you executing common tasks in Windows File Explorer more easily.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s main features are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Advanced clipboard support (copy, append or modify).&lt;/li&gt;&#xA;&lt;li&gt;File operation queuing (batch copy or paste).&lt;/li&gt;&#xA;&lt;li&gt;Better &amp;amp; quicker file deletions.&lt;/li&gt;&#xA;&lt;li&gt;Powerful file renaming algorithms.&lt;/li&gt;&#xA;&lt;li&gt;XP like search tool (simple search tool).&lt;/li&gt;&#xA;&lt;li&gt;Extends Windows File Explorer by registering as a Shell Extension.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;extTools allows its users to execute tasks that are not available in a default Windows environment. extTools is also designed to replace existing task that are badly designed, annoying to execute or simply missing.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Exttools on end2end zone</title><link>http://localhost:1313/tags/exttools/</link><description>Recent content in Exttools on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 29 Mar 2015 20:00:07 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/exttools/index.xml" rel="self" type="application/rss+xml"/><item><title>extTools: a windows shell extension to help you with common Windows File Explorer tasks.</title><link>http://localhost:1313/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</link><pubDate>Sun, 29 Mar 2015 20:00:07 +0000</pubDate><guid>http://localhost:1313/exttools-a-windows-shell-extension-to-help-you-with-common-windows-file-explorer-tasks/</guid><description>&lt;h1 id="what-is-exttools">What is extTools&lt;/h1>
+&lt;p>extTools is a fast and innovative FREEWARE (for non-commercial use) software suite to help you executing common tasks in Windows File Explorer more easily.&lt;/p>
+&lt;p>It&amp;rsquo;s main features are:&lt;/p>
+&lt;ul>
+&lt;li>Advanced clipboard support (copy, append or modify).&lt;/li>
+&lt;li>File operation queuing (batch copy or paste).&lt;/li>
+&lt;li>Better &amp;amp; quicker file deletions.&lt;/li>
+&lt;li>Powerful file renaming algorithms.&lt;/li>
+&lt;li>XP like search tool (simple search tool).&lt;/li>
+&lt;li>Extends Windows File Explorer by registering as a Shell Extension.&lt;/li>
+&lt;/ul>
+&lt;p>extTools allows its users to execute tasks that are not available in a default Windows environment. extTools is also designed to replace existing task that are badly designed, annoying to execute or simply missing.&lt;/p></description></item></channel></rss>

@@ -1,351 +1,213 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>OfficeReadOnly: How to open Microsoft Office documents as read-only - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="OfficeReadOnly: How to open Microsoft Office documents as read-only">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/officereadonly-how-to-open-microsoft-office-documents-as-read-only/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/officereadonly-how-to-open-microsoft-office-documents-as-read-only/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only&amp;url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;description=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/">OfficeReadOnly: How to open Microsoft Office documents as read-only</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2015-01-28 02:12:41 &#43;0000 &#43;0000">January 28, 2015</time>
-    <p>end2end</p>
-    <p>3-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only&amp;url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;description=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/" class="image" style="--bg-image: url('/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png');">
-    <img class="stretchV" src="/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#officereadonly">OfficeReadOnly</a></li>
-    <li><a href="#screenshots">Screenshots</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="#compatible-with">Compatible with</a></li>
-    <li><a href="#minimum-system-requirements">Minimum system requirements</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#history-of-changes">History of changes</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only&amp;url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;description=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/">OfficeReadOnly: How to open Microsoft Office documents as read-only</a></h2>
 </div>
-
-        
-		
-        <h1 id="officereadonly">OfficeReadOnly</h1>
+<div class="meta">
+<time datetime="2015-01-28 02:12:41 +0000 +0000">January 28, 2015</time>
+<p>end2end</p>
+<p>3-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only&amp;url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;title=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f&amp;description=OfficeReadOnly%3a%20How%20to%20open%20Microsoft%20Office%20documents%20as%20read-only" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fofficereadonly-how-to-open-microsoft-office-documents-as-read-only%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/officereadonly-how-to-open-microsoft-office-documents-as-read-only/" class="image" style="--bg-image:url('/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png')">
+<img class="stretchV" src="/wp-content/uploads/2015/01/OfficeReadOnly-How-to-open-Microsoft-Office-documents-as-Read-Only.png" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#officereadonly">OfficeReadOnly</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#compatible-with">Compatible with</a></li>
+<li><a href="#minimum-system-requirements">Minimum system requirements</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#history-of-changes">History of changes</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="officereadonly">OfficeReadOnly</h1>
 <p>OfficeReadOnly is a tool that allows a user to open any Office Documents as a Read-Only document directly from the File Explorer.</p>
 <p>It&rsquo;s main features are:</p>
 <ul>
 <li>Integrates into Windows File Explorer or the with the &ldquo;Send to&rdquo; folder.</li>
 <li>Supports Documents, Workbooks, Presentations and Diagrams.</li>
-<li>Supports both Microsoft Office 2003 (<em>.doc) and Microsoft Office 2010 file extensions (</em>.doc, and *.docx).</li>
+<li>Supports both Microsoft Office 2003 (*.doc) and Microsoft Office 2010 file extensions (*.doc, and *.docx).</li>
 <li>Can be used from the command prompt.</li>
 </ul>
 <p>Microsoft Office does not supports opening files as read-only when right-clicking a document from the File Explorer menu and it does not support opening file as read-only from the command prompt.</p>
-<p>OfficeReadOnly was created to solve this issue.</p>
-<p>The only way to open a document read-only is to first open the appropriate application for the document and then use the &ldquo;<em><strong>File</strong></em>&rdquo; menu and select &ldquo;<em><strong>Open</strong></em>&rdquo;. Then, user has to browse to the actual file and change the opening mode from &ldquo;<strong><em>Open</em></strong>&rdquo; to &ldquo;<strong><em>Open Read-Only</em></strong>&rdquo; and finally click the file. That is a long process for a task that should be simpler.</p>
+<p>OfficeReadOnly was created to solve this issue.
+The only way to open a document read-only is to first open the appropriate application for the document and then use the &ldquo;<em><strong>File</strong></em>&rdquo; menu and select &ldquo;<em><strong>Open</strong></em>&rdquo;. Then, user has to browse to the actual file and change the opening mode from &ldquo;<strong><em>Open</em></strong>&rdquo; to &ldquo;<strong><em>Open Read-Only</em></strong>&rdquo; and finally click the file. That is a long process for a task that should be simpler.</p>
 <p>OfficeReadOnly makes it easy to open a document as read-only right from the File Explorer. Simply right-click a document and select &ldquo;<strong><em>Open with Office Read-Only</em></strong>&rdquo;.</p>
-<p>OfficeReadOnly also helps developers by keeping the file intact! Since OfficeReadOnly allows a user to open a file <strong>directly</strong> in read-only, it prevents the application from doing unintentional modifications to the file: every time a user opens an Office Document, the application will modify the document (without your knowledge) to change some meta-data.  The meta-data change will happens even if you do not press &ldquo;<em><strong>Save</strong></em>&rdquo;. The only way to prevent this is to open the file as read-only.</p>
-<p>**Usage:<br /> **OfficeRO [inputfile]</p>
+<p>OfficeReadOnly also helps developers by keeping the file intact! Since OfficeReadOnly allows a user to open a file <strong>directly</strong> in read-only, it prevents the application from doing unintentional modifications to the file: every time a user opens an Office Document, the application will modify the document (without your knowledge) to change some meta-data. The meta-data change will happens even if you do not press &ldquo;<em><strong>Save</strong></em>&rdquo;. The only way to prevent this is to open the file as read-only.</p>
+<p><strong>Usage:</strong>
+OfficeRO [inputfile]</p>
 <h1 id="screenshots">Screenshots</h1>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-context-menu.png"><img src="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-context-menu.png" alt="Office Read Only (context menu)"></a></p>
-<p>Office Read Only (context menu)</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-send-to-menu.png"><img src="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-send-to-menu.png" alt="Office Read Only (send to menu)"></a></p>
-<p>Office Read Only (send to menu)</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-unsupported-file.png"><img src="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-unsupported-file.png" alt="Office Read Only (unsupported file)"></a></p>
-<p>Office Read Only (unsupported file)</p>
+<p><a href="/wp-content/uploads/2015/01/Office-Read-Only-context-menu.png">
+<figure>
+<img src="/wp-content/uploads/2015/01/Office-Read-Only-context-menu-300x246.png" alt="Office Read Only (context menu)">
+<figcaption>Office Read Only (context menu)</figcaption>
+</figure>
+</a></p>
+<p><a href="/wp-content/uploads/2015/01/Office-Read-Only-send-to-menu.png">
+<figure>
+<img src="/wp-content/uploads/2015/01/Office-Read-Only-send-to-menu-300x169.png" alt="Office Read Only (send to menu)">
+<figcaption>Office Read Only (send to menu)</figcaption>
+</figure>
+</a></p>
+<p><a href="/wp-content/uploads/2015/01/Office-Read-Only-unsupported-file.png">
+<figure>
+<img src="/wp-content/uploads/2015/01/Office-Read-Only-unsupported-file-300x171.png" alt="Office Read Only (unsupported file)">
+<figcaption>Office Read Only (unsupported file)</figcaption>
+</figure>
+</a></p>
 <h1 id="download">Download</h1>
 <p>You can download OfficeReadOnly by clicking on the following links:</p>
 <ul>
-<li><a href="http://www.end2endzone.com/download/628/" title="Version 1.2.40"> Office Read Only v1.2.40 (win32 portable) (132 downloads) </a></li>
-<li><a href="http://www.end2endzone.com/download/625/" title="Version 1.2.40"> Office Read Only v1.2.40 (win32 Setup) (117 downloads) </a></li>
-<li><a href="http://www.end2endzone.com/download/620/" title="Version 1.2.40"> Office Read Only v1.2.40 (x64 portable) (137 downloads) </a></li>
-<li><a href="http://www.end2endzone.com/download/618/" title="Version 1.2.40"> Office Read Only v1.2.40 (x64 Setup) (161 downloads) </a></li>
+<li>
+<a href="/wp-content/uploads/2015/01/Office-Read-Only-v1.2.40-Win32-portable.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+Office Read Only v1.2.40 (win32 portable)
+</a></li>
+<li>
+<a href="/wp-content/uploads/2015/01/Office-Read-Only-v1.2.31-Win32-Setup-portable.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+Office Read Only v1.2.40 (win32 Setup)
+</a></li>
+<li>
+<a href="/wp-content/uploads/2015/01/Office-Read-Only-v1.2.40-x64-portable.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+Office Read Only v1.2.40 (x64 portable)
+</a></li>
+<li>
+<a href="/wp-content/uploads/2015/01/Office-Read-Only-v1.2.31-x64-Setup-portable.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+Office Read Only v1.2.40 (x64 Setup)
+</a></li>
 </ul>
 <h1 id="compatible-with">Compatible with</h1>
 <p>OfficeReadOnly is only available for the Windows platform and has been tested with the following version of Windows:</p>
@@ -364,270 +226,155 @@
 </ul>
 <h1 id="license">License</h1>
 <p>OfficeReadOnly is being distributed as Freeware for personal, commercial use, non-profit organization, and educational purpose. It may be included with CD-ROM/DVD-ROM distributions. You are NOT allowed to make a charge for distributing this Software (either for profit or merely to recover your media and distribution costs) whether as a stand-alone product, or as part of a compilation or anthology, nor to use it for supporting your business or customers. It may be distributed freely on any website or through any other distribution mechanism, as long as no part of it is changed in any way.</p>
-<p>The full license is available <a href="http://www.end2endzone.com/wp-content/uploads/2015/01/Office-Read-Only-v1.2-EULA.htm">here</a>.</p>
+<p>The full license is available <a href="/wp-content/uploads/2015/01/Office-Read-Only-v1.2-EULA.htm">here</a>.</p>
 <h1 id="history-of-changes">History of changes</h1>
 <p>Version 1.2 - First public release</p>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/microsoft-office/">Microsoft Office</a></li>
-        
-      
-    </ul>
-  
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='ad7732c97768f041f599dec37cee1224'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/" class="button left"><span>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</span></a>
-    
-    
-      <a href="/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/" class="button right"><span>bin2cpp: The easiest way to embed small files into a C&#43;&#43; executable</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/freeware/">Freeware</a></li>
+<li><a class="article-terms-link" href="/tags/microsoft-office/">Microsoft Office</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='ad7732c97768f041f599dec37cee1224'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/msbuildreorder-how-to-reorder-a-visual-studio-build-log-for-easy-reading/" class="button left"><span>MSBuildReorder: How to reorder a Visual Studio build log for easy reading</span></a>
+<a href="/bin2cpp-the-easiest-way-to-embed-small-files-into-a-c-executable/" class="button right"><span>bin2cpp: The easiest way to embed small files into a C++ executable</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

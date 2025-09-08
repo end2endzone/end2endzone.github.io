@@ -1,339 +1,172 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>How to remove ads from HDHomeRun recordings and still encode with Handbrake - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="How to remove ads from HDHomeRun recordings and still encode with Handbrake">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake&amp;url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;description=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">How to remove ads from HDHomeRun recordings and still encode with Handbrake</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2015-10-04 20:41:01 &#43;0000 &#43;0000">October 4, 2015</time>
-    <p>end2end</p>
-    <p>4-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake&amp;url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;description=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/" class="image" style="--bg-image: url('/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#whats-the-trick-">What&rsquo;s the trick ?</a></li>
-    <li><a href="#download--install-required-software">Download &amp; Install required software</a></li>
-    <li><a href="#virtualdub-ffmpeg-input-plugin">Virtualdub FFMpeg Input Plugin</a></li>
-    <li><a href="#instructions">Instructions</a>
-      <ol>
-        <li><a href="#open-video-file-in-virtualdub">Open video file in Virtualdub</a></li>
-        <li><a href="#cut-ads--video-section">Cut ads / video section</a></li>
-        <li><a href="#lossless-video-codec">Lossless video codec</a></li>
-        <li><a href="#audio-codec">Audio codec</a></li>
-        <li><a href="#save-a-temporary-file">Save a temporary file</a></li>
-        <li><a href="#encode-final-video-with-handbrake">Encode final video with Handbrake</a></li>
-      </ol>
-    </li>
-    <li><a href="#what-you-get">What you get</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake&amp;url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;description=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/">How to remove ads from HDHomeRun recordings and still encode with Handbrake</a></h2>
 </div>
-
-        
-		
-        <h1 id="introduction">Introduction</h1>
+<div class="meta">
+<time datetime="2015-10-04 20:41:01 +0000 +0000">October 4, 2015</time>
+<p>end2end</p>
+<p>4-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake&amp;url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;title=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f&amp;description=How%20to%20remove%20ads%20from%20HDHomeRun%20recordings%20and%20still%20encode%20with%20Handbrake" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fhow-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/how-to-remove-ads-from-hdhomerun-recordings-and-still-encode-with-handbrake/" class="image" style="--bg-image:url('/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2015/10/Remove-ads-from-HDHomerun-recording-featured-image.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#whats-the-trick-">What&rsquo;s the trick ?</a></li>
+<li><a href="#download--install-required-software">Download & Install required software</a></li>
+<li><a href="#virtualdub-ffmpeg-input-plugin">Virtualdub FFMpeg Input Plugin</a></li>
+<li><a href="#instructions">Instructions</a>
+<ol>
+<li><a href="#open-video-file-in-virtualdub">Open video file in Virtualdub</a></li>
+<li><a href="#cut-ads--video-section">Cut ads / video section</a></li>
+<li><a href="#lossless-video-codec">Lossless video codec</a></li>
+<li><a href="#audio-codec">Audio codec</a></li>
+<li><a href="#save-a-temporary-file">Save a temporary file</a></li>
+<li><a href="#encode-final-video-with-handbrake">Encode final video with Handbrake</a></li>
+</ol>
+</li>
+<li><a href="#what-you-get">What you get</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>I record lots of TV shows using the HDHomeRun. I sometime want to keep recordings on a disk for archiving or to watch later. The following article explains how to remove ads from HDHomeRun recordings and encode the final video with Handbrake without quality loss. The whole process is executed using only FREE tools!</p>
 <p>With all TV shows comes a bunch of TV ads that I do not want to keep and waste time and disk space for. I encode all my videos using <a href="https://handbrake.fr/downloads.php">Handbrake</a> because it supports quality based H264 encoding and 5.1 surround sounds but unfortunately, it does not support removing ads.</p>
 <p class="postedit">
-  Note that this process is now deprecated as I have a new workflow which does not requires an intermediate file. The new workflow is available at the following address: <a href="http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/">http://www.end2endzone.com/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/</a>.
+Note that this process is now deprecated as I have a new workflow which does not requires an intermediate file. The new workflow is available at the following address: <a href="/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/">Best way to remove ads from HDHomeRun recordings (no intermediate file required)</a>.
 </p>
 <h1 id="whats-the-trick-">What&rsquo;s the trick ?</h1>
 <p>The trick is to use a temporary (intermediate) file to cut ads and encode this file with a lossless video codec to prevent any quality degradation. Then use Handbrake to encode the final video for best results.</p>
-<h1 id="download--install-required-software">Download &amp; Install required software</h1>
+<h1 id="download--install-required-software">Download & Install required software</h1>
 <p>The following software must be downloaded and installed:</p>
 <ul>
 <li><a href="http://www.virtualdub.org/download.html">VirtualDub 1.10.4</a></li>
@@ -346,326 +179,222 @@
 <p>This plugin allows reading files that are not AVI and works perfectly with Montreal&rsquo;s CBFT-DT MPEG 2 files.</p>
 <h1 id="instructions">Instructions</h1>
 <h2 id="open-video-file-in-virtualdub">Open video file in Virtualdub</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/10/VirtualDub-default-video.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/VirtualDub-default-video.jpg" alt="VirtualDub default video"></a></p>
-<p>VirtualDub default video</p>
-<ul>
+<p><a href="/wp-content/uploads/2015/10/VirtualDub-default-video.jpg">
+<figure>
+<img src="/wp-content/uploads/2015/10/VirtualDub-default-video.jpg" alt="VirtualDub default video">
+<figcaption>VirtualDub default video</figcaption>
+</figure>
+</a></p>
+<ol>
 <li>Click on <em>File</em> menu.</li>
-<li>Click on <em>Open video file&hellip;</em></li>
+<li>Click on <em>Open video file&mldr;</em></li>
 <li>Browse to your MPEG2 video file.</li>
-</ul>
+</ol>
 <h2 id="cut-ads--video-section">Cut ads / video section</h2>
 <p>Virtualdub is the best video editing application I know. It support video resizing, splitting, joining, filters but mostly removing ADS!</p>
-<ul>
-<li>
-<p>Move the cursor to the first frame of an ad. Note: you can use your keyboard arrows to move 1 frame forward or backward to set the cursor at the exact desired frame.</p>
-</li>
-<li>
-<p>Click on <em>Edit</em> menu and select <em>Set Selection Start</em> to mark the beginning of the ad. You can also press the <a href="http://www.end2endzone.com/wp-content/uploads/2015/10/VirtualDub-Set-Selection-Start.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/VirtualDub-Set-Selection-Start.jpg" alt="VirtualDub Set Selection Start"></a> button.</p>
-</li>
-<li>
-<p>Move the cursor to the last frame of the same ad.</p>
-</li>
-<li>
-<p>Click on <em>Edit</em> menu and select <em>Set Selection End</em> to mark the end of the ad. You can also press the <a href="http://www.end2endzone.com/wp-content/uploads/2015/10/VirtualDub-Set-Selection-End.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/VirtualDub-Set-Selection-End.jpg" alt="VirtualDub Set Selection End"></a> button.</p>
 <ol>
-<li>This will highlight the area that will be cut out of the final video: <a href="http://www.end2endzone.com/wp-content/uploads/2015/10/Virtualdub-Selection.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/Virtualdub-Selection.jpg" alt="Virtualdub Selection"></a></li>
-</ol>
-<p>Virtualdub Selection</p>
-<ol start="2">
+<li>Move the cursor to the first frame of an ad. Note: you can use your keyboard arrows to move 1 frame forward or backward to set the cursor at the exact desired frame.</li>
+<li>Click on <em>Edit</em> menu and select <em>Set Selection Start</em> to mark the beginning of the ad. You can also press the <a href="/wp-content/uploads/2015/10/VirtualDub-Set-Selection-Start.jpg">
+<img src="/wp-content/uploads/2015/10/VirtualDub-Set-Selection-Start.jpg" alt="VirtualDub Set Selection Start">
+</a> button.</li>
+<li>Move the cursor to the last frame of the same ad.</li>
+<li>Click on <em>Edit</em> menu and select <em>Set Selection End</em> to mark the end of the ad. You can also press the <a href="/wp-content/uploads/2015/10/VirtualDub-Set-Selection-End.jpg">
+<img src="/wp-content/uploads/2015/10/VirtualDub-Set-Selection-End.jpg" alt="VirtualDub Set Selection End">
+</a> button.</li>
+<li>This will highlight the area that will be cut out of the final video:
+<a href="/wp-content/uploads/2015/10/Virtualdub-Selection.jpg">
+<figure>
+<img src="/wp-content/uploads/2015/10/Virtualdub-Selection.jpg" alt="Virtualdub Selection">
+<figcaption>Virtualdub Selection</figcaption>
+</figure>
+</a></li>
 <li>Click on <em>Edit</em> menu and select <em>Delete</em> to remove the selection from the video. You can also press the <em>Delete</em> key on your keyboard.</li>
 <li>Repeat all steps for each ads.</li>
 </ol>
-</li>
-</ul>
 <h2 id="lossless-video-codec">Lossless video codec</h2>
 <p>You need to select an appropriate video codec for saving the temporary file. You may be aware that most video codec makes approximation and even tries to encode &ldquo;movement&rdquo; in the stream to maximize compression. However, they loose quality (some less than other) during each encoding. To prevent any quality loss, a lossless video codec must be selected. As it&rsquo;s name implies, the Lagarith video codec is lossless which means that it does not loose quality each time you re-encode a new video.</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/10/Virtualdub-Video-Codec-Selection.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/Virtualdub-Video-Codec-Selection.jpg" alt="Virtualdub Lagarith Lossless Video Codec Selection"></a></p>
-<p>Virtualdub Lagarith Lossless Video Codec Selection</p>
-<ul>
-<li>Click on <em>Video</em> menu and select <em>Compression</em>&hellip;</li>
-</ul>
-<li>
-  Select <em><em>Lagarith Lossless Video Codec:<br /> </em></em>
-</li>
+<p><a href="/wp-content/uploads/2015/10/Virtualdub-Video-Codec-Selection.jpg">
+<figure>
+<img src="/wp-content/uploads/2015/10/Virtualdub-Video-Codec-Selection.jpg" alt="Virtualdub Lagarith Lossless Video Codec Selection">
+<figcaption>Virtualdub Lagarith Lossless Video Codec Selection</figcaption>
+</figure>
+</a></p>
+<ol>
+<li>Click on <em>Video</em> menu and select <em>Compression</em>&mldr;</li>
+<li>Select <strong>Lagarith Lossless Video Codec:</strong></li>
+</ol>
 <h2 id="audio-codec">Audio codec</h2>
 <p>There is no need to use any compression codec for the audio. A typical TV show is 45 minutes long which only takes ~2.9 GiB (66 MiB / min) for 5.1 Surround sound and ~495 MiB (11 MiB / min) for Stereo sound. With today&rsquo;s disk space, no compression is as good as lossless compression.</p>
 <ol>
 <li>Click on <em>Audio</em> menu and select <em>Full Processing Mode</em>.</li>
 </ol>
 <h2 id="save-a-temporary-file">Save a temporary file</h2>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/10/Virtualdub-encoding.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/Virtualdub-encoding.jpg" alt="Virtualdub encoding"></a></p>
-<p>Virtualdub encoding</p>
-<ul>
-<li>Click on File menu and select Save as AVI&hellip;</li>
+<p><a href="/wp-content/uploads/2015/10/Virtualdub-encoding.jpg">
+<figure>
+<img src="/wp-content/uploads/2015/10/Virtualdub-encoding.jpg" alt="Virtualdub encoding">
+<figcaption>Virtualdub encoding</figcaption>
+</figure>
+</a></p>
+<ol>
+<li>Click on File menu and select Save as AVI&mldr;</li>
 <li>Wait for the process to complete.</li>
-</ul>
+</ol>
 <h2 id="encode-final-video-with-handbrake">Encode final video with Handbrake</h2>
 <p>Now you got a nice TV show episode without any ads. Just open the file in Handbrake and encode using your favorite video parameters.</p>
-<p><a href="http://www.end2endzone.com/wp-content/uploads/2015/10/Handbrake-video-settings.jpg"><img src="http://www.end2endzone.com/wp-content/uploads/2015/10/Handbrake-video-settings.jpg" alt="Handbrake video settings"></a></p>
-<p>Handbrake video settings</p>
+<p><a href="/wp-content/uploads/2015/10/Handbrake-video-settings.jpg">
+<figure>
+<img src="/wp-content/uploads/2015/10/Handbrake-video-settings.jpg" alt="Handbrake video settings">
+<figcaption>Handbrake video settings</figcaption>
+</figure>
+</a></p>
 <h1 id="what-you-get">What you get</h1>
 <p>In the end, you get a perfectly encoded video without any ADS!</p>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/other/">Other</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/hdhomerun/">hdhomerun</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/tv/">tv</a></li>
-        
-      
-    </ul>
-  
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='bfc38259a2850add428ea796e306fa8f'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/" class="button left"><span>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</span></a>
-    
-    
-      <a href="/lune-de-sang-blood-moon/" class="button right"><span>Lune de Sang / Blood moon</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/other/">Other</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/hdhomerun/">hdhomerun</a></li>
+<li><a class="article-terms-link" href="/tags/tv/">tv</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='bfc38259a2850add428ea796e306fa8f'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/best-way-to-remove-ads-from-hdhomerun-recordings-no-intermediate-file-required/" class="button left"><span>Best way to remove ads from HDHomeRun recordings (no intermediate file required)</span></a>
+<a href="/lune-de-sang-blood-moon/" class="button right"><span>Lune de Sang / Blood moon</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

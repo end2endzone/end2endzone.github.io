@@ -1,19 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Raspberry Pi on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/raspberry-pi/</link>
-    <description>Recent content in Raspberry Pi on end2end zone</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate>
-    <atom:link href="http://www.end2endzone.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PiDVR Record over the air TV on a Raspberry Pi 4</title>
-      <link>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</link>
-      <pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate>
-      <guid>http://www.end2endzone.com/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</guid>
-      <description>&lt;h1 id=&#34;about-the-project&#34;&gt;About the project&lt;/h1&gt;&#xA;&lt;p&gt;The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.&lt;/p&gt;&#xA;&lt;h1 id=&#34;required-hardware&#34;&gt;Required Hardware&lt;/h1&gt;&#xA;&lt;p&gt;This project requires the following hardware:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Raspberry Pi 4 (with the required parts)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;4GB of ram&lt;/li&gt;&#xA;&lt;li&gt;A 16GB SD card&lt;/li&gt;&#xA;&lt;li&gt;A micro HDMI cable&lt;/li&gt;&#xA;&lt;li&gt;Monitor with HDMI input&lt;/li&gt;&#xA;&lt;li&gt;A 15.3W USB-C Power Supply (3A @ 5v power supply)&lt;/li&gt;&#xA;&lt;li&gt;Raspberry Pi 4 case. Preferably a passive cooling case for noise consideration.&lt;br&gt;&#xA;I used the &lt;a href=&#34;https://www.argon40.com/argon-one-raspberry-pi-4-case.html&#34;&gt;Argon One&lt;/a&gt; case.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;An HDHomeRun Dual tuner from &lt;a href=&#34;https://www.silicondust.com/&#34;&gt;Silicondust&lt;/a&gt;. The oldest model will do. For this build, I used the &lt;a href=&#34;https://www.google.com/search?q=HDHR3-US&amp;amp;amp;source=lnms&amp;amp;amp;tbm=isch&amp;amp;amp;sa=X&amp;amp;amp;ved=2ahUKEwjquKyuvsbuAhWkrFkKHXbmCLMQ_AUoA3oECAEQBQ&amp;amp;amp;biw=1920&amp;amp;amp;bih=927&#34;&gt;&lt;em&gt;HDHR3-US&lt;/em&gt;&lt;/a&gt; which dates back to 2012-2013.&lt;/li&gt;&#xA;&lt;li&gt;An over-the-air tv antenna for ATSC signals. For this build I use the &lt;a href=&#34;https://www.google.com/search?q=Antennas&amp;#43;Direct&amp;#43;Clearstream&amp;#43;4&amp;#43;antenna&#34;&gt;Clearstream 4&lt;/a&gt; antenna by Antennas Direct.&lt;/li&gt;&#xA;&lt;li&gt;50ft to 100ft Coaxial Cable, 18AWG, 75 Ohm to connect the antenna to the HDHomeRun.&lt;/li&gt;&#xA;&lt;li&gt;External Solid State Drive (SSD) with about 500Gb in size.&lt;/li&gt;&#xA;&lt;li&gt;USB 3.0 to SATA Converter Adapter - Look for one that has UASP support.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;software-list&#34;&gt;Software list&lt;/h1&gt;&#xA;&lt;p&gt;This section defines the list of required software for the project. Follow the instructions in the next section to know when and how to install them.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raspberry Pi on end2end zone</title><link>http://localhost:1313/tags/raspberry-pi/</link><description>Recent content in Raspberry Pi on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Mar 2021 19:40:03 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml"/><item><title>PiDVR Record over the air TV on a Raspberry Pi 4</title><link>http://localhost:1313/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</link><pubDate>Sun, 14 Mar 2021 19:40:03 +0000</pubDate><guid>http://localhost:1313/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/</guid><description>&lt;h1 id="about-the-project">About the project&lt;/h1>
+&lt;p>The following project explains how I used a Raspberry Pi 4 to create a personal digital video recorder to record over-the-air tv.&lt;/p>
+&lt;h1 id="required-hardware">Required Hardware&lt;/h1>
+&lt;p>This project requires the following hardware:&lt;/p>
+&lt;ul>
+&lt;li>Raspberry Pi 4 (with the required parts)
+&lt;ul>
+&lt;li>4GB of ram&lt;/li>
+&lt;li>A 16GB SD card&lt;/li>
+&lt;li>A micro HDMI cable&lt;/li>
+&lt;li>Monitor with HDMI input&lt;/li>
+&lt;li>A 15.3W USB-C Power Supply (3A @ 5v power supply)&lt;/li>
+&lt;li>Raspberry Pi 4 case. Preferably a passive cooling case for noise consideration.&lt;br>
+I used the &lt;a href="https://www.argon40.com/argon-one-raspberry-pi-4-case.html">Argon One&lt;/a> case.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>An HDHomeRun Dual tuner from &lt;a href="https://www.silicondust.com/">Silicondust&lt;/a>. The oldest model will do. For this build, I used the &lt;a href="https://www.google.com/search?q=HDHR3-US&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;sa=X&amp;amp;ved=2ahUKEwjquKyuvsbuAhWkrFkKHXbmCLMQ_AUoA3oECAEQBQ&amp;amp;biw=1920&amp;amp;bih=927">&lt;em>HDHR3-US&lt;/em>&lt;/a> which dates back to 2012-2013.&lt;/li>
+&lt;li>An over-the-air tv antenna for ATSC signals. For this build I use the &lt;a href="https://www.google.com/search?q=Antennas&amp;#43;Direct&amp;#43;Clearstream&amp;#43;4&amp;#43;antenna">Clearstream 4&lt;/a> antenna by Antennas Direct.&lt;/li>
+&lt;li>50ft to 100ft Coaxial Cable, 18AWG, 75 Ohm to connect the antenna to the HDHomeRun.&lt;/li>
+&lt;li>External Solid State Drive (SSD) with about 500Gb in size.&lt;/li>
+&lt;li>USB 3.0 to SATA Converter Adapter - Look for one that has UASP support.&lt;/li>
+&lt;/ul>
+&lt;h1 id="software-list">Software list&lt;/h1>
+&lt;p>This section defines the list of required software for the project. Follow the instructions in the next section to know when and how to install them.&lt;/p></description></item></channel></rss>

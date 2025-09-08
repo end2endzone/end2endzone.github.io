@@ -1,339 +1,172 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse&amp;url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;description=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/">RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-03-30 17:05:59 &#43;0000 &#43;0000">March 30, 2016</time>
-    <p>end2end</p>
-    <p>7-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse&amp;url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;description=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/" class="image" style="--bg-image: url('/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#purpose">Purpose</a></li>
-    <li><a href="#library-features">Library features</a></li>
-    <li><a href="#library-dependencies">Library dependencies</a>
-      <ol>
-        <li><a href="#pinchangeint"><a href="https://github.com/GreyGnome/PinChangeInt">PinChangeInt</a></a></li>
-        <li><a href="#ercaguy_"><a href="http://www.electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html">eRCaGuy_Timer2_Counter</a></a></li>
-      </ol>
-    </li>
-    <li><a href="#usage">Usage</a>
-      <ol>
-        <li><a href="#demo">Demo</a></li>
-      </ol>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#download">Download</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse&amp;url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;description=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/">RcReceiverSignal: an arduino library for retrieving the RC Transmitter value from an RC Receiver pulse</a></h2>
 </div>
-
-        
-		
-        <h1 id="introduction">Introduction</h1>
-<p>The following arduino library was written to use the findings found during the <em><strong><a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" title="Edit “Mapping RC Transmitter PWM signal to actual transmitter values”">Mapping RC Transmitter PWM signal to actual transmitter values</a>{.row-title}</strong></em> article. All results were wrapped into a library for ease of use.</p>
+<div class="meta">
+<time datetime="2016-03-30 17:05:59 +0000 +0000">March 30, 2016</time>
+<p>end2end</p>
+<p>7-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse&amp;url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;title=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f&amp;description=RcReceiverSignal%3a%20an%20arduino%20library%20for%20retrieving%20the%20RC%20Transmitter%20value%20from%20an%20RC%20Receiver%20pulse" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2frcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/" class="image" style="--bg-image:url('/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/03/Arduino-RcReceiverSignal-library.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#library-features">Library features</a></li>
+<li><a href="#library-dependencies">Library dependencies</a>
+<ol>
+<li><a href="#pinchangeint"><a href="https://github.com/GreyGnome/PinChangeInt">PinChangeInt</a></a></li>
+<li><a href="#ercaguy_timer2_counter"><a href="http://www.electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html">eRCaGuy_Timer2_Counter</a></a></li>
+</ol>
+</li>
+<li><a href="#usage">Usage</a>
+<ol>
+<li><a href="#demo">Demo</a></li>
+</ol>
+</li>
+<li><a href="#license">License</a></li>
+<li><a href="#download">Download</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>The following arduino library was written to use the findings found during the <em><strong><a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values</a></strong></em> article. All results were wrapped into a library for ease of use.</p>
 <p>The RcReceiverSignal is an arduino library that allows one to read a signal sent from a Remote Controlled (RC) receiver.</p>
 <p>Skip to the <a href="/rcreceiversignal-an-arduino-library-for-retreiving-the-rc-transmitter-value-from-an-rc-receiver-pulse/#Download">download section</a> for quick download.</p>
 <h1 id="purpose">Purpose</h1>
 <p>The RcReceiverSignal library allows one to easily configure an input pin to read a PWM signal sent from a RC receiver by attaching a RcReceiverSignal instance to a pin connected the receiver and automatically monitor each pulse sent by the receiver.</p>
 <p>It allows the main loop to retrieve the latest received pulse length (PWM) and convert the pulse length back to the actual transmitter signal value (ranging from -150% to 150%).</p>
-<p>The library supports automatic PWM signal change detection. The library&rsquo;s ability to convert a PWM value to the actual transmitter numeric value is based on empirical tests available at <em><strong><a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" title="Edit “Mapping RC Transmitter PWM signal to actual transmitter values”">Mapping RC Transmitter PWM signal to actual transmitter values</a>{.row-title}.</strong></em></p>
+<p>The library supports automatic PWM signal change detection. The library&rsquo;s ability to convert a PWM value to the actual transmitter numeric value is based on empirical tests available at <em><strong><a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/">Mapping RC Transmitter PWM signal to actual transmitter values</a>.</strong></em></p>
 <h1 id="library-features">Library features</h1>
 <p>Possible use are:</p>
 <ul>
@@ -341,24 +174,21 @@
 <li>Automatically handles interrupt protection.</li>
 <li>Automatic ISR handling. All required code automatically generated.</li>
 <li>Allows one to convert a pulse length (PWM) back to the original transmitter value.</li>
-</ul>
-<li>
-  Supports multiple Transmitter/Receiver combination: <li>
-      Spektrum DX9 tx + Spektrum AR8000 rx
-    </li>
-    * Spektrum DX9 tx +&nbsp;Orange R620X rx
-    * Tactic TTX600 tx +&nbsp;Tactic TR624 rx
-    * CCPM Servo Tester
-</li>
+<li>Supports multiple Transmitter/Receiver combination:
 <ul>
-<li>Supports <a href="http://www.electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html">eRCaGuy_Timer2_Counter</a> 0.5µs (or the native <em>micros()</em> function) for timing calculations.</li>
+<li>Spektrum DX9 tx + Spektrum AR8000 rx</li>
+<li>Spektrum DX9 tx + Orange R620X rx</li>
+<li>Tactic TTX600 tx + Tactic TR624 rx</li>
+<li>CCPM Servo Tester</li>
+</ul>
+</li>
+<li>Supports <a href="http://www.electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html">eRCaGuy_Timer2_Counter</a> 0.5µs (or the native <em>micros()</em> function) for timing calculations.</li>
 </ul>
 <h1 id="library-dependencies">Library dependencies</h1>
 <h2 id="pinchangeint"><a href="https://github.com/GreyGnome/PinChangeInt">PinChangeInt</a></h2>
 <p>This library allows the arduino to attach interrupts on multiple pins.</p>
-<h2 id="ercaguy_"><a href="http://www.electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html">eRCaGuy_Timer2_Counter</a></h2>
-<p>(optional)<br>
-This library configures the arduino&rsquo;s timer2 to 0.5µs precision. It is used for a <em>micros()</em> function replacement and allows times calculations that are far more precise (8 times!) than the default&rsquo;s 4µs resolution.</p>
+<h2 id="ercaguy_timer2_counter"><a href="http://www.electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html">eRCaGuy_Timer2_Counter</a></h2>
+<p>(optional) This library configures the arduino&rsquo;s timer2 to 0.5µs precision. It is used for a <em>micros()</em> function replacement and allows times calculations that are far more precise (8 times!) than the default&rsquo;s 4µs resolution.</p>
 <h1 id="usage">Usage</h1>
 <p>Use the DECLARE_RECEIVER_SIGNAL macro to declare an instance of RcReceiverSignal. ie:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">DECLARE_RECEIVER_SIGNAL</span><span class="p">(</span><span class="n">receiver_aux1_handler</span><span class="p">);</span>
@@ -372,180 +202,182 @@ This library configures the arduino&rsquo;s timer2 to 0.5µs precision. It is us
 <p>In the <em>setup()</em> function, you need to configure each instance by calling the <em>receiver_aux1_handler_setup()</em> function with the interrupt pin as argument. ie:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">receiver_aux1_handler_setup</span><span class="p">(</span><span class="n">RECEIVER_AUX1_IN_PIN</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">receiver_throttle_handler_setup</span><span class="p">(</span><span class="n">RECEIVER_THROTTLE_IN_PIN</span><span class="p">);</span>
-</span></span></code></pre></div><p>In the loop function, one can call the _hasChanged() m_ethod to know if the PWM value has changed since the last call or call the <em>getPwmValue()</em> function to get the last PWM value observed by the <em>RcReceiverSignal</em> instance.</p>
+</span></span></code></pre></div><p>In the loop function, one can call the <em>hasChanged()</em> method to know if the PWM value has changed since the last call or call the <em>getPwmValue()</em> function to get the last PWM value observed by the <em>RcReceiverSignal</em> instance.</p>
 <p>From a PWM value, one can call the <em>getSignalValue()</em> or <em>getDeviceSignalValue()</em> methods to convert a given PWM signal from a known device combination to a transmitter value (within -150% to +150%).</p>
 <h2 id="demo">Demo</h2>
-<p>The following demo show how to use the library:<br>
-(download the
-<a href="http://www.end2endzone.com/download/1794/" title="Version 1.1.203"> RcReceiverSignal v1.1.203 LedUpdate demo.ino (572 downloads) </a>)</p>
-<pre tabindex="0"><code>//
-//  RcReceiverSignal Library
-//  LedUpdate example
-//  Copyright (C) 2016 Antoine Beauchamp
-//  The code &amp; updates for the library can be found on http://end2endzone.com
-//
-// AUTHOR/LICENSE:
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 3.0 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License (LGPL-3.0) for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-//
-// DISCLAIMER:
-//  This software is furnished &#34;as is&#34;, without technical support, and with no 
-//  warranty, express or implied, as to its usefulness for any purpose.
-//
-// PURPOSE:
-//  The following example reads a PWM signal on pin 2. If the value is below the
-//  center position, it turns ON the arduino&#39;s LED. If the value is close to the
-//  center position, it blinks the arduino&#39;s LED. If the value is higher than the
-//  center position, it turns OFF the arduino&#39;s LED.
-//
-
-//
-//RcReceiverSignal library has a dependency to PinChangeInt library.
-#include &lt;PinChangeInt.h&gt;
-
-//
-//This library allows one to have a micros() replacement function 
-//which has a 1us resolution instead of 4usec.
-//For more information on this library, see the following:
-// http://electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html
-// http://www.instructables.com/id/How-to-get-an-Arduino-micros-function-with-05us-pr/
-//
-#include &lt;eRCaGuy_Timer2_Counter.h&gt;
-
-//that&#39;s the example&#39;s library!
-#include &lt;RcReceiverSignal.h&gt;
-
-//project&#39;s contants
-#define RECEIVER_AUX1_IN_PIN 2 // we could choose any pin
-#define LED_OUT_PIN 13
-#define LED_MODE_ON       0
-#define LED_MODE_OFF      1
-#define LED_MODE_BLINK    2
-#define LED_MODE_BLINK_TIME 100 //blinks every 100 ms
-#define PWM_CENTER_EPSILON 100 //defines the epsilon value which allows to detect &#34;center&#34; position
-
-//project&#39;s switches
-#define ENABLE_SERIAL_OUTPUT
-
-DECLARE_RECEIVER_SIGNAL(receiver_aux1_handler);
-char ledMode = LED_MODE_OFF;  //initialize LED to OFF by default
-int ledState = LOW;           //initialize LED to OFF by default
-unsigned long prevBlinkTime = 0;
-
-uint32_t timer2CounterWrapperFunction() {
-  return timer2.get_count();
-}
-
-void setup() {
-  //configure Timer2
-  timer2.setup(); //this MUST be done before the other Timer2_Counter functions work; Note: since this messes up PWM outputs on pins 3 &amp; 11, as well as 
-                  //interferes with the tone() library (http://arduino.cc/en/reference/tone), you can always revert Timer2 back to normal by calling 
-                  //timer2.unsetup()
-  
-  //configure RcReceiverSignal with an external time counter
-  //eRCaGuy_Timer2_Counter lirary has 0.5us resolution.
-  //The counter value must be divided by 2 to convert from 0.5us steps to 1us steps
-  //which results in microseconds resolution.
-  RcReceiverSignal::setExternalTimeCounter(&amp;timer2CounterWrapperFunction, 1, 2);
-
-  //link RcReceiverSignal to use PinChangeInt library
-  RcReceiverSignal::setAttachInterruptFunction(&amp;PCintPort::attachInterrupt);
-  RcReceiverSignal::setPinStatePointer(&amp;PCintPort::pinState);
-
-  #ifdef ENABLE_SERIAL_OUTPUT
-    Serial.begin(115200);
-    Serial.println(&#34;ready&#34;);
-  #endif
-
-  // initialize digital pin 13 as an output.
-  pinMode(LED_OUT_PIN, OUTPUT);
-  
-  receiver_aux1_handler_setup(RECEIVER_AUX1_IN_PIN);
-}
-
-void blinkLed()
-{
-  // See https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay
-  
-  // check to see if it&#39;s time to blink the LED; that is, if the
-  // difference between the current time and last time you blinked
-  // the LED is bigger than the interval at which you want to
-  // blink the LED.
-  unsigned long currentMillis = millis();
-
-  if (currentMillis - prevBlinkTime &gt;= LED_MODE_BLINK_TIME) {
-    // save the last time you blinked the LED
-    prevBlinkTime = currentMillis;
-
-    // if the LED is off turn it on and vice-versa:
-    if (ledState == LOW) {
-      ledState = HIGH;
-    } else {
-      ledState = LOW;
-    }
-
-    // set the LED with the ledState of the variable:
-    digitalWrite(LED_OUT_PIN, ledState);
-  }  
-}
-
-void loop() {
-
-  //update LED status
-  if (ledMode == LED_MODE_ON) {
-    ledState = HIGH;
-    digitalWrite(LED_OUT_PIN, ledState);  // turn the LED on (HIGH is the voltage level)
-  }
-  else if (ledMode == LED_MODE_OFF) {
-    ledState = LOW;
-    digitalWrite(LED_OUT_PIN, ledState);   // turn the LED off by making the voltage LOW
-  }
-  else if (ledMode == LED_MODE_BLINK)
-  {
-    blinkLed();
-  }
-  
-  //detect when the receiver AUX1 value has changed
-  if (receiver_aux1_handler.hasChanged())
-  {
-    unsigned long pwmValue = receiver_aux1_handler.getPwmValue();
-
-    if (pwmValue &lt; 1500-PWM_CENTER_EPSILON) {
-      #ifdef ENABLE_SERIAL_OUTPUT
-      if (ledMode != LED_MODE_ON)
-        Serial.println(&#34;Setting LED to ON&#34;);
-      #endif
-      ledMode = LED_MODE_ON;
-    }
-    else if (pwmValue &gt; 1500+PWM_CENTER_EPSILON) {
-      #ifdef ENABLE_SERIAL_OUTPUT
-      if (ledMode != LED_MODE_OFF)
-        Serial.println(&#34;Setting LED to OFF&#34;);
-      #endif
-      ledMode = LED_MODE_OFF;
-    }
-    else {
-      #ifdef ENABLE_SERIAL_OUTPUT
-      if (ledMode != LED_MODE_BLINK)
-        Serial.println(&#34;Setting LED to BLINK&#34;);
-      #endif
-      ledMode = LED_MODE_BLINK;
-    }
-  }
-}
-
-</code></pre>
+<p>The following demo show how to use the library:
+<a href="/wp-content/uploads/2016/03/RcReceiverSignal-v1.0.124-LedUpdate.ino" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+RcReceiverSignal-v1.0.124-LedUpdate.ino
+</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  RcReceiverSignal Library
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  LedUpdate example
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  Copyright (C) 2016 Antoine Beauchamp
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  The code &amp; updates for the library can be found on http://end2endzone.com
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// AUTHOR/LICENSE:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  This library is free software; you can redistribute it and/or
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  modify it under the terms of the GNU Lesser General Public
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  License as published by the Free Software Foundation; either
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  version 3.0 of the License, or (at your option) any later version.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  This library is distributed in the hope that it will be useful,
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  Lesser General Public License (LGPL-3.0) for more details.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  You should have received a copy of the GNU Lesser General Public
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  License along with this library; if not, write to the Free Software
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// DISCLAIMER:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  This software is furnished &#34;as is&#34;, without technical support, and with no 
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  warranty, express or implied, as to its usefulness for any purpose.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">// PURPOSE:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  The following example reads a PWM signal on pin 2. If the value is below the
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  center position, it turns ON the arduino&#39;s LED. If the value is close to the
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  center position, it blinks the arduino&#39;s LED. If the value is higher than the
+</span></span></span><span class="line"><span class="cl"><span class="c1">//  center position, it turns OFF the arduino&#39;s LED.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">//RcReceiverSignal library has a dependency to PinChangeInt library.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;PinChangeInt.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1">//This library allows one to have a micros() replacement function 
+</span></span></span><span class="line"><span class="cl"><span class="c1">//which has a 1us resolution instead of 4usec.
+</span></span></span><span class="line"><span class="cl"><span class="c1">//For more information on this library, see the following:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// http://electricrcaircraftguy.com/2014/02/Timer2Counter-more-precise-Arduino-micros-function.html
+</span></span></span><span class="line"><span class="cl"><span class="c1">// http://www.instructables.com/id/How-to-get-an-Arduino-micros-function-with-05us-pr/
+</span></span></span><span class="line"><span class="cl"><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;eRCaGuy_Timer2_Counter.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//that&#39;s the example&#39;s library!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;RcReceiverSignal.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//project&#39;s contants
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define RECEIVER_AUX1_IN_PIN 2 </span><span class="c1">// we could choose any pin
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define LED_OUT_PIN 13
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define LED_MODE_ON       0
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define LED_MODE_OFF      1
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define LED_MODE_BLINK    2
+</span></span></span><span class="line"><span class="cl"><span class="cp">#define LED_MODE_BLINK_TIME 100 </span><span class="c1">//blinks every 100 ms
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define PWM_CENTER_EPSILON 100 </span><span class="c1">//defines the epsilon value which allows to detect &#34;center&#34; position
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">//project&#39;s switches
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#define ENABLE_SERIAL_OUTPUT
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">DECLARE_RECEIVER_SIGNAL</span><span class="p">(</span><span class="n">receiver_aux1_handler</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">ledMode</span> <span class="o">=</span> <span class="n">LED_MODE_OFF</span><span class="p">;</span>  <span class="c1">//initialize LED to OFF by default
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">ledState</span> <span class="o">=</span> <span class="n">LOW</span><span class="p">;</span>           <span class="c1">//initialize LED to OFF by default
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">prevBlinkTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">uint32_t</span> <span class="nf">timer2CounterWrapperFunction</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">timer2</span><span class="p">.</span><span class="n">get_count</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">//configure Timer2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">timer2</span><span class="p">.</span><span class="n">setup</span><span class="p">();</span> <span class="c1">//this MUST be done before the other Timer2_Counter functions work; Note: since this messes up PWM outputs on pins 3 &amp; 11, as well as 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                  <span class="c1">//interferes with the tone() library (http://arduino.cc/en/reference/tone), you can always revert Timer2 back to normal by calling 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                  <span class="c1">//timer2.unsetup()
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl">  <span class="c1">//configure RcReceiverSignal with an external time counter
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">//eRCaGuy_Timer2_Counter lirary has 0.5us resolution.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">//The counter value must be divided by 2 to convert from 0.5us steps to 1us steps
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">//which results in microseconds resolution.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">RcReceiverSignal</span><span class="o">::</span><span class="n">setExternalTimeCounter</span><span class="p">(</span><span class="o">&amp;</span><span class="n">timer2CounterWrapperFunction</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">//link RcReceiverSignal to use PinChangeInt library
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">RcReceiverSignal</span><span class="o">::</span><span class="n">setAttachInterruptFunction</span><span class="p">(</span><span class="o">&amp;</span><span class="n">PCintPort</span><span class="o">::</span><span class="n">attachInterrupt</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">RcReceiverSignal</span><span class="o">::</span><span class="n">setPinStatePointer</span><span class="p">(</span><span class="o">&amp;</span><span class="n">PCintPort</span><span class="o">::</span><span class="n">pinState</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="cp">#ifdef ENABLE_SERIAL_OUTPUT
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;ready&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="cp">#endif
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// initialize digital pin 13 as an output.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_OUT_PIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="n">receiver_aux1_handler_setup</span><span class="p">(</span><span class="n">RECEIVER_AUX1_IN_PIN</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">blinkLed</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// See https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl">  <span class="c1">// check to see if it&#39;s time to blink the LED; that is, if the
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// difference between the current time and last time you blinked
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// the LED is bigger than the interval at which you want to
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// blink the LED.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">currentMillis</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">currentMillis</span> <span class="o">-</span> <span class="n">prevBlinkTime</span> <span class="o">&gt;=</span> <span class="n">LED_MODE_BLINK_TIME</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// save the last time you blinked the LED
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">prevBlinkTime</span> <span class="o">=</span> <span class="n">currentMillis</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// if the LED is off turn it on and vice-versa:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">ledState</span> <span class="o">==</span> <span class="n">LOW</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ledState</span> <span class="o">=</span> <span class="n">HIGH</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">ledState</span> <span class="o">=</span> <span class="n">LOW</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// set the LED with the ledState of the variable:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_OUT_PIN</span><span class="p">,</span> <span class="n">ledState</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>  
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">//update LED status
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="n">ledMode</span> <span class="o">==</span> <span class="n">LED_MODE_ON</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ledState</span> <span class="o">=</span> <span class="n">HIGH</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_OUT_PIN</span><span class="p">,</span> <span class="n">ledState</span><span class="p">);</span>  <span class="c1">// turn the LED on (HIGH is the voltage level)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">ledMode</span> <span class="o">==</span> <span class="n">LED_MODE_OFF</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ledState</span> <span class="o">=</span> <span class="n">LOW</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_OUT_PIN</span><span class="p">,</span> <span class="n">ledState</span><span class="p">);</span>   <span class="c1">// turn the LED off by making the voltage LOW
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">ledMode</span> <span class="o">==</span> <span class="n">LED_MODE_BLINK</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">blinkLed</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1">//detect when the receiver AUX1 value has changed
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="n">receiver_aux1_handler</span><span class="p">.</span><span class="n">hasChanged</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">pwmValue</span> <span class="o">=</span> <span class="n">receiver_aux1_handler</span><span class="p">.</span><span class="n">getPwmValue</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">pwmValue</span> <span class="o">&lt;</span> <span class="mi">1500</span><span class="o">-</span><span class="n">PWM_CENTER_EPSILON</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="cp">#ifdef ENABLE_SERIAL_OUTPUT
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>      <span class="k">if</span> <span class="p">(</span><span class="n">ledMode</span> <span class="o">!=</span> <span class="n">LED_MODE_ON</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Setting LED to ON&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="cp">#endif
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>      <span class="n">ledMode</span> <span class="o">=</span> <span class="n">LED_MODE_ON</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">pwmValue</span> <span class="o">&gt;</span> <span class="mi">1500</span><span class="o">+</span><span class="n">PWM_CENTER_EPSILON</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="cp">#ifdef ENABLE_SERIAL_OUTPUT
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>      <span class="k">if</span> <span class="p">(</span><span class="n">ledMode</span> <span class="o">!=</span> <span class="n">LED_MODE_OFF</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Setting LED to OFF&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="cp">#endif
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>      <span class="n">ledMode</span> <span class="o">=</span> <span class="n">LED_MODE_OFF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="cp">#ifdef ENABLE_SERIAL_OUTPUT
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>      <span class="k">if</span> <span class="p">(</span><span class="n">ledMode</span> <span class="o">!=</span> <span class="n">LED_MODE_BLINK</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;Setting LED to BLINK&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="cp">#endif
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>      <span class="n">ledMode</span> <span class="o">=</span> <span class="n">LED_MODE_BLINK</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span></code></pre></div>
 <h1 id="license">License</h1>
 <p>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.</p>
 <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License (LGPL-3.0) for more details.</p>
@@ -553,278 +385,161 @@ void loop() {
 <p><strong>DISCLAIMER:</strong><br>
 This software is furnished &ldquo;as is&rdquo;, without technical support, and with no warranty, express or implied, as to its usefulness for any purpose.</p>
 <h1 id="download">Download</h1>
-<p>You can download the RcReceiverSignal arduino library by clicking on the following link:</p>
-<pre><code>	[ Download &quot;RcReceiverSignal arduino library v1.1.203&quot; RcReceiverSignal-v1.1.203.zip - Downloaded 664 times - 59 KB ](http://www.end2endzone.com/download/1792/)
-</code></pre>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-          <li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
-        
-      
-    </ul>
-  
+<p>You can download the RcReceiverSignal arduino library by clicking on the following link:
+<a href="/wp-content/uploads/2016/03/RcReceiverSignal-v1.0.124.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+RcReceiverSignal-v1.0.124.zip
+</a></p>
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='6a0752cdf80c0c7a9f91c46bc16bfb58'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/" class="button left"><span>How to multiplex RC Transmitter switches into a single channel</span></a>
-    
-    
-      <a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" class="button right"><span>Mapping RC Transmitter PWM signal to actual transmitter values</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+<li><a class="article-terms-link" href="/categories/model-aeronautics/">Model Aeronautics</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+<li><a class="article-terms-link" href="/tags/rc/">RC</a></li>
+<li><a class="article-terms-link" href="/tags/rc-transmitter/">RC transmitter</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='6a0752cdf80c0c7a9f91c46bc16bfb58'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/how-to-multiplex-rc-transmitter-switches-into-a-single-channel/" class="button left"><span>How to multiplex RC Transmitter switches into a single channel</span></a>
+<a href="/mapping-rc-transmitter-pwm-signal-to-actual-transmitter-values/" class="button right"><span>Mapping RC Transmitter PWM signal to actual transmitter values</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>

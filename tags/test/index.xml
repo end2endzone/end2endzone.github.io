@@ -1,36 +1,449 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>test on end2end zone</title>
-    <link>http://www.end2endzone.com/tags/test/</link>
-    <description>Recent content in test on end2end zone</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 1900 00:00:00 +0000</lastBuildDate><atom:link href="http://www.end2endzone.com/tags/test/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>test css classes</title>
-      <link>http://www.end2endzone.com/blog/1900-01-01-test-css-classes/</link>
-      <pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.end2endzone.com/blog/1900-01-01-test-css-classes/</guid>
-      <description>hey this is my text default color
-this is a link to google.com
-this is another line of text{#id .pleasenote}
-h1 Text in header 1 this is a link to google.com
-h2 Text in header 2 this is a link to google.com
-h3 Text in header 3 this is a link to google.com
-h4 Text in header 4 this is a link to google.com
-h5 Text in header 5 this is a link to google.</description>
-    </item>
-    
-    <item>
-      <title>Test highlighting</title>
-      <link>http://www.end2endzone.com/blog/1900-01-01-test-highlighting/</link>
-      <pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.end2endzone.com/blog/1900-01-01-test-highlighting/</guid>
-      <description>cpp - code fences 1// Simple C++ program to display &amp;#34;Hello World&amp;#34; 2// Header file for input output functions 3#include&amp;lt;iostream&amp;gt;4using namespace std; 5// main function - where the execution of program begins 6int main() 7{ 8 // prints hello world 9 cout&amp;lt;&amp;lt;&amp;#34;Hello World&amp;#34;; 10 return 0; 11} txt - code fences 1Roses are red, 2Violets are blue, 3Sugar is sweet, 4And so are you. html - code fences 1&amp;lt;html&amp;gt; 2 &amp;lt;head&amp;gt; 3 &amp;lt;/head&amp;gt; 4 &amp;lt;body&amp;gt; 5 &amp;lt;h1&amp;gt;Hello World&amp;lt;h1&amp;gt; 6 &amp;lt;/body&amp;gt; 7&amp;lt;/html&amp;gt; unspecified - code fences The greatest glory in living lies not in never falling, but in rising every time we fall.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Test on end2end zone</title><link>http://localhost:1313/tags/test/</link><description>Recent content in Test on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 1900 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml"/><item><title>test css classes</title><link>http://localhost:1313/blog/1900-01-01-test-css-classes/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-css-classes/</guid><description>&lt;p>hey this is my text default color&lt;/p>
+&lt;p>&lt;a href="http://google.com">this is a link to google.com&lt;/a>&lt;/p>
+&lt;p>this is another line of text&lt;/p>
+&lt;p> 
+ &lt;/p>
+&lt;p>&lt;strong>Heading:&lt;/strong>&lt;/p>
+&lt;h1 id="h1">h1&lt;/h1>
+&lt;p>Text in header 1 &lt;a href="http://google.com">this is a link to google.com&lt;/a>&lt;/p>
+&lt;h2 id="h2">h2&lt;/h2>
+&lt;p>Text in header 2 &lt;a href="http://google.com">this is a link to google.com&lt;/a>&lt;/p>
+&lt;h3 id="h3">h3&lt;/h3>
+&lt;p>Text in header 3 &lt;a href="http://google.com">this is a link to google.com&lt;/a>&lt;/p>
+&lt;h4 id="h4">h4&lt;/h4>
+&lt;p>Text in header 4 &lt;a href="http://google.com">this is a link to google.com&lt;/a>&lt;/p>
+&lt;h5 id="h5">h5&lt;/h5>
+&lt;p>Text in header 5 &lt;a href="http://google.com">this is a link to google.com&lt;/a>&lt;/p></description></item><item><title>Test highlighting</title><link>http://localhost:1313/blog/1900-01-01-test-highlighting/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-highlighting/</guid><description>&lt;h1 id="tables">Tables&lt;/h1>
+&lt;p>Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Name&lt;/th>
+ &lt;th>Age&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Bob&lt;/td>
+ &lt;td>27&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Alice&lt;/td>
+ &lt;td>23&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="inline-markdown-within-tables">Inline Markdown within tables&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Inline&lt;/th>
+ &lt;th>Markdown&lt;/th>
+ &lt;th>In&lt;/th>
+ &lt;th>Table&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;em>italics&lt;/em>&lt;/td>
+ &lt;td>&lt;strong>bold&lt;/strong>&lt;/td>
+ &lt;td>&lt;del>strikethrough&lt;/del>&lt;/td>
+ &lt;td>&lt;code>code&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h1 id="code-fences">Code fences&lt;/h1>
+&lt;h2 id="cpp">cpp&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Simple C++ program to display &amp;#34;Hello World&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Header file for input output functions
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// main function - where the execution of program begins
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// prints hello world
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="s">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="txt">txt&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">Roses are red,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Violets are blue,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sugar is sweet,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">And so are you.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="html">html&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h1&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Hello World&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h1&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="unspecified">unspecified&lt;/h2>
+&lt;pre tabindex="0">&lt;code>The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela
+The way to get started is to quit talking and begin doing. -Walt Disney
+Your time is limited, so don&amp;#39;t waste it living someone else&amp;#39;s life. Don&amp;#39;t be trapped by dogma – which is living with the results of other people&amp;#39;s thinking. -Steve Jobs
+If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt
+If you look at what you have in life, you&amp;#39;ll always have more. If you look at what you don&amp;#39;t have in life, you&amp;#39;ll never have enough. -Oprah Winfrey
+If you set your goals ridiculously high and it&amp;#39;s a failure, you will fail above everyone else&amp;#39;s success. -James Cameron
+Life is what happens when you&amp;#39;re busy making other plans. -John Lennon
+&lt;/code>&lt;/pre>&lt;h2 id="hardcoded-html-pre-tags">hardcoded HTML pre tags&lt;/h2>
+&lt;pre>
+OffsetTravel = (switch default travel (see below)) - Offset
+if OffsetTravel &amp;lt; 0
+ SwitchMixValue = OffsetTravel / 100 * Low rate
+else
+ SwitchMixValue = OffsetTravel / 100 * High rate
+&lt;/pre>
+&lt;h2 id="static-file-with-hightlight-static-file-shortcode">static file with &amp;lsquo;hightlight-static-file&amp;rsquo; shortcode&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Simple C++ program to display &amp;#34;Hello World&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Header file for input output functions
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// main function - where the execution of program begins
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// prints hello world
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="s">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="highlight-shortcode-rendered-by-hugo-at-build-time--compile-time">highlight shortcode (rendered by Hugo at build-time / compile-time)&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">199
+&lt;/span>&lt;span class="lnt">200
+&lt;/span>&lt;span class="hl">&lt;span class="lnt">201
+&lt;/span>&lt;/span>&lt;span class="lnt">202
+&lt;/span>&lt;span class="hl">&lt;span class="lnt">203
+&lt;/span>&lt;/span>&lt;span class="hl">&lt;span class="lnt">204
+&lt;/span>&lt;/span>&lt;span class="hl">&lt;span class="lnt">205
+&lt;/span>&lt;/span>&lt;span class="lnt">206
+&lt;/span>&lt;span class="lnt">207
+&lt;/span>&lt;span class="lnt">208
+&lt;/span>&lt;span class="lnt">209
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Simple C++ program to display &amp;#34;Hello World&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Header file for input output functions&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line hl">&lt;span class="cl">&lt;span class="err">#&lt;/span>&lt;span class="nx">include&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">iostream&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">using&lt;/span> &lt;span class="nx">namespace&lt;/span> &lt;span class="nx">std&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line hl">&lt;span class="cl">&lt;span class="c1">// main function - where the execution of program begins&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line hl">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line hl">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// prints hello world&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="s">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="with-additional-custom-css-classes-ie-postedit">with additional custom css classes (ie: &amp;lsquo;postedit&amp;rsquo;)&lt;/h2>
+&lt;div class="highlight postedit">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Simple C++ program to display &amp;#34;Hello World&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Header file for input output functions
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// main function - where the execution of program begins
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// prints hello world
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="s">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="wrapped-in-linenumbers-shortcode">wrapped in linenumbers shortcode&lt;/h2>
+&lt;div class="highlight">
+ &lt;pre tabindex="0" class="chroma">
+ &lt;code id="code-block-7" class="line-numbers">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Simple C++ program to display &amp;#34;Hello World&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Header file for input output functions
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// main function - where the execution of program begins
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// prints hello world
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="s">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/code>
+ &lt;/pre>
+&lt;/div>
+&lt;script>
+ document.addEventListener('DOMContentLoaded', () => {
+ insertLineNumbersInCodeBlock('code-block-7');
+ });
+&lt;/script>
+&lt;div class="highlight">
+ &lt;pre tabindex="0" class="chroma">
+ &lt;code id="code-block-8" class="line-numbers">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello, World!&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/code>
+ &lt;/pre>
+&lt;/div>
+&lt;script>
+ document.addEventListener('DOMContentLoaded', () => {
+ insertLineNumbersInCodeBlock('code-block-8');
+ });
+&lt;/script>
+&lt;div class="highlight">
+ &lt;pre tabindex="0" class="chroma">
+ &lt;code id="code-block-9" class="line-numbers">&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Hello World Page&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">h1&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Hello, World!&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">h1&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>This is my first HTML page.&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/code>
+ &lt;/pre>
+&lt;/div>
+&lt;script>
+ document.addEventListener('DOMContentLoaded', () => {
+ insertLineNumbersInCodeBlock('code-block-9');
+ });
+&lt;/script>
+&lt;h1 id="image-galleries-as-tables">Image Galleries (as tables)&lt;/h1>
+&lt;div class="image-gallery">
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;!-- -->&lt;/th>
+ &lt;th>&lt;!-- -->&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37538053182/in/album-72157686816329321/">&lt;br /> 
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2446_e2ez-672x448.jpg" alt="">
+&lt;br /> &lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37538049222/in/album-72157686816329321/">&lt;br /> 
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2488_e2ez-672x448.jpg" alt="">
+&lt;br /> &lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37538046922/in/album-72157686816329321/">&lt;br /> 
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2526_e2ez-672x448.jpg" alt="">
+&lt;br /> &lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/36900405873/in/album-72157686816329321/">&lt;br /> 
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2549_e2ez-672x448.jpg" alt="">
+&lt;br /> &lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://www.flickr.com/photos/154618444@N05/37538045602/in/album-72157686816329321/">&lt;br /> 
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2567_e2ez-672x448.jpg" alt="">
+&lt;br /> &lt;/a>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+
+&lt;/div>
+
+&lt;h1 id="image-galleries-images-in-a-div">Image Galleries (images in a div)&lt;/h1>
+&lt;div class="image-gallery">
+&lt;a href="https://www.flickr.com/photos/154618444@N05/37538053182/in/album-72157686816329321/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2446_e2ez-672x448.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/37538049222/in/album-72157686816329321/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2488_e2ez-672x448.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/37538046922/in/album-72157686816329321/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2526_e2ez-672x448.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/36900405873/in/album-72157686816329321/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2549_e2ez-672x448.jpg" alt="">
+&lt;/a>
+&lt;a href="https://www.flickr.com/photos/154618444@N05/37538045602/in/album-72157686816329321/">
+&lt;img src="http://localhost:1313/wp-content/uploads/2015/08/IMG_2567_e2ez-672x448.jpg" alt="">
+&lt;/a>
+&lt;/div>
+
+&lt;h1 id="quotes">Quotes:&lt;/h1>
+&lt;p>According to the &lt;a href="http://www.horizonhobby.com/pdf/SPMR9900-Manual_EN.pdf">User Manual of the Spektrum DX9 Instruction Manual&lt;/a>, this is the definition of Mixing:&lt;/p></description></item><item><title>Test of feature Bypassing default linking</title><link>http://localhost:1313/blog/1900-01-01-test-multilanguage-en/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-multilanguage-en/</guid><description>&lt;h1 id="level-1">Level 1&lt;/h1>
+&lt;p>This is a sample content for testing the feature &lt;a href="https://gohugo.io/content-management/multilingual/#bypassing-default-linking">Bypassing default linking&lt;/a>.&lt;/p></description></item><item><title>Test shortcodes</title><link>http://localhost:1313/blog/1900-01-01-test-shortcodes/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-shortcodes/</guid><description>&lt;h3 id="downloads">downloads&lt;/h3>
+&lt;p>This is download button:&lt;/br>
+
+&lt;a href="https://codeload.github.com/end2endzone/end2endzone-hugo/zip/refs/heads/main" target="_blank" class="btn btn-default">
+ &lt;i class="fas fa-download">&lt;/i>
+ Download end2endzone-hugo
+&lt;/a>&lt;/p>
+&lt;h3 id="buttons">buttons&lt;/h3>
+&lt;p>These are other buttons:
+
+&lt;a href="https://getgrav.org/" target="_blank" class="btn btn-default">
+ 
+ 
+ 
+ Get Grav
+ 
+&lt;/a>
+
+&lt;a href="https://getgrav.org/" target="_blank" class="btn btn-default">
+ 
+ 
+ 
+ 
+ &lt;i class="fas fa-download">&lt;/i>
+ 
+ 
+ Get Grav with icon
+ 
+&lt;/a>
+
+&lt;a href="https://getgrav.org/" target="_blank" class="btn btn-default">
+ 
+ 
+ 
+ 
+ 
+ Get Grav with icon right
+ 
+ &lt;i class="fas fa-download">&lt;/i>
+ 
+&lt;/a>&lt;/p>
+&lt;h3 id="postedit">postedit&lt;/h3>
+&lt;p class="postedit">
+ EDIT: Source code is now moved to GitHub. Source code can be downloaded from &lt;a href="http://github.com/end2endzone/msbuildreorder">the project&amp;rsquo;s GitHub page&lt;/a>.
+&lt;/p>
+&lt;h3 id="pleasenote">pleasenote&lt;/h3>
+&lt;p class="pleasenote">
+ NOTE: Please note that download links are now deprecated. Binary version of msbuildreorder can be downloaded directly from &lt;a href="http://github.com/end2endzone/msbuildreorder/releases">the project&amp;rsquo;s GitHub page&lt;/a>.
+&lt;/p></description></item><item><title>Test Table of Contents</title><link>http://localhost:1313/blog/1900-01-01-test-table-of-contents/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-table-of-contents/</guid><description>&lt;h1 id="level-1">Level 1&lt;/h1>
+&lt;p>Lorem ipsum&lt;/p>
+&lt;h1 id="level-1-1">Level 1&lt;/h1>
+&lt;h2 id="level-2a">Level 2A&lt;/h2>
+&lt;p>text at level 2a&lt;/p>
+&lt;h2 id="level-2b">Level 2B&lt;/h2>
+&lt;p>text at level 2b&lt;/p>
+&lt;h3 id="level-3a">Level 3a&lt;/h3>
+&lt;p>text 3a&lt;/p>
+&lt;h3 id="level-3b">Level 3b&lt;/h3>
+&lt;p>text 3b&lt;/p>
+&lt;h3 id="level-3c">Level 3c&lt;/h3>
+&lt;p>text 3c&lt;/p>
+&lt;h4 id="level-4">Level 4&lt;/h4>
+&lt;p>text 4&lt;/p>
+&lt;h5 id="level-5">Level 5&lt;/h5>
+&lt;p>text 5&lt;/p>
+&lt;h6 id="level-6">Level 6&lt;/h6>
+&lt;p>text 6&lt;/p>
+&lt;p>####### Level 7&lt;/p>
+&lt;p>text 7&lt;/p></description></item><item><title>Test Table of Contents (closed)</title><link>http://localhost:1313/blog/1900-01-01-test-table-of-contents-closed/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-table-of-contents-closed/</guid><description>&lt;h1 id="level-1">Level 1&lt;/h1>
+&lt;p>Lorem ipsum&lt;/p>
+&lt;h1 id="level-1-1">Level 1&lt;/h1>
+&lt;h2 id="level-2a">Level 2A&lt;/h2>
+&lt;p>text at level 2a&lt;/p>
+&lt;h2 id="level-2b">Level 2B&lt;/h2>
+&lt;p>text at level 2b&lt;/p>
+&lt;h3 id="level-3a">Level 3a&lt;/h3>
+&lt;p>text 3a&lt;/p>
+&lt;h3 id="level-3b">Level 3b&lt;/h3>
+&lt;p>text 3b&lt;/p>
+&lt;h3 id="level-3c">Level 3c&lt;/h3>
+&lt;p>text 3c&lt;/p>
+&lt;h4 id="level-4">Level 4&lt;/h4>
+&lt;p>text 4&lt;/p>
+&lt;h5 id="level-5">Level 5&lt;/h5>
+&lt;p>text 5&lt;/p>
+&lt;h6 id="level-6">Level 6&lt;/h6>
+&lt;p>text 6&lt;/p>
+&lt;p>####### Level 7&lt;/p>
+&lt;p>text 7&lt;/p></description></item><item><title>Test Table of Contents (none)</title><link>http://localhost:1313/blog/1900-01-01-test-table-of-contents-none/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-table-of-contents-none/</guid><description>&lt;h1 id="level-1">Level 1&lt;/h1>
+&lt;p>Lorem ipsum&lt;/p>
+&lt;h1 id="level-1-1">Level 1&lt;/h1>
+&lt;h2 id="level-2a">Level 2A&lt;/h2>
+&lt;p>text at level 2a&lt;/p>
+&lt;h2 id="level-2b">Level 2B&lt;/h2>
+&lt;p>text at level 2b&lt;/p>
+&lt;h3 id="level-3a">Level 3a&lt;/h3>
+&lt;p>text 3a&lt;/p>
+&lt;h3 id="level-3b">Level 3b&lt;/h3>
+&lt;p>text 3b&lt;/p>
+&lt;h3 id="level-3c">Level 3c&lt;/h3>
+&lt;p>text 3c&lt;/p>
+&lt;h4 id="level-4">Level 4&lt;/h4>
+&lt;p>text 4&lt;/p>
+&lt;h5 id="level-5">Level 5&lt;/h5>
+&lt;p>text 5&lt;/p>
+&lt;h6 id="level-6">Level 6&lt;/h6>
+&lt;p>text 6&lt;/p>
+&lt;p>####### Level 7&lt;/p>
+&lt;p>text 7&lt;/p></description></item><item><title>Test url links</title><link>http://localhost:1313/blog/1900-01-01-test-url-links/</link><pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate><guid>http://localhost:1313/blog/1900-01-01-test-url-links/</guid><description>&lt;h1 id="links">Links&lt;/h1>
+&lt;h2 id="ref-shortcodes">Ref shortcodes&lt;/h2>
+&lt;ul>
+&lt;li>Ref:
+&lt;ul>
+&lt;li>http://localhost:1313/diy-kitchen-under-cabinet-led-lighting/&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Relref:
+&lt;ul>
+&lt;li>/diy-kitchen-under-cabinet-led-lighting/&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Nested in markdown:
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/diy-kitchen-under-cabinet-led-lighting/">DIY Kitchen under cabinet LED lighting&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="hyperlinks">Hyperlinks&lt;/h2>
+&lt;p>&lt;a href="http://localhost:1313/wp-content/uploads/2014/07/IMG_9277.jpg">link to an image&lt;/a>&lt;/p>
+&lt;h2 id="images">Images&lt;/h2>
+&lt;p>
+&lt;img src="http://localhost:1313/wp-content/uploads/2014/07/IMG_9277-300x200.jpg" alt="IMG_9277">
+&lt;/p>
+&lt;h2 id="linked-images">Linked-images&lt;/h2>
+&lt;p>&lt;a href="http://localhost:1313/wp-content/uploads/2014/07/IMG_9277.jpg">
+&lt;img src="http://localhost:1313/wp-content/uploads/2014/07/IMG_9277-300x200.jpg" alt="IMG_9277">
+&lt;/a>&lt;/p>
+&lt;h2 id="code-blocks">Code blocks&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#include&lt;/span> &lt;span class="cpf">&amp;lt;NonBlockingRtttl.h&amp;gt;&lt;/span>&lt;span class="cp">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//project&amp;#39;s contants
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#define BUZZER_PIN 8
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">const&lt;/span> &lt;span class="kt">char&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">tetris&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;tetris:d=4,o=5,b=160:e6,8b,8c6,8d6,16e6,16d6,8c6,8b,a,8a,8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,2a,8p,d6,8f6,a6,8g6,8f6,e6,8e6,8c6,e6,8d6,8c6,b,8b,8c6,d6,e6,c6,a,a&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">const&lt;/span> &lt;span class="kt">char&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">arkanoid&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;Arkanoid:d=4,o=5,b=140:8g6,16p,16g.6,2a#6,32p,8a6,8g6,8f6,8a6,2g6&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">const&lt;/span> &lt;span class="kt">char&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">mario&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;mario:d=4,o=5,b=100:16e6,16e6,32p,8e6,16c6,8e6,8g6,8p,8g,8p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,16p,8c6,16p,8g,16p,8e,16p,8a,8b,16a#,8a,16g.,16e6,16g6,8a6,16f6,8g6,8e6,16c6,16d6,8b,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16c7,16p,16c7,16c7,p,16g6,16f#6,16f6,16d#6,16p,16e6,16p,16g#,16a,16c6,16p,16a,16c6,16d6,8p,16d#6,8p,16d6,8p,16c6&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">byte&lt;/span> &lt;span class="n">songIndex&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//which song to play when the previous one finishes
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">setup&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">BUZZER_PIN&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">115200&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">println&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">loop&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">isPlaying&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">songIndex&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">BUZZER_PIN&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">mario&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">songIndex&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//ready for next song
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//play for 5 sec then stop.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//note: this is a blocking code section
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//use to demonstrate the use of stop
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kt">unsigned&lt;/span> &lt;span class="kt">long&lt;/span> &lt;span class="n">start&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">millis&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span> &lt;span class="n">millis&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">start&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">5000&lt;/span> &lt;span class="p">)&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">play&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">stop&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">songIndex&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">BUZZER_PIN&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">arkanoid&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">songIndex&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//ready for next song
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">songIndex&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">BUZZER_PIN&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">tetris&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">songIndex&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//ready for next song
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rtttl&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="n">play&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

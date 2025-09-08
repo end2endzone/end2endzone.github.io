@@ -1,333 +1,166 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
+<!doctype html><html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
 <title>SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred - end2end zone</title>
 <meta name="description" content="end2end zone">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="twitter:card" content="summary_large_image">
-
 <meta property="og:site_name" content="end2end zone">
 <meta property="og:title" content="SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred">
 <meta property="og:description" content="end2end zone">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://www.end2endzone.com/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/">
-    <meta property="og:image" content="http://www.end2endzone.com/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg">
-    <meta property="og:image:alt" content="">
-
-
-  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
-  
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
-  
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
-
-
-  <meta name="generator" content="Hugo 0.147.9">
-  
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
-          <link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
-        <link rel="stylesheet" href="/css/end2endzone.css">
-        <link rel="stylesheet" href="/css/button.css">
+<meta property="og:url" content="http://localhost:1313/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/">
+<meta property="og:image" content="http://localhost:1313/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg">
+<meta property="og:image:alt" content>
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
 </head>
-
-  <body>
-    
-
+<body>
 <header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/" class="nav">
-        
-          Blog
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu menu">
-      
-        
-          
-          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
-        
-      
-        
-          
-          <a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
-        
-      
-        
-          
-          <a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
-        
-      
-        
-          
-          <a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
-        
-      
-        
-          
-          <a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
-        
-      
-        
-          
-          <a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
-        
-      
-      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
-      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
-    </menu>
-    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
-    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
-    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
-  <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="en" class="nav link active">English (en)</a>
-  
-    
-      
-    
-      
-        <a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
-      
-    
-  
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
 </menu>
-
-  
-    <menu id="share-menu" class="flyout-menu menu">
-      <h1>Share Post</h1>
-      
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred&amp;url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;description=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-    </menu>
-  
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that&#39;s me" /></a>
-  <header>
-    <h1>end2end zone</h1>
-  </header>
-  <main>
-    <p>My life dumped to a web site</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-    </footer>
-  
-</section>
-
-      <main id="site-main">
-        
-  <article>
-    <div class="post">
-      <header>
-  <div class="title">
-    
-      <h2><a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/">SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</a></h2>
-    
-    
-  </div>
-  <div class="meta">
-    <time datetime="2016-06-10 20:14:19 &#43;0000 &#43;0000">June 10, 2016</time>
-    <p>end2end</p>
-    <p>8-Minute Read</p>
-  </div>
-</header>
-
-	  
-      
-      
-        <div id="socnet-share">
-          
-
-
-
-
-  
-    
-    <a href="//twitter.com/share?text=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred&amp;url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <p>Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <p>LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;description=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <p>Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2fwww.end2endzone.com%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <p>Email</p>
-        </a>
-  
-
-
-        </div>
-      
-	  
-      <div class="content">
-        <a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="image" style="--bg-image: url('/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg" alt="">
-  </a>
-		
-        
-        
-          
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-          Table of contents
-        </span>
-    </div>
-    <div class="expand-content" style="display: none;">
-      <aside>
-        <nav id="TableOfContents">
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#purpose">Purpose</a></li>
-    <li><a href="#library-features">Library features</a></li>
-    <li><a href="#usage">Usage</a>
-      <ol>
-        <li><a href="#basic-usage">Basic Usage</a></li>
-        <li><a href="#fade-a-led">Fade a LED</a></li>
-        <li><a href="#countdown-or-elapsed-time">Countdown or Elapsed time</a></li>
-        <li><a href="#timed-repetitive-cycles">Timed repetitive cycles</a></li>
-        <li><a href="#timed-restricted-state-machines">Timed restricted state machines</a></li>
-      </ol>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#download">Download</a></li>
-  </ol>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
 </nav>
-      </aside>
-    </div>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred&amp;url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;description=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/">SoftTimers – A collection of software timers to easily compute elapsed time since an event occurred</a></h2>
 </div>
-
-        
-		
-        <h1 id="introduction">Introduction</h1>
+<div class="meta">
+<time datetime="2016-06-10 20:14:19 +0000 +0000">June 10, 2016</time>
+<p>end2end</p>
+<p>7-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred&amp;url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;title=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f&amp;description=SoftTimers%20%e2%80%93%20A%20collection%20of%20software%20timers%20to%20easily%20compute%20elapsed%20time%20since%20an%20event%20occurred" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=http%3a%2f%2flocalhost%3a1313%2fsofttimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/" class="image" style="--bg-image:url('/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/06/Arduino-SoftTimers-library.jpg" alt>
+</a>
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#library-features">Library features</a></li>
+<li><a href="#usage">Usage</a>
+<ol>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#fade-a-led">Fade a LED</a></li>
+<li><a href="#countdown-or-elapsed-time">Countdown or Elapsed time</a></li>
+<li><a href="#timed-repetitive-cycles">Timed repetitive cycles</a></li>
+<li><a href="#timed-restricted-state-machines">Timed restricted state machines</a></li>
+</ol>
+</li>
+<li><a href="#license">License</a></li>
+<li><a href="#download">Download</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>The following article is about my simplest library that I wrote for the arduino: <em>SoftTimers</em>. The <em>SoftTimers</em> arduino library allows one to properly time multiple events and know when each &ldquo;timer&rdquo; expires meaning that an action is required.</p>
 <p>Skip to the <a href="/softtimers-a-collection-of-software-timers-to-easily-compute-elapsed-time-since-an-event-occured/#Download">download section</a> for quick download.</p>
-<p>When I first learned programming the arduino, I learned the &ldquo;<em>hello world</em>&rdquo; of the arduino: turning a LED on and off.  As expected, I used <code>delay()</code> to define how long the LED should be on and off.</p>
+<p>When I first learned programming the arduino, I learned the &ldquo;<em>hello world</em>&rdquo; of the arduino: turning a LED on and off. As expected, I used <code>delay()</code> to define how long the LED should be on and off.</p>
 <p>However, this approach is bad since it break the &ldquo;realtime&rdquo; property of the software to react to other event. If I want to make the LED instantly turn off when pressing a button, I had to wait for the delay to complete before processing the button. (I know you could use interrupts and update with LED pin within the interrupt but that is out of scope for now.)</p>
 <p>Another issue is extensibility. Making 3 LEDs blink at different time interval is much harder with delays. How about 40 LEDs? Impossible?</p>
 <p>This is where SoftTimers arduino library becomes helpful.</p>
@@ -335,7 +168,7 @@
 <p>The SoftTimers allows one to properly time multiple events and know when each &ldquo;timer&rdquo; expires meaning that an action is required. In this example above, a SoftTimer expires when it is time to toggle an LED.</p>
 <p>SoftTimers also provide the elapsed time since an event occurred. In case of an interruption, the elapsed time can be used as debugging information. It can also be used as a countdown information displayed to the user.</p>
 <p>The library regroups basic timer functionalities into a single class. The usual way to get the same functionality is to create multiple variables for each single timer. This way is hard to maintain when you need multiple timers are required to run at the same time.</p>
-<p>SoftTimer classes are designed to be keep &ldquo;simple &amp; stupid&rdquo;. No software interrupts. Non-blocking. Each timer must be polled within the loop() to know their status.</p>
+<p>SoftTimer classes are designed to be keep &ldquo;simple & stupid&rdquo;. No software interrupts. Non-blocking. Each timer must be polled within the loop() to know their status.</p>
 <h1 id="library-features">Library features</h1>
 <p>Here is a list of all library features:</p>
 <ul>
@@ -350,14 +183,16 @@
 <h2 id="basic-usage">Basic Usage</h2>
 <p>Call <code>setTimeOutTime()</code> to setup the non-blocking SoftTimer then call <code>reset()</code> to restart the internal counter.</p>
 <p>Within the <code>loop()</code>, use <code>hasTimedOut()</code> to know if the timer has expired.</p>
-<p>At any moment, call <code>getElapsedTime()</code> to get the absolute elapsed time since the last <code>reset()</code>.</p>
+<p>At any moment, call <code>getElapsedTime()</code> to get the absolute elapsed time since the last <code>reset()</code>.</p>
 <h2 id="fade-a-led">Fade a LED</h2>
 <p>Fading a LED like <a href="https://www.arduino.cc/en/Tutorial/Fade">arduino&rsquo;s Built-in Fade Example</a> is trivial using SoftTimers. The library helps in defining the constant speed at which the LED will fade by defining the total length of the process and by easily mapping the timer &ldquo;progress&rdquo; to the amount of fade (PWM) used with the output pin. All of this in a non-blocking manner.</p>
 <p>The following example increases the intensity of a LED from OFF to ON in 1 second and then decreases the intensity of the LED back to OFF in 1 second.</p>
-<p>Demo</p>
-<p>Click the following to download the example below:<br>
-(download
-<a href="http://www.end2endzone.com/download/2109/" title="Version 1.2.219"> Fade a LED example.ino</a>)</p>
+<p>Demo:</p>
+<p>Click the following to download the example below:</p>
+<a href="/wp-content/uploads/2016/06/SoftTimers-v1.1.219-FadeLed-demo.ino" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+SoftTimers-v1.1.219-FadeLed-demo.ino
+</a>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SoftTimers.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="cp">#define LED_PIN 9
@@ -406,47 +241,49 @@
 <h2 id="countdown-or-elapsed-time">Countdown or Elapsed time</h2>
 <p>Any program that need to display a countdown or compute the elapsed time between two events can also benefit from SoftTimers.</p>
 <p>The following example runs a countdown of 5 seconds and then turns a LED on.</p>
-<p>Demo</p>
-<p>Click the following to download the example below:<br>
-(download
-<a href="http://www.end2endzone.com/download/2105/" title="Version 1.2.219"> Countdown example.ino</a>)</p>
-<pre tabindex="0"><code>#include &lt;SoftTimers.h&gt;
-
-#define LED_PIN 13
-
-/**************************************************
- * Run a countdown from 5 second to 0 and turn LED on
- **************************************************/
-SoftTimer countdown; //millisecond timer
-
-void setup() {
-  pinMode(LED_PIN, OUTPUT);
-
-  Serial.begin(115200);
-  
-  //update timers
-  countdown.setTimeOutTime(5000); // 5 seconds
-  
-  //start counting now
-  countdown.reset();
-}
-
-void loop() {
-  if (!countdown.hasTimedOut())
-  {
-    //show user how much time left in milliseconds
-    uint32_t remaining = countdown.getRemainingTime();
-    Serial.print(remaining);
-    Serial.println(&#34; ms...&#34;);
-  }
-  else
-  {
-    //turn ON the LED
-    digitalWrite(LED_PIN, HIGH);
-  }
-}
-
-</code></pre>
+<p>Demo:</p>
+<p>Click the following to download the example below:</p>
+<a href="/wp-content/uploads/2016/06/SoftTimers-v1.1.219-Countdown-demo.ino" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+SoftTimers-v1.1.219-Countdown-demo.ino
+</a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SoftTimers.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define LED_PIN 13
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="cm">/**************************************************
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * Run a countdown from 5 second to 0 and turn LED on
+</span></span></span><span class="line"><span class="cl"><span class="cm"> **************************************************/</span>
+</span></span><span class="line"><span class="cl"><span class="n">SoftTimer</span> <span class="n">countdown</span><span class="p">;</span> <span class="c1">//millisecond timer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1">//update timers
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">countdown</span><span class="p">.</span><span class="n">setTimeOutTime</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span> <span class="c1">// 5 seconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl">  <span class="c1">//start counting now
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">countdown</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">countdown</span><span class="p">.</span><span class="n">hasTimedOut</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//show user how much time left in milliseconds
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">uint32_t</span> <span class="n">remaining</span> <span class="o">=</span> <span class="n">countdown</span><span class="p">.</span><span class="n">getRemainingTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">remaining</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&#34; ms...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//turn ON the LED
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_PIN</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span></code></pre></div>
 <h2 id="timed-repetitive-cycles">Timed repetitive cycles</h2>
 <p>SoftTimer library also help reducing repetitive timed cycles to their simplest non-blocking form. SoftTimer library automatically computes current cycle index. Any toggling or cycle scenarios can be implemented with very few lines of code.</p>
 <p>The following example implements a system where a single HIGH pin must be cycled every second within multiple pins as defined by the following loop:</p>
@@ -454,12 +291,14 @@ void loop() {
 <li>set pin 8, 9 and 13 to LOW, LOW and HIGH respectively and then wait 1 second.</li>
 <li>set pin 8, 9 and 13 to HIGH, LOW and LOW respectively and then wait 1 second.</li>
 <li>set pin 8, 9 and 13 to LOW, HIGH and LOW respectively and then wait 1 second.</li>
-<li>repeat the cycle forever&hellip;</li>
+<li>repeat the cycle forever&mldr;</li>
 </ul>
-<p>Demo</p>
-<p>Click the following to download the example below:<br>
-(download
-<a href="http://www.end2endzone.com/download/2107/" title="Version 1.2.219"> Cycle a High pin example.ino</a>)</p>
+<p>Demo:</p>
+<p>Click the following to download the example below:</p>
+<a href="/wp-content/uploads/2016/06/SoftTimers-v1.1.219-CycleHighPin-demo.ino" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+SoftTimers-v1.1.219-CycleHighPin-demo.ino
+</a>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SoftTimers.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="cp">#define LED_PIN_0 13
@@ -521,12 +360,14 @@ void loop() {
 <li>State #2 - LISTENING (200 ms)</li>
 <li>State #3 - SYNCHRONIZING (500 ms)</li>
 <li>State #4 - UPDATING (300 ms)</li>
-<li>State #1 &hellip;.</li>
+<li>State #1 &mldr;.</li>
 </ul>
-<p>Demo</p>
-<p>Click the following to download the example below:<br>
-(download
-<a href="http://www.end2endzone.com/download/2111/" title="Version 1.2.219"> State Machine example.ino</a>)</p>
+<p>Demo:</p>
+<p>Click the following to download the example below:</p>
+<a href="/wp-content/uploads/2016/06/SoftTimers-v1.1.219-StateMachine-demo.ino" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+SoftTimers-v1.1.219-StateMachine-demo.ino
+</a>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;SoftTimers.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
 </span></span><span class="line"><span class="cl"><span class="cm">/**************************************************
@@ -618,280 +459,164 @@ void loop() {
 </span></span><span class="line"><span class="cl">
 </span></span></code></pre></div>
 <h1 id="license">License</h1>
-<p>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.</p>
-<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License (LGPL-3.0) for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA</p>
-<p><strong>DISCLAIMER:</strong><br>
-This software is furnished &ldquo;as is&rdquo;, without technical support, and with no warranty, express or implied, as to its usefulness for any purpose.</p>
+<p>Copyright (C) 2016 Antoine Beauchamp</p>
+<p>This library is licensed under the MIT License:</p>
+<p>A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<p>The full license is available <a href="https://github.com/end2endzone/bin2cpp/blob/master/LICENSE">here</a>.</p>
 <h1 id="download">Download</h1>
 <p>You can download the SoftTimers arduino library by clicking on the following link:</p>
-<pre><code>	[ Download &quot;SoftTimers arduino library v1.1.219&quot; SoftTimers-v1.1.219.zip - Downloaded 430 times - 41 KB ](http://www.end2endzone.com/download/2089/)
-</code></pre>
-      </div>
-      <footer>
-        <div class="stats">
-  
-    <ul class="categories">
-      
-        
-          <li><a class="article-terms-link" href="/categories/development/">Development</a></li>
-        
-      
-    </ul>
-  
-  
-    <ul class="tags">
-      
-        
-          <li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/english/">english</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
-        
-      
-    </ul>
-  
+<a href="https://github.com/end2endzone/SoftTimers/archive/refs/tags/2.1.0.zip" target="_blank" class="btn btn-default">
+<i class="fas fa-download"></i>
+SoftTimers v2.1.0.zip
+</a>
 </div>
-
-      </footer>
-    </div>
-    
-      
-  <div class='post'>
-    
-    <div>
-      <h2 id='say-something'>Say Something</h2>
-        <form id='comment-form' class='new-comment' method='POST'>
-          
-          <h3 class='reply-notice hidden'>
-            <span class='reply-name'></span>
-            <a class='reply-close-btn button'><i class='fas fa-times'></i></a>
-          </h3>
-
-          
-          <input type='hidden' name='options[entryId]' value='81f39fc663a04587af4ae30000349917'>
-          <input type='hidden' name='fields[replyThread]' value=''>
-          <input type='hidden' name='fields[replyID]' value=''>
-          <input type='hidden' name='fields[replyName]' value=''>
-
-          
-          <input required name='fields[name]' type='text' placeholder='Your Name'>
-          <input name='fields[website]' type='text' placeholder='Your Website'>
-          <input required name='fields[email]' type='email' placeholder='Your Email'>
-          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
-
-          
-          
-
-          
-          <div class='submit-notice'>
-            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
-          </div>
-
-          
-          <button type='button' id="comment-form-submit" class='button'>Submit</button>
-          <button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
-          <button type='reset' id="comment-form-reset" class='button'>Reset</button>
-        </form>
-    </div>
-
-    
-    <div class='comments-container'>
-      <h2>Comments</h2>
-    </div>
-  </div>
-
-
-    
-  </article>
-  <div class="pagination">
-    
-      <a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/" class="button left"><span>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</span></a>
-    
-    
-      <a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/" class="button right"><span>libRtttl – A c&#43;&#43; library (with UI) for compressing/optimizing the RTTTL audio format</span></a>
-    
-  </div>
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent Posts</h1>
-      </header>
-      
-      <article class="mini-post">
-          <a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
-          <time class="published" datetime="2021-03-14 19:40:03 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image: url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C&#43;&#43; development on Github.</a></h2>
-          <time class="published" datetime="2021-03-14 16:42:39 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
-          <time class="published" datetime="2021-03-14 14:49:47 &#43;0000 &#43;0000">March 14, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image: url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c&#43;&#43; library which properly encode and decode command line arguments</a></h2>
-          <time class="published" datetime="2017-06-25 16:02:08 &#43;0000 &#43;0000">June 25, 2017</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image: url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg');">
-    <img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt="">
-  </a>
-        <header>
-          <h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c&#43;&#43; library which encapsulate any value of variant types</a></h2>
-          <time class="published" datetime="2017-05-28 21:06:45 &#43;0000 &#43;0000">May 28, 2017</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog" class="button">See More</a>
-        </footer>
-      
-    </section>
-  
-
-  
-    
-
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-          
-          <li>
-              <a href="/categories/photography/">photography<span class="count">28</span></a>
-          
-          <li>
-              <a href="/categories/development/">development<span class="count">22</span></a>
-          
-          <li>
-              <a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
-          
-          <li>
-              <a href="/categories/other/">other<span class="count">9</span></a>
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/development/">Development</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/arduino/">arduino</a></li>
+<li><a class="article-terms-link" href="/tags/arduino-library/">arduino library</a></li>
+<li><a class="article-terms-link" href="/tags/c++/">c++</a></li>
+<li><a class="article-terms-link" href="/tags/english/">english</a></li>
+<li><a class="article-terms-link" href="/tags/open-source/">open source</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='81f39fc663a04587af4ae30000349917'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/csvplot-a-command-line-script-which-uses-microsoft-excel-to-plot-a-graph-from-a-comma-separated-values-csv-file/" class="button left"><span>csvplot – A command line script which uses Microsoft Excel to plot a graph from a Comma-separated values (CSV) file</span></a>
+<a href="/librtttl-a-c-library-with-ui-for-compressingoptimizing-the-rtttl-audio-format/" class="button right"><span>libRtttl – A c++ library (with UI) for compressing/optimizing the RTTTL audio format</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 +0000">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 +0000">June 25, 2017</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/" class="image" style="--bg-image:url('/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2016/10/libVariant-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libvariant-a-c-library-which-encapsulate-any-value-of-variant-types/">libVariant – A c++ library which encapsulate any value of variant types</a></h2>
+<time class="published" datetime="2017-05-28 21:06:45 +0000 +0000">May 28, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
 </section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    © 2021 end2end zone
-      <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
-  </p>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/test/">test<span class="count">8</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2021 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/highlight.js"></script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
-    <script>
-      hljs.configure({ ignoreUnescapedHTML: true }); 
-      hljs.highlightAll();
-      hljs.initLineNumbersOnLoad();
-    </script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W&#43;eAPwLy/ou5bI1OAMI&#43;G5KdBi/QDUA="></script>
-    <script src="/js/add-on.js"></script>
-    </div>
-  </body>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
 </html>
