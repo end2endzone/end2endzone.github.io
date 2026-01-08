@@ -1,0 +1,345 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT - end2end zone</title>
+<meta name="description" content="end2end zone">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="end2end zone">
+<meta property="og:title" content="Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT">
+<meta property="og:description" content="end2end zone">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://end2endzone.github.io/blog/cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/">
+<meta property="og:image" content="https://end2endzone.github.io/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
+</head>
+<body>
+<header id="site-header">
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+</menu>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT&amp;url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f&amp;title=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f&amp;title=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f&amp;description=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/blog/cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/">Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT</a></h2>
+</div>
+<div class="meta">
+<time datetime="2026-01-08 00:00:00 +0000 UTC">January 8, 2026</time>
+<p>end2end</p>
+<p>2-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT&amp;url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f&amp;title=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f&amp;title=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f&amp;description=Cr%c3%a9er%20un%20sensor%20personnalis%c3%a9%20dans%20Home%20Assistant%20attach%c3%a9e%20%c3%a0%20une%20valeur%20MQTT" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=https%3a%2f%2fend2endzone.github.io%2fblog%2fcr%25C3%25A9er-un-sensor-personnalis%25C3%25A9-dans-home-assistant-attach%25C3%25A9e-%25C3%25A0-une-valeur-mqtt%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:block">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#contexte">Contexte</a></li>
+<li><a href="#problème">Problème</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#valider">Valider</a></li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="contexte">Contexte</h1>
+<p>J&rsquo;utilise une serrure intelligente à la maison. C&rsquo;est le modèle <a href="https://www.kwikset.com/products/detail/916-smartcode-traditional-electronic-deadbolt-with-zigbee-technology">916 SmartCode Traditional Electronic Deadbolt with Zigbee Technology</a> par Kwikset.</p>
+<p>Elle est disponible dans Home Assistant. Je peux donc lui envoyer des commandes telles que &ldquo;Barre-toi&rdquo; ou &ldquo;Débarre-toi&rdquo;. Je peux aussi recevoir son état courant pour savoir si la porte est actuellement barrée ou pas.</p>
+<p>La serrure communique en utilisant le protocole Zigbee. Pour être disponible dans Home Assistant, j&rsquo;utilise Zigbee2Mqtt qui permet d&rsquo;exposer des appareils Zigbee dans Home Assistant via un serveur MQTT.
+Zigbee2Mqtt détecte la serrure en tant qu&rsquo;un <a href="https://www.zigbee2mqtt.io/devices/9GED21500-005.html">SmartCode 10 Touch par Weiser</a>.</p>
+<p>La communication bidirectionelle se fait de la façon suivante:</p>
+<pre tabindex="0"><code>Serrure &lt;--&gt; Zigbee 3.0 &lt;--&gt; Zigbee2Mqtt &lt;--&gt; Serveur MQTT &lt;--&gt; Réseau Ethernet/Wifi &lt;--&gt; Home Assisant
+</code></pre><h1 id="problème">Problème</h1>
+<p>Malheureusement, il semble que Zigbee2Mqtt n&rsquo;expose pas tous les états de la serrure dans Home Assitant.</p>
+<p>Par exemple, la serrure peut-être dans un des états suivants:</p>
+<ol>
+<li><code>locked</code></li>
+<li><code>unlocked</code></li>
+<li><code>not_fully_locked</code></li>
+</ol>
+<p>Mais dans Home Assistant, l&rsquo;état de la serrure sera exposée comme <code>LOCK</code> ou <code>UNLOCK</code>. Dans le 3e cas, Home Assistant affiche <code>UNLOCK</code>.</p>
+<p>Il arrive parfois que la porte n&rsquo;est pas bien fermée et donc la serrure n&rsquo;est pas bien enclanchée. Avec la configuration de base dans Home Assistant, ce n&rsquo;est malheureusement pas possible de pouvoir créé une automatisation lorsque cela se produit.</p>
+<h1 id="solution">Solution</h1>
+<p>Créer un sensor custom dans Home Assistant provenant d&rsquo;une valeur MQTT !</p>
+<p>Il est possible de créé une entité sensor personnalisée dans Home Assistant afin d&rsquo;exposer la chaîne de charactère qui provient directement de l&rsquo;appareil zigbee.</p>
+<p>L&rsquo;état de la serrure (<code>locked</code>, <code>unlocked</code> ou <code>not_fully_locked</code>) est exposée dans MQTT via le topic suivant:<br>
+<code>zigbee2mqtt/serrure_porte_avant</code>.</p>
+<p>Le payload est de type json et ressemble à ceci:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;action_source_name&#34;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;action_user&#34;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;auto_relock_time&#34;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;battery&#34;</span><span class="p">:</span> <span class="mi">70</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;linkquality&#34;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;lock_state&#34;</span><span class="p">:</span> <span class="s2">&#34;not_fully_locked&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;pin_code&#34;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;sound_volume&#34;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;state&#34;</span><span class="p">:</span> <span class="s2">&#34;UNLOCK&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;users&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Il est possible d&rsquo;exposer la propriété json <code>lock_state</code> dans Home Assistant comme une entité indépendante.</p>
+<p>Pour ce faire, il faut modifier directement le fichier <code>configuration.yaml</code> de la façon suivante:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Custom integration for Serrure-Porte-Avant</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># https://www.home-assistant.io/integrations/sensor.mqtt/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">mqtt</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">sensor</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My Serrure Porte Avant Advanced Lock state&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">state_topic</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;zigbee2mqtt/serrure_porte_avant&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">value_template</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ value_json.lock_state }}&#34;</span><span class="w">
+</span></span></span></code></pre></div><p class="pleasenote">
+Note:<br>
+Après la modification, il faut redémarer Home Assistant pour que le changement soit disponible.
+</p>
+<h1 id="valider">Valider</h1>
+<p>Vous pouvez ensuite valider que l&rsquo;état &ldquo;réel&rdquo; de la serrure est maintenant disponible via une entité.</p>
+<p>Pour ce faire, aller dans le menu <a href="http://homeassistant.local:8123/developer-tools/state"><em>Developper tools</em>, onglet <em>States</em></a> et faite une recherche pour <code>my serrure</code>. Vous devriez voir l&rsquo;entité <code>sensor.my_serrure_porte_avant_advanced_lock_state</code> avec le State <code>locked</code>, <code>unlocked</code> ou <code>not_fully_locked</code>.</p>
+</div>
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/home-assistant/">Home Assistant</a></li>
+<li><a class="article-terms-link" href="/categories/tutorial/">Tutorial</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/home-assistant/">Home Assistant</a></li>
+<li><a class="article-terms-link" href="/tags/tutorial/">Tutorial</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='463bf2af565cd31796730ecb3b93a5d1'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="button right"><span>PiDVR Record over the air TV on a Raspberry Pi 4</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<header>
+<h2><a href="/blog/cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/">Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT</a></h2>
+<time class="published" datetime="2026-01-08 00:00:00 +0000 UTC">January 8, 2026</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/libArgvCodec-cplusplus-library.jpg" alt>
+</a>
+<header>
+<h2><a href="/libargvcodec-a-c-library-which-properly-encode-and-decode-command-line-arguments/">libArgvCodec – A c++ library which properly encode and decode command line arguments</a></h2>
+<time class="published" datetime="2017-06-25 16:02:08 +0000 UTC">June 25, 2017</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
+</section>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/home-assistant/">home assistant<span class="count">1</span></a>
+<li>
+<a href="/categories/tutorial/">tutorial<span class="count">1</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2026 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
+</html>
