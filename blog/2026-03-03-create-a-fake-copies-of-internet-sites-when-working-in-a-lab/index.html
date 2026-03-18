@@ -1,0 +1,931 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Create a fake copies of internet sites when working in a lab - end2end zone</title>
+<meta name="description" content="end2end zone">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="end2end zone">
+<meta property="og:title" content="Create a fake copies of internet sites when working in a lab">
+<meta property="og:description" content="end2end zone">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://end2endzone.github.io/blog/2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab/">
+<meta property="og:image" content="https://end2endzone.github.io/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
+</head>
+<body>
+<header id="site-header">
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+</menu>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab&amp;url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f&amp;title=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f&amp;title=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f&amp;description=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/blog/2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab/">Create a fake copies of internet sites when working in a lab</a></h2>
+</div>
+<div class="meta">
+<time datetime="2026-03-03 00:00:00 +0000 UTC">March 3, 2026</time>
+<p>end2end</p>
+<p>12-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab&amp;url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f&amp;title=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f&amp;title=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f&amp;description=Create%20a%20fake%20copies%20of%20internet%20sites%20when%20working%20in%20a%20lab" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:none">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#problem--context">Problem / Context</a></li>
+<li><a href="#description">Description</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#common-tlspki-acronyms-and-terminology">Common TLS/PKI acronyms and terminology</a>
+<ol>
+<li><a href="#ca---certificate-authority">CA - Certificate Authority</a></li>
+<li><a href="#cnf---configuration-file">CNF - Configuration File</a></li>
+<li><a href="#csr---certificate-signing-request">CSR - Certificate Signing Request</a></li>
+<li><a href="#crt---certificate">CRT - Certificate</a></li>
+<li><a href="#crl---certificate-revocation-list">CRL - Certificate Revocation List</a></li>
+<li><a href="#pem---privacy-enhanced-mail-format">PEM - Privacy Enhanced Mail (format)</a></li>
+</ol>
+</li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#configuration-steps">Configuration steps</a>
+<ol>
+<li><a href="#install-apache-httpd-web-server">Install Apache httpd web server</a>
+<ol>
+<li><a href="#download">Download</a></li>
+<li><a href="#extract-to-local-directory">Extract to local directory</a></li>
+</ol>
+</li>
+<li><a href="#update-path">Update PATH</a></li>
+<li><a href="#create-entries-in-windows-hosts-file">Create entries in Windows hosts file</a></li>
+<li><a href="#setup-a-new-ca-infrastructure">Setup a new CA infrastructure</a>
+<ol>
+<li><a href="#create-working-directory-for-the-cas-database">Create Working Directory for the CA&rsquo;s database</a></li>
+<li><a href="#create-ca-config-file">Create CA Config File</a></li>
+<li><a href="#create-a-root-ca-certificate">Create a Root CA certificate</a></li>
+<li><a href="#copy-root-ca-certificate-to-apache-conf-directory">Copy Root CA certificate to Apache conf directory</a></li>
+<li><a href="#install-ca-in-windows">Install CA in Windows</a></li>
+</ol>
+</li>
+<li><a href="#configure-apache-for-https">Configure Apache for HTTPS</a></li>
+<li><a href="#create-a-new-certificate-for-all-fake-domain">Create a new certificate for all fake domain</a>
+<ol>
+<li><a href="#create-a-certificate-for-a-domain">Create a certificate for a domain</a>
+<ol>
+<li><a href="#create-file-a-configuration-file">Create file a Configuration File</a></li>
+<li><a href="#generate-key--csr">Generate Key + CSR</a></li>
+<li><a href="#generate-the-private-key">Generate the private key</a></li>
+<li><a href="#generate-the-csr-using-your-csr-config">Generate the CSR using your CSR config</a></li>
+<li><a href="#verify-the-csr-contains-the-correct-san">Verify the CSR contains the correct SAN</a></li>
+<li><a href="#sign-the-csr-with-your-ca">Sign the CSR with your CA</a></li>
+<li><a href="#verify-the-final-certificate">Verify the final certificate</a></li>
+<li><a href="#copy-new-files-to-apache-conf-directory">Copy new files to Apache conf directory</a></li>
+<li><a href="#modify-apaches-https-conf-settings-to-expose-the-new-domain">Modify Apache&rsquo;s HTTPS conf settings to expose the new domain</a></li>
+<li><a href="#create-the-directory-structure-in-apaches-htdocs-directory">Create the directory structure in Apache&rsquo;s htdocs directory</a></li>
+<li><a href="#add-the-fake-downloadable-exe-file-under-the-new-directory-structure">Add the fake downloadable exe file under the new directory structure</a></li>
+</ol>
+</li>
+<li><a href="#repeat-for-other-domains">Repeat for other domains</a></li>
+<li><a href="#generate-a-new-crl">Generate a new CRL</a></li>
+<li><a href="#copy-new-crlpem-to-apaches-htdocs">Copy new crl.pem to Apache&rsquo;s htdocs</a></li>
+<li><a href="#modify-apache-config-to-server-the-crl-file">Modify Apache config to server the CRL file</a></li>
+<li><a href="#setup-apache-fully-qualified-domain-name-fqdn">Setup Apache fully qualified domain name (FQDN)</a></li>
+<li><a href="#start-apache-httpd-server">Start Apache httpd server</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#testing">Testing</a>
+<ol>
+<li><a href="#check-if-crl-is-served">Check if CRL is served</a></li>
+<li><a href="#check-imagemagickorg-https-certificate">Check imagemagick.org https certificate</a></li>
+<li><a href="#check-7ziporg-and--https-certificate">Check 7zip.org and <a href="http://www.7-zip.org">www.7-zip.org</a> https certificate</a></li>
+</ol>
+</li>
+<li><a href="#debugging">Debugging:</a>
+<ol>
+<li><a href="#skip-certificate-checks">Skip certificate checks</a></li>
+<li><a href="#validate-a-csr-file">Validate a CSR file:</a></li>
+<li><a href="#validate-a-crt-file">Validate a CRT file:</a></li>
+<li><a href="#check-that-a-certificate-is-signed-by-your-ca">Check that a certificate is signed by your CA:</a></li>
+<li><a href="#check-that-a-certificates-issuer-matches-your-cas-subject">Check that a certificate&rsquo;s issuer matches your CA&rsquo;s subject:</a></li>
+<li><a href="#verify-crl--ca-chain">Verify CRL &ndash;> CA chain:</a></li>
+<li><a href="#verify-your-traffic-do-not-go-through-a-proxy">Verify your traffic do not go through a proxy</a></li>
+<li><a href="#issue---the-certificate-chain-was-issued-by-an-authority-that-is-not-trusted-sec_e_untrusted_root-0x80090325">Issue - The certificate chain was issued by an authority that is not trusted. SEC_E_UNTRUSTED_ROOT (0x80090325)</a></li>
+<li><a href="#issue---the-certificate-is-revoked-crypt_e_revoked-0x80092010">Issue - The certificate is revoked. CRYPT_E_REVOKED (0x80092010)</a></li>
+<li><a href="#issue---the-revocation-function-was-unable-to-check-revocation-because-the-revocation-server-was-offline-crypt_e_revocation_offline-0x80092013">Issue - The revocation function was unable to check revocation because the revocation server was offline. CRYPT_E_REVOCATION_OFFLINE (0x80092013)</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="problem--context">Problem / Context</h1>
+<p>Development takes place inside a secure R&amp;D lab where internet access is strictly forbidden due to confidentiality or regulatory requirements.</p>
+<p>However many tools are designed with internet access in mind. Even if they provide a downloadable installation package for offline usage, these tools often requires an internet connection to download additionnal packages to function properly. In a lab environment without internet access these tools do not behaves properly.</p>
+<p>Other times, tools requires internet for simple task such as to check if there is a new version available. Without an internet access, they sometimes wait multiple minutes until the verification times out. This makes the tool slow and painfull to use in a lab environment without internet access.</p>
+<h1 id="description">Description</h1>
+<p>This document describes how to create a fake https server that uses self-signed certificates for faking internet access in an offline environment.</p>
+<p>This document will create a local duplicate of the following URLs:</p>
+<ul>
+<li><a href="https://imagemagick.org/archive/binaries/ImageMagick-7.1.2-15-portable-Q8-x64.7z">https://imagemagick.org/archive/binaries/ImageMagick-7.1.2-15-portable-Q8-x64.7z</a></li>
+<li><a href="https://www.7-zip.org/a/7z2600-x64.exe">https://www.7-zip.org/a/7z2600-x64.exe</a></li>
+</ul>
+<p>At the time of this writing, the current IP of the hosts listed above is:</p>
+<ul>
+<li>imagemagick.org → 50.251.58.13</li>
+<li><a href="https://www.7-zip.org">www.7-zip.org</a> → 49.12.202.237</li>
+</ul>
+<h1 id="architecture">Architecture</h1>
+<p>Clean architecture recommendation:</p>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>imagemagick.org</td>
+<td>fake site</td>
+</tr>
+<tr>
+<td><a href="https://www.7-zip.org">www.7-zip.org</a></td>
+<td>fake site</td>
+</tr>
+<tr>
+<td>7-zip.org</td>
+<td>fake site</td>
+</tr>
+<tr>
+<td>pki.local</td>
+<td>CA infrastructure</td>
+</tr>
+</tbody>
+</table><p>Configuration:</p>
+<ul>
+<li>Our domain certificates will be signed with our CA certificate.</li>
+<li>Our CA certificate will be hosted on domain <code>pki.local</code> (which is also fake and hosted on the same Apache httpd server)</li>
+</ul>
+<h1 id="common-tlspki-acronyms-and-terminology">Common TLS/PKI acronyms and terminology</h1>
+<h2 id="ca---certificate-authority">CA - Certificate Authority</h2>
+<ul>
+<li>A trusted entity that signs certificates.</li>
+<li>Uses its own private key to validate that a certificate is legitimate.</li>
+<li>Your CA signs CSRs to produce server certificates.</li>
+</ul>
+<h2 id="cnf---configuration-file">CNF - Configuration File</h2>
+<ul>
+<li>A plain‑text OpenSSL configuration file.</li>
+<li>Controls how keys, CSRs, and certificates are generated.
+Examples:</li>
+<li>myCA.cnf → config for your CA</li>
+<li>7zip.cnf → config for generating a CSR for a domain</li>
+</ul>
+<h2 id="csr---certificate-signing-request">CSR - Certificate Signing Request</h2>
+<ul>
+<li>A file containing:
+<ul>
+<li>the domain name(s)</li>
+<li>the public key</li>
+<li>optional SANs (Subject Alternative Names)</li>
+</ul>
+</li>
+<li>Generated from a private key.</li>
+<li>Sent to a CA, which signs it to produce a certificate.
+Relationship:<br>
+Private Key → generates → CSR → signed by CA → produces → Certificate (.crt)</li>
+</ul>
+<h2 id="crt---certificate">CRT - Certificate</h2>
+<ul>
+<li>The final signed certificate issued by the CA.</li>
+<li>Usually in PEM format, even if the extension is .crt.</li>
+<li>Contains:
+<ul>
+<li>public key</li>
+<li>SANs</li>
+<li>validity dates</li>
+<li>CA signature</li>
+</ul>
+</li>
+</ul>
+<p>Relationship:<br>
+CSR → signed by CA → produces → CRT</p>
+<h2 id="crl---certificate-revocation-list">CRL - Certificate Revocation List</h2>
+<p>A CRL is a digitally signed list, published by a Certificate Authority (CA), that identifies certificates that are no longer trusted before their normal expiration date. Certificates can be revoked for many reasons. Instead of waiting for the certificate to expire, the CA marks it as revoked and publishes that information in the CRL.</p>
+<h2 id="pem---privacy-enhanced-mail-format">PEM - Privacy Enhanced Mail (format)</h2>
+<ul>
+<li>A file format used as a container, not a certificate type.</li>
+<li>Base64‑encoded text wrapped in:</li>
+</ul>
+<pre tabindex="0"><code>-----BEGIN CERTIFICATE-----
+...
+-----END CERTIFICATE-----
+</code></pre><p>Can contain:</p>
+<ul>
+<li>certificates (.pem)</li>
+<li>private keys (.key)</li>
+<li>CA bundles</li>
+<li>CSRs</li>
+</ul>
+<h1 id="workflow">Workflow</h1>
+<p>Here&rsquo;s the workflow in order:</p>
+<ol>
+<li>Generate private key for a domain<br>
+→ file <code>domain.key</code></li>
+<li>Generate CSR using the key + CNF<br>
+→ file <code>domain.csr</code></li>
+<li>CA signs the CSR using its own config (myCA.cnf)<br>
+→ file <code>domain.crt</code></li>
+<li>Certificate is stored in PEM format<br>
+→ <code>.crt</code> or <code>.pem</code> (same format, different naming convention)</li>
+<li>Apache uses
+<ul>
+<li><code>domain.crt</code> (certificate)</li>
+<li><code>domain.key</code> (private key)</li>
+<li><code>myCA.pem.crt</code> (CA certificate)</li>
+</ul>
+</li>
+</ol>
+<h1 id="configuration-steps">Configuration steps</h1>
+<h2 id="install-apache-httpd-web-server">Install Apache httpd web server</h2>
+<h3 id="download">Download</h3>
+<p>Download apache lounge / httpd :</p>
+<ul>
+<li><a href="https://httpd.apache.org/">https://httpd.apache.org/</a></li>
+<li>Click on <em>Download</em> link</li>
+<li>Click on <a href="https://httpd.apache.org/docs/current/platform/windows.html#down">Files for Microsoft Windows</a>.</li>
+<li>Click on <a href="http://www.apachelounge.com/download/">Apache Lounge</a>.</li>
+<li>Download url: <a href="https://www.apachelounge.com/download/VS18/binaries/httpd-2.4.66-260223-Win64-VS18.zip">https://www.apachelounge.com/download/VS18/binaries/httpd-2.4.66-260223-Win64-VS18.zip</a></li>
+</ul>
+<h3 id="extract-to-local-directory">Extract to local directory</h3>
+<p>Use 7-zip to extract the zip file to <code>C:\</code>. The extraction process should create directory <code>C:\Apache24</code>.</p>
+<h2 id="update-path">Update PATH</h2>
+<p>Add <code>C:\Apache24\bin</code> to PATH</p>
+<p>or use the following command when you open a new command prompt:</p>
+<pre tabindex="0"><code>set PATH=C:\Apache24\bin;%PATH%
+</code></pre><h2 id="create-entries-in-windows-hosts-file">Create entries in Windows hosts file</h2>
+<p>Edit file <code>C:\Windows\System32\drivers\etc\hosts</code>.<br>
+Add an entry that resolve to 127.0.0.1 for every web site you want to emulate.</p>
+<p>For example::</p>
+<pre tabindex="0"><code>127.0.0.1 imagemagick.org
+127.0.0.1 www.7-zip.org
+127.0.0.1 7-zip.org
+127.0.0.1 pki.local
+</code></pre><h2 id="setup-a-new-ca-infrastructure">Setup a new CA infrastructure</h2>
+<h3 id="create-working-directory-for-the-cas-database">Create Working Directory for the CA&rsquo;s database</h3>
+<pre tabindex="0"><code>mkdir C:\Apache24\workspace
+cd /d C:\Apache24\workspace
+mkdir my-local-ca-database
+mkdir my-local-ca-database\newcerts
+type nul &gt; my-local-ca-database\index.txt
+echo 01 &gt; my-local-ca-database\serial
+echo 01 &gt; my-local-ca-database\crlnumber
+</code></pre><h3 id="create-ca-config-file">Create CA Config File</h3>
+<p>Create file <code>C:\Apache24\workspace\myCA.cnf</code></p>
+<pre tabindex="0"><code>[ ca ]
+default_ca = CA_default
+
+[ CA_default ]
+dir               = ./my-local-ca-database
+database          = $dir/index.txt
+new_certs_dir     = $dir/newcerts
+certificate       = ./myCA.pem
+private_key       = ./myCA.key
+serial            = $dir/serial
+crlnumber         = $dir/crlnumber
+default_md        = sha256
+policy            = policy_any
+default_days      = 3650
+default_crl_days  = 3650
+copy_extensions   = copy
+
+[ policy_any ]
+commonName = supplied
+
+[ req ]
+distinguished_name = dn
+
+[ dn ]
+
+[ v3_server ]
+crlDistributionPoints = URI:http://pki.local/crl.pem
+</code></pre><h3 id="create-a-root-ca-certificate">Create a Root CA certificate</h3>
+<pre tabindex="0"><code>cd /d C:\Apache24\workspace
+openssl genrsa -out myCA.key 2048
+openssl req -x509 -new -nodes -key myCA.key -sha256 -days 3650 -out myCA.pem -subj &#34;/CN=MyLocalCA&#34;
+</code></pre><h3 id="copy-root-ca-certificate-to-apache-conf-directory">Copy Root CA certificate to Apache conf directory</h3>
+<p>myCA.pem → C:\Apache24\conf\</p>
+<h3 id="install-ca-in-windows">Install CA in Windows</h3>
+<ol>
+<li>Start MMC.exe</li>
+<li>File, Add/remove snap-in&mldr;</li>
+<li>Select <em>Certificates</em></li>
+<li>Click on button <em>Add ></em>.</li>
+<li>Select <em>Computer account</em>. Then <em>Next</em>.</li>
+<li>Select <em>Local computer</em>. Then <em>Finish</em>.</li>
+<li>Click OK</li>
+<li>Expand &ldquo;Certificates (Local Computer)&rdquo; in left panel.</li>
+<li>Open <em>Trusted Root Certification Autorities</em>.</li>
+<li>Right-click on <em>Certificates</em>, select menu <em>All Tasks/Import&mldr;</em>.</li>
+<li>Click <em>Next</em>.</li>
+<li>Browse to C:\Apache24\workspace. Filter for <em>All Files</em>. Select file <code>myCA.pem</code> and click <em>Open</em>.</li>
+<li>Click <em>Next</em>.</li>
+<li>Select option <em>Place all certificates in the following store</em> and validate that <em>Certificate Store</em> is set to <code>Trusted Root Certification Authorities</code>.</li>
+<li>Click <em>Next</em>.</li>
+<li>Click <em>Finish</em>.</li>
+<li>Validate that <code>MyLocalCA</code> is found in the list of certificates.</li>
+</ol>
+<h2 id="configure-apache-for-https">Configure Apache for HTTPS</h2>
+<p>Edit file <code>C:\Apache24\conf\httpd.conf</code>:<br>
+Uncomment the following lines:</p>
+<ul>
+<li><code># LoadModule socache_shmcb_module modules/mod_socache_shmcb.so</code></li>
+<li><code># LoadModule ssl_module modules/mod_ssl.so</code></li>
+<li><code>#Include conf/extra/httpd-ssl.conf</code></li>
+</ul>
+<p>Edit file <code>C:\Apache24\conf\extra\httpd-ssl.conf</code>:<br>
+Comment the xml node <code>&lt;VirtualHost _default_:443></code>.</p>
+<ul>
+<li>Add <code># </code> in front of all lines from <code>&lt;VirtualHost _default_:443></code> up to <code>&lt;/VirtualHost></code>.</li>
+</ul>
+<h2 id="create-a-new-certificate-for-all-fake-domain">Create a new certificate for all fake domain</h2>
+<h3 id="create-a-certificate-for-a-domain">Create a certificate for a domain</h3>
+<h4 id="create-file-a-configuration-file">Create file a Configuration File</h4>
+<p>Create file <code>C:\Apache24\workspace\7zip.cnf</code>:</p>
+<pre tabindex="0"><code>[ req ]
+default_bits = 2048
+prompt = no
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[ dn ]
+CN = 7zip.org
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = www.7-zip.org
+DNS.2 = 7-zip.org
+</code></pre><p>This will produce a CSR with:</p>
+<ul>
+<li>CN = 7zip.org</li>
+<li>SAN = <a href="https://www.7-zip.org">www.7-zip.org</a>, 7-zip.org</li>
+</ul>
+<p>The CN does not need to list all domains. Modern TLS clients ignore CN for hostname validation anyway.
+The SAN extension is the authoritative source.</p>
+<h4 id="generate-key--csr">Generate Key + CSR</h4>
+<pre tabindex="0"><code>openssl genrsa -out 7zip.key 2048
+openssl req -new -key 7zip.key -out 7zip.csr -config 7zip.cnf
+</code></pre><h4 id="generate-the-private-key">Generate the private key</h4>
+<p><code>openssl genrsa -out 7zip.key 2048</code></p>
+<h4 id="generate-the-csr-using-your-csr-config">Generate the CSR using your CSR config</h4>
+<p><code>openssl req -new -key 7zip.key -out 7zip.csr -config 7zip.cnf</code></p>
+<h4 id="verify-the-csr-contains-the-correct-san">Verify the CSR contains the correct SAN</h4>
+<p><code>openssl req -in 7zip.csr -text -noout</code></p>
+<p>Look for the following in the output for a confirmation:</p>
+<pre tabindex="0"><code>X509v3 Subject Alternative Name:
+    DNS:www.7-zip.org, DNS:7-zip.org
+</code></pre><h4 id="sign-the-csr-with-your-ca">Sign the CSR with your CA</h4>
+<p><code>openssl ca -config myCA.cnf -in 7zip.csr -out 7zip.crt -extensions v3_server</code></p>
+<p>Output:</p>
+<pre tabindex="0"><code>Using configuration from myCA.cnf
+Check that the request matches the signature
+Signature ok
+The Subject&#39;s Distinguished Name is as follows
+commonName            :ASN.1 12:&#39;7zip.org&#39;
+Certificate is to be certified until Feb 22 15:54:27 2036 GMT (3650 days)
+Sign the certificate? [y/n]:y
+
+
+1 out of 1 certificate requests certified, commit? [y/n]y
+Write out database with 1 new entries
+Database updated
+</code></pre><h4 id="verify-the-final-certificate">Verify the final certificate</h4>
+<p><code>openssl x509 -in 7zip.crt -text -noout</code></p>
+<p>Look for the following in the output for a confirmation:</p>
+<pre tabindex="0"><code>X509v3 Subject Alternative Name:
+    DNS:www.7-zip.org, DNS:7-zip.org
+</code></pre><h4 id="copy-new-files-to-apache-conf-directory">Copy new files to Apache conf directory</h4>
+<p>7zip.crt → C:\Apache24\conf<br>
+7zip.key → C:\Apache24\conf\</p>
+<h4 id="modify-apaches-https-conf-settings-to-expose-the-new-domain">Modify Apache&rsquo;s HTTPS conf settings to expose the new domain</h4>
+<p>Edit file <code>C:\Apache24\conf\extra\httpd-ssl.conf</code>.
+Add the following section:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;VirtualHost</span> <span class="err">*:443</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    ServerName 7-zip.org
+</span></span><span class="line"><span class="cl">    ServerAlias www.7-zip.org
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    DocumentRoot &#34;C:/Apache24/htdocs/7-zip.org&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    SSLEngine on
+</span></span><span class="line"><span class="cl">    SSLCertificateFile &#34;C:/Apache24/conf/7zip.crt&#34;
+</span></span><span class="line"><span class="cl">    SSLCertificateKeyFile &#34;C:/Apache24/conf/7zip.key&#34;
+</span></span><span class="line"><span class="cl">    SSLCertificateChainFile &#34;C:/Apache24/conf/myCA.pem&#34;
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/VirtualHost&gt;</span>
+</span></span></code></pre></div><h4 id="create-the-directory-structure-in-apaches-htdocs-directory">Create the directory structure in Apache&rsquo;s htdocs directory</h4>
+<pre tabindex="0"><code>cd /d C:\Apache24\htdocs
+mkdir 7-zip.org\a
+</code></pre><h4 id="add-the-fake-downloadable-exe-file-under-the-new-directory-structure">Add the fake downloadable exe file under the new directory structure</h4>
+<pre tabindex="0"><code>copy &#34;%SystemRoot%\notepad.exe&#34; C:\Apache24\htdocs\7-zip.org\a\7z2600-x64.exe
+</code></pre><h3 id="repeat-for-other-domains">Repeat for other domains</h3>
+<p>Repeat the steps <code>Create a certificate for a domain</code> for all other domains:</p>
+<ul>
+<li><code>imagemagick.org</code></li>
+</ul>
+<p>That is:</p>
+<ul>
+<li>Create domain Configuration Files :
+<ul>
+<li><code>C:\Apache24\workspace\imagemagick.cnf</code>:
+<pre tabindex="0"><code>[ req ]
+default_bits = 2048
+prompt = no
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[ dn ]
+CN = imagemagick.org
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = imagemagick.org
+</code></pre></li>
+</ul>
+</li>
+<li>Execute commands such as :
+<pre tabindex="0"><code>cd /d C:\Apache24\workspace
+openssl genrsa -out imagemagick.key 2048
+openssl req -new -key imagemagick.key -out imagemagick.csr -config imagemagick.cnf
+openssl genrsa -out imagemagick.key 2048
+openssl req -new -key imagemagick.key -out imagemagick.csr -config imagemagick.cnf
+openssl ca -config myCA.cnf -in imagemagick.csr -out imagemagick.crt -extensions v3_server
+</code></pre></li>
+<li>Copy <code>*.crt</code> and <code>*.key</code> to <code>C:\Apache24\conf\</code> :
+<pre tabindex="0"><code>imagemagick.crt → C:\Apache24\conf\
+imagemagick.key → C:\Apache24\conf\
+</code></pre></li>
+<li>Add the following to <code>C:\Apache24\conf\extra\httpd-ssl.conf</code> :
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;VirtualHost</span> <span class="err">*:443</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    ServerName imagemagick.org
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    DocumentRoot &#34;C:/Apache24/htdocs/imagemagick.org&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    SSLEngine on
+</span></span><span class="line"><span class="cl">    SSLCertificateFile &#34;C:/Apache24/conf/imagemagick.crt&#34;
+</span></span><span class="line"><span class="cl">    SSLCertificateKeyFile &#34;C:/Apache24/conf/imagemagick.key&#34;
+</span></span><span class="line"><span class="cl">    SSLCertificateChainFile &#34;C:/Apache24/conf/myCA.pem&#34;
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/VirtualHost&gt;</span>
+</span></span></code></pre></div></li>
+<li>Create fake download files :
+<ul>
+<li>mkdir C:\Apache24\htdocs\imagemagick.org\archive\binaries</li>
+<li><code>C:\Apache24\htdocs\imagemagick.org\archive\binaries\ImageMagick-7.1.2-15-portable-Q8-x64.7z</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="generate-a-new-crl">Generate a new CRL</h3>
+<p>Since the CA has a new certificates in its database, export a new crl.pem:<br>
+<code>openssl ca -config myCA.cnf -gencrl -out crl.pem</code>:</p>
+<p>Output:</p>
+<pre tabindex="0"><code>Using configuration from myCA.cnf
+</code></pre><h3 id="copy-new-crlpem-to-apaches-htdocs">Copy new crl.pem to Apache&rsquo;s htdocs</h3>
+<p>crl.pem → C:\Apache24\htdocs\</p>
+<h3 id="modify-apache-config-to-server-the-crl-file">Modify Apache config to server the CRL file</h3>
+<p>Edit the file <code>C:\Apache24\conf\httpd.conf</code>.<br>
+Add the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"># Serve http://pki.local/crl.pem
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;VirtualHost</span> <span class="err">*:80</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    ServerName pki.local
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    DocumentRoot &#34;C:/Apache24/htdocs&#34;
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;Directory</span> <span class="err">&#34;C:/Apache24/htdocs&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        Require all granted
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/Directory&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/VirtualHost&gt;</span>
+</span></span></code></pre></div><h3 id="setup-apache-fully-qualified-domain-name-fqdn">Setup Apache fully qualified domain name (FQDN)</h3>
+<p>Apache wants to know the server&rsquo;s fully qualified domain name (FQDN) so it can use it for things like redirects, self‑referencing URLs, and log messages.</p>
+<p>If Apache doesn&rsquo;t find a global ServerName directive, it falls back to whatever the OS returns for the hostname</p>
+<p>Even though Apache is configured with <code>ServerName</code> inside a all <code>&lt;VirtualHost></code>, Apache still expects a global one.</p>
+<p>Replace the line <code>#ServerName www.example.com:80</code> with <code>ServerName localhost:80</code> in file <code>conf\httpd.conf</code>.</p>
+<p>Without the change, you get the following output error when running httpd.exe:</p>
+<pre tabindex="0"><code>AH00558: httpd.exe: Could not reliably determine the server&#39;s fully qualified domain name, using ::1. Set the &#39;ServerName&#39; directive globally to suppress this message
+</code></pre><h3 id="start-apache-httpd-server">Start Apache httpd server</h3>
+<p>httpd.exe</p>
+<h1 id="testing">Testing</h1>
+<h2 id="check-if-crl-is-served">Check if CRL is served</h2>
+<pre tabindex="0"><code>curl http://pki.local/crl.pem
+</code></pre><p>File should download.</p>
+<p>SUCCESS!</p>
+<h2 id="check-imagemagickorg-https-certificate">Check imagemagick.org https certificate</h2>
+<pre tabindex="0"><code>curl https://imagemagick.org/archive/binaries/imagemagick-7.1.2-15-portable-Q8-x64.7z --output foo-imagemagick.7z
+</code></pre><p>File should download.</p>
+<p>SUCCESS!</p>
+<h2 id="check-7ziporg-and--https-certificate">Check 7zip.org and <a href="https://www.7-zip.org">www.7-zip.org</a> https certificate</h2>
+<pre tabindex="0"><code>curl https://7-zip.org/a/7z2600-x64.exe --output foo-7zip.exe
+curl https://www.7-zip.org/a/7z2600-x64.exe --output foo-www7zip.exe
+</code></pre><p>Bith files should download.</p>
+<p>SUCCESS!</p>
+<h1 id="debugging">Debugging:</h1>
+<h2 id="skip-certificate-checks">Skip certificate checks</h2>
+<p>Explaination:</p>
+<ul>
+<li>
+<p>option <code>-k</code> disables:</p>
+<ul>
+<li>hostname verification</li>
+<li>trust verification</li>
+</ul>
+<p>So even if the cert says DNS:something.else.com, it will still download.<br>
+Normal curl enforces hostname match.</p>
+</li>
+<li>
+<p>option <code>-v</code> enables verbose output.</p>
+</li>
+</ul>
+<p><code>curl -vk https://www.7-zip.org/a/7z2600-x64.exe --output foo-www7zip.exe</code></p>
+<p>If Apache is configured to serve the file, you should see the following output.</p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed  
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host www.7-zip.org:443 was resolved.
+* IPv6: (none)
+* IPv4: 127.0.0.1
+*   Trying 127.0.0.1:443...
+* schannel: disabled automatic use of client certificate
+* ALPN: curl offers http/1.1
+* ALPN: server accepted http/1.1
+* Connected to www.7-zip.org (127.0.0.1) port 443
+* using HTTP/1.x
+&gt; GET /a/7z2600-x64.exe HTTP/1.1
+&gt; Host: www.7-zip.org
+&gt; User-Agent: curl/8.13.0
+&gt; Accept: */*
+&gt;
+&lt; HTTP/1.1 200 OK
+&lt; Date: Fri, 13 Mar 2026 13:56:38 GMT
+&lt; Server: Apache/2.4.66 (Win64) OpenSSL/3.6.1 
+&lt; Last-Modified: Fri, 30 May 2025 00:45:20 GMT
+&lt; ETag: &#34;31000-6364fba95ed95&#34;
+&lt; Accept-Ranges: bytes
+&lt; Content-Length: 200704
+&lt; Content-Type: application/x-msdownload
+&lt;
+{ [89850 bytes data]
+100  196k  100  196k    0     0  4924k      0 --:--:-- --:--:-- --:--:-- 5157k
+* Connection #0 to host www.7-zip.org left intact
+</code></pre><h2 id="validate-a-csr-file">Validate a CSR file:</h2>
+<p><code>openssl req -in name.csr -text -noout</code></p>
+<p>Look for the following in the output:</p>
+<pre tabindex="0"><code>X509v3 Subject Alternative Name:
+    DNS:name.com
+</code></pre><h2 id="validate-a-crt-file">Validate a CRT file:</h2>
+<p><code>openssl x509 -in imagemagick.crt -text -noout</code></p>
+<p>Look for the following in the output:</p>
+<pre tabindex="0"><code>X509v3 Subject Alternative Name:
+    DNS:name.com
+</code></pre><h2 id="check-that-a-certificate-is-signed-by-your-ca">Check that a certificate is signed by your CA:</h2>
+<p><code>openssl verify -CAfile myCA.pem imagemagick.crt</code></p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>imagemagick.crt: OK
+</code></pre><h2 id="check-that-a-certificates-issuer-matches-your-cas-subject">Check that a certificate&rsquo;s issuer matches your CA&rsquo;s subject:</h2>
+<p><code>openssl x509 -in imagemagick.crt -noout -issuer</code></p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>issuer=CN=MyLocalCA
+</code></pre><p>Must match the output of command:<br>
+<code>openssl x509 -in myCA.pem -noout -subject</code></p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>subject=CN=MyLocalCA
+</code></pre><h2 id="verify-crl--ca-chain">Verify CRL &ndash;> CA chain:</h2>
+<p><code>openssl verify -crl_check -CAfile myCA.pem -CRLfile crl.pem imagemagick.crt</code></p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>imagemagick.crt: OK
+</code></pre><h2 id="verify-your-traffic-do-not-go-through-a-proxy">Verify your traffic do not go through a proxy</h2>
+<p><code>netsh winhttp show proxy</code></p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>Direct access (no proxy server).
+</code></pre><p>In powershell:<br>
+<code>[System.Net.WebRequest]::GetSystemWebProxy().GetProxy("http://pki.local")</code></p>
+<p>Expected output:</p>
+<pre tabindex="0"><code>AbsolutePath   : /
+AbsoluteUri    : http://pki.local/
+LocalPath      : /
+Authority      : pki.local
+HostNameType   : Dns
+IsDefaultPort  : True
+IsFile         : False
+IsLoopback     : False
+PathAndQuery   : /
+Segments       : {/}
+IsUnc          : False
+Host           : pki.local
+Port           : 80
+Query          :
+Fragment       :
+Scheme         : http
+OriginalString : http://pki.local
+DnsSafeHost    : pki.local
+IdnHost        : pki.local
+IsAbsoluteUri  : True
+UserEscaped    : False
+UserInfo       :
+</code></pre><p>If your output is different than above, your system is configured with a proxy.</p>
+<h2 id="issue---the-certificate-chain-was-issued-by-an-authority-that-is-not-trusted-sec_e_untrusted_root-0x80090325">Issue - The certificate chain was issued by an authority that is not trusted. SEC_E_UNTRUSTED_ROOT (0x80090325)</h2>
+<p><code>curl https://www.7-zip.org/a/7z2600-x64.exe --output foo-7zip.exe</code></p>
+<p>Output:</p>
+<pre tabindex="0"><code>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (60) schannel: SEC_E_UNTRUSTED_ROOT (0x80090325) - The certificate chain was issued by an authority that is not trusted.
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+</code></pre><p>Explication:<br>
+You probably did not imported myCA certificate as a Trusted Root Certification Authorities</p>
+<h2 id="issue---the-certificate-is-revoked-crypt_e_revoked-0x80092010">Issue - The certificate is revoked. CRYPT_E_REVOKED (0x80092010)</h2>
+<p><code>curl https://www.7-zip.org/a/7z2600-x64.exe --output foo-7zip.exe</code></p>
+<p>Output:</p>
+<pre tabindex="0"><code>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (35) schannel: next InitializeSecurityContext failed: CRYPT_E_REVOKED (0x80092010) - The certificate is revoked.
+</code></pre><p>Explication:<br>
+The certificate was revoked in the CA database, or the file <code>C:/Apache24/conf/7zip.crt</code> is outdated. You must :</p>
+<ul>
+<li>Regenerate a new certificate.</li>
+<li>Sign the certificate with the CA.</li>
+<li>Export a new <code>crl.pem</code> from the CA database&rsquo;s.</li>
+<li>Copy <code>crl.pem</code> to <code>C:\Apache24\htdocs\crl.pem</code>.</li>
+</ul>
+<h2 id="issue---the-revocation-function-was-unable-to-check-revocation-because-the-revocation-server-was-offline-crypt_e_revocation_offline-0x80092013">Issue - The revocation function was unable to check revocation because the revocation server was offline. CRYPT_E_REVOCATION_OFFLINE (0x80092013)</h2>
+<p><code>curl https://www.7-zip.org/a/7z2600-x64.exe --output foo-7zip.exe</code></p>
+<p>Output:</p>
+<pre tabindex="0"><code>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (35) schannel: next InitializeSecurityContext failed: CRYPT_E_REVOCATION_OFFLINE (0x80092013) - The revocation function was unable to check revocation because the revocation server was offline.
+</code></pre><p>Explication:</p>
+<ul>
+<li>Curl is unable to reach your CRL.</li>
+<li>Check with command <code>curl -v http://pki.local/crl.pem</code> to see if the file can be served.</li>
+<li>Make sure you have a virtualhost for serving pki.local domain over http (not https).</li>
+<li>Check your proxy settings. Disable proxy for <code>pki.local</code> and your other domains:
+<ul>
+<li>Go to Windows <em>Settings</em>, <em>Network & Internet</em>, <em>Proxy</em>.</li>
+<li>Under section &ldquo;<em>Manual Proxy setup</em>&rdquo;, locate the text field &ldquo;<em>Use the proxy server except for addresses that starts with the following entries</em>&rdquo;.</li>
+<li>Add the following at the beginning: <code>127.0.0.1;*.local;</code>. You can also add this value to the registry key <code>[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]</code>, and modify the <em>String Value</em> named <code>ProxyOverride</code>.</li>
+</ul>
+</li>
+</ul>
+</div>
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/tutorial/">Tutorial</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/tutorial/">Tutorial</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='711030bd48acaded27487df9a3447b2c'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/blog/2026-01-08-cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/" class="button right"><span>Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<header>
+<h2><a href="/blog/2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab/">Create a fake copies of internet sites when working in a lab</a></h2>
+<time class="published" datetime="2026-03-03 00:00:00 +0000 UTC">March 3, 2026</time>
+</header>
+</article>
+<article class="mini-post">
+<header>
+<h2><a href="/blog/2026-01-08-cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/">Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT</a></h2>
+<time class="published" datetime="2026-01-08 00:00:00 +0000 UTC">January 8, 2026</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-encode-command-line-parameters-on-windows-done-right/" class="image" style="--bg-image:url('/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2017/06/How-to-encode-command-line-parameters-on-Windows-done-right.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-encode-command-line-parameters-on-windows-done-right/">How to encode command line parameters on Windows – done right</a></h2>
+<time class="published" datetime="2021-03-14 14:49:47 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
+</section>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/tutorial/">tutorial<span class="count">2</span></a>
+<li>
+<a href="/categories/home-assistant/">home assistant<span class="count">1</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2026 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
+</html>
