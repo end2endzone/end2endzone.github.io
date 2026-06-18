@@ -1,0 +1,467 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Share a Git repository over HTTP on Windows using Apache - end2end zone</title>
+<meta name="description" content="end2end zone">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="end2end zone">
+<meta property="og:title" content="Share a Git repository over HTTP on Windows using Apache">
+<meta property="og:description" content="end2end zone">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://end2endzone.github.io/blog/2026-02-10-share-a-git-repository-over-http-on-windows-using-apache/">
+<meta property="og:image" content="https://end2endzone.github.io/img/main/logo.jpg">
+<link rel="manifest" href="/favicon/site.webmanifest?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="generator" content="Hugo 0.147.9">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/a11y-dark.min.css">
+<link rel="stylesheet" href="/css/bundle.min.150c477221f0a4cd774059ec37d705d2dfd096e42675af327b9fc2bbbbaebf45.css" integrity="sha256-FQxHciHwpM13QFnsN9cF0t/QluQmda8ye5/Cu7uuv0U="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="/css/end2endzone.css">
+<link rel="stylesheet" href="/css/button.css">
+</head>
+<body>
+<header id="site-header">
+<nav id="site-nav">
+<h1 class="nav-title">
+<a href="/" class="nav">
+Blog
+</a>
+</h1>
+<menu id="site-nav-menu" class="flyout-menu menu">
+<a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+<a href="/about" class="nav link"><i class='far fa-id-card'></i> About</a>
+<a href="/blog" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+<a href="/categories" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+<a href="/tags" class="nav link"><i class='fas fa-sitemap'></i> Tags</a>
+<a href="/contact" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+<a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+<a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+</menu>
+<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+<a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+<a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+</nav>
+<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+<menu id="lang-menu" class="flyout-menu menu">
+<a href="#" lang="en" class="nav link active">English (en)</a>
+<a href="/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+</menu>
+<menu id="share-menu" class="flyout-menu menu">
+<h1>Share Post</h1>
+<a href="//twitter.com/share?text=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache&amp;url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f&amp;title=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f&amp;title=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f&amp;description=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</menu>
+</header>
+<div id="wrapper">
+<section id="site-intro">
+<a href="/"><img src="/img/main/logo.jpg" class="circle" width="100" alt="Hey that's me"></a>
+<header>
+<h1>end2end zone</h1>
+</header>
+<main>
+<p>My life dumped to a web site</p>
+</main>
+<footer>
+<ul class="socnet-icons">
+</ul>
+</footer>
+</section>
+<main id="site-main">
+<article>
+<div class="post">
+<header>
+<div class="title">
+<h2><a href="/blog/2026-02-10-share-a-git-repository-over-http-on-windows-using-apache/">Share a Git repository over HTTP on Windows using Apache</a></h2>
+</div>
+<div class="meta">
+<time datetime="2026-02-10 00:00:00 +0000 UTC">February 10, 2026</time>
+<p>end2end</p>
+<p>5-Minute Read</p>
+</div>
+</header>
+<div id="socnet-share">
+<a href="//twitter.com/share?text=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache&amp;url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+<p>Twitter</p>
+</a>
+<a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+<p>Facebook</p>
+</a>
+<a href="//www.reddit.com/submit?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f&amp;title=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache" target="_blank" rel="noopener" class="nav share-btn reddit">
+<p>Reddit</p>
+</a>
+<a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f&amp;title=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache" target="_blank" rel="noopener" class="nav share-btn linkedin">
+<p>LinkedIn</p>
+</a>
+<a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f&amp;description=Share%20a%20Git%20repository%20over%20HTTP%20on%20Windows%20using%20Apache" target="_blank" rel="noopener" class="nav share-btn pinterest">
+<p>Pinterest</p>
+</a>
+<a href="mailto:?subject=Check%20out%20this%20post%20by &amp;body=https%3a%2f%2fend2endzone.github.io%2fblog%2f2026-02-10-share-a-git-repository-over-http-on-windows-using-apache%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+<p>Email</p>
+</a>
+</div>
+<div class="content">
+<div class="expand">
+<div class="expand-label" style="cursor:pointer" onclick='$h=$(this),$h.next("div").slideToggle(100,function(){$h.children("i").attr("class",function(){return $h.next("div").is(":visible")?"fas fa-chevron-down":"fas fa-chevron-right"})})'>
+<i style="font-size:x-small" class="fas fa-chevron-right"></i>
+<span>
+Table of contents
+</span>
+</div><div class="expand-content" style="display:none">
+<aside>
+<nav id="TableOfContents">
+<ol>
+<li><a href="#problem--context">Problem / Context</a></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#configuration-steps">Configuration steps</a>
+<ol>
+<li><a href="#install-apache-http-server">Install Apache HTTP Server</a>
+<ol>
+<li><a href="#download--install">Download & Install</a></li>
+<li><a href="#edit-ddevapache24confhttpdconf">Edit &ldquo;D:\dev\Apache24\conf\httpd.conf&rdquo;</a></li>
+<li><a href="#create-usernames-and-password-file">Create usernames and password file</a></li>
+<li><a href="#clone-a-repository-install-repositories">Clone a repository (install repositories)</a></li>
+<li><a href="#create-file-git-daemon-export-ok">Create file <code>git-daemon-export-ok</code></a></li>
+</ol>
+</li>
+<li><a href="#start-apache">Start Apache</a></li>
+</ol>
+</li>
+<li><a href="#testing">Testing</a>
+<ol>
+<li><a href="#clone-a-repository">Clone a Repository</a></li>
+<li><a href="#expected-result">Expected Result</a></li>
+</ol>
+</li>
+<li><a href="#troubleshooting">Troubleshooting</a>
+<ol>
+<li><a href="#warning-remote-head-refers-to-nonexistent-ref-unable-to-checkout">warning: remote HEAD refers to nonexistent ref, unable to checkout</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</aside>
+</div>
+</div>
+<h1 id="problem--context">Problem / Context</h1>
+<p>A Git repository should not be shared directly through a Windows shared folder when multiple users need concurrent access.</p>
+<p>Although it may appear convenient, concurrent access to the repository can lead to corruption and other consistency issues.</p>
+<p>There are safer alternatives. For example:</p>
+<ul>
+<li>Git over HTTP(S)</li>
+<li>Git over SSH</li>
+<li>Dedicated Git server software such as Gitolite, Gitea, or GitLab</li>
+</ul>
+<p><em>Git over HTTP(S)</em> is a common solution that can be implemented wiht Apache or Nginx. It provides proper concurrency handling and push/pull operations while remaining relatively easy to deploy in isolated or restricted environments.</p>
+<p>This document explains how to expose Git repositories over HTTP using Apache HTTP Server and Git for Windows.</p>
+<h1 id="solution">Solution</h1>
+<p>The solution described in this document uses:</p>
+<ul>
+<li>Apache HTTP Server</li>
+<li>Git for Windows</li>
+<li>Git&rsquo;s <code>git-http-backend.exe</code></li>
+</ul>
+<p>The architecture is straightforward:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apache HTTP Server</td>
+<td>Serves HTTP requests</td>
+</tr>
+<tr>
+<td>git-http-backend.exe</td>
+<td>Implements the Git smart HTTP protocol as a cgibin script</td>
+</tr>
+<tr>
+<td>Bare repositories</td>
+<td>Storage for Git repositories</td>
+</tr>
+<tr>
+<td>htpasswd authentication</td>
+<td>Optional access control</td>
+</tr>
+</tbody>
+</table><h1 id="configuration-steps">Configuration steps</h1>
+<h2 id="install-apache-http-server">Install Apache HTTP Server</h2>
+<h3 id="download--install">Download & Install</h3>
+<ol>
+<li>Open <a href="https://httpd.apache.org/download.cgi">https://httpd.apache.org/download.cgi</a></li>
+<li>Click <strong>Files for Microsoft Windows</strong>.</li>
+<li>Click <strong>Apache Lounge</strong>.</li>
+<li>Download <code>httpd-2.4.66-260131-Win64-VS18.zip</code>.</li>
+<li>Extract the archive to: <code>D:\dev\Apache24</code>.</li>
+</ol>
+<h3 id="edit-ddevapache24confhttpdconf">Edit &ldquo;D:\dev\Apache24\conf\httpd.conf&rdquo;</h3>
+<ol>
+<li>
+<p>Update <em><strong>SRVROOT</strong></em>.<br>
+Change line 31 to <code>Define SRVROOT "D:/dev/Apache24"</code>.</p>
+</li>
+<li>
+<p>Enable CGI Support.<br>
+Uncomment the following:
+<code># LoadModule cgi_module modules/mod_cgi.so</code>.</p>
+</li>
+<li>
+<p>Enable executable files for CGI.<br>
+In section <code>&lt;IfModule mime_module></code>, locate line <code>AddHandler cgi-script .cgi</code> and add <code>AddHandler cgi-script .exe</code> under <em>IfModule</em> node.</p>
+</li>
+<li>
+<p>Configure Git HTTP Backend.<br>
+Append the following configuration at the end of <code>httpd.conf</code>:</p>
+<pre tabindex="0"><code>SetEnv GIT_PROJECT_ROOT D:/dev/repositories
+SetEnv GIT_HTTP_EXPORT_ALL
+
+# Link URLS that starts with /git/ with Git for Windows&#39; cgi-bin&#39;s handler.
+ScriptAliasMatch ^/git/(.*) &#34;C:/Program Files/Git/mingw64/libexec/git-core/git-http-backend.   exe/$1&#34;
+
+# Define files under this directory as cgi-bin exe handler.
+&lt;Directory &#34;C:/Program Files/Git/mingw64/libexec/git-core&#34;&gt;
+  Options +ExecCGI
+  AllowOverride None
+  Require all granted
+&lt;/Directory&gt;
+
+# Enable security with username/password authentification.
+# User names/passwords are from a local list stored in file git-users.htpasswd.
+# git clone and git fetch use git-upload-pack (read‑only). You usually want those open.
+# But It might be better to require authentication when pulling or cloning from a repository    (even in read-only).
+&lt;LocationMatch &#34;^/git/.*/git-upload-pack$&#34;&gt;
+  AuthType Basic
+  AuthName &#34;Git Access&#34;
+  AuthUserFile &#34;${SRVROOT}/conf/git-users.htpasswd&#34;
+  Require valid-user
+&lt;/LocationMatch&gt;
+
+# git push uses git-receive-pack. Restricting that location forces authentication when    someone tries to push.
+&lt;LocationMatch &#34;^/git/.*/git-receive-pack$&#34;&gt;
+  AuthType Basic
+  AuthName &#34;Git Access&#34;
+  AuthUserFile &#34;${SRVROOT}/conf/git-users.htpasswd&#34;
+  Require valid-user
+&lt;/LocationMatch&gt;
+</code></pre></li>
+</ol>
+<h3 id="create-usernames-and-password-file">Create usernames and password file</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">htpasswd -c <span class="s2">&#34;.\conf\git-users.htpasswd&#34;</span> john
+</span></span></code></pre></div><p>The command will request a password for the new user name. For example, use <code>doe</code> for password.</p>
+<h3 id="clone-a-repository-install-repositories">Clone a repository (install repositories)</h3>
+<p>Git for Windows&rsquo; git-http-backend.exe requires &ldquo;bare&rdquo; repositories.
+A bare repository is a cloned repo without the working copy files (only the database).
+It &ldquo;matches&rdquo; the content of the <code>.git</code> directory of a normal cloned repository.</p>
+<p>To clone a bare repository:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="k">cd</span> /d D:\dev\repositories
+</span></span><span class="line"><span class="cl">git clone --bare https://github.com/quartzquark/chess.git
+</span></span></code></pre></div><p>The command above will create directory <code>D:\dev\repositories\chess.git</code>.</p>
+<p>You can also convert a normal repository to a bare repository. This will only keep directory <code>chess/.git</code> as directory <code>chess.git</code> with the following command:<br>
+<code>git clone --bare &lt;normal-clone-directory-name> &lt;name-of-bare-repo-directory>.git</code>.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">git clone --bare chess chess.git
+</span></span></code></pre></div><h3 id="create-file-git-daemon-export-ok">Create file <code>git-daemon-export-ok</code></h3>
+<p>The <code>git-daemon-export-ok</code> file is a crucial component of the Git daemon, serving as a whitelist to prevent accidental exposure of repositories. It is an empty file that can be created in the .git directory of a Git repository. This file is not committed with the repository&rsquo;s code but is created to allow the Git daemon to export the repository. The presence of this file is necessary for the Git daemon to function correctly and for clients to clone or fetch from the repository.</p>
+<p>From <a href="https://git-scm.com/docs/git-daemon">https://git-scm.com/docs/git-daemon</a> :</p>
+<blockquote>
+<p>It verifies that the directory has the magic file &ldquo;git-daemon-export-ok&rdquo;, and it will refuse to export any Git directory that hasn’t explicitly been marked for export this way (unless the &ndash;export-all parameter is specified). If you pass some directory paths as git daemon arguments, the offers are limited to repositories within those directories.</p></blockquote>
+<p>The following command to creates the file:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="k">type</span> nul <span class="p">&gt;</span> D:\dev\repositories\chess.git\git-daemon-export-ok
+</span></span></code></pre></div><h2 id="start-apache">Start Apache</h2>
+<p>Start Apache manually:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl">D<span class="p">:</span><span class="nl">\dev\Apache24\bin\httpd.exe</span>
+</span></span></code></pre></div><h1 id="testing">Testing</h1>
+<h2 id="clone-a-repository">Clone a Repository</h2>
+<p>Run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone http://127.0.0.1/git/chess.git
+</span></span></code></pre></div><p>Apache should request credentials on the first time.
+Username/password are saved to Windows <em>Credential Manager</em>, under section <code>Windows Credential</code>. Look out for an entry named <code>git:http://127.0.0.1</code>, and verify that username is <code>john</code>.</p>
+<h2 id="expected-result">Expected Result</h2>
+<p>The repository should clone successfully.</p>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<h2 id="warning-remote-head-refers-to-nonexistent-ref-unable-to-checkout">warning: remote HEAD refers to nonexistent ref, unable to checkout</h2>
+<p>When you clone a reposotory, you may encounter the following warning:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">warning: remote HEAD refers to nonexistent ref, unable to checkout
+</span></span></code></pre></div><p>This occurs when the bare repository&rsquo;s <code>HEAD</code> points to a branch that does not exist. A common example is when HEAD refers to <code>refs/heads/master</code> when the repository actually uses <code>refs/heads/main</code>. This occurs when the repository&rsquo;s default branch configured is <code>master</code> instead of <code>main</code>. The default branch for a repository is stored in file <code>HEAD</code>. Print the content of <code>HEAD</code> file with the command <code>cat HEAD</code> to validate. It should output something similar to <code>refs/heads/master</code>. If there is no branch named <code>master</code> in this repository, then you shall get the warning message above when cloning the repository.</p>
+<p>To fix it, do the following:</p>
+<ol>
+<li>Stop Apache&rsquo;s service or process.</li>
+<li>Open a Terminal or a Git Bash terminal.</li>
+<li>Browse to the bare repository directory.</li>
+<li>Check the current state of HEAD pointer with <code>cat HEAD</code>.</li>
+<li>Print the list of all references with the command <code>git show-ref</code>. This will output all existing branches and tags.</li>
+<li>Set HEAD to an existing branch. Enter the command <code>git symbolic-ref HEAD &lt;NEW-REF></code> where <code>&lt;NEW-REF></code> is one of the references printed with the previous command.
+For example:
+<code>git symbolic-ref HEAD refs/heads/main</code>.</li>
+<li>Retart Apache&rsquo;s service or process.</li>
+<li>Try to clone the repository again.</li>
+</ol>
+<p>The warning should disappear.</p>
+</div>
+<footer>
+<div class="stats">
+<ul class="categories">
+<li><a class="article-terms-link" href="/categories/tutorial/">Tutorial</a></li>
+</ul>
+<ul class="tags">
+<li><a class="article-terms-link" href="/tags/tutorial/">Tutorial</a></li>
+<li><a class="article-terms-link" href="/tags/git/">Git</a></li>
+<li><a class="article-terms-link" href="/tags/apache/">Apache</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<div class='post'>
+<div>
+<h2 id='say-something'>Say Something</h2>
+<form id='comment-form' class='new-comment' method='POST'>
+<h3 class='reply-notice hidden'>
+<span class='reply-name'></span>
+<a class='reply-close-btn button'><i class='fas fa-times'></i></a>
+</h3>
+<input type='hidden' name='options[entryId]' value='6129af2ad999f7d5be7f7922e3d44b00'>
+<input type='hidden' name='fields[replyThread]'>
+<input type='hidden' name='fields[replyID]'>
+<input type='hidden' name='fields[replyName]'>
+<input required name='fields[name]' type='text' placeholder='Your Name'>
+<input name='fields[website]' type='text' placeholder='Your Website'>
+<input required name='fields[email]' type='email' placeholder='Your Email'>
+<textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+<div class='submit-notice'>
+<strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+<strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</div>
+<button type='button' id="comment-form-submit" class='button'>Submit</button>
+<button type='button' id="comment-form-submitted" class='hidden button' disabled>Submitted</button>
+<button type='reset' id="comment-form-reset" class='button'>Reset</button>
+</form>
+</div>
+<div class='comments-container'>
+<h2>Comments</h2>
+</div>
+</div>
+</article>
+<div class="pagination">
+<a href="/blog/2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab/" class="button left"><span>Create a fake copies of internet sites when working in a lab</span></a>
+<a href="/blog/2026-01-08-cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/" class="button right"><span>Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT</span></a>
+</div>
+</main>
+<section id="site-sidebar">
+<section id="recent-posts">
+<header>
+<h1>Recent Posts</h1>
+</header>
+<article class="mini-post">
+<header>
+<h2><a href="/blog/2026-03-03-create-a-fake-copies-of-internet-sites-when-working-in-a-lab/">Create a fake copies of internet sites when working in a lab</a></h2>
+<time class="published" datetime="2026-03-03 00:00:00 +0000 UTC">March 3, 2026</time>
+</header>
+</article>
+<article class="mini-post">
+<header>
+<h2><a href="/blog/2026-02-10-share-a-git-repository-over-http-on-windows-using-apache/">Share a Git repository over HTTP on Windows using Apache</a></h2>
+<time class="published" datetime="2026-02-10 00:00:00 +0000 UTC">February 10, 2026</time>
+</header>
+</article>
+<article class="mini-post">
+<header>
+<h2><a href="/blog/2026-01-08-cr%C3%A9er-un-sensor-personnalis%C3%A9-dans-home-assistant-attach%C3%A9e-%C3%A0-une-valeur-mqtt/">Créer un sensor personnalisé dans Home Assistant attachée à une valeur MQTT</a></h2>
+<time class="published" datetime="2026-01-08 00:00:00 +0000 UTC">January 8, 2026</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/PiDVR-Record-over-the-air-TV-on-a-Raspberry-Pi-4.jpg" alt>
+</a>
+<header>
+<h2><a href="/pidvr-record-over-the-air-tv-on-a-raspberry-pi-4/">PiDVR Record over the air TV on a Raspberry Pi 4</a></h2>
+<time class="published" datetime="2021-03-14 19:40:03 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<article class="mini-post">
+<a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/" class="image" style="--bg-image:url('/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg')">
+<img class="stretchV" src="/wp-content/uploads/2021/03/HOW-TO-SETUP-MACOS-CATALINA-10.15-IN-VIRTUALBOX-FOR-C-DEVELOPMENT-ON-GITHUB.jpg" alt>
+</a>
+<header>
+<h2><a href="/how-to-setup-macos-catalina-10-15-in-virtualbox-for-c-development-on-github/">How to setup macOS Catalina 10.15 in VirtualBox for C++ development on Github.</a></h2>
+<time class="published" datetime="2021-03-14 16:42:39 +0000 UTC">March 14, 2021</time>
+</header>
+</article>
+<footer>
+<a href="/blog" class="button">See More</a>
+</footer>
+</section>
+<section id="categories">
+<header>
+<h1><a href="/categories">Categories</a></h1>
+</header>
+<ul>
+<li>
+<a href="/categories/photography/">photography<span class="count">28</span></a>
+<li>
+<a href="/categories/development/">development<span class="count">22</span></a>
+<li>
+<a href="/categories/model-aeronautics/">model aeronautics<span class="count">17</span></a>
+<li>
+<a href="/categories/other/">other<span class="count">9</span></a>
+<li>
+<a href="/categories/tutorial/">tutorial<span class="count">3</span></a>
+<li>
+<a href="/categories/home-assistant/">home assistant<span class="count">1</span></a>
+</li>
+</ul>
+</section>
+<section id="mini-bio">
+<header>
+<h1>About</h1>
+</header>
+<p>Hey! I'm Antoine author of end2end zone. Take a couple of minutes to get to know me a little better.</p>
+<footer>
+<a href="/about" class="button">Learn More</a>
+</footer>
+</section>
+</section>
+<footer id="site-footer">
+<ul class="socnet-icons">
+</ul>
+<p class="copyright">
+© 2026 end2end zone
+<br>
+Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.147.9' target='_blank' rel='noopener'>Hugo</a>
+</p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+<script src="/js/highlight.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+<script>hljs.configure({ignoreUnescapedHTML:!0}),hljs.highlightAll(),hljs.initLineNumbersOnLoad()</script><script src="/js/bundle.min.88c850c616696a7e395be7803f02f2fe8bb96c8d4e00c23e1b929d062fd00d40.js" integrity="sha256-iMhQxhZpan45W+eAPwLy/ou5bI1OAMI+G5KdBi/QDUA="></script>
+<script src="/js/add-on.js"></script>
+<script src="/js/linenumbers.js"></script>
+</div>
+</body>
+</html>

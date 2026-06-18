@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache on end2end zone</title><link>https://end2endzone.github.io/tags/apache/</link><description>Recent content in Apache on end2end zone</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://end2endzone.github.io/tags/apache/index.xml" rel="self" type="application/rss+xml"/><item><title>Share a Git repository over HTTP on Windows using Apache</title><link>https://end2endzone.github.io/blog/2026-02-10-share-a-git-repository-over-http-on-windows-using-apache/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate><guid>https://end2endzone.github.io/blog/2026-02-10-share-a-git-repository-over-http-on-windows-using-apache/</guid><description>&lt;h1 id="problem--context">Problem / Context&lt;/h1>
+&lt;p>A Git repository should not be shared directly through a Windows shared folder when multiple users need concurrent access.&lt;/p>
+&lt;p>Although it may appear convenient, concurrent access to the repository can lead to corruption and other consistency issues.&lt;/p>
+&lt;p>There are safer alternatives. For example:&lt;/p>
+&lt;ul>
+&lt;li>Git over HTTP(S)&lt;/li>
+&lt;li>Git over SSH&lt;/li>
+&lt;li>Dedicated Git server software such as Gitolite, Gitea, or GitLab&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>Git over HTTP(S)&lt;/em> is a common solution that can be implemented wiht Apache or Nginx. It provides proper concurrency handling and push/pull operations while remaining relatively easy to deploy in isolated or restricted environments.&lt;/p></description></item></channel></rss>
